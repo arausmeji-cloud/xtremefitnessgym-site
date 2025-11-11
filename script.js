@@ -35,4 +35,7 @@ nav.querySelectorAll("a").forEach((link) => {
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
+
 }
+// --- Verificación básica del sitio ---
+console.log("Xtreme Fitness Gym website loaded successfully!");
