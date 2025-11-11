@@ -3,229 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xtreme Fitness Gym | No Excuses, Just Results</title>
+  <title>Xtreme Fitness Gym</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header id="main-header" class="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <!-- Si después querés usar imagen de logo: <img src="logo.png" alt="Xtreme Fitness Gym" /> -->
-        <span class="logo-main">Xtreme Fitness Gym</span>
-        <span class="logo-tagline">No Excuses. Just Results.</span>
-      </div>
-
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#equipment">Equipment</a>
-        <a href="#memberships">Memberships</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        ☰
-      </button>
-    </div>
+  <header>
+    <h1>Xtreme Fitness Gym</h1>
+    <p class="slogan">No Excuses. Be the Best You Can Be.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO / HOME -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Be The Best You Can Be</h1>
-      <p>
-        Strength-focused, no-nonsense training in Western Sydney.  
-        Old-school iron, modern results.
-      </p>
-      <div class="hero-buttons">
-        <a href="#memberships" class="btn btn-primary">View Memberships</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
-      </div>
-    </div>
+  <section id="home" class="section">
+    <h2>Welcome to Xtreme Fitness Gym</h2>
+    <p>Push your limits, transform your body, and achieve real results. Join our community today.</p>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container section-content">
-      <div class="section-text">
-        <h2>About Xtreme Fitness Gym</h2>
-        <p>
-          Xtreme Fitness Gym is a serious training space for people who actually
-          want results. No gimmicks, no fluff – just quality equipment, expert
-          programming and a community that pushes you to level up every session.
-        </p>
-        <p>
-          We specialise in strength, hypertrophy and real-world conditioning.
-          Our floor is packed with refurbished commercial machines, heavy-duty
-          racks, platforms and enough plates to keep even the strongest lifters
-          happy.
-        </p>
-        <ul class="bullet-list">
-          <li>Old-school plate-loaded and pin-loaded machines</li>
-          <li>Cardio equipment for conditioning and fat loss</li>
-          <li>Olympic bars, bumper plates and dumbbells with custom branding</li>
-          <li>Rubber flooring and dedicated strength area</li>
-        </ul>
-      </div>
-    </div>
+    <h2>About Us</h2>
+    <p>Xtreme Fitness Gym is built for athletes, fighters, and anyone who wants to be their best. From weightlifting to martial arts — we’ve got everything you need to grow stronger every day.</p>
   </section>
 
-  <!-- EQUIPMENT -->
-  <section id="equipment" class="section section-alt">
-    <div class="container">
-      <h2>Equipment & Zones</h2>
-      <p class="section-subtitle">
-        Built for lifters. Designed for progress.
-      </p>
-
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Strength Machines</h3>
-          <p>
-            Refurbished plate-loaded and selectorised machines for legs, chest,
-            back, shoulders and arms – tuned for biomechanics and heavy use.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Free Weights</h3>
-          <p>
-            Custom-branded dumbbells and Olympic plates, flat/incline benches
-            and platforms for squats, bench, deadlifts and heavy rows.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Cardio Zone</h3>
-          <p>
-            Commercial treadmills, bikes and other equipment to support fat loss,
-            conditioning and warm-ups before big lifts.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Future Classes & Coaching</h3>
-          <p>
-            In the future we’ll offer small-group strength sessions and
-            personalised programs so you’re never guessing what to do.
-          </p>
-        </article>
-      </div>
-    </div>
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Weight Training & Hypertrophy Programs</li>
+      <li>Jiu-Jitsu and Combat Classes</li>
+      <li>Cardio, Step, and Cross-Training</li>
+      <li>Sauna and Cold Bath Recovery</li>
+    </ul>
   </section>
 
-  <!-- MEMBERSHIPS -->
-  <section id="memberships" class="section">
-    <div class="container">
-      <h2>Memberships</h2>
-      <p class="section-subtitle">
-        Simple options. No hidden fees. No excuses.
-      </p>
-
-      <div class="cards-grid memberships-grid">
-        <article class="card card-highlight">
-          <h3>Founding Member</h3>
-          <p class="price">From $X / week</p>
-          <ul class="bullet-list">
-            <li>Unlimited gym access</li>
-            <li>Founders-only rate (limited spots)</li>
-            <li>Priority booking when we launch</li>
-            <li>Early access to new equipment & zones</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-full">Register Interest</a>
-        </article>
-
-        <article class="card">
-          <h3>Casual & Short-Term</h3>
-          <p class="price">Coming soon</p>
-          <p>
-            Casual visits and short-term passes will be available after launch –
-            perfect if you’re in the area for a short time.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Coaching & Programs</h3>
-          <p class="price">Coming soon</p>
-          <p>
-            One-on-one coaching and structured training blocks for strength,
-            hypertrophy and fat loss – tailored to your goals and experience.
-          </p>
-        </article>
-      </div>
-    </div>
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <p>Check out our machines, training area, and transformation results — coming soon!</p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="container contact-container">
-      <div class="section-text">
-        <h2>Contact & Location</h2>
-        <p>
-          Xtreme Fitness Gym will be opening soon in Western Sydney.  
-          Leave your details below and we’ll contact you with opening dates,
-          membership offers and exact location once it’s confirmed.
-        </p>
-
-        <ul class="contact-list">
-          <li><strong>Email:</strong> info@xtremefitnessgym.com.au</li>
-          <li><strong>City:</strong> Sydney, NSW</li>
-          <li><strong>Focus:</strong> Strength, muscle & real results</li>
-        </ul>
-
-        <p class="small-text">
-          By sending this form you agree that we may contact you about
-          Xtreme Fitness Gym opening dates, offers and updates.
-        </p>
-      </div>
-
-      <form
-        class="contact-form"
-        action="mailto:info@xtremefitnessgym.com.au"
-        method="post"
-        enctype="text/plain"
-      >
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input id="name" name="Name" type="text" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input id="email" name="Email" type="email" required />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" rows="4" placeholder="Tell us about your goals..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full">
-          Send Message
-        </button>
-
-        <p class="form-note">
-          If the form doesn’t open your email app, write us directly at
-          <a href="mailto:info@xtremefitnessgym.com.au">info@xtremefitnessgym.com.au</a>.
-        </p>
-      </form>
-    </div>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@xtremefitnessgym.com.au" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Xtreme Fitness Gym. All rights reserved.</p>
-      <p class="footer-tagline">No excuses. Just results.</p>
-      <div class="footer-links">
-        <!-- Cuando tengamos redes, las ponemos acá -->
-        <span>Instagram · Facebook · TikTok (coming soon)</span>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 Xtreme Fitness Gym. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
