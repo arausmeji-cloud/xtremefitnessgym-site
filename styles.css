@@ -61,12 +61,29 @@ body {
 /* LOGO Y TÍTULO */
 .logo-block {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px 80px; /* más ancho, menos alto */
-    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px 100px;  /* Más ancho (100), más bajo (20) */
+    border-radius: 14px;
     text-align: center;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-block:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px rgba(255, 255, 120, 0.5);
 }
 
 .logo-block:hover {
@@ -80,23 +97,46 @@ body {
 }
 
 .logo-img {
-    width: 300px;       /* Aumentamos un poco el logo */
+    width: 340px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 8px; /* Bordes más suaves */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro más chico */
-    padding: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3); /* Sutil brillo */
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease forwards;
+}
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 150, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(255, 255, 100, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 150, 0.2);
+    }
 }
 
+.logo-img {
+    width: 340px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease forwards, glowPulse 4s ease-in-out infinite;
+}
 .site-title {
-    font-size: 3.2rem;       /* Más grande */
-    color: #FFD700;          /* Amarillo intenso */
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    font-size: 3.8rem; /* Más grande */
+    color: #FFD700;
+    letter-spacing: 3px;
+    margin: 20px 0 10px;
     text-transform: uppercase;
-    text-shadow: 0 0 12px rgba(255, 255, 0, 0.6);
+    text-shadow: 0 0 18px rgba(255, 255, 0, 0.6);
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 .slogan {
   font-size: 1.1rem;
@@ -398,6 +438,7 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
 
 
