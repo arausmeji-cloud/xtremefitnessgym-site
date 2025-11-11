@@ -61,12 +61,17 @@ body {
 /* LOGO Y TÍTULO */
 .logo-block {
     display: inline-block;
-    background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(30,30,30,0.9));
-    padding: 25px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 80px; /* más ancho, menos alto */
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.logo-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 255, 100, 0.5);
 }
 
 .logo-block:hover {
@@ -393,6 +398,7 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
 
 
