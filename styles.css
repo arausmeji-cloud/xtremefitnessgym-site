@@ -62,8 +62,8 @@ body {
 .logo-block {
     display: inline-block;
     background: rgba(0, 0, 0, 0.85);
-    padding: 20px 100px;  /* Más ancho (100), más bajo (20) */
-    border-radius: 14px;
+    padding: 20px 120px; /* alto (vertical) - ancho (horizontal) */
+    border-radius: 12px;
     text-align: center;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -438,6 +438,7 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
 
 
