@@ -62,8 +62,8 @@ body {
 .logo-block {
     display: inline-block;
     background: rgba(0, 0, 0, 0.85);
-    padding: 20px 120px; /* alto (vertical) - ancho (horizontal) */
-    border-radius: 12px;
+    padding: 15px 160px; /* Menos altura (15), más ancho (160) */
+    border-radius: 16px;
     text-align: center;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -80,7 +80,22 @@ body {
         transform: translateY(0);
     }
 }
+.logo-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,120,0.15), transparent);
+    transform: translateX(-100%);
+    animation: shine 6s infinite linear;
+}
 
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
 .logo-block:hover {
     transform: scale(1.04);
     box-shadow: 0 0 40px rgba(255, 255, 120, 0.5);
@@ -438,6 +453,7 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
 
 
