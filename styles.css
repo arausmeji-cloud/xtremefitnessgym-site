@@ -69,11 +69,14 @@ body {
 }
 
 .logo-img {
-    width: 260px;   /* tamaño más grande */
+    width: 320px;       /* Aumentamos un poco el logo */
     height: auto;
     display: block;
-    margin: 0 auto 20px;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+    margin: 0 auto 15px;
+    border-radius: 8px; /* Bordes más suaves */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro más chico */
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3); /* Sutil brillo */
 }
 
 .site-title {
@@ -383,4 +386,5 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
