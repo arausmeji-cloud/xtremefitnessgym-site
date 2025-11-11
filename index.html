@@ -1,14 +1,64 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xtreme Fitness Gym</title>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Xtreme Fitness Gym</h1>
-  <p>No Excuses. Be the Best You Can Be.</p>
+  <header>
+    <h1>Xtreme Fitness Gym</h1>
+    <p class="slogan">No Excuses. Be the Best You Can Be.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h2>Welcome to Xtreme Fitness Gym</h2>
+    <p>Push your limits, transform your body, and achieve real results. Join our community today.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Xtreme Fitness Gym is built for athletes, fighters, and anyone who wants to be their best. From weightlifting to martial arts — we’ve got everything you need to grow stronger every day.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Weight Training & Hypertrophy Programs</li>
+      <li>Jiu-Jitsu and Combat Classes</li>
+      <li>Cardio, Step, and Cross-Training</li>
+      <li>Sauna and Cold Bath Recovery</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <p>Check out our machines, training area, and transformation results — coming soon!</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@xtremefitnessgym.com.au" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Xtreme Fitness Gym. All rights reserved.</p>
+  </footer>
 </body>
 </html>
