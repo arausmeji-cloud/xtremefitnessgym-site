@@ -1,41 +1,131 @@
-/* ====== ESTILO GENERAL ====== */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #111;
-  color: #f4f4f4;
-  text-align: center;
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #111, #000);
+}
+
+h1 {
+  color: #f6c800; /* Amarillo XF */
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  color: #9cff00; /* Verde XF */
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9cff00;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f6c800;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.section h2 {
+  color: #f6c800;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.section p,
+.section li {
+  color: #e0e0e0;
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+.section ul {
+  list-style: none;
   padding: 0;
 }
 
-/* ====== ENCABEZADO ====== */
-h1 {
-  font-size: 3em;
-  color: #ffeb3b; /* Amarillo brillante del logo */
-  margin-top: 80px;
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-/* ====== LEMA ====== */
-p {
-  font-size: 1.5em;
-  color: #a4ff00; /* Verde lima del logo */
-  margin-top: 10px;
-}
-
-/* ====== BOTÓN / CONTACTO ====== */
-button {
-  background-color: #ffeb3b;
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
   border: none;
-  padding: 12px 24px;
-  margin-top: 40px;
-  border-radius: 8px;
-  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f6c800;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  color: #111;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #a4ff00;
-  color: #111;
+  background-color: #9cff00;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  .section {
+    padding: 40px 10px;
+  }
 }
