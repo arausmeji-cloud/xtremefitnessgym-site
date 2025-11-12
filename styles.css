@@ -560,29 +560,38 @@ textarea:focus {
     drop-shadow(0 28px 40px rgba(0,0,0,.38))
     drop-shadow(0 2px 0 rgba(255,255,255,.04));
 }
-.logo-img{
+.logo-img {
   position: relative;
-  overflow: visible;
-  isolation: isolate;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 460px;
+  filter:
+    drop-shadow(0 12px 22px rgba(0,0,0,.45))
+    drop-shadow(0 24px 36px rgba(0,0,0,.35))
+    drop-shadow(0 2px 0 rgba(255,255,255,.03));
 }
-.logo-img.sheen::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(115deg,
-    rgba(255,255,255,0) 20%,
-    rgba(255,255,255,.20) 50%,
-    rgba(255,255,255,0) 80%);
-  mix-blend-mode: screen;
+
+.logo-img.sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 70%);
   transform: translateX(-120%);
   animation: sheenSweep 6s ease-in-out infinite;
-  pointer-events:none;
+  filter: blur(3px);
+  opacity: 0.3;
+  pointer-events: none;
 }
-@keyframes sheenSweep{
+
+@keyframes sheenSweep {
   0%   { transform: translateX(-120%); opacity: 0; }
-  10%  { opacity:.7; }
-  45%  { transform: translateX(120%); opacity:.0; }
-  100% { transform: translateX(120%); opacity:0; }
+  20%  { opacity: 0.6; }
+  40%  { transform: translateX(120%); opacity: 0; }
+  100% { transform: translateX(120%); opacity: 0; }
 }
 
 
