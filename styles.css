@@ -118,11 +118,16 @@ body {
   width: 440px; /* agranda el logo */
   height: auto;
   display: block;
-  margin: 0 auto 15px; /* centrado con espacio inferior */
+  margin: 0 auto 8px; /* centrado con espacio inferior */
   border-radius: 8px;
   filter: drop-shadow(0 8px 25px rgba(255, 255, 0, 0.4)); /* efecto brillo XF */
   animation: fadeIn 1.5s ease forwards;
 }
+.logo-img {
+  position: relative;
+  z-index: 2;
+}
+
 .logo-img {
   position: relative;
   z-index: 2;
@@ -483,6 +488,7 @@ textarea:focus {
     width: 220px;
   }
 }
+
 
 
 
