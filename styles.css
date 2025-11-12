@@ -488,6 +488,17 @@ textarea:focus {
     width: 220px;
   }
 }
+@media (max-width: 900px) {
+  .logo-img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    width: 240px;
+  }
+}
 
 
 
