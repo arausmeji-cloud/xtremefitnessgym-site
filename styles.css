@@ -64,7 +64,6 @@ body {
   transition: none;
   position: relative;
 }
-}
 
 @keyframes fadeInUp {
     from {
@@ -606,6 +605,7 @@ textarea:focus {
   40%  { transform: translateX(120%); opacity: 0; }
   100% { transform: translateX(120%); opacity: 0; }
 }
+
 
 
 
