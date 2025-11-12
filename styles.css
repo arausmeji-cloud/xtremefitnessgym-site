@@ -456,6 +456,12 @@ textarea:focus {
   padding: 0 !important;         /* evita que el panel se vea más grande que el logo */
   margin: 0 auto !important;     /* centrado sin margen raro */
 }
+/* Quitar cualquier sombra o fondo persistente del logo */
+.logo-img {
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
 
 
 
