@@ -126,10 +126,10 @@ body {
     animation: fadeIn 1.2s ease forwards;
 }
 /* === LOGO PRINCIPAL XF === */
-.logo-img {
+.logo-block img {
   position: relative;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   width: 460px;
   height: auto;
   filter:
@@ -137,11 +137,11 @@ body {
   drop-shadow(0 0 25px rgba(255, 255, 120, 0.55))
   drop-shadow(0 -10px 20px rgba(255, 255, 255, 0.15));
 animation: logoGlow 5s ease-in-out infinite;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.logo-img:hover {
-  transform: scale(1.04);
+.logo-block img:hover {
+  transform: scale(1.05);
 }
 
 @keyframes logoGlow {
@@ -597,6 +597,7 @@ textarea:focus {
   40%  { transform: translateX(120%); opacity: 0; }
   100% { transform: translateX(120%); opacity: 0; }
 }
+
 
 
 
