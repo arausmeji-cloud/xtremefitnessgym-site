@@ -123,27 +123,7 @@ body {
   filter: drop-shadow(0 8px 25px rgba(255, 255, 0, 0.4)); /* efecto brillo XF */
   animation: fadeIn 1.5s ease forwards;
 }
-.logo-img {
-  position: relative;
-  z-index: 2;
-}
 
-.logo-img {
-  position: relative;
-  z-index: 2;
-}
-
-.logo-img::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 0, 0.08), transparent 70%);
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
 .site-title {
     font-size: 3.8rem; /* Más grande */
     color: #FFD700;
@@ -153,7 +133,39 @@ body {
     text-shadow: 0 0 18px rgba(255, 255, 0, 0.6);
     animation: fadeIn 1.2s ease forwards;
 }
+/* === LOGO PRINCIPAL XF === */
+.logo-img {
+  position: relative;
+  display: block;
+  margin: 0 auto 20px;
+  width: 460px;
+  height: auto;
+  filter:
+    drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7))
+    drop-shadow(0 0 20px rgba(255, 255, 100, 0.3))
+    drop-shadow(0 0 40px rgba(180, 255, 120, 0.2));
+  animation: logoGlow 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
 
+.logo-img:hover {
+  transform: scale(1.04);
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 10px 15px rgba(0, 0, 0, 0.7))
+      drop-shadow(0 0 20px rgba(255, 255, 100, 0.3))
+      drop-shadow(0 0 40px rgba(180, 255, 120, 0.2));
+  }
+  50% {
+    filter:
+      drop-shadow(0 15px 20px rgba(0, 0, 0, 0.8))
+      drop-shadow(0 0 30px rgba(255, 255, 160, 0.5))
+      drop-shadow(0 0 60px rgba(180, 255, 120, 0.4));
+  }
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -593,6 +605,7 @@ textarea:focus {
   40%  { transform: translateX(120%); opacity: 0; }
   100% { transform: translateX(120%); opacity: 0; }
 }
+
 
 
 
