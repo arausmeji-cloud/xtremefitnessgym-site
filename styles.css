@@ -114,15 +114,7 @@ body {
     }
 }
 
-.logo-img {
-  width: 440px; /* agranda el logo */
-  height: auto;
-  display: block;
-  margin: 0 auto 8px; /* centrado con espacio inferior */
-  border-radius: 8px;
-  filter: drop-shadow(0 8px 25px rgba(255, 255, 0, 0.4)); /* efecto brillo XF */
-  animation: fadeIn 1.5s ease forwards;
-}
+
 
 .site-title {
     font-size: 3.8rem; /* Más grande */
@@ -605,6 +597,7 @@ textarea:focus {
   40%  { transform: translateX(120%); opacity: 0; }
   100% { transform: translateX(120%); opacity: 0; }
 }
+
 
 
 
