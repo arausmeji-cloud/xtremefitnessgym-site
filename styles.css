@@ -59,16 +59,15 @@ body {
 }
 
 /* LOGO Y TÍTULO */
-.logo-block {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 8px 240px; /* MUCHO más ancho, menos alto */
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    animation: fadeInUp 1s ease forwards;
-    position: relative;
+.logo-block{
+  display:inline-block;
+  background: transparent;   /* sin fondo */
+  padding: 0;                /* sin relleno extra */
+  border-radius: 0;          /* sin bordes redondeados del “cuadro” */
+  box-shadow: none;          /* sin sombra */
+  transition: none;
+  position: relative;
+}
 }
 
 @keyframes fadeInUp {
@@ -82,15 +81,10 @@ body {
     }
 }
 .logo-block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,255,120,0.15), transparent);
-    transform: translateX(-100%);
-    animation: shine 6s infinite linear;
+  content: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  display: none !important;
 }
 
 @keyframes shine {
@@ -454,6 +448,7 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+
 
 
 
