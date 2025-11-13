@@ -529,6 +529,95 @@ textarea:focus {
   padding: 0 !important;
   margin: 0 auto !important;
 }
+/* === LOGO XF — PRO 3D SHOWROOM EFFECT === */
+.logo-block {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* RELIEVE + EFECTO 3D VISUAL */
+.logo-img {
+  position: relative;
+  display: block;
+  margin: 0 auto 18px;
+  width: 480px;
+  height: auto;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  filter:
+    drop-shadow(0 10px 18px rgba(0, 0, 0, 0.7))
+    drop-shadow(0 0 15px rgba(255, 255, 255, 0.08))
+    contrast(1.15) brightness(1.08);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Efecto flotante y más volumen al pasar el mouse */
+.logo-block:hover .logo-img {
+  transform: translateY(-5px) rotateX(2deg) rotateY(-2deg);
+  filter:
+    drop-shadow(0 14px 24px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 0 25px rgba(255, 255, 200, 0.3))
+    brightness(1.2);
+}
+
+/* HALO DE LUZ DESDE ATRÁS — EFECTO “RESPIRA” */
+.logo-block::after {
+  content: "";
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 155%;
+  height: 190%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 200, 0.55) 0%,
+    rgba(255, 255, 160, 0.35) 40%,
+    rgba(0, 0, 0, 0) 75%
+  );
+  filter: blur(45px);
+  opacity: 0.8;
+  z-index: -1;
+  animation: haloBreath 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ANIMACIÓN SUAVE DE LUZ “RESPIRANDO” */
+@keyframes haloBreath {
+  0%, 100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(38px);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.08);
+    filter: blur(55px);
+  }
+}
+
+/* REFLEJO SUAVE SUPERIOR */
+.logo-block::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  filter: blur(8px);
+  opacity: .7;
+  pointer-events: none;
+}
+
+/* AJUSTES RESPONSIVE */
+@media (max-width: 900px) { .logo-img { width: 340px; } }
+@media (max-width: 600px) { .logo-img { width: 240px; } }
+
 
 
 
