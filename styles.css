@@ -507,6 +507,27 @@ textarea:focus {
     padding: 3.5rem 1.2rem;
   }
 }
+/* === EFECTO 3D INTENSO PARA EL LOGO XF === */
+.logo-img {
+  filter:
+    drop-shadow(4px 4px 6px rgba(0,0,0,0.9))   /* sombra fuerte abajo a la derecha */
+    drop-shadow(-3px -3px 5px rgba(255,255,255,0.18)) /* brillo leve arriba a la izquierda */
+    drop-shadow(0 14px 25px rgba(0,0,0,0.75))  /* profundidad adicional */
+    drop-shadow(0 0 40px rgba(255,255,120,0.4)); /* halo de luz */
+  transform: translateZ(0);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* efecto al pasar el mouse: se levanta con brillo */
+.logo-img:hover {
+  transform: scale(1.05) translateY(-3px);
+  filter:
+    drop-shadow(5px 5px 8px rgba(0,0,0,0.95))
+    drop-shadow(-4px -4px 6px rgba(255,255,255,0.2))
+    drop-shadow(0 18px 30px rgba(0,0,0,0.8))
+    drop-shadow(0 0 55px rgba(255,255,150,0.55));
+}
+
 
 
 
