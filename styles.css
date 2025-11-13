@@ -53,6 +53,23 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.logo-img {
+  position: relative;
+  width: 280px;
+  filter: drop-shadow(0 15px 25px rgba(255, 204, 0, 0.7)); /* luz amarilla cálida debajo */
+  animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+/* efecto suave de pulsación de luz */
+@keyframes glowPulse {
+  from {
+    filter: drop-shadow(0 15px 25px rgba(255, 204, 0, 0.7));
+  }
+  to {
+    filter: drop-shadow(0 25px 40px rgba(255, 204, 0, 0.4));
+  }
+}
+
 
 /* LOGO Y TÍTULO */
 .logo-block{
@@ -739,6 +756,7 @@ textarea:focus {
 /* AJUSTES RESPONSIVE */
 @media (max-width: 900px) { .logo-img { width: 340px; } }
 @media (max-width: 600px) { .logo-img { width: 240px; } }
+
 
 
 
