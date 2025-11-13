@@ -129,6 +129,56 @@ body {
   transition: transform 0.35s ease, filter 0.35s ease;
   animation: xfGlow 6s ease-in-out infinite;
 }
+/* === EFECTO 3D REAL + HALO POSTERIOR === */
+.logo-block {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px; /* da sensación de profundidad */
+}
+
+.logo-img {
+  position: relative;
+  transform: translateZ(25px) rotateX(2deg) rotateY(-2deg);
+  filter:
+    drop-shadow(0 22px 30px rgba(0,0,0,0.85))      /* sombra profunda */
+    drop-shadow(0 0 50px rgba(255,255,180,0.35))   /* brillo dorado */
+    drop-shadow(0 -6px 10px rgba(255,255,255,0.15))/* luz superior suave */;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Halo luminoso “desde atrás” */
+.logo-block::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  height: 180%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,200,0.7) 0%,
+    rgba(255,255,140,0.25) 40%,
+    rgba(0,0,0,0) 80%
+  );
+  filter: blur(70px);
+  z-index: -1;
+  opacity: 0.9;
+  animation: glowBack 6s ease-in-out infinite;
+}
+
+/* Animación de respiración */
+@keyframes glowBack {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+}
+
 /* === RELIEVE INTENSO 3D — PRO SHOWROOM === */
 .logo-img {
   filter:
@@ -630,6 +680,7 @@ textarea:focus {
 /* AJUSTES RESPONSIVE */
 @media (max-width: 900px) { .logo-img { width: 340px; } }
 @media (max-width: 600px) { .logo-img { width: 240px; } }
+
 
 
 
