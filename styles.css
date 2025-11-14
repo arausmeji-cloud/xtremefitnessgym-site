@@ -69,63 +69,35 @@ body {
   display: inline-block;
   margin-bottom: 30px;
 }
-
-/* === LOGO XF — CLEAN PREMIUM VERSION === */
+/* === LOGO XF — NATURAL CLEAN VERSION === */
 .logo-img {
-  width: 520px;                 /* ⬆ más grande */
+  width: 520px;            /* tamaño grande, profesional */
   height: auto;
   display: block;
-  margin: 0 auto 18px;
-  
-  /* Sombras mucho más suaves */
+  margin: 0 auto 10px;
+
+  /* Sombras muy suaves y naturales */
   filter:
-    drop-shadow(0 8px 14px rgba(0,0,0,0.6))
-    drop-shadow(0 0 12px rgba(255,255,120,0.20))
-    brightness(1.05)
+    drop-shadow(0 6px 10px rgba(0,0,0,0.45))
+    brightness(1)
     contrast(1.05);
-  
-  transition: transform 0.35s ease, filter 0.35s ease;
+
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-/* Hover elegante, sin luces locas */
+/* Hover sutil, premium */
 .logo-img:hover {
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-2px);
   filter:
-    drop-shadow(0 12px 18px rgba(0,0,0,0.75))
-    drop-shadow(0 0 18px rgba(255,255,120,0.30))
-    brightness(1.10);
+    drop-shadow(0 8px 14px rgba(0,0,0,0.55))
+    brightness(1.03);
 }
 
-/* Halo respirando MUY suave y reducido */
-.logo-block::after {
-  content: "";
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255,255,160,0.25) 0%,
-    rgba(0,0,0,0) 70%
-  );
-  filter: blur(35px);        /* ⬇ antes era 55-70px, demasiado */
-  opacity: 0.45;             /* ⬇ muchísimo más suave */
-  z-index: -1;
-  animation: softGlow 5s ease-in-out infinite;
-}
-
-/* Glow respirando: más premium */
-@keyframes softGlow {
-  0%, 100% {
-    opacity: 0.30;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.55;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
+/* Sin halo detrás */
+.logo-block::after,
+.logo-block::before {
+  content: none !important;
+  display: none !important;
 }
 
 /* SLOGANS */
@@ -320,6 +292,7 @@ body {
   .logo-img { width: 220px; }
   .section { padding: 3.6rem 1.1rem; }
 }
+
 
 
 
