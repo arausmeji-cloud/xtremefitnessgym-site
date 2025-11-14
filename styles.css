@@ -368,6 +368,67 @@ textarea:focus {
   .hero {
     min-height: 85vh;
   }
+/* === LOGO XF — EFECTO 3D PREMIUM CLEAN === */
+
+.logo-block {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-img {
+  width: 420px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  /* Sombras premium */
+  filter:
+    drop-shadow(0 14px 22px rgba(0,0,0,0.85))       /* sombra real */
+    drop-shadow(0 0 35px rgba(255,230,120,0.25));  /* halo XF suave */
+
+  transition: transform .35s ease, filter .35s ease;
+}
+
+/* Hover pro */
+.logo-img:hover {
+  transform: translateY(-4px);
+  filter:
+    drop-shadow(0 18px 28px rgba(0,0,0,0.95))
+    drop-shadow(0 0 55px rgba(255,240,150,0.45));
+}
+
+/* HALO “RESPIRA” suave atrás */
+.logo-block::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 170%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,180,0.55) 0%,
+    rgba(255,255,130,0.25) 35%,
+    rgba(0,0,0,0) 75%
+  );
+  filter: blur(45px);
+  opacity: 0.55;
+  z-index: -1;
+  animation: logoGlow 6s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    opacity: .55;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
 
 
 
