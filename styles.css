@@ -37,13 +37,16 @@ body {
 }
 .hero {
   position: relative;
-  min-height: 60vh;        /* baja el alto total */
-  padding: 10px 0 10px;    /* casi sin espacio vertical */
+  min-height: 55vh !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  gap: 10px;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -72,7 +75,7 @@ body {
   width: 580px;            /* tamaño grande, profesional */
   height: auto;
   display: block;
-  margin: 0 auto 4px;
+  margin: 0px auto 0px; !important;
 
   /* Sombras muy suaves y naturales */
   filter:
@@ -290,6 +293,7 @@ body {
   .logo-img { width: 220px; }
   .section { padding: 3.6rem 1.1rem; }
 }
+
 
 
 
