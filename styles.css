@@ -62,65 +62,33 @@ body {
   width: 100%;
   max-width: var(--max-width);
 }
-/* ======== FIX GLOBAL DE ESPACIOS – HERO + LOGO + TITULOS ======== */
-
-/* 1) HERO: reducir espacio arriba/abajo */
+/* FIX ESPACIO ALREDEDOR DEL LOGO */
 .hero {
-    min-height: 80vh !important;         /* antes 90–92vh */
-    padding-top: 20px !important;        /* antes 40px+ */
-    padding-bottom: 20px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start !important;  /* sube todo */
-    align-items: center;
+  min-height: 75vh !important; /* antes 92vh — estaba forzando mucho espacio */
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  display: flex;
+  align-items: flex-start !important; /* sube todo */
+  justify-content: flex-start !important;
+  flex-direction: column;
 }
 
-/* 2) Contenedor interno del hero */
-.hero-inner {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-/* 3) LOGO — subirlo y centrarlo mejor */
 .logo-block {
-    margin-top: 10px !important;
-    margin-bottom: 0px !important; 
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
 }
 
 .logo-img {
-    width: 600px !important;              /* LOGO MÁS GRANDE */
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
 }
 
-/* 4) TITULO Y TEXTOS DEBAJO DEL LOGO */
 .site-title,
 .slogan,
 .sub-slogan {
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;        /* mucho más compacto */
-    padding: 0 !important;
-}
-
-/* título principal */
-.site-title {
-    font-size: 3.2rem !important;
-}
-
-/* 5) NAVBAR — levantarlo un poco también */
-.main-nav {
-    margin-top: 10px !important;
-    margin-bottom: 15px !important;
-}
-
-/* 6) Evitar márgenes de bloques colapsando */
-h1, h2, h3, p {
-    margin-top: 0 !important;
-}
-
-/* 7) Hacer que el fade del background no genere tanto espacio */
-.hero::after {
-    content: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
+  padding: 0 !important;
 }
 
 /* ==== LOGO CLEAN PREMIUM ==== */
@@ -353,6 +321,7 @@ h1, h2, h3, p {
   .logo-img { width: 220px; }
   .section { padding: 3.6rem 1.1rem; }
 }
+
 
 
 
