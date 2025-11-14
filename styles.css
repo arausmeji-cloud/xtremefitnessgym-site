@@ -1,11 +1,7 @@
-
-
-
-
-
-
-
-
+/* ============================================
+   XTREME FITNESS GYM — PREMIUM CLEAN CSS
+   by Compa (para Meji)
+   ============================================ */
 
 /* RESET */
 *,
@@ -18,161 +14,149 @@
 
 /* VARIABLES */
 :root {
-  --bg: #000000;
-  --bg-alt: #0c0c0c;
-  --text: #f5f5f5;
-  --muted: #bbbbbb;
-  --accent: #f6c800;   /* amarillo XF */
-  --accent-2: #9cff00; /* verde XF */
-  --max-width: 1200px;
+  --bg: #000000;                 /* fondo general */
+  --text: #f5f5f5;               /* texto estándar */
+  --muted: #bdbdbd;              /* texto suave */
+  --accent: #f6c800;             /* amarillo XF */
+  --accent-2: #9cff00;           /* verde XF */
+  --max-width: 1100px;
 }
 
 /* BODY */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #000;
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+/* ============================================
+   HERO SECTION (LOGO + SLOGANS)
+   ============================================ */
+
 .hero {
   position: relative;
-  min-height: 55vh !important;
+  min-height: 80vh; /* compacto, más profesional */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  gap: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-/* HERO INNER */
+/* Contenedor interno */
 .hero-inner {
-  position: relative;
-  z-index: 2;
   width: 100%;
   max-width: var(--max-width);
-}
-/* FIX ESPACIO ALREDEDOR DEL LOGO */
-.hero {
-  min-height: 75vh !important; /* antes 92vh — estaba forzando mucho espacio */
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  display: flex;
-  align-items: flex-start !important; /* sube todo */
-  justify-content: flex-start !important;
-  flex-direction: column;
+  margin: 0 auto;
+  z-index: 2;
 }
 
-.logo-block {
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-}
-
-.logo-img {
-  margin-top: 0 !important;
-  margin-bottom: 5px !important;
-}
-
-.site-title,
-.slogan,
-.sub-slogan {
-  margin-top: 0 !important;
-  margin-bottom: 4px !important;
-  padding: 0 !important;
-}
-
-/* ==== LOGO CLEAN PREMIUM ==== */
+/* ============================================
+   LOGO XF — LIMPIO, PREMIUM, CONTROLADO
+   ============================================ */
 
 .logo-block {
   position: relative;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
-/* === LOGO XF — NATURAL CLEAN VERSION === */
+
+/* LOGO: natural, sin glow exagerado, sin halos */
 .logo-img {
-  width: 580px;            /* tamaño grande, profesional */
+  width: 620px;      /* tamaño ideal que pediste */
   height: auto;
   display: block;
-  margin: 0px auto 0px; !important;
+  margin: 0 auto;
 
-  /* Sombras muy suaves y naturales */
   filter:
     drop-shadow(0 6px 10px rgba(0,0,0,0.45))
     brightness(1)
     contrast(1.05);
 
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover sutil, premium */
+/* Hover premium */
 .logo-img:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   filter:
-    drop-shadow(0 8px 14px rgba(0,0,0,0.55))
-    brightness(1.03);
+    drop-shadow(0 10px 18px rgba(0,0,0,0.55))
+    brightness(1.1);
 }
 
-/* Sin halo detrás */
-.logo-block::after,
-.logo-block::before {
-  content: none !important;
-  display: none !important;
-}
+/* ============================================
+   SLOGANS
+   ============================================ */
 
-/* SLOGANS */
-.slogan {
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+.site-title {
+  font-size: 3rem;
+  font-weight: 700;
   text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 3px;
+  margin: 8px 0 2px;
+}
+
+.slogan {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: var(--accent-2);
-  margin-top: 0.6rem;
+  margin-top: 4px;
+  margin-bottom: 6px;
 }
 
 .sub-slogan {
-  margin-top: 0.35rem;
   font-size: 1rem;
   color: var(--muted);
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
-/* NAVBAR */
+/* ============================================
+   NAVBAR
+   ============================================ */
+
 .main-nav {
-  margin: 2rem 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.6rem;
   flex-wrap: wrap;
+  gap: 1.4rem;
 }
 
 .main-nav a {
-  text-decoration: none;
   color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.18em;
+  text-decoration: none;
   text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  position: relative;
   padding-bottom: 3px;
   transition: color 0.2s ease;
 }
 
 .main-nav a::after {
   content: "";
-  display: block;
-  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 2px;
+  width: 0%;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   transition: width 0.25s ease;
 }
@@ -185,55 +169,61 @@ body {
   width: 100%;
 }
 
-/* HERO BUTTONS */
+/* ============================================
+   BOTONES HERO
+   ============================================ */
+
 .hero-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1.8rem;
+  margin-top: 1.4rem;
 }
 
-/* BUTTONS */
 .btn {
-  padding: 0.85rem 1.8rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #000;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.8);
 }
 
 .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255,255,255,0.45);
   color: var(--text);
+  background: transparent;
 }
 
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.08);
 }
 
-/* SECTIONS */
+/* ============================================
+   SECCIONES GENERALES
+   ============================================ */
+
 .section {
-  padding: 4.6rem 1.6rem;
+  padding: 4rem 1.5rem;
   background: var(--bg);
 }
 
 .section-alt {
-  background: var(--bg-alt);
+  background: #111;
 }
 
 .section-inner {
@@ -244,91 +234,56 @@ body {
 
 .section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
   color: var(--accent);
-}
-
-.section-subtitle {
-  color: var(--muted);
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .section p {
-  max-width: 700px;
-  margin: 0.5rem auto;
   color: var(--muted);
 }
 
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.6rem;
-}
+/* ============================================
+   FOOTER
+   ============================================ */
 
-.card {
-  background: #15151f;
-  border-radius: 14px;
-  padding: 1.6rem 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  text-align: left;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.75);
-}
-
-.card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.6rem;
-}
-
-/* GALLERY */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.2rem;
-}
-
-/* CONTACT */
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 2rem;
-}
-
-.contact-form {
-  background: #15151f;
-  padding: 1.8rem;
-  border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
-}
-
-/* FOOTER */
 .footer {
-  background: #050509;
-  padding: 1.6rem;
-  text-align: center;
-  color: var(--muted);
+  background: #000;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem 1.5rem;
 }
 
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 
-/* RESPONSIVE */
+.footer-tagline {
+  color: var(--accent-2);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
 @media (max-width: 900px) {
-  .logo-img { width: 300px; }
-  .contact-layout { grid-template-columns: 1fr; }
+  .logo-img {
+    width: 440px;
+  }
 }
 
 @media (max-width: 600px) {
-  .logo-img { width: 220px; }
-  .section { padding: 3.6rem 1.1rem; }
+  .logo-img {
+    width: 320px;
+  }
+  .site-title {
+    font-size: 2.4rem;
+  }
+  .slogan {
+    font-size: 1.2rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
