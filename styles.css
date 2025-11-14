@@ -38,12 +38,12 @@ body {
 
 .hero {
   position: relative;
-  min-height: 80vh;         /* antes 92vh */
+  min-height: 88vh;         /* antes 92vh */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 1.5rem 0.5rem; /* agregamos un 3er valor: bottom */
+  padding: 20px 1.5rem 20px; /* mucho menos aire */
   background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
 .hero-overlay {
@@ -290,6 +290,7 @@ body {
   .logo-img { width: 220px; }
   .section { padding: 3.6rem 1.1rem; }
 }
+
 
 
 
