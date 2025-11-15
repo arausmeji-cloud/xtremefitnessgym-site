@@ -35,17 +35,18 @@ body {
    HERO SECTION (LOGO + SLOGANS)
    ============================================ */
 
+
 .hero {
   position: relative;
-  min-height: 30vh; /* compacto, más profesional */
+  min-height: 35vh; /* compacto, elimina el espacio gigante */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
@@ -287,4 +288,5 @@ body {
     font-size: 1.2rem;
   }
 }
+
 
