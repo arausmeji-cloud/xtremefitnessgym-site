@@ -91,8 +91,8 @@ body {
 
 .sub-slogan {
   color: var(--muted);
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 2px;
 }
 
 /* ======================================================
@@ -284,6 +284,7 @@ textarea {
   .site-title { font-size: 2.4rem; }
   .slogan { font-size: 1.15rem; }
 }
+
 
 
 
