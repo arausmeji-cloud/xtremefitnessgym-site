@@ -285,6 +285,57 @@ textarea {
   .slogan { font-size: 1.15rem; }
 }
 
+/* ============================================
+   NAVBAR FUERTE – XTREME FITNESS GYM
+   ============================================ */
+.strong-nav {
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 0;
+  backdrop-filter: blur(3px);
+  border-top: 2px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.strong-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.strong-nav a {
+  color: var(--accent-2);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Efecto subrayado industrial */
+.strong-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 0.25s ease;
+}
+
+.strong-nav a:hover {
+  color: white;
+}
+
+.strong-nav a:hover::after {
+  width: 100%;
+}
+
 
 
 
