@@ -37,7 +37,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 80vh; /* compacto, más profesional */
+  min-height: 30vh; /* compacto, más profesional */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -287,3 +287,4 @@ body {
     font-size: 1.2rem;
   }
 }
+
