@@ -7,37 +7,54 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body>
-  <!-- HEADER / HERO -->
-  <header class="hero" id="home">
-    <div class="hero-overlay"></div>
+
+  <!-- =========================== -->
+  <!-- HERO CLEAN PREMIUM (compacto) -->
+  <!-- =========================== -->
+  <header id="home" class="hero">
     <div class="hero-inner">
+
+      <!-- LOGO -->
       <div class="logo-block">
-        <!-- Cuando subamos tu logo real, el archivo irá en /images/logo-xf.png -->
-  <img src="/LOGO2.svg" alt="XTREME FITNESS GYM Logo" class="logo-img" />
-
- <p class="slogan">Be The Best You Can Be. No excuses</p>
-        <p class="sub-slogan">Your transformation starts here.</p>
+        <img src="images/XF-logo.png" class="logo-img" alt="Xtreme Fitness Gym" />
       </div>
 
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- TITULO -->
+      <h1 class="site-title">XTREME FITNESS GYM</h1>
 
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Join Now</a>
-        <a href="#about" class="btn btn-outline">Learn More</a>
-      </div>
+      <!-- SLOGANS -->
+      <p class="slogan">Be the best you can be. No excuses</p>
+      <p class="sub-slogan">Your transformation starts here.</p>
+
     </div>
   </header>
 
+  <!-- =========================== -->
+  <!-- NAVBAR -->
+  <!-- =========================== -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- =========================== -->
+  <!-- CTA BUTTONS (debajo del navbar) -->
+  <!-- =========================== -->
+  <div class="hero-cta">
+    <a href="#contact" class="btn btn-primary">Join Now</a>
+    <a href="#about" class="btn btn-outline">Learn More</a>
+  </div>
+
+  <!-- =========================== -->
   <!-- ABOUT -->
+  <!-- =========================== -->
   <section id="about" class="section">
     <div class="section-inner">
       <h2>About Xtreme Fitness Gym</h2>
@@ -47,26 +64,28 @@
         not to waste time.
       </p>
       <p>
-        From strength and hypertrophy to conditioning and martial arts, Xtreme Fitness Gym
-        will be a complete facility in Western Sydney for those who want real results.
+        From strength and hypertrophy to conditioning and martial arts,
+        Xtreme Fitness Gym will be a complete facility in Western Sydney
+        for those who want real results.
       </p>
     </div>
   </section>
 
-  <!-- SERVICES / EQUIPMENT -->
+  <!-- =========================== -->
+  <!-- EQUIPMENT & SERVICES -->
+  <!-- =========================== -->
   <section id="services" class="section section-alt">
     <div class="section-inner">
       <h2>Equipment & Services</h2>
-      <p class="section-subtitle">
-        A serious setup for serious training.
-      </p>
+      <p class="section-subtitle">A serious setup for serious training.</p>
 
       <div class="cards">
+
         <article class="card">
           <h3>Strength Area</h3>
           <p>
-            Plate-loaded and selectorised machines, squat racks, benches, Olympic bars
-            and heavy dumbbells – built for progressive overload.
+            Plate-loaded and selectorised machines, squat racks, benches,
+            Olympic bars and heavy dumbbells – built for progressive overload.
           </p>
         </article>
 
@@ -93,17 +112,21 @@
             as the gym grows.
           </p>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- GALLERY (placeholder por ahora) -->
+  <!-- =========================== -->
+  <!-- GALLERY -->
+  <!-- =========================== -->
   <section id="gallery" class="section">
     <div class="section-inner">
       <h2>Gallery</h2>
       <p class="section-subtitle">
         Real photos of the gym, equipment and members will be added once the facility is set up.
       </p>
+
       <div class="gallery-grid placeholder-gallery">
         <div class="gallery-item">Machines</div>
         <div class="gallery-item">Free Weights</div>
@@ -113,26 +136,32 @@
     </div>
   </section>
 
+  <!-- =========================== -->
   <!-- CONTACT -->
+  <!-- =========================== -->
   <section id="contact" class="section section-alt">
     <div class="section-inner contact-layout">
+
       <div class="contact-text">
         <h2>Contact & Opening Info</h2>
         <p>
           Xtreme Fitness Gym will be opening in a suburb of Sydney, NSW.
-          Leave your details below and we’ll contact you with opening dates,
-          location and founding member offers.
+          Leave your details below and we’ll contact you with opening dates, location
+          and founding member offers.
         </p>
+
         <ul class="contact-details">
           <li><strong>Email:</strong> info@xtremefitnessgym.com.au</li>
           <li><strong>City:</strong> Sydney, NSW</li>
           <li><strong>Focus:</strong> Strength, hypertrophy & real results</li>
         </ul>
+
         <p class="small">
           Serious lifters, beginners and everyone committed to improving are welcome.
         </p>
       </div>
 
+      <!-- FORM -->
       <form
         class="contact-form"
         action="mailto:info@xtremefitnessgym.com.au"
@@ -154,19 +183,20 @@
           <textarea id="message" name="Message" rows="4" required placeholder="Tell us about your goals..."></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-full">
-          Send Message
-        </button>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
 
         <p class="form-note">
           If the form doesn’t open your email app, write to:
           <a href="mailto:info@xtremefitnessgym.com.au">info@xtremefitnessgym.com.au</a>
         </p>
       </form>
+
     </div>
   </section>
 
+  <!-- =========================== -->
   <!-- FOOTER -->
+  <!-- =========================== -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-left">
@@ -178,5 +208,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
