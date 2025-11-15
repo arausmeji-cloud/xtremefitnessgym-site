@@ -72,7 +72,7 @@ body {
 
 /* LOGO: natural, sin glow exagerado, sin halos */
 .logo-img {
-  width: 620px;      /* tamaño ideal que pediste */
+  width: 650px;      /* tamaño ideal que pediste */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -288,5 +288,6 @@ body {
     font-size: 1.2rem;
   }
 }
+
 
 
