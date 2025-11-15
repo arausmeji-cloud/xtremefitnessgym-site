@@ -45,8 +45,8 @@ body {
   align-items: center;
   text-align: center;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
   background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
@@ -288,6 +288,7 @@ body {
     font-size: 1.2rem;
   }
 }
+
 
 
 
