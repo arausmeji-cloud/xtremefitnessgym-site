@@ -38,18 +38,18 @@ body {
 .hero {
   background: url("images/hero-bg.jpg") center/cover no-repeat;
   text-align: center;
-  min-height: 50vh;
-  padding: 20px 0;
+
+  /* ALTURAS PERFECTAS */
+  min-height: 20vh;      /* muy compacto */
+  padding-top: 5px;      /* casi nada de espacio */
+  padding-bottom: 5px;
+
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;  /* centra todo */
+  align-items: center;
 }
 
-.hero-inner {
-  max-width: var(--max-width);
-  width: 100%;
-}
 
 /* LOGO */
 .logo-block {
@@ -283,6 +283,7 @@ textarea {
   .site-title { font-size: 2.4rem; }
   .slogan { font-size: 1.15rem; }
 }
+
 
 
 
