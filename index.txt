@@ -30,7 +30,8 @@
   <!-- ==========================
        NAVBAR
   =========================== -->
-  <nav class="main-nav strong-nav">
+  <nav class="strong-nav">
+
     <ul>
         <li><a class="btn-strong" href="#about">ABOUT</a></li>
         <li><a class="btn-strong" href="#services">SERVICES</a></li>
@@ -149,6 +150,7 @@
 
 </body>
 </html>
+
 
 
 
