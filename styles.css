@@ -381,9 +381,76 @@ textarea {
   width: 100%;
 }
 
+/* SECTION TITLES CLEAN STRONG */
+.section h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(246,200,0,0.25);
+}
 
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
 
+.section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0.6rem auto;
+}
 
+/* SERVICE CARDS — PREMIUM CLEAN */
+.card {
+  background: #0f0f0f;
+  padding: 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
+}
+
+/* GALLERY PLACEHOLDER CLEAN */
+.placeholder-gallery .gallery-item {
+  background: #121212;
+  border: 1px dashed rgba(255,255,255,0.25);
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* CONTACT CLEAN PREMIUM */
+.contact-layout {
+  gap: 2.5rem;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.contact-details li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  padding: 2rem;
+  background: #0f0f0f;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
+}
 
 
 
