@@ -8,29 +8,26 @@
 </head>
 <body>
 
-  <!-- ==========================
-       HERO SECTION
-  =========================== -->
-  <header class="hero">
-    <div class="hero-inner">
+<!-- ============================
+     HERO SECTION — XTREME FITNESS GYM
+     ============================ -->
+<header class="hero">
 
-      <!-- LOGO -->
-      <div class="logo-block">
-        <img src="images/LOGO2.svg" alt="XTREME FITNESS GYM Logo" class="logo-img" />
-      </div>
+  <!-- LOGO -->
+  <div class="logo-block">
+    <img src="images/logo2.svg" alt="Xtreme Fitness Gym Logo" class="logo-img">
+  </div>
 
-      <!-- TEXTOS -->
-      <h1 class="site-title">XTREME FITNESS GYM</h1>
-      <p class="slogan">Be the best you can be. No excuses.</p>
-      <p class="sub-slogan">Your transformation starts here.</p>
+  <!-- SLOGAN -->
+  <h2 class="slogan">Be the best you can be. No excuses.</h2>
+  <p class="sub-slogan">Your transformation starts here.</p>
 
-    </div>
-  </header>
+</header>
 
-  <!-- ==========================
-       NAVBAR
-  =========================== -->
-  <nav class="strong-nav">
+<!-- ============================
+     NAVBAR FUERTE VERSION A
+     ============================ -->
+<nav class="strong-nav">
   <ul>
     <li><a class="btn-strong" href="#about">About</a></li>
     <li><a class="btn-strong" href="#services">Services</a></li>
@@ -150,6 +147,7 @@
 
 </body>
 </html>
+
 
 
 
