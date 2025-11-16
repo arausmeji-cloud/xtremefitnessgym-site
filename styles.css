@@ -450,6 +450,42 @@ textarea {
   box-shadow: 0 12px 35px rgba(0,0,0,0.75);
 }
 
+/* ======================================================
+   XF — STRONG BUTTONS (OPTION A)
+   ====================================================== */
+
+.strong-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-top: 10px;
+}
+
+.btn-strong {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #f6c800, #9cff00);
+  color: #000;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-strong:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
+  filter: brightness(1.15);
+}
+
+.btn-strong:active {
+  transform: translateY(0px);
+  filter: brightness(0.9);
+}
+
 
 
 
