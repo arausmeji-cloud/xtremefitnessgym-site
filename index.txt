@@ -30,14 +30,15 @@
   <!-- ==========================
        NAVBAR
   =========================== -->
-  <nav class="main-nav">
+  <nav class="main-nav strong-nav">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a class="btn-strong" href="#about">ABOUT</a></li>
+        <li><a class="btn-strong" href="#services">SERVICES</a></li>
+        <li><a class="btn-strong" href="#gallery">GALLERY</a></li>
+        <li><a class="btn-strong" href="#contact">CONTACT</a></li>
     </ul>
-  </nav>
+</nav>
+
 
   <!-- ==========================
        ABOUT
@@ -148,5 +149,6 @@
 
 </body>
 </html>
+
 
 
