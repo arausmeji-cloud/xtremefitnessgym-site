@@ -335,6 +335,52 @@ textarea {
 .strong-nav a:hover::after {
   width: 100%;
 }
+/* ======================================================
+   XF POWER BUTTONS — STRONG & CLEAN
+   ====================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  transition: all .22s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f6c800, #9cff00);
+  color: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.75);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: #fff;
+}
+
+/* full width for contact form */
+.btn-full {
+  width: 100%;
+}
+
 
 
 
