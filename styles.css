@@ -36,7 +36,7 @@ body {
    ====================================================== */
 
 .hero {
-  background: url("images/hero-bg.jpg") center/cover no-repeat;
+ background: url("images/hero-bg-2.jpg") center/cover no-repeat;
   text-align: center;
 
   /* ALTURAS PERFECTAS */
@@ -485,6 +485,7 @@ textarea {
   transform: translateY(0px);
   filter: brightness(0.9);
 }
+
 
 
 
