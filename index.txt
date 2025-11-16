@@ -31,14 +31,14 @@
        NAVBAR
   =========================== -->
   <nav class="strong-nav">
-
-    <ul>
-        <li><a class="btn-strong" href="#about">ABOUT</a></li>
-        <li><a class="btn-strong" href="#services">SERVICES</a></li>
-        <li><a class="btn-strong" href="#gallery">GALLERY</a></li>
-        <li><a class="btn-strong" href="#contact">CONTACT</a></li>
-    </ul>
+  <ul>
+    <li><a class="btn-strong" href="#about">About</a></li>
+    <li><a class="btn-strong" href="#services">Services</a></li>
+    <li><a class="btn-strong" href="#gallery">Gallery</a></li>
+    <li><a class="btn-strong" href="#contact">Contact</a></li>
+  </ul>
 </nav>
+
 
 
   <!-- ==========================
@@ -150,6 +150,7 @@
 
 </body>
 </html>
+
 
 
 
