@@ -592,6 +592,47 @@ textarea {
   box-shadow: 0 10px 26px rgba(0,0,0,0.85);
 }
 
+/* ================================
+   GALLERY MENU (BUTTON CARDS)
+===================================*/
+
+.gallery-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gallery-card {
+  background: #0f0f0f;
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  width: 260px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
+}
+
+.gallery-card h3 {
+  color: var(--accent-2); /* VERDE LIMA */
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.gallery-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 
 
 
