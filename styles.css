@@ -22,13 +22,14 @@
   --max-width: 1100px;
 }
 
-/* BODY */
+/* GLOBAL DARK TEXTURE BACKGROUND */
 body {
-  font-family: system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  overflow-x: hidden;
+    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0d0d0d; /* fallback negro por si no carga */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 /* ======================================================
@@ -670,6 +671,7 @@ textarea {
     width: 100%;
   }
 }
+
 
 
 
