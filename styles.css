@@ -1998,39 +1998,27 @@ textarea {
    FIX CONTACT LAYOUT ON MOBILE
 ======================================*/
 @media (max-width: 768px) {
+
   .contact-layout {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: left;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    width: 100% !important;
   }
 
-  .contact-form {
-    width: 100%;
+  .contact-layout * {
+    max-width: 100% !important;
   }
 
   .contact-details {
-    width: 100%;
-  }
-}
-
-/* CONTACT mobile fix */
-@media (max-width: 768px) {
-  .contact-layout {
-    flex-direction: column;
-    gap: 2rem;
+    width: 100% !important;
   }
 
-  .contact-details,
   .contact-form {
-    width: 100%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
-
 /* FORCE GLOBAL BACKGROUND */
 body,
 .section,
@@ -2047,6 +2035,7 @@ html {
     background-size: cover !important;
     background-color: #0d0d0d !important;
 }
+
 
 
 
