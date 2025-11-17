@@ -80,20 +80,37 @@
     </div>
   </section>
 
-  <!-- ==========================
+ <!-- ==========================
        GALLERY
   =========================== -->
-  <section id="gallery" class="section">
-    <div class="section-inner">
-      <h2>Gallery</h2>
-      <p class="section-subtitle">Photos will be added once the facility is set up.</p>
+<section id="gallery" class="section section-alt">
+  <div class="section-inner">
 
-      <div class="gallery-grid placeholder-gallery">
-        <div class="gallery-item">Machines</div>
-        <div class="gallery-item">Weights</div>
-        <div class="gallery-item">Cardio</div>
-        <div class="gallery-item">Jiu-Jitsu</div>
-      </div>
+    <h2>Gallery</h2>
+    <div class="section-subtitle">Explore what Xtreme Fitness Gym is all about.</div>
+
+    <div class="gallery-menu">
+
+      <a href="gallery-gym.html" class="gallery-card">
+        <h3>XF Gym</h3>
+        <p>Machines, racks, plates & dumbbells.</p>
+      </a>
+
+      <a href="gallery-bjj.html" class="gallery-card">
+        <h3>BJJ</h3>
+        <p>Brazilian Jiu-Jitsu – confidence, discipline, self-defense.</p>
+      </a>
+
+      <a href="gallery-impact.html" class="gallery-card">
+        <h3>XF Impact</h3>
+        <p>Mindset, community & transformation.</p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+     
     </div>
   </section>
 
@@ -147,6 +164,7 @@
 
 </body>
 </html>
+
 
 
 
