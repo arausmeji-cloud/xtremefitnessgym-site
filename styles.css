@@ -2036,6 +2036,67 @@ html {
     background-color: #0d0d0d !important;
 }
 
+/* ======================================
+   XF HERO BUTTON — PREMIUM & PROFESSIONAL
+======================================*/
+
+.xf-hero-btn {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 16px 42px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #000;
+    text-decoration: none;
+
+    background: linear-gradient(135deg, #f6c800, #9cff00);
+    border-radius: 50px;
+
+    box-shadow: 0 10px 24px rgba(0,0,0,0.55);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover: ligero levantamiento, profesional */
+.xf-hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.65);
+}
+
+/* Animación sutil de pulso */
+.xf-hero-btn::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.08) 0%,
+        transparent 60%
+    );
+    animation: xfPulse 6s infinite ease-out;
+    opacity: 0;
+}
+
+@keyframes xfPulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.25;
+    }
+    70% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
 
 
 
