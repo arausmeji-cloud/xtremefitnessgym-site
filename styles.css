@@ -187,22 +187,31 @@ body {
 }
 
 /* ======================================================
-   GALLERY
-   ====================================================== */
+   GALLERY — XF PREMIUM
+====================================================== */
 
 .gallery-grid {
-  margin-top: 2rem;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
 }
 
-.placeholder-gallery .gallery-item {
-  background: #111;
-  border: 1px dashed rgba(255,255,255,0.2);
-  border-radius: 10px;
-  padding: 1rem;
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
+
+.gallery-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+}
+
 
 /* ======================================================
    CONTACT
@@ -483,6 +492,7 @@ textarea {
   transform: translateY(0px);
   filter: brightness(0.9);
 }
+
 
 
 
