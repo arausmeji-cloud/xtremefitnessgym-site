@@ -672,6 +672,22 @@ textarea {
   }
 }
 
+/* FORCE GLOBAL BACKGROUND */
+body,
+.section,
+.section-alt,
+.hero,
+footer,
+nav {
+    background: transparent !important;
+}
+
+/* REAL GLOBAL DARK TEXTURE */
+html {
+    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+    background-color: #0d0d0d !important;
+}
 
 
 
