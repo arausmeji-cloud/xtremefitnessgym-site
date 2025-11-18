@@ -41,8 +41,8 @@ body {
   text-align: center;
 
   min-height: 55vh;     /* altura ideal: ni vacío ni apretado */
-  padding-top: 10px;    
-  padding-bottom: 10px;
+  padding-top: 2px;    
+  padding-bottom: 2px;
 
   display: flex;
   flex-direction: column;
@@ -2095,6 +2095,18 @@ html {
     100% {
         transform: scale(1.8);
         opacity: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    header img {
+        width: 240px; /* un poco más grande en pantallas grandes */
+        display: block;
+        margin: 0 auto; /* lo centra */
+    }
+
+    .hero {
+        padding-top: 20px; /* ajusta space arriba en laptop */
     }
 }
 
