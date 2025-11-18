@@ -58,8 +58,8 @@ body {
 }
 
 .logo-img {
-  width: 750px;    /* antes 600 px */
-  max-width: 92%;
+  width: 850px;    /* antes 600 px */
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -2097,6 +2097,7 @@ html {
         opacity: 0;
     }
 }
+
 
 
 
