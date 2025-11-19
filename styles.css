@@ -213,6 +213,12 @@ textarea {
   color: var(--text);
 }
 
+<div class="contact-layout">
+  <div class="map-box">...</div>   <!-- 1 -->
+  <ul class="contact-details">...</ul>  <!-- 2 -->
+  <form class="contact-form">...</form> <!-- 3 -->
+</div>
+
 /* FOOTER */
 .footer {
   padding: 2rem 1rem;
@@ -289,6 +295,7 @@ textarea {
   background: #111;
   color: var(--text);
 }
+
 
 
 
