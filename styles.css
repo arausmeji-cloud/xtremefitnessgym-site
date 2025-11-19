@@ -300,14 +300,39 @@ textarea {
   color: var(--text);
 }
 
+/* FOOTER CENTER FIX */
 .footer {
   text-align: center !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 
+/* CONTACT FORM FIX */
+.contact-form {
+  background: rgba(20, 20, 20, 0.75) !important;
+  padding: 2rem !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55) !important;
+}
+/* MOBILE CONTACT LAYOUT */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .map-box {
+    order: 1;
+  }
+
+  .contact-right {
+    order: 2;
+  }
+}
 
 
 
