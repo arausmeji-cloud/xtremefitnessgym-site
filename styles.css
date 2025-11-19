@@ -111,12 +111,19 @@ body {
 
 /* SECTIONS */
 
+.section {
+  padding: 4rem 1.5rem;
+  background: transparent !important; /* Sin franjas */
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
 .section-alt {
   padding: 4rem 1.5rem;
   background: transparent;   /* ❗ No más franjas */
   backdrop-filter: none;     /* ❗ No más capas oscuras */
   box-shadow: none;          /* ❗ Sin bordes raros */
 }
+
 
 .section-inner {
   max-width: var(--max-width);
@@ -221,5 +228,6 @@ textarea {
 #about {
   margin-top: 60px;
 }
+
 
 
