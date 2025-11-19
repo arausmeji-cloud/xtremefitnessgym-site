@@ -1,5 +1,5 @@
 /* ======================================================
-   XTREME FITNESS GYM — PREMIUM CLEAN STYLES
+   XTREME FITNESS GYM — PREMIUM CLEAN STYLES (FINAL)
    ====================================================== */
 
 /* RESET */
@@ -22,34 +22,34 @@
   --max-width: 1100px;
 }
 
-/* GLOBAL DARK TEXTURE BACKGROUND */
+/* GLOBAL BACKGROUND */
 body {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-color: #0d0d0d; /* fallback negro por si no carga */
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+  background: url("images/dark-texture-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* ======================================================
-   HERO — LOGO CENTRADO Y SIN ESPACIOS EXTRA
+   HERO — LOGO + SPACING FIX
    ====================================================== */
 
 .hero {
   background: url("images/hero-bg-2.jpg") center/cover no-repeat;
   text-align: center;
 
-  min-height: 55vh;     /* altura ideal: ni vacío ni apretado */
-  padding-top: 2px;    
-  padding-bottom: 2px;
+  min-height: 58vh;
+  padding-top: 10px;
+  padding-bottom: 15px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* IMPORTANT: aligns everything properly */
   align-items: center;
 }
-
 
 /* LOGO */
 .logo-block {
@@ -58,12 +58,13 @@ body {
 }
 
 .logo-img {
-  width: 850px;    /* antes 600 px */
-  max-width: 100%;
+  width: 820px;        /* tamaño ideal */
+  max-width: 92%;      /* mobile-friendly */
   height: auto;
   margin: 0 auto;
   display: block;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.45));
+  transition: .25s ease;
 }
 
 .logo-img:hover {
@@ -75,7 +76,7 @@ body {
 .site-title {
   color: var(--accent);
   font-size: 3rem;
-  margin-top: 10px;
+  margin-top: 8px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -83,219 +84,20 @@ body {
 .slogan {
   color: var(--accent-2);
   font-size: 1.3rem;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .sub-slogan {
   color: var(--muted);
-  margin-top: 1px;
-  margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 /* ======================================================
-   NAVBAR
+   STRONG NAVBAR
    ====================================================== */
 
-.main-nav {
-  padding: 15px 0;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.main-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
-  position: relative;
-}
-
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.25s ease;
-}
-
-.main-nav a:hover {
-  color: var(--text);
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-/* ======================================================
-   SECTIONS
-   ====================================================== */
-
-.section {
-  padding: 4rem 1.5rem;
-  background: var(--bg);
-}
-
-.section-alt {
-  background: var(--bg-alt);
-}
-
-.section-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section h2 {
-  color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.section p {
-  color: var(--muted);
-}
-
-/* ======================================================
-   CARDS
-   ====================================================== */
-
-.cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: #101010;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.6rem;
-}
-
-/* ======================================================
-   GALLERY — XF PREMIUM
-====================================================== */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem;
-  margin-top: 2rem;
-}
-
-.gallery-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.gallery-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.75);
-}
-
-
-/* ======================================================
-   CONTACT
-   ====================================================== */
-
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
-  text-align: left;
-}
-
-.contact-details li {
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-
-.contact-form {
-  background: #101010;
-  padding: 1.6rem;
-  border-radius: 14px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.6rem;
-  margin-top: 0.2rem;
-  border-radius: 8px;
-  background: #000;
-  border: 1px solid #333;
-  color: var(--text);
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border: none;
-  padding: 0.9rem 1.6rem;
-  width: 100%;
-  margin-top: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ======================================================
-   FOOTER
-   ====================================================== */
-
-.footer {
-  padding: 2rem 1.5rem;
-  background: #000;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.footer-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  color: var(--muted);
-}
-
-.footer-tagline {
-  color: var(--accent-2);
-}
-
-/* ======================================================
-   RESPONSIVE
-   ====================================================== */
-
-@media(max-width: 900px) {
-  .logo-img { width: 450px; }
-}
-
-@media(max-width: 600px) {
-  .logo-img { width: 320px; }
-  .site-title { font-size: 2.4rem; }
-  .slogan { font-size: 1.15rem; }
-}
-
-/* ============================================
-   NAVBAR FUERTE – XTREME FITNESS GYM
-   ============================================ */
 .strong-nav {
-  margin-top: 15px;
+  margin-top: 18px;
   background: rgba(0, 0, 0, 0.6);
   padding: 12px 0;
   backdrop-filter: blur(3px);
@@ -306,7 +108,7 @@ textarea {
 .strong-nav ul {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2.4rem;
   list-style: none;
   padding: 0;
 }
@@ -319,10 +121,8 @@ textarea {
   letter-spacing: 0.2em;
   text-decoration: none;
   position: relative;
-  transition: color 0.25s ease;
 }
 
-/* Efecto subrayado industrial */
 .strong-nav a::after {
   content: "";
   position: absolute;
@@ -335,14 +135,15 @@ textarea {
 }
 
 .strong-nav a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .strong-nav a:hover::after {
   width: 100%;
 }
+
 /* ======================================================
-   XF POWER BUTTONS — STRONG & CLEAN
+   BUTTONS
    ====================================================== */
 
 .btn {
@@ -371,429 +172,8 @@ textarea {
   box-shadow: 0 16px 40px rgba(0,0,0,0.75);
 }
 
-.btn-outline {
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.35);
-  color: #fff;
-}
-
-.btn-outline:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: #fff;
-}
-
-/* full width for contact form */
-.btn-full {
-  width: 100%;
-}
-
-/* SECTION TITLES CLEAN STRONG */
-.section h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  text-shadow: 0 0 18px rgba(246,200,0,0.25);
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 2rem;
-}
-
-.section p {
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 750px;
-  margin: 0.6rem auto;
-}
-
-/* SERVICE CARDS — PREMIUM CLEAN */
-.card {
-  background: #0f0f0f;
-  padding: 1.8rem;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
-}
-
-/* GALLERY PLACEHOLDER CLEAN */
-.placeholder-gallery .gallery-item {
-  background: #121212;
-  border: 1px dashed rgba(255,255,255,0.25);
-  padding: 1.2rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-
-/* CONTACT CLEAN PREMIUM */
-.contact-layout {
-  gap: 2.5rem;
-}
-
-.contact-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-.contact-details li {
-  margin-bottom: 0.5rem;
-}
-
-.contact-form {
-  padding: 2rem;
-  background: #0f0f0f;
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
 /* ======================================================
-   XF — STRONG BUTTONS (OPTION A)
-   ====================================================== */
-
-.strong-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: 10px;
-}
-
-.btn-strong {
-  display: inline-block;
-  padding: 10px 22px;
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  color: #000;
-  font-weight: 800;
-  font-size: 0.95rem;
-  text-decoration: none;
-  letter-spacing: 1px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  transition: all 0.25s ease;
-}
-
-.btn-strong:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  filter: brightness(1.15);
-}
-
-.btn-strong:active {
-  transform: translateY(0px);
-  filter: brightness(0.9);
-}
-
-/* ======================================================
-   GALLERY PAGES & CATEGORY CARDS
-   ====================================================== */
-
-/* tarjetas de categorías en la home */
-.gallery-categories {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.gallery-cat-card {
-  display: block;
-  padding: 1.6rem 1.4rem;
-  border-radius: 14px;
-  background: #101010;
-  border: 1px solid rgba(255,255,255,0.08);
-  text-decoration: none;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.gallery-cat-card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 1rem;
-}
-
-.gallery-cat-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.gallery-cat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.85);
-  border-color: rgba(255,255,255,0.22);
-}
-
-/* HEADER de las páginas de galería */
-.gallery-page-header {
-  padding: 2.5rem 1.5rem 1rem;
-  text-align: center;
-  background: #000;
-}
-
-.gallery-page-header h1 {
-  color: var(--accent);
-  font-size: 2.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.gallery-page-header p {
-  color: var(--muted);
-  margin-top: 0.5rem;
-}
-
-/* link para volver */
-.back-link {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: var(--accent-2);
-  text-decoration: none;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.back-link:hover {
-  text-decoration: underline;
-}
-
-/* grid de fotos de cada galería */
-.gallery-photos {
-  padding: 0 1.5rem 3rem;
-}
-
-.gallery-photos-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.gallery-photos-inner img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  border: 1px solid rgba(255,255,255,0.18);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.85);
-}
-
-/* ================================
-   GALLERY MENU (BUTTON CARDS)
-===================================*/
-
-.gallery-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.gallery-card {
-  background: #0f0f0f;
-  padding: 1.8rem 2rem;
-  border-radius: 16px;
-  width: 260px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gallery-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
-.gallery-card h3 {
-  color: var(--accent-2); /* VERDE LIMA */
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.gallery-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-/* ======================================
-   FIX CONTACT LAYOUT ON MOBILE
-======================================*/
-@media (max-width: 768px) {
-  .contact-layout {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: left;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-details {
-    width: 100%;
-  }
-}
-
-/* CONTACT mobile fix */
-/* ======================================================
-   XTREME FITNESS GYM — PREMIUM CLEAN STYLES
-   ====================================================== */
-
-/* RESET */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* VARIABLES */
-:root {
-  --bg: #000000;
-  --bg-alt: #0d0d0d;
-  --text: #f5f5f5;
-  --muted: #bdbdbd;
-  --accent: #f6c800;
-  --accent-2: #9cff00;
-  --max-width: 1100px;
-}
-
-/* GLOBAL DARK TEXTURE BACKGROUND */
-body {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-color: #0d0d0d; /* fallback negro por si no carga */
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-/* ======================================================
-   HERO — LOGO CENTRADO Y SIN ESPACIOS EXTRA
-   ====================================================== */
-
-.hero {
-  background: url("images/hero-bg-2.jpg") center/cover no-repeat;
-  text-align: center;
-
-  min-height: 55vh;     /* altura ideal: ni vacío ni apretado */
-  padding-top: 10px;    
-  padding-bottom: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* LOGO */
-.logo-block {
-  margin: 0;
-  padding: 0;
-}
-
-.logo-img {
-  width: 750px;    /* antes 600 px */
-  max-width: 92%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.45));
-}
-
-.logo-img:hover {
-  transform: translateY(-3px);
-  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.55));
-}
-
-/* TEXTOS */
-.site-title {
-  color: var(--accent);
-  font-size: 3rem;
-  margin-top: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.slogan {
-  color: var(--accent-2);
-  font-size: 1.3rem;
-  margin-top: 5px;
-}
-
-.sub-slogan {
-  color: var(--muted);
-  margin-top: 1px;
-  margin-bottom: 2px;
-}
-
-/* ======================================================
-   NAVBAR
-   ====================================================== */
-
-.main-nav {
-  padding: 15px 0;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.main-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
-  position: relative;
-}
-
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.25s ease;
-}
-
-.main-nav a:hover {
-  color: var(--text);
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-/* ======================================================
-   SECTIONS
+   SECTIONS CLEAN
    ====================================================== */
 
 .section {
@@ -812,12 +192,20 @@ body {
 }
 
 .section h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
   color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(246,200,0,0.25);
 }
 
 .section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0.6rem auto;
   color: var(--muted);
 }
 
@@ -833,10 +221,17 @@ body {
 }
 
 .card {
-  background: #101010;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #0f0f0f;
+  padding: 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
 }
 
 .card h3 {
@@ -845,8 +240,8 @@ body {
 }
 
 /* ======================================================
-   GALLERY — XF PREMIUM
-====================================================== */
+   GALLERY
+   ====================================================== */
 
 .gallery-grid {
   display: grid;
@@ -870,7 +265,6 @@ body {
   box-shadow: 0 14px 28px rgba(0,0,0,0.75);
 }
 
-
 /* ======================================================
    CONTACT
    ====================================================== */
@@ -882,15 +276,11 @@ body {
   text-align: left;
 }
 
-.contact-details li {
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-
 .contact-form {
-  background: #101010;
-  padding: 1.6rem;
-  border-radius: 14px;
+  background: #0f0f0f;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
 }
 
 input,
@@ -904,1219 +294,20 @@ textarea {
   color: var(--text);
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border: none;
-  padding: 0.9rem 1.6rem;
-  width: 100%;
-  margin-top: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ======================================================
-   FOOTER
-   ====================================================== */
-
-.footer {
-  padding: 2rem 1.5rem;
-  background: #000;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.footer-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  color: var(--muted);
-}
-
-.footer-tagline {
-  color: var(--accent-2);
-}
-
-/* ======================================================
-   RESPONSIVE
-   ====================================================== */
-
-@media(max-width: 900px) {
-  .logo-img { width: 450px; }
-}
-
-@media(max-width: 600px) {
-  .logo-img { width: 320px; }
-  .site-title { font-size: 2.4rem; }
-  .slogan { font-size: 1.15rem; }
-}
-
-/* ============================================
-   NAVBAR FUERTE – XTREME FITNESS GYM
-   ============================================ */
-.strong-nav {
-  margin-top: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 12px 0;
-  backdrop-filter: blur(3px);
-  border-top: 2px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-}
-
-.strong-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  list-style: none;
-  padding: 0;
-}
-
-.strong-nav a {
-  color: var(--accent-2);
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.25s ease;
-}
-
-/* Efecto subrayado industrial */
-.strong-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.25s ease;
-}
-
-.strong-nav a:hover {
-  color: white;
-}
-
-.strong-nav a:hover::after {
-  width: 100%;
-}
-/* ======================================================
-   XF POWER BUTTONS — STRONG & CLEAN
-   ====================================================== */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.2rem;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  transition: all .22s ease;
-  border: none;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  color: #000;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.75);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.35);
-  color: #fff;
-}
-
-.btn-outline:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: #fff;
-}
-
-/* full width for contact form */
 .btn-full {
   width: 100%;
-}
-
-/* SECTION TITLES CLEAN STRONG */
-.section h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  text-shadow: 0 0 18px rgba(246,200,0,0.25);
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 2rem;
-}
-
-.section p {
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 750px;
-  margin: 0.6rem auto;
-}
-
-/* SERVICE CARDS — PREMIUM CLEAN */
-.card {
-  background: #0f0f0f;
-  padding: 1.8rem;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
-}
-
-/* GALLERY PLACEHOLDER CLEAN */
-.placeholder-gallery .gallery-item {
-  background: #121212;
-  border: 1px dashed rgba(255,255,255,0.25);
-  padding: 1.2rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-
-/* CONTACT CLEAN PREMIUM */
-.contact-layout {
-  gap: 2.5rem;
-}
-
-.contact-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-.contact-details li {
-  margin-bottom: 0.5rem;
-}
-
-.contact-form {
-  padding: 2rem;
-  background: #0f0f0f;
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
-/* ======================================================
-   XF — STRONG BUTTONS (OPTION A)
-   ====================================================== */
-
-.strong-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: 10px;
-}
-
-.btn-strong {
-  display: inline-block;
-  padding: 10px 22px;
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  color: #000;
-  font-weight: 800;
-  font-size: 0.95rem;
-  text-decoration: none;
-  letter-spacing: 1px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  transition: all 0.25s ease;
-}
-
-.btn-strong:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  filter: brightness(1.15);
-}
-
-.btn-strong:active {
-  transform: translateY(0px);
-  filter: brightness(0.9);
-}
-
-/* ======================================================
-   GALLERY PAGES & CATEGORY CARDS
-   ====================================================== */
-
-/* tarjetas de categorías en la home */
-.gallery-categories {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.gallery-cat-card {
-  display: block;
-  padding: 1.6rem 1.4rem;
-  border-radius: 14px;
-  background: #101010;
-  border: 1px solid rgba(255,255,255,0.08);
-  text-decoration: none;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.gallery-cat-card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 1rem;
-}
-
-.gallery-cat-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.gallery-cat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.85);
-  border-color: rgba(255,255,255,0.22);
-}
-
-/* HEADER de las páginas de galería */
-.gallery-page-header {
-  padding: 2.5rem 1.5rem 1rem;
-  text-align: center;
-  background: #000;
-}
-
-.gallery-page-header h1 {
-  color: var(--accent);
-  font-size: 2.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.gallery-page-header p {
-  color: var(--muted);
-  margin-top: 0.5rem;
-}
-
-/* link para volver */
-.back-link {
-  display: inline-block;
   margin-top: 1rem;
-  font-size: 0.9rem;
-  color: var(--accent-2);
-  text-decoration: none;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
-.back-link:hover {
-  text-decoration: underline;
-}
-
-/* grid de fotos de cada galería */
-.gallery-photos {
-  padding: 0 1.5rem 3rem;
-}
-
-.gallery-photos-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.gallery-photos-inner img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  border: 1px solid rgba(255,255,255,0.18);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.85);
-}
-
-/* ================================
-   GALLERY MENU (BUTTON CARDS)
-===================================*/
-
-.gallery-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.gallery-card {
-  background: #0f0f0f;
-  padding: 1.8rem 2rem;
-  border-radius: 16px;
-  width: 260px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gallery-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
-.gallery-card h3 {
-  color: var(--accent-2); /* VERDE LIMA */
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.gallery-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-/* ======================================
-   FIX CONTACT LAYOUT ON MOBILE
-======================================*/
+/* MOBILE FIXES */
 @media (max-width: 768px) {
   .contact-layout {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: left;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-details {
-    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 
-/* CONTACT mobile fix */
-@media (max-width: 768px) {
-  .contact-layout {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .contact-details,
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-  }
-}
-
-/* FORCE GLOBAL BACKGROUND */
-body,
-.section,
-.section-alt,
-.hero,
-footer,
-nav {
-    background: transparent !important;
-}
-
-/* REAL GLOBAL DARK TEXTURE */
-html {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
-    background-color: #0d0d0d !important;
-}
-
-
-
-
-
-/* REAL GLOBAL DARK TEXTURE */
-html {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
-    background-color: #0d0d0d !important;
-}
-
 /* ======================================================
-   XTREME FITNESS GYM — PREMIUM CLEAN STYLES
+   RESPONSIVE LOGO FIX
    ====================================================== */
 
-/* RESET */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* VARIABLES */
-:root {
-  --bg: #000000;
-  --bg-alt: #0d0d0d;
-  --text: #f5f5f5;
-  --muted: #bdbdbd;
-  --accent: #f6c800;
-  --accent-2: #9cff00;
-  --max-width: 1100px;
-}
-
-/* GLOBAL DARK TEXTURE BACKGROUND */
-body {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-color: #0d0d0d; /* fallback negro por si no carga */
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-/* ======================================================
-   HERO — LOGO CENTRADO Y SIN ESPACIOS EXTRA
-   ====================================================== */
-
-.hero {
-  background: url("images/hero-bg-2.jpg") center/cover no-repeat;
-  text-align: center;
-
-  min-height: 55vh;     /* altura ideal: ni vacío ni apretado */
-  padding-top: 10px;    
-  padding-bottom: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* LOGO */
-.logo-block {
-  margin: 0;
-  padding: 0;
-}
-
-.logo-img {
-  width: 750px;    /* antes 600 px */
-  max-width: 92%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.45));
-}
-
-.logo-img:hover {
-  transform: translateY(-3px);
-  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.55));
-}
-
-/* TEXTOS */
-.site-title {
-  color: var(--accent);
-  font-size: 3rem;
-  margin-top: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.slogan {
-  color: var(--accent-2);
-  font-size: 1.3rem;
-  margin-top: 5px;
-}
-
-.sub-slogan {
-  color: var(--muted);
-  margin-top: 1px;
-  margin-bottom: 2px;
-}
-
-/* ======================================================
-   NAVBAR
-   ====================================================== */
-
-.main-nav {
-  padding: 15px 0;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.main-nav a {
-  color: var(--muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
-  position: relative;
-}
-
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.25s ease;
-}
-
-.main-nav a:hover {
-  color: var(--text);
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-/* ======================================================
-   SECTIONS
-   ====================================================== */
-
-.section {
-  padding: 4rem 1.5rem;
-  background: var(--bg);
-}
-
-.section-alt {
-  background: var(--bg-alt);
-}
-
-.section-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section h2 {
-  color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.section p {
-  color: var(--muted);
-}
-
-/* ======================================================
-   CARDS
-   ====================================================== */
-
-.cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: #101010;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.6rem;
-}
-
-/* ======================================================
-   GALLERY — XF PREMIUM
-====================================================== */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem;
-  margin-top: 2rem;
-}
-
-.gallery-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.gallery-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.75);
-}
-
-
-/* ======================================================
-   CONTACT
-   ====================================================== */
-
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
-  text-align: left;
-}
-
-.contact-details li {
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-
-.contact-form {
-  background: #101010;
-  padding: 1.6rem;
-  border-radius: 14px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 0.6rem;
-  margin-top: 0.2rem;
-  border-radius: 8px;
-  background: #000;
-  border: 1px solid #333;
-  color: var(--text);
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border: none;
-  padding: 0.9rem 1.6rem;
-  width: 100%;
-  margin-top: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ======================================================
-   FOOTER
-   ====================================================== */
-
-.footer {
-  padding: 2rem 1.5rem;
-  background: #000;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.footer-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  color: var(--muted);
-}
-
-.footer-tagline {
-  color: var(--accent-2);
-}
-
-/* ======================================================
-   RESPONSIVE
-   ====================================================== */
-
-@media(max-width: 900px) {
-  .logo-img { width: 450px; }
-}
-
-@media(max-width: 600px) {
-  .logo-img { width: 320px; }
-  .site-title { font-size: 2.4rem; }
-  .slogan { font-size: 1.15rem; }
-}
-
-/* ============================================
-   NAVBAR FUERTE – XTREME FITNESS GYM
-   ============================================ */
-.strong-nav {
-  margin-top: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 12px 0;
-  backdrop-filter: blur(3px);
-  border-top: 2px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-}
-
-.strong-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  list-style: none;
-  padding: 0;
-}
-
-.strong-nav a {
-  color: var(--accent-2);
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.25s ease;
-}
-
-/* Efecto subrayado industrial */
-.strong-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.25s ease;
-}
-
-.strong-nav a:hover {
-  color: white;
-}
-
-.strong-nav a:hover::after {
-  width: 100%;
-}
-/* ======================================================
-   XF POWER BUTTONS — STRONG & CLEAN
-   ====================================================== */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.2rem;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  transition: all .22s ease;
-  border: none;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  color: #000;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.75);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.35);
-  color: #fff;
-}
-
-.btn-outline:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: #fff;
-}
-
-/* full width for contact form */
-.btn-full {
-  width: 100%;
-}
-
-/* SECTION TITLES CLEAN STRONG */
-.section h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  text-shadow: 0 0 18px rgba(246,200,0,0.25);
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 2rem;
-}
-
-.section p {
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 750px;
-  margin: 0.6rem auto;
-}
-
-/* SERVICE CARDS — PREMIUM CLEAN */
-.card {
-  background: #0f0f0f;
-  padding: 1.8rem;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
-}
-
-/* GALLERY PLACEHOLDER CLEAN */
-.placeholder-gallery .gallery-item {
-  background: #121212;
-  border: 1px dashed rgba(255,255,255,0.25);
-  padding: 1.2rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-
-/* CONTACT CLEAN PREMIUM */
-.contact-layout {
-  gap: 2.5rem;
-}
-
-.contact-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-.contact-details li {
-  margin-bottom: 0.5rem;
-}
-
-.contact-form {
-  padding: 2rem;
-  background: #0f0f0f;
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
-/* ======================================================
-   XF — STRONG BUTTONS (OPTION A)
-   ====================================================== */
-
-.strong-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: 10px;
-}
-
-.btn-strong {
-  display: inline-block;
-  padding: 10px 22px;
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  color: #000;
-  font-weight: 800;
-  font-size: 0.95rem;
-  text-decoration: none;
-  letter-spacing: 1px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  transition: all 0.25s ease;
-}
-
-.btn-strong:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  filter: brightness(1.15);
-}
-
-.btn-strong:active {
-  transform: translateY(0px);
-  filter: brightness(0.9);
-}
-
-/* ======================================================
-   GALLERY PAGES & CATEGORY CARDS
-   ====================================================== */
-
-/* tarjetas de categorías en la home */
-.gallery-categories {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.gallery-cat-card {
-  display: block;
-  padding: 1.6rem 1.4rem;
-  border-radius: 14px;
-  background: #101010;
-  border: 1px solid rgba(255,255,255,0.08);
-  text-decoration: none;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.gallery-cat-card h3 {
-  color: var(--accent-2);
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 1rem;
-}
-
-.gallery-cat-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.gallery-cat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.85);
-  border-color: rgba(255,255,255,0.22);
-}
-
-/* HEADER de las páginas de galería */
-.gallery-page-header {
-  padding: 2.5rem 1.5rem 1rem;
-  text-align: center;
-  background: #000;
-}
-
-.gallery-page-header h1 {
-  color: var(--accent);
-  font-size: 2.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.gallery-page-header p {
-  color: var(--muted);
-  margin-top: 0.5rem;
-}
-
-/* link para volver */
-.back-link {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: var(--accent-2);
-  text-decoration: none;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.back-link:hover {
-  text-decoration: underline;
-}
-
-/* grid de fotos de cada galería */
-.gallery-photos {
-  padding: 0 1.5rem 3rem;
-}
-
-.gallery-photos-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.gallery-photos-inner img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  border: 1px solid rgba(255,255,255,0.18);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.85);
-}
-
-/* ================================
-   GALLERY MENU (BUTTON CARDS)
-===================================*/
-
-.gallery-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.gallery-card {
-  background: #0f0f0f;
-  padding: 1.8rem 2rem;
-  border-radius: 16px;
-  width: 260px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gallery-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
-}
-
-.gallery-card h3 {
-  color: var(--accent-2); /* VERDE LIMA */
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.gallery-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-/* ======================================
-   FIX CONTACT LAYOUT ON MOBILE
-======================================*/
-@media (max-width: 768px) {
-
-  .contact-layout {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2rem !important;
-    width: 100% !important;
-  }
-
-  .contact-layout * {
-    max-width: 100% !important;
-  }
-
-  .contact-details {
-    width: 100% !important;
-  }
-
-  .contact-form {
-    width: 100% !important;
-    margin: 0 !important;
-  }
-}
-/* FORCE GLOBAL BACKGROUND */
-body,
-.section,
-.section-alt,
-.hero,
-footer,
-nav {
-    background: transparent !important;
-}
-
-/* REAL GLOBAL DARK TEXTURE */
-html {
-    background: url("images/dark-texture-bg.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
-    background-color: #0d0d0d !important;
-}
-
-/* ======================================
-   XF HERO BUTTON — PREMIUM & PROFESSIONAL
-======================================*/
-
-.xf-hero-btn {
-    display: inline-block;
-    margin-top: 26px;
-    padding: 16px 42px;
-    font-size: 1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: #000;
-    text-decoration: none;
-
-    background: linear-gradient(135deg, #f6c800, #9cff00);
-    border-radius: 50px;
-
-    box-shadow: 0 10px 24px rgba(0,0,0,0.55);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover: ligero levantamiento, profesional */
-.xf-hero-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 36px rgba(0,0,0,0.65);
-}
-
-/* Animación sutil de pulso */
-.xf-hero-btn::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(255,255,255,0.08) 0%,
-        transparent 60%
-    );
-    animation: xfPulse 6s infinite ease-out;
-    opacity: 0;
-}
-
-@keyframes xfPulse {
-    0% {
-        transform: scale(0.5);
-        opacity: 0.25;
-    }
-    70% {
-        transform: scale(1.4);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1.8);
-        opacity: 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    header img {
-        width: 240px; /* un poco más grande en pantallas grandes */
-        display: block;
-        margin: 0 auto; /* lo centra */
-    }
-
-    .hero {
-        padding-top: 20px; /* ajusta space arriba en laptop */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
+@
