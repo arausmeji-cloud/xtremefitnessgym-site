@@ -195,7 +195,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-
+.map-box {
+  background: rgba(0,0,0,0.85);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+}
 .contact-form {
   background: rgba(0,0,0,0.80);
   padding: 2rem;
@@ -230,3 +235,4 @@ textarea {
 #about {
   margin-top: 60px;
 }
+
