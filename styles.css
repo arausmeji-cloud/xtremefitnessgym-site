@@ -1,10 +1,9 @@
 
-
 /* ======================================================
    XTREME FITNESS GYM — PREMIUM CLEAN STYLES (FINAL)
    ====================================================== */
 
-/* RESET */
+/* RESET BÁSICO */
 *,
 *::before,
 *::after {
@@ -15,8 +14,8 @@
 
 /* VARIABLES */
 :root {
-  --bg: #000000;
-  --bg-alt: #0d0d0d;
+  --bg: rgba(0, 0, 0, 0.90);
+  --bg-alt: rgba(10, 10, 10, 0.92);
   --text: #f5f5f5;
   --muted: #bdbdbd;
   --accent: #f6c800;
@@ -25,35 +24,42 @@
 }
 
 /* ======================================================
-   GLOBAL BACKGROUND FIX — NO MORE CUTS
+   GLOBAL BACKGROUND — TEXTURA EN TODA LA PÁGINA
    ====================================================== */
 
+html, body {
+  height: 100%;
+}
+
 body {
-  background: url("images/dark-texture-bg.jpg") repeat center center;
-  background-size: auto 1000px;
-  background-color: #0d0d0d;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
+  background-image: url("images/dark-texture-bg.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 600px auto;   /* se repite, no se corta */
+  color: var(--text);
   font-family: Arial, sans-serif;
 }
 
 /* ======================================================
-   HERO — LOGO + SPACING FIX
+   HERO — LOGO + FONDO HERO-BG
    ====================================================== */
 
 .hero {
-  background: url("images/dark-texture-bg.jpg") center/cover no-repeat;
-  text-align: center;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px 35px;
+}
 
-  min-height: 58vh;
-  padding-top: 10px;
-  padding-bottom: 15px;
-
+.hero-inner {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  text-align: center;
+  gap: 0.4rem;               /* controla el espacio entre logo, botón y textos */
 }
 
 /* LOGO */
@@ -63,13 +69,13 @@ body {
 }
 
 .logo-img {
-  width: 820px;
-  max-width: 92%;
+  width: 820px;              /* logo bien grande en desktop */
+  max-width: 92%;            /* que se adapte en pantallas chicas */
   height: auto;
-  margin: 0 auto 10px auto; /* FIX spacing */
   display: block;
+  margin: 0 auto 0.4rem auto;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.45));
-  transition: .25s ease;
+  transition: transform .25s ease, filter .25s ease;
 }
 
 .logo-img:hover {
@@ -77,44 +83,86 @@ body {
   filter: drop-shadow(0 12px 18px rgba(0,0,0,0.55));
 }
 
-/* TEXTOS */
+/* TEXTOS HERO */
 .slogan {
   color: var(--accent-2);
-  font-size: 1.3rem;
-  margin-top: 0.3rem;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .sub-slogan {
   color: var(--muted);
-  margin-top: 0.2rem;
+  font-size: 0.98rem;
+  margin: 0;
 }
 
 /* ======================================================
-   STRONG NAVBAR
+   BOTÓN PRINCIPAL
+   ====================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.8);
+  filter: brightness(1.05);
+}
+
+/* botón del hero: pequeño ajuste de espacio */
+.hero-btn {
+  margin-top: 0.3rem;        /* poco espacio entre logo y botón */
+}
+
+/* botón de contacto full width */
+.btn-full {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* ======================================================
+   NAVBAR FUERTE
    ====================================================== */
 
 .strong-nav {
-  margin-top: 18px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   padding: 12px 0;
-  backdrop-filter: blur(3px);
-  border-top: 2px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  border-top: 2px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.06);
 }
 
 .strong-nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 2.4rem;
-  list-style: none;
 }
 
 .strong-nav a {
   color: var(--accent-2);
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-decoration: none;
   position: relative;
 }
@@ -139,41 +187,7 @@ body {
 }
 
 /* ======================================================
-   BUTTONS
-   ====================================================== */
-
-.btn,
-.xf-hero-btn,
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.2rem;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  transition: all .22s ease;
-  border: none;
-  text-decoration: none;
-  color: #000;
-}
-
-.xf-hero-btn {
-  margin-top: 5px; /* ALIGNMENT FIX */
-  background: linear-gradient(135deg, #f6c800, #9cff00);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
-}
-
-.xf-hero-btn:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.75);
-}
-
-/* ======================================================
-   SECTIONS CLEAN
+   SECCIONES GENERALES
    ====================================================== */
 
 .section {
@@ -209,8 +223,14 @@ body {
   color: var(--muted);
 }
 
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
 /* ======================================================
-   CARDS
+   CARDS (SERVICES & EQUIPMENT)
    ====================================================== */
 
 .cards {
@@ -221,17 +241,17 @@ body {
 }
 
 .card {
-  background: #0f0f0f;
+  background: #101010;
   padding: 1.8rem;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.65);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.85);
 }
 
 .card h3 {
@@ -240,7 +260,7 @@ body {
 }
 
 /* ======================================================
-   GALLERY — FIXED (TARJETAS)
+   GALLERY — TARJETAS
    ====================================================== */
 
 .gallery-menu {
@@ -252,18 +272,33 @@ body {
 
 .gallery-card {
   display: block;
-  padding: 1.5rem;
-  background: #0f0f0f;
+  padding: 1.6rem 1.4rem;
   border-radius: 14px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  background: #101010;
+  border: 1px solid rgba(255,255,255,0.08);
   text-decoration: none;
   color: var(--text);
-  transition: .25s ease;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.7);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.gallery-card h3 {
+  color: var(--accent-2);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+}
+
+.gallery-card p {
+  color: var(--muted);
+  font-size: 0.96rem;
 }
 
 .gallery-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0,0,0,0.75);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.9);
+  border-color: rgba(255,255,255,0.2);
 }
 
 /* ======================================================
@@ -271,46 +306,124 @@ body {
    ====================================================== */
 
 #contact {
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
   text-align: left;
+  align-items: flex-start;
+}
+
+.contact-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-details li {
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+  font-size: 0.98rem;
 }
 
 .contact-form {
-  background: #0f0f0f;
+  background: #101010;
   padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.75);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.85);
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: block;
+  margin-top: 0.6rem;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 0.6rem;
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
   border-radius: 8px;
   background: #000;
   border: 1px solid #333;
   color: var(--text);
+  font-size: 0.95rem;
 }
 
-.btn-full {
-  width: 100%;
-  margin-top: 1rem;
+textarea {
+  resize: vertical;
 }
 
-/* MOBILE FIXES */
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+.footer {
+  padding: 1.8rem 1.5rem;
+  background: rgba(0,0,0,0.92);
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer-tagline {
+  color: var(--accent-2);
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 900px) {
+  .logo-img {
+    width: 600px;
+    max-width: 95%;
+  }
+
+  .section {
+    padding: 3rem 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding-top: 25px;
+  }
+
+  .strong-nav ul {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+
   .contact-layout {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 600px) {
   .logo-img {
-    max-width: 95%;
+    width: 360px;
+    max-width: 92%;
+  }
+
+  .slogan {
+    font-size: 1.1rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
   }
 }
