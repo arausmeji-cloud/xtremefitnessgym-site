@@ -611,6 +611,17 @@ a.button-link {
     }
 }
 
+/* LOGO SIZE FINAL XF */
+.logo-container img {
+    width: 320px !important;   /* desktop */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-container img {
+        width: 260px !important;  /* mobile */
+    }
+}
 
 
 
