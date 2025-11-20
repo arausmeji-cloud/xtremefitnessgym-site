@@ -623,6 +623,29 @@ a.button-link {
     }
 }
 
+/* FULL MOBILE BUTTON ALIGN FIX */
+@media (max-width: 768px) {
+
+    .hero-buttons,
+    .home-buttons,
+    .menu-buttons,
+    .top-buttons,
+    nav ul {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 18px !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    nav ul li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
 
 
 
