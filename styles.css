@@ -749,3 +749,92 @@ a.button-link {
   }
 }
 
+/* ============================
+   FIX MASTER – XF FINAL BUILD
+============================ */
+
+/* 1. GALLERY FIX — que parezcan botones */
+.gallery-menu {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.gallery-card {
+    background: rgba(0,0,0,0.55);
+    border: 2px solid #b6ff00;
+    border-radius: 24px;
+    padding: 18px 24px;
+    width: 260px;
+    text-decoration: none;
+    color: #b6ff00;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    background: #b6ff00;
+    color: #000;
+}
+
+
+/* 2. NAVIGATION FIX – Desktop y Mobile */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav a {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* 3. MAPA RESPONSIVE */
+.map-box iframe {
+    max-width: 700px;
+    width: 100%;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .map-box iframe {
+        height: 260px;
+    }
+}
+
+/* 4. FORMULARIO CENTRADO */
+.contact-form {
+    margin: 0 auto !important;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        text-align: center !important;
+    }
+}
+
+/* 5. LOGO POSITION FIX */
+.hero {
+    padding-top: 20px !important;
+}
