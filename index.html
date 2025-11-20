@@ -1,169 +1,116 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xtreme Fitness Gym | No Excuses. Just Results.</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xtreme Fitness Gym</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="hero-inner">
-
-      <!-- LOGO -->
-     <div class="logo-container">
-    <img src="images/LOGO_SITO_optimized.svg" alt="Xtreme Fitness Gym Logo">
-</div>
-      <!-- BUTTON -->
-      <a href="#contact" class="btn-primary hero-btn">Start Your Transformation</a>
-
-      <p class="slogan">Be the best you can be.</p>
-      <p class="sub-slogan">No excuses, just results.</p>
-
+  <!-- =========================================
+       HEADER & LOGO
+  ========================================== -->
+  <header>
+    <div class="logo-container">
+      <img src="images/LOGO_SITO_glow.svg" alt="XF Logo">
     </div>
   </header>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="section-inner">
+  <!-- =========================================
+       HERO SECTION
+  ========================================== -->
+  <section class="hero">
+    <h1>Start Your Transformation</h1>
+    <p>No excuses. Just results.</p>
+    <a href="#contact" class="btn-hero">Join XF Today</a>
+  </section>
 
-      <h2>About Xtreme Fitness Gym</h2>
+
+  <!-- =========================================
+       ABOUT SECTION
+  ========================================== -->
+  <section class="about container">
+    <h2>About Xtreme Fitness</h2>
+    <p>
+      At XF we push you to become the best version of yourself.  
+      Elite equipment, intense atmosphere, and a community that supports your growth.  
+      Strength, conditioning, functional training, and the discipline of Jiu-Jitsu all in one place.
+    </p>
+  </section>
+
+
+  <!-- =========================================
+       GALLERY SECTION
+  ========================================== -->
+  <section class="gallery container">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+      <img src="images/gym1.jpg" alt="Gym Image 1">
+      <img src="images/gym2.jpg" alt="Gym Image 2">
+      <img src="images/gym3.jpg" alt="Gym Image 3">
+      <img src="images/gym4.jpg" alt="Gym Image 4">
+      <img src="images/gym5.jpg" alt="Gym Image 5">
+      <img src="images/gym6.jpg" alt="Gym Image 6">
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       CONTACT SECTION – Mapa → Texto → Formulario
+  ========================================== -->
+  <section id="contact" class="contact-section container">
+    <h2>Contact Us</h2>
+
+    <!-- GOOGLE MAP -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.470213583795!2d151.201!3d-33.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae40f0f0f00d%3A0x0000000000000000!2sSydney!5e0!3m2!1sen!2sau!4v000000000"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="contact-info">
       <p>
-        Xtreme Fitness Gym is designed for those who train with intention,
-        discipline, and intensity. Premium equipment, a focused environment, 
-        and a culture built around real work—no shortcuts, no excuses.
+        Ready to take the next step?  
+        Reach out and become part of the XF family.  
+        We're here to help you achieve your goals — stronger, faster, better.
       </p>
-
     </div>
+
+    <!-- FORMULARIO -->
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your Name">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Your Email">
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section section-alt">
-    <div class="section-inner">
 
-      <h2>Services & Equipment</h2>
-
-      <div class="cards">
-
-        <div class="card">
-          <h3>Strength Area</h3>
-          <p>Plate-loaded machines, racks, benches, and heavy dumbbells.</p>
-        </div>
-
-        <div class="card">
-          <h3>Free Weights</h3>
-          <p>Platforms and a complete free-weight zone for serious lifters.</p>
-        </div>
-
-        <div class="card">
-          <h3>Cardio</h3>
-          <p>Machines for warm-ups, conditioning, and fat loss.</p>
-        </div>
-
-        <div class="card">
-          <h3>Future Extras</h3>
-          <p>Sauna, Jiu-Jitsu area, and more premium features coming soon.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="section">
-    <div class="section-inner">
-
-      <h2>Gallery</h2>
-      <p class="subtitle">Explore what Xtreme Fitness Gym is all about.</p>
-
-      <div class="gallery-menu">
-
-        <a href="gallery-gym.html" class="gallery-card">
-          <h3>XF Gym</h3>
-          <p>Machines, racks, plates & dumbbells.</p>
-        </a>
-
-        <a href="gallery-bjj.html" class="gallery-card">
-          <h3>BJJ</h3>
-          <p>Confidence, discipline, self-defense.</p>
-        </a>
-
-        <a href="gallery-impact.html" class="gallery-card">
-          <h3>XF Impact</h3>
-          <p>Mindset, community & transformation.</p>
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
- <section id="contact" class="section section-alt">
-  <div class="section-inner">
-
-    <h2>Contact</h2>
-
-    <div class="contact-layout">
-
-      <!-- MAPA -->
-      <div class="map-box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6856!2d151.2070!3d-33.8675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3df263!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v123456789"
-          width="100%"
-          height="250"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
-      </div>
-
-      <!-- COLUMNA DERECHA: datos + formulario -->
-      <div class="contact-right">
-
-        <ul class="contact-details">
-          <li><strong>Email:</strong> info@xtremefitnessgym.com.au</li>
-          <li><strong>Location:</strong> Sydney / Australia</li>
-        </ul>
-
-        <form class="contact-form">
-          <label>Name</label>
-          <input type="text" required />
-
-          <label>Email</label>
-          <input type="email" required />
-
-          <label>Message</label>
-          <textarea rows="4"></textarea>
-
-          <button class="btn-primary btn-full">Send</button>
-        </form>
-
-      </div>
-
-    </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Xtreme Fitness Gym</p>
-    <p class="footer-tagline">No excuses. Just results.</p>
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+  <footer>
+    © 2025 Xtreme Fitness Gym — All Rights Reserved
   </footer>
 
 </body>
-</html>
-
-        
+</html>        
