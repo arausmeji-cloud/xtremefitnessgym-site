@@ -450,4 +450,33 @@ body {
   }
 }
 
+/* FIX BOTONES MOBILE */
+button,
+.btn,
+a.button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;           /* Centra el botón */
+    width: fit-content;       /* Evita que se estire raro */
+}
+
+/* Centrado específico para los botones SERVICES / GALLERY */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.home-buttons a {
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
 
