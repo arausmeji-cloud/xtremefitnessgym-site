@@ -581,6 +581,35 @@ a.button-link {
     margin: 0 auto;
 }
 
+/* FIX DEFINITIVO BOTONES MOBILE (PIEZA MAESTRA) */
+@media (max-width: 768px) {
+    .hero-buttons,
+    .home-buttons,
+    .menu-buttons,
+    .top-buttons,
+    nav ul,
+    .cta-buttons {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        gap: 16px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .hero-buttons a,
+    .home-buttons a,
+    .menu-buttons a,
+    .top-buttons a,
+    nav ul li a,
+    .cta-buttons a {
+        margin: 0 auto !important;
+        display: inline-block !important;
+    }
+}
 
 
 
