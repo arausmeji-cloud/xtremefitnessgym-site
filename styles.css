@@ -1,11 +1,162 @@
 
 
 
-/* ===============================
-   CONTACT SECTION – XF FINAL FIX
-   =============================== */
 
-/* Contenedor principal: mapa izquierda – contacto derecha */
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --bg: #0d0d0d;          /* Fondo liso moderno */
+  --text: #d7ff88;        /* Verde XF pálido */
+  --muted: #cccccc;
+  --accent: #ffea00;      /* Amarillo XF */
+  --accent-2: #9cff00;    /* Verde neon XF */
+  --max-width: 1100px;
+}
+
+/* GLOBAL BACKGROUND */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.logo-img {
+  width: 760px;
+  max-width: 95%;
+  margin: 0 auto 15px;
+  display: block;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.6));
+}
+
+/* BUTTON */
+.hero-btn,
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  padding: 1rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+  transition: all .25s ease;
+}
+
+.hero-btn:hover,
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.75);
+}
+
+/* SLOGANS */
+.slogan {
+  color: var(--accent-2);
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.sub-slogan {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: var(--muted);
+}
+
+/* NAVIGATION */
+.nav {
+  background: transparent;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0;
+}
+
+.nav a {
+  color: var(--accent-2);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  padding: 10px 19px;
+  border: 1px solid var(--accent-2);
+  border-radius: 50px;
+  transition: 0.25s;
+}
+
+.nav a:hover {
+  background: var(--accent-2);
+  color: #000;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 1.5rem;
+  background: transparent !important;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.3rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.section p {
+  max-width: 750px;
+  margin: 0.6rem auto;
+  color: var(--muted);
+}
+
+/* CARDS */
+.cards {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(0,0,0,0.75);
+  padding: 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================
+   CONTACT – FINAL VERSION XF
+   ============================ */
+
 .contact-layout {
   margin-top: 2rem;
   display: grid;
@@ -14,22 +165,22 @@
   align-items: center;
 }
 
-/* MARCO DEL MAPA (con glow verde XF) */
+/* MAPA */
 .map-box {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0,0,0,0.75);
   padding: 1rem;
   border-radius: 16px;
-  box-shadow: 0 0 22px rgba(156, 255, 0, 0.35);
+  box-shadow: 0 0 22px rgba(156,255,0,0.35);
 }
 
 .map-box iframe {
   width: 100%;
-  height: 400px;
+  height: 420px;
   border: 0;
   border-radius: 14px;
 }
 
-/* DATOS DE CONTACTO */
+/* CONTACT DETAILS */
 .contact-details {
   list-style: none;
   padding: 0;
@@ -43,12 +194,12 @@
   margin-bottom: 0.6rem;
 }
 
-/* FORMULARIO – cuadro suavemente más claro + glow */
+/* FORMULARIO – versión B (clean + glow verde) */
 .contact-form {
-  background: rgba(20, 20, 20, 0.75);
+  background: rgba(20,20,20,0.75);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(156, 255, 0, 0.3);
+  box-shadow: 0 0 20px rgba(156,255,0,0.3);
 }
 
 .contact-form label {
@@ -63,10 +214,18 @@
   width: 100%;
   padding: 0.7rem;
   margin-bottom: 1rem;
-  border-radius: 8px;
-  border: none;
+  border-radius: 10px;
+  border: 1px solid #2b2b2b;
   background: #111;
   color: var(--text);
+  transition: 0.25s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 12px rgba(156,255,0,0.6);
+  outline: none;
 }
 
 /* BOTÓN centrado */
@@ -75,11 +234,8 @@
   margin: 0 auto;
 }
 
-/* ===============================
-   MOBILE FIX – MAPA ARRIBA
-   =============================== */
+/* MOBILE FIX */
 @media (max-width: 768px) {
-
   .contact-layout {
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
@@ -101,18 +257,10 @@
   }
 }
 
-/* ===============================
-   FOOTER CENTERED
-   =============================== */
+/* FOOTER */
 .footer {
   text-align: center !important;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem 1rem;
+  color: var(--muted);
 }
-
-
-
 
