@@ -334,6 +334,38 @@ textarea {
   }
 }
 
+/* --- MOBILE FIXES --- */
+@media (max-width: 768px) {
+
+  /* Fuerza a que la sección contact esté en 1 sola columna */
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  /* El mapa ocupa 100% */
+  .map-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Detalles y formulario ocupan 100% */
+  .contact-right {
+    width: 100%;
+  }
+
+  /* Centrar títulos y texto */
+  #contact h2,
+  .contact-details {
+    text-align: center;
+  }
+
+  /* Botón centrado */
+  .contact-form button {
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 
 
