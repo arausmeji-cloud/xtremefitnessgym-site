@@ -49,30 +49,19 @@ body {
     align-items: center;
     margin: 0 auto;
 }
-
+/* LOGO SIZE FINAL */
 .logo-container img {
-    width: 180px;      /* ajustable */
-    height: auto;
-    display: block;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .logo-container img {
-        width: 150px;
-    }
-}
-/* LOGO SIZE FIX */
-.logo-container img {
-    width: 260px;      /* tamaño perfecto para desktop */
-    height: auto;
+  width: 500px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-    .logo-container img {
-        width: 220px;  /* tamaño perfecto para mobile */
-    }
+  .logo-container img {
+    width: 380px;
+  }
 }
+
+
 
 
 /* BUTTON */
@@ -687,6 +676,7 @@ a.button-link {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 
 
