@@ -41,6 +41,29 @@ body {
   display: block;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.6));
 }
+/* CENTRAR LOGO NUEVO */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 180px;      /* ajustable */
+    height: auto;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-container img {
+        width: 150px;
+    }
+}
+
+
 
 /* BUTTON */
 .hero-btn,
@@ -473,6 +496,23 @@ a.button-link {
     margin: 10px auto;
 }
 
+/* FIX BOTONES mobile */
+@media (max-width: 768px) {
+    .home-buttons {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 16px;
+        margin: 0 auto !important;
+        width: 100%;
+    }
+
+    .home-buttons a {
+        margin: 0 auto !important;
+    }
+}
 
 
 
