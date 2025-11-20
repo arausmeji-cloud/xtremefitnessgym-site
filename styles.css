@@ -647,5 +647,46 @@ a.button-link {
     }
 }
 
+/* FINAL LOGO SIZE XF */
+.logo-container img {
+    width: 380px !important;   /* Desktop */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-container img {
+        width: 300px !important;   /* Mobile grande */
+    }
+}
+
+/* MAP CONTAINER FIX */
+.contact-map {
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}
+
+.gallery-links a {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #b6ff00;
+    border-radius: 30px;
+    color: #b6ff00;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.gallery-links a:hover {
+    background: #b6ff00;
+    color: #000;
+}
+
+.gallery-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 
