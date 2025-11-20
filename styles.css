@@ -367,6 +367,21 @@ textarea {
   }
 }
 
+/* CONTACT FORM – GLOW VERDE XF */
+.contact-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(156, 255, 0, 0.3); /* Glow verde XF */
+}
+
+/* MAPA – MARCO A JUEGO */
+.map-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(156, 255, 0, 0.3);
+}
 
 
 
