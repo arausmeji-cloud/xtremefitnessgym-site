@@ -73,7 +73,7 @@ body {
 
 .hero {
     height: 85vh;
-    background: url('hero.jpg') center/cover no-repeat fixed;
+    background: url('images/hero-bg-2.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,4 +279,5 @@ h2 {
         gap: 15px;
     }
 }
+
 
