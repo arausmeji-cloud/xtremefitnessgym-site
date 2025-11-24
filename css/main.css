@@ -49,23 +49,19 @@ body {
     border-bottom: 1px solid #111;
 }
 
-.logo {
-    width: 210px;     /* tamaño más grande */
+/* LOGO CENTRADO ARRIBA */
+.logo-header {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: transparent;
+}
+
+.logo-header img {
+    width: 240px;
     height: auto;
-    display: block;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--text-light);
-    font-weight: 600;
-    font-size: 1.05rem;
-    transition: 0.25s ease-in-out;
-}
-
-.nav a:hover {
-    color: var(--xf-green);
-}
 /* ======================================
    HERO
 ====================================== */
@@ -278,6 +274,7 @@ h2 {
         gap: 15px;
     }
 }
+
 
 
 
