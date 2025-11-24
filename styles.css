@@ -30,12 +30,12 @@ body {
 }
 
 /* ======================================
-   HEADER
+   HEADER – FIXED
 ====================================== */
 
 .header {
     width: 100%;
-    padding: 25px 40px;
+    padding: 15px 40px;
     background: var(--light-bg);
     display: flex;
     justify-content: space-between;
@@ -46,26 +46,27 @@ body {
     border-bottom: 1px solid #222;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    width: 160px;
+    width: 155px;
     height: auto;
 }
 
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
 .nav a {
-    margin-left: 25px;
     text-decoration: none;
     color: var(--text-light);
     font-weight: 600;
     transition: var(--transition);
 }
-
-.nav a:hover {
-    color: var(--dark-bg);
-    background: var(--xf-green);
-    padding: 6px 12px;
-    border-radius: 4px;
-}
-
 /* ======================================
    HERO
 ====================================== */
@@ -278,3 +279,4 @@ h2 {
         gap: 15px;
     }
 }
+
