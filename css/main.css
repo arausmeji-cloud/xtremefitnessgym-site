@@ -37,31 +37,34 @@ body {
 
 .header {
     width: 100%;
-    padding: 15px 40px;
-    background: var(--light-bg);
+    padding: 25px 50px;
+    background: rgba(10, 10, 10, 0.92); /* un poco transparente para fundirse */
+    backdrop-filter: blur(6px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #222;
+    z-index: 1000;
+    border-bottom: 1px solid #111;
 }
 
 .logo {
-    width: 155px;
+    width: 210px;     /* tamaño más grande */
     height: auto;
-}
-.nav {
-    display: flex;
-    gap: 25px;
+    display: block;
 }
 
 .nav a {
     text-decoration: none;
     color: var(--text-light);
     font-weight: 600;
-    transition: var(--transition);
+    font-size: 1.05rem;
+    transition: 0.25s ease-in-out;
+}
+
+.nav a:hover {
+    color: var(--xf-green);
 }
 /* ======================================
    HERO
@@ -275,6 +278,7 @@ h2 {
         gap: 15px;
     }
 }
+
 
 
 
