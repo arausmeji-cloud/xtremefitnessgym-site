@@ -3,6 +3,10 @@
    Limpio – Moderno – Responsive
 ====================================== */
 
+body {
+    border: 10px solid red;
+}
+
 /* ---------- VARIABLES ---------- */
 :root {
     --xf-yellow: #ffe800;
@@ -279,5 +283,6 @@ h2 {
         gap: 15px;
     }
 }
+
 
 
