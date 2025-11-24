@@ -22,21 +22,20 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--dark-bg);
+    background: url('../images/dark-texture-bg.jpg') center/cover fixed no-repeat;
     color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* ===========================
    LOGO GIGANTE ARRIBA
 =========================== */
 .logo-header {
-    width: 100%;
-    text-align: center;
-    padding: 35px 0;
+    padding: 50px 0 20px 0; /* más espacio arriba y abajo */
 }
 
 .logo-header img {
-    width: 280px; /* Opción C (más grande) */
+    width: 340px; /* más grande */
     height: auto;
 }
 
@@ -201,3 +200,4 @@ h2 {
     color: var(--text-muted);
     border-top: 1px solid #222;
 }
+
