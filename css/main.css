@@ -48,16 +48,10 @@ body {
     border-bottom: 1px solid #222;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     width: 155px;
     height: auto;
 }
-
 .nav {
     display: flex;
     gap: 25px;
@@ -281,6 +275,7 @@ h2 {
         gap: 15px;
     }
 }
+
 
 
 
