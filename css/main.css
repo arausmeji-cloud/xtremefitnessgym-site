@@ -135,7 +135,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
 }
 
@@ -257,7 +257,7 @@ body {
    MOBILE RESPONSIVE
    ====================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
@@ -295,5 +295,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
