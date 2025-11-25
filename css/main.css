@@ -295,6 +295,59 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ===============================
+   XF IMPACT SECTION
+   =============================== */
+
+.impact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.impact-section h2 {
+    font-size: 2.8rem;
+    color: var(--text-green);
+    margin-bottom: 20px;
+}
+
+.impact-intro {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--text-green);
+}
+
+.impact-card h3 {
+    color: var(--text-yellow);
+    margin-bottom: 10px;
+}
+
+.impact-card p {
+    color: var(--text-muted);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
