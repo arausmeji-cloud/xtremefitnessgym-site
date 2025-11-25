@@ -97,6 +97,7 @@ body {
    NAV CENTRADO
 ====================================== */
 
+/* NAV CENTRADO */
 .nav-under-hero {
     width: 100%;
     padding: 25px 0;
@@ -111,32 +112,16 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    border: 1px solid var(--xf-green);
+    border: 2px solid var(--xf-green);
     border-radius: 6px;
     background: rgba(0,0,0,0.4);
-    transition: 0.25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 .nav-under-hero a:hover {
     background: var(--xf-green);
     color: #000;
     border-color: var(--xf-yellow);
-}
-/* ======================================
-   SECTIONS GLOBAL
-====================================== */
-
-section {
-    padding: 70px 20px;
-    max-width: var(--max-width);
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.4rem;
-    color: var(--xf-green);
-    margin-bottom: 40px;
 }
 
 /* ======================================
@@ -300,6 +285,7 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
