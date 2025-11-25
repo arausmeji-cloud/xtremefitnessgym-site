@@ -1,16 +1,16 @@
 /* ======================================
-   XTREME FITNESS GYM – FINAL CSS
-====================================== */
+   XTREME FITNESS GYM — FINAL CSS
+   ====================================== */
 
 /* ---------- VARIABLES ---------- */
 :root {
-    --xf-yellow: #ffe800;
-    --xf-green: #00ff6a;
+    --xf-yellow: #ffe600;
+    --xf-green: #a0ff6a;
     --dark-bg: #0a0a0a;
     --light-bg: #111;
     --text-light: #eee;
     --text-muted: #aaa;
-    --transition: 0.25s ease-in-out;
+    --transition: .25s ease-in-out;
     --max-width: 1200px;
 }
 
@@ -29,47 +29,42 @@ body {
 }
 
 /* ======================================
-   LOGO GIGANTE CENTRADO ARRIBA
-====================================== */
-
+   LOGO PRINCIPAL — PROTAGONISTA
+   ====================================== */
 .logo-header {
-    width: 100%;
     text-align: center;
-    padding: 150px 0 60px; /* baja el logo */
+    padding: 120px 0 60px; /* Espacio equilibrado arriba y abajo */
 }
 
 .logo-header img {
-    width: 480px; /* tamaño ideal para hero */
-    max-width: 90%;
+    width: 500px;      /* LOGO GRANDE */
+    max-width: 80%;    /* Escala perfecta en mobile */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 /* ======================================
-   HERO
-====================================== */
-
+   HERO SECTION
+   ====================================== */
 .hero {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     text-align: center;
-    padding: 30px;
+    padding: 10px 20px 40px;
 }
 
 .hero-content h1 {
-    font-size: 3.6rem;
+    font-size: 3rem;
     color: var(--xf-yellow);
     letter-spacing: 4px;
 }
 
 .hero-content p {
     font-size: 1.4rem;
-    margin: 18px 0 35px;
+    margin: 15px 0;
 }
 
+/* BOTÓN PRINCIPAL */
 .btn-primary {
     background: var(--xf-green);
     color: var(--dark-bg);
@@ -86,22 +81,13 @@ body {
     color: #000;
     transform: translateY(-3px);
 }
-.motto {
-    font-size: 1.8rem;
-    color: var(--xf-yellow);
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
 
 /* ======================================
-   NAV CENTRADO
-====================================== */
-
-/* NAV CENTRADO */
+   NAV — CENTRADO DEBAJO DEL HERO
+   ====================================== */
 .nav-under-hero {
     width: 100%;
     padding: 25px 0;
-    background: transparent;
     text-align: center;
 }
 
@@ -125,9 +111,25 @@ body {
 }
 
 /* ======================================
-   SERVICES
-====================================== */
+   SECTIONS — GLOBAL
+   ====================================== */
+section {
+    padding: 20px 20px;
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+}
 
+section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--xf-green);
+    margin-bottom: 40px;
+}
+
+/* ======================================
+   WHAT WE OFFER — SERVICES
+   ====================================== */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,34 +149,10 @@ body {
     transform: translateY(-6px);
     border-color: var(--xf-green);
 }
-.gallery-menu {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.gallery-btn {
-    padding: 14px 28px;
-    background: rgba(0,0,0,0.7);
-    border: 2px solid var(--xf-green);
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--xf-yellow);
-    text-decoration: none;
-    transition: 0.25s ease-in-out;
-}
-
-.gallery-btn:hover {
-    background: var(--xf-green);
-    color: #000;
-}
 
 /* ======================================
-   GALLERY
-====================================== */
-
+   GALLERY — SOLO UNA (la de abajo)
+   ====================================== */
 .gallery-menu {
     display: flex;
     justify-content: center;
@@ -191,20 +169,20 @@ body {
     font-weight: 600;
     color: var(--xf-yellow);
     text-decoration: none;
-    transition: 0.25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 .gallery-btn:hover {
     background: var(--xf-green);
     color: #000;
 }
+
 /* ======================================
    CONTACT
-====================================== */
-
+   ====================================== */
 .contact-container {
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
     align-items: start;
 }
@@ -246,8 +224,7 @@ body {
 
 /* ======================================
    FOOTER
-====================================== */
-
+   ====================================== */
 .footer {
     text-align: center;
     padding: 25px 0;
@@ -256,42 +233,24 @@ body {
 
 /* ======================================
    MOBILE RESPONSIVE
-====================================== */
-
-@media (max-width: 900px) {
+   ====================================== */
+@media (max-width: 980px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
-
-    .gallery-grid {
-        grid-template-columns: 1fr 1fr;
+    .gallery-menu {
+        flex-direction: column;
     }
-
     .contact-container {
         grid-template-columns: 1fr;
     }
-
     .logo-header img {
-        width: 180px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.6rem;
+        width: 340px;
     }
 }
 
-@media (max-width: 600px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 680px) {
+    .logo-header img {
+        width: 260px;
     }
 }
-
-
-
-
-
-
-
-
-
-
