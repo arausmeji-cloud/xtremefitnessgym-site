@@ -317,15 +317,24 @@ body {
     border-radius: 8px;
 }
 
-/* Mobile */
+
+/* Desktop */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Tablet */
 @media (max-width: 900px) {
-    .services-grid {
+    .impact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
-    .services-grid {
+    .impact-grid {
         grid-template-columns: 1fr;
     }
 }
