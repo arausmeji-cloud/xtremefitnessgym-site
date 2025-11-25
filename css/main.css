@@ -99,15 +99,21 @@ body {
 
 .nav-under-hero a {
     color: var(--xf-yellow);
-    margin: 0 30px;
+    margin: 0 25px;
+    padding: 10px 18px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.3rem;
-    transition: 0.25s;
+    font-size: 1.1rem;
+    border: 1px solid var(--xf-green);
+    border-radius: 6px;
+    background: rgba(0,0,0,0.4);
+    transition: 0.25s ease-in-out;
 }
 
 .nav-under-hero a:hover {
-    color: var(--xf-green);
+    background: var(--xf-green);
+    color: #000;
+    border-color: var(--xf-yellow);
 }
 
 /* ======================================
@@ -260,4 +266,5 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
 
