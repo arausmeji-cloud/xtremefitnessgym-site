@@ -115,7 +115,6 @@ body {
     color: #000;
     border-color: var(--xf-yellow);
 }
-
 /* ======================================
    SECTIONS GLOBAL
 ====================================== */
@@ -266,5 +265,6 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
