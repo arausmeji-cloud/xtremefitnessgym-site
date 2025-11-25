@@ -35,11 +35,11 @@ body {
 .logo-header {
     width: 100%;
     text-align: center;
-    padding: 40px 0 20px;
+    padding: 80px 0 40px; /* MÁS ABAJO */
 }
 
 .logo-header img {
-    width: 280px;
+    width: 350px; /* MÁS GRANDE */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -260,3 +260,4 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
