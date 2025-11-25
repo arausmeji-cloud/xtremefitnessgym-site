@@ -33,7 +33,7 @@ body {
    ====================================== */
 .logo-header {
     text-align: center;
-    padding: 120px 0 60px; /* Espacio equilibrado arriba y abajo */
+    padding: 100px 0 30px; /* baja el logo y reduce el espacio */
 }
 
 .logo-header img {
@@ -254,3 +254,4 @@ section h2 {
         width: 260px;
     }
 }
+
