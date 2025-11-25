@@ -1,20 +1,20 @@
 /* ======================================
-   XTREME FITNESS GYM — FINAL CSS
+   XTREME FITNESS GYM — FINAL CLEAN CSS
    ====================================== */
 
-/* ---------- VARIABLES ---------- */
+/* -------- VARIABLES -------- */
 :root {
     --xf-yellow: #ffe600;
-    --xf-green: #a0ff6a;
+    --xf-green: #a4ff0a;
     --dark-bg: #0a0a0a;
     --light-bg: #111;
     --text-light: #eee;
     --text-muted: #aaa;
-    --transition: .25s ease-in-out;
-    --max-width: 1200px;
+    --transition: 0.25s ease-in-out;
+    --max-width: 1280px;
 }
 
-/* ---------- RESET ---------- */
+/* -------- RESET -------- */
 * {
     margin: 0;
     padding: 0;
@@ -29,16 +29,16 @@ body {
 }
 
 /* ======================================
-   LOGO PRINCIPAL — PROTAGONISTA
+   LOGO GIGANTE CENTRADO
    ====================================== */
 .logo-header {
     text-align: center;
-    padding: 100px 0 30px; /* baja el logo y reduce el espacio */
+    padding: 110px 0 40px; /* MENOS ESPACIO ARRIBA */
 }
 
 .logo-header img {
-    width: 500px;      /* LOGO GRANDE */
-    max-width: 80%;    /* Escala perfecta en mobile */
+    width: 540px; /* AGRANDADO 20% */
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -48,128 +48,141 @@ body {
    HERO SECTION
    ====================================== */
 .hero {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
     text-align: center;
-    padding: 10px 20px 40px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: var(--xf-yellow);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 .hero-content p {
     font-size: 1.4rem;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
-/* BOTÓN PRINCIPAL */
+/* ======================================
+   BOTÓN PRO XF (UNIFICADO)
+   ====================================== */
 .btn-primary {
-    background: var(--xf-green);
-    color: var(--dark-bg);
-    padding: 14px 28px;
-    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.4);
+    border: 2px solid var(--xf-green);
+    border-radius: 8px;
     font-weight: bold;
+    color: var(--xf-yellow);
     text-decoration: none;
     transition: var(--transition);
     display: inline-block;
 }
 
 .btn-primary:hover {
-    background: var(--xf-yellow);
+    background: var(--xf-green);
     color: #000;
-    transform: translateY(-3px);
+    border-color: var(--xf-green);
 }
 
 /* ======================================
-   NAV — CENTRADO DEBAJO DEL HERO
+   MENÚ CENTRADO DEBAJO DEL HERO
    ====================================== */
 .nav-under-hero {
     width: 100%;
-    padding: 25px 0;
     text-align: center;
+    margin-top: 25px;
 }
 
 .nav-under-hero a {
     color: var(--xf-yellow);
-    margin: 0 25px;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
+    margin: 10px;
+    padding: 10px 22px;
     border: 2px solid var(--xf-green);
     border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
     background: rgba(0,0,0,0.4);
-    transition: .25s ease-in-out;
+    transition: var(--transition);
 }
 
 .nav-under-hero a:hover {
     background: var(--xf-green);
     color: #000;
-    border-color: var(--xf-yellow);
 }
 
 /* ======================================
-   SECTIONS — GLOBAL
+   SERVICES
    ====================================== */
-section {
-    padding: 20px 20px;
+.services {
+    text-align: center;
     max-width: var(--max-width);
-    margin: auto;
-    text-align: center;
+    margin: 80px auto 40px;
+    padding: 0 20px;
 }
 
-section h2 {
-    text-align: center;
+.services h2 {
     font-size: 2.4rem;
-    color: var(--xf-green);
     margin-bottom: 40px;
+    color: var(--xf-green);
 }
 
-/* ======================================
-   WHAT WE OFFER — SERVICES
-   ====================================== */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 35px;
 }
 
 .service-box {
     background: rgba(20, 20, 20, 0.8);
     padding: 25px;
     border-radius: 10px;
-    text-align: center;
-    border: 1px solid #222;
+    border: 2px solid #222;
     transition: var(--transition);
 }
 
 .service-box:hover {
-    transform: translateY(-6px);
+    margin-top: -6px;
     border-color: var(--xf-green);
 }
 
 /* ======================================
-   GALLERY — SOLO UNA (la de abajo)
+   GALLERY MENU
    ====================================== */
+.gallery {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: var(--xf-green);
+    font-size: 2.3rem;
+    margin-bottom: 35px;
+}
+
 .gallery-menu {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .gallery-btn {
     padding: 14px 28px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.4);
     border: 2px solid var(--xf-green);
     border-radius: 8px;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--xf-yellow);
     text-decoration: none;
-    transition: .25s ease-in-out;
+    transition: var(--transition);
 }
 
 .gallery-btn:hover {
@@ -180,23 +193,37 @@ section h2 {
 /* ======================================
    CONTACT
    ====================================== */
+.contact {
+    margin-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--xf-green);
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
-    align-items: start;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-map iframe {
     width: 100%;
     height: 330px;
+    border-radius: 5px;
     border: 0;
-    border-radius: 8px;
 }
 
 .contact-text p {
     margin-bottom: 14px;
-    color: var(--text-muted);
+    color: var(--text-light);
 }
 
 .contact-form form {
@@ -210,21 +237,16 @@ section h2 {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 5px;
-    outline: none;
     background: #1b1b1b;
+    border-radius: 6px;
     color: var(--text-light);
-    font-size: 1rem;
 }
 
 .contact-form textarea {
     height: 120px;
-    resize: none;
 }
 
-/* ======================================
-   FOOTER
-   ====================================== */
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 25px 0;
@@ -234,24 +256,44 @@ section h2 {
 /* ======================================
    MOBILE RESPONSIVE
    ====================================== */
-@media (max-width: 980px) {
+
+@media (max-width: 900px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
     .gallery-menu {
         flex-direction: column;
     }
+
+    .gallery-btn {
+        text-align: center;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
+        text-align: center;
     }
-    .logo-header img {
-        width: 340px;
+
+    .nav-under-hero a {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
     .logo-header img {
-        width: 260px;
+        width: 340px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
+
 
