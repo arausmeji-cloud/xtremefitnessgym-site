@@ -86,6 +86,12 @@ body {
     color: #000;
     transform: translateY(-3px);
 }
+.motto {
+    font-size: 1.8rem;
+    color: var(--xf-yellow);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
 /* ======================================
    NAV CENTRADO
@@ -294,6 +300,7 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
