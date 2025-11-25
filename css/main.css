@@ -35,11 +35,12 @@ body {
 .logo-header {
     width: 100%;
     text-align: center;
-    padding: 120px 0 50px; /* BAJAR EL LOGO */
+    padding: 150px 0 60px; /* baja el logo */
 }
 
 .logo-header img {
-    width: 420px; /* LOGO GRANDE */
+    width: 480px; /* tamaño ideal para hero */
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -293,6 +294,7 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
