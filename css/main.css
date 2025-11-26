@@ -173,7 +173,7 @@ body {
    GALLERY MENU
    ====================================== */
 .gallery {
-    margin-top: 80px;
+    margin-top: 120px;
     text-align: center;
 }
 
@@ -211,12 +211,9 @@ body {
    CONTACT
    ====================================== */
 .contact {
-    padding: 60px 20px;
-    margin-top: 80px; /* SUBE el título Contact Us */
+    padding: 40px 20px 60px; /* top - lados - bottom */
     text-align: center;
 }
-
-
 
 .contact h2 {
     color: var(--xf-green);
@@ -265,14 +262,7 @@ body {
     height: 120px;
 }
 
-.contact-text p.contact-email {
-    border: 2px solid #b6ff00;   /* borde verde XF */
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-}
+
 .contact-email {
     background: rgba(0,0,0,0.6);
     border: 2px solid #d6ff00; /* Amarillo XF */
@@ -377,6 +367,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
