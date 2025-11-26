@@ -485,3 +485,25 @@ body {
     max-height: 90%;
     border-radius: 10px;
 }
+/* BOTONES DE NAVEGACIÓN DEL LIGHTBOX */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--xf-yellow);
+    border: 2px solid var(--xf-yellow);
+    padding: 10px 18px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10000;
+}
+
+#prev-btn { left: 30px; }
+#next-btn { right: 30px; }
+
+.nav-btn:hover {
+    background: var(--xf-yellow);
+    color: #000;
+}
