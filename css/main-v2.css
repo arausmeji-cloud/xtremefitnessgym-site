@@ -466,7 +466,7 @@ body {
     box-shadow: 0 0 15px var(--xf-green);
 }
 
-/* LIGHTBOX */
+/* ========== LIGHTBOX ========== */
 #lightbox {
     position: fixed;
     top: 0;
@@ -485,23 +485,28 @@ body {
     max-height: 90%;
     border-radius: 10px;
 }
-/* BOTONES DE NAVEGACIÓN DEL LIGHTBOX */
+
+/* Botones de navegación */
 .nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     color: var(--xf-yellow);
     border: 2px solid var(--xf-yellow);
-    padding: 10px 18px;
-    font-size: 2rem;
+    padding: 12px 18px;
+    font-size: 30px;
     cursor: pointer;
-    border-radius: 8px;
-    z-index: 9990;
+    z-index: 10000;
 }
 
-#prev-btn { left: 30px; }
-#next-btn { right: 30px; }
+.prev-btn {
+    left: 30px;
+}
+
+.next-btn {
+    right: 30px;
+}
 
 .nav-btn:hover {
     background: var(--xf-yellow);
