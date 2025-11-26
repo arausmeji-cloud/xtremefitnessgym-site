@@ -20,7 +20,7 @@
 <section class="gallery-photos">
     <div class="gallery-grid">
 
-        <!-- RUTAS REALES SEGÚN TU GITHUB -->
+        <!-- Imágenes correctas con THUMBNAIL -->
         <img src="images/gallery/bjj/bjj-1.jpg" class="gallery-thumb">
         <img src="images/gallery/bjj/bjj-2.jpg" class="gallery-thumb">
         <img src="images/gallery/bjj/bjj-3.jpg" class="gallery-thumb">
@@ -40,6 +40,13 @@
 </footer>
 
 <!-- ============= LIGHTBOX ============= -->
+<div id="lightbox">
+    <button class="nav-btn prev-btn" id="prev-btn">&#10094;</button>
+    <img src="">
+    <button class="nav-btn next-btn" id="next-btn">&#10095;</button>
+</div>
+
+<!-- ============= SCRIPT ============== -->
 <script>
     const images = Array.from(document.querySelectorAll(".gallery-thumb"));
     let currentIndex = 0;
@@ -60,29 +67,16 @@
         lightboxImg.src = images[currentIndex].src;
     }
 
-    // Botones
+    // Botón siguiente
     document.getElementById("next-btn").addEventListener("click", (event) => {
         event.stopPropagation();
         currentIndex = (currentIndex + 1) % images.length;
         showImage();
     });
 
+    // Botón anterior
     document.getElementById("prev-btn").addEventListener("click", (event) => {
         event.stopPropagation();
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage();
     });
-
-    // Cerrar lightbox al hacer clic afuera
-    lightbox.addEventListener("click", () => {
-        lightbox.style.display = "none";
-    });
-</script>
-
-document.getElementById("lightbox").addEventListener("click", function() {
-    this.style.display = "none";
-});
-</script>
-
-</body>
-</html>
