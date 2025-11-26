@@ -273,7 +273,9 @@ body {
     padding-top: 20px;
     text-align: center;
 }
-
+.contact h2 {
+    margin-top: -20px !important;
+}
 .contact h2 {
     margin-bottom: 30px;
 }
@@ -331,9 +333,20 @@ body {
     height: 120px;
 }
 .contact-form {
-    margin-left: -10px !important;
+    margin-left: -4px !important;
+}
+/* Unificar tamaño de texto en inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
 }
 
+/* Glow al pasar el cursor por MESSAGE */
+.contact-form textarea:hover {
+    border-color: var(--xf-yellow) !important;
+    box-shadow: 0 0 8px var(--xf-green) !important;
+}
 
 /* Placeholder estilo XF */
 .contact-form input::placeholder,
