@@ -497,7 +497,7 @@ body {
     font-size: 2rem;
     cursor: pointer;
     border-radius: 8px;
-    z-index: 10000;
+    z-index: 9990;
 }
 
 #prev-btn { left: 30px; }
