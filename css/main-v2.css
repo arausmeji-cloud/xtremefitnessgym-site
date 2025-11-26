@@ -206,6 +206,11 @@ body {
     background: var(--xf-green);
     color: #000;
 }
+/* Botón del formulario ajustado */
+.contact-form .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+}
 
 /* ======================================
    XF IMPACT
@@ -336,6 +341,30 @@ body {
     color: #eaeaea !important;
     font-size: 1.1rem !important;
 }
+
+/* Campos del formulario estilo XF */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid var(--xf-green);
+    background: rgba(0,0,0,0.55);
+    border-radius: 8px;
+    color: var(--xf-yellow);
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    transition: 0.25s ease-in-out;
+}
+
+/* Efecto al hacer clic */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--xf-yellow);
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0 0 8px var(--xf-green);
+}
+
 
 /* ======================
    FIX EMAIL BOX
