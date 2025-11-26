@@ -173,7 +173,7 @@ body {
    GALLERY MENU
    ====================================== */
 .gallery-section {
-    margin-top: 120px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -211,12 +211,12 @@ body {
    CONTACT
    ====================================== */
 .contact {
-    padding: 40px 20px 60px; /* top - lados - bottom */
+    padding: 20px; /* top - lados - bottom */
     text-align: center;
 }
 
 .contact h2 {
-    margin-top: 20px;     /* sube solo el título sin mover todo */
+    margin-top: 0px;     /* sube solo el título sin mover todo */
     margin-bottom: 30px;  /* ajusta el aire hacia abajo */
 }
 
@@ -327,9 +327,9 @@ body {
 /* ===============================
    XF IMPACT SECTION
    =============================== */
-.impact-section {
-    padding: 40px 20px;
-    text-align: center;
+
+   .impact-section {
+    margin-bottom: 40px;
 }
 
 .impact-grid {
@@ -366,6 +366,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
