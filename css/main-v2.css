@@ -211,6 +211,13 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+.gallery-btn {
+    box-shadow: 0 0 6px rgba(164,255,10,0.35);
+}
+
+.gallery-btn:hover {
+    box-shadow: 0 0 12px rgba(164,255,10,0.7);
+}
 
 /* ======================================
    XF IMPACT
@@ -253,6 +260,12 @@ body {
     font-size: 1.4rem !important;
     margin-bottom: 10px;
 }
+.impact-section h2 {
+    color: var(--xf-green) !important;
+    text-shadow: 0 0 10px rgba(164,255,10,0.5);
+}
+
+
 /* ======================================
    CONTACT
    ====================================== */
@@ -286,7 +299,7 @@ body {
 }
 
 .contact-email {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.60) !important;
     border: 3px solid #d6ff00;
     display: inline-block;
     padding: 12px 18px;
@@ -311,11 +324,16 @@ body {
     background: #1b1b1b;
     border-radius: 6px;
     color: var(--text-light);
+   font-size: 1rem !important;
 }
 
 .contact-form textarea {
     height: 120px;
 }
+.contact-form {
+    margin-left: -10px !important;
+}
+
 
 /* Placeholder estilo XF */
 .contact-form input::placeholder,
@@ -340,6 +358,11 @@ body {
     font-size: 2.5rem !important;
     margin-bottom: 35px !important;
 }
+
+.contact h2 {
+    margin-top: -10px !important;
+}
+
 
 .contact-text h3 {
     color: var(--xf-yellow) !important;
