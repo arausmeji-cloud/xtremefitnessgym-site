@@ -172,7 +172,7 @@ body {
 /* ======================================
    GALLERY MENU
    ====================================== */
-.gallery {
+.gallery-section {
     margin-top: 120px;
     text-align: center;
 }
@@ -216,9 +216,8 @@ body {
 }
 
 .contact h2 {
-    color: var(--xf-green);
-    font-size: 2.4rem;
-    margin-bottom: 40px;
+    margin-top: 20px;     /* sube solo el título sin mover todo */
+    margin-bottom: 30px;  /* ajusta el aire hacia abajo */
 }
 
 .contact-container {
@@ -262,23 +261,23 @@ body {
     height: 120px;
 }
 
-
 .contact-email {
-    background: rgba(0,0,0,0.6);
-    border: 2px solid #d6ff00; /* Amarillo XF */
+    background: rgba(0,0,0,0.7);
+    border: 3px solid #d6ff00;   /* borde XF fuerte */
     display: inline-block;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 700;
     color: #fff;
     margin-top: 10px;
 }
+
 /* FOOTER */
 
 .footer {
     text-align: center;
-    padding: 40px 0 60px; /* top 40px - left/right 0 - bottom 60px */
+    padding: 40px 0 90px; /* top 40px - left/right 0 - bottom 60px */
     color: #d6ff00;
     font-size: 14px;
 }
@@ -367,6 +366,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
