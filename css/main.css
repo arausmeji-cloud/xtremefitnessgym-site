@@ -211,7 +211,7 @@ body {
    CONTACT
    ====================================== */
 .contact {
-    padding: 20px; /* top - lados - bottom */
+    padding-top: 20px; /* top - lados - bottom */
     text-align: center;
 }
 
@@ -366,6 +366,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
