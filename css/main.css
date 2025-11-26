@@ -56,10 +56,13 @@ body {
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 2.8rem;   /* antes estaba más grande */
-    margin-bottom: 15px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #d6ff00; /* Amarillo XF */
+    font-weight: 700;
 }
+
 
 .hero h2 {
     font-size: 2.5rem;
@@ -354,6 +357,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
