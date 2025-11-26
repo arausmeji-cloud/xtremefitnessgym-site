@@ -440,4 +440,48 @@ body {
 .btn-primary {
     margin-top: 10px !important;
 }
+/* ============================
+   GALLERY THUMBNAILS
+   ============================ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
 
+.gallery-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 2px solid var(--xf-yellow);
+}
+
+/* Hover */
+.gallery-thumb:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px var(--xf-green);
+}
+
+/* LIGHTBOX */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
