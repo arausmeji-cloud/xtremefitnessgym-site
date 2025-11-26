@@ -211,10 +211,12 @@ body {
    CONTACT
    ====================================== */
 .contact {
-    margin-top: 80px;
-    padding-bottom: 40px;
+    padding: 60px 20px;
+    margin-top: 80px; /* SUBE el título Contact Us */
     text-align: center;
 }
+
+
 
 .contact h2 {
     color: var(--xf-green);
@@ -283,9 +285,11 @@ body {
     margin-top: 10px;
 }
 /* FOOTER */
-footer p {
-    color: #d6ff00; /* Amarillo XF */
+
+.footer {
     text-align: center;
+    padding: 40px 0 60px; /* top 40px - left/right 0 - bottom 60px */
+    color: #d6ff00;
     font-size: 14px;
 }
 
@@ -373,6 +377,7 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
