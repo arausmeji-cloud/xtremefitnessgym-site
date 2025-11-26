@@ -317,6 +317,15 @@ body {
     height: 120px;
 }
 
+/* Placeholder estilo XF */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 230, 0, 0.65); /* Amarillo XF suave */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
 /* ======================
    FIX CONTACT SECTION
    ====================== */
