@@ -265,21 +265,24 @@ body {
     text-shadow: 0 0 10px rgba(164,255,10,0.5);
 }
 
-
 /* ======================================
    CONTACT
    ====================================== */
+
 .contact {
-    padding-top: 20px;
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
     text-align: center;
 }
+
 .contact h2 {
-    margin-top: -20px !important;
-}
-.contact h2 {
-    margin-bottom: 30px;
+    color: var(--xf-green) !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 35px !important;
+    margin-top: -20px !important; /* SUBIDO */
 }
 
+/* GRID */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -289,6 +292,7 @@ body {
     padding: 0 20px;
 }
 
+/* MAPA */
 .contact-map iframe {
     width: 100%;
     height: 330px;
@@ -296,98 +300,47 @@ body {
     border: 0;
 }
 
+/* TEXTO CENTRAL */
+.contact-text h3 {
+    color: var(--xf-yellow) !important;
+    font-size: 1.4rem !important;
+}
 .contact-text p {
+    color: #eaeaea !important;
+    font-size: 1.1rem !important;
     margin-bottom: 14px;
 }
 
+/* CAJA DE EMAIL */
 .contact-email {
-    background: rgba(0,0,0,0.60) !important;
-    border: 3px solid #d6ff00;
-    display: inline-block;
-    padding: 12px 18px;
-    border-radius: 12px;
-    font-size: 17px;
+    background: rgba(0,0,0,0.6) !important;
+    border: 3px solid var(--xf-yellow) !important;
+    padding: 14px 22px !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    font-size: 18px !important;
     font-weight: 700;
-    color: #fff;
+    display: inline-block;
     margin-top: 10px;
 }
 
+/* FORMULARIO – CAJA EXTERIOR */
+.contact-form {
+    padding: 20px !important;
+    border: 3px solid var(--xf-yellow) !important;
+    border-radius: 12px !important;
+    background: rgba(0,0,0,0.45) !important;
+    margin-left: -2px !important; /* CENTRADO */
+}
+
+/* FORMULARIO INTERNOS */
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #1b1b1b;
-    border-radius: 6px;
-    color: var(--text-light);
-   font-size: 1rem !important;
-}
-
-.contact-form textarea {
-    height: 120px;
-}
-.contact-form {
-    margin-left: -4px !important;
-}
-/* Unificar tamaño de texto en inputs y textarea */
-.contact-form input,
-.contact-form textarea {
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-}
-
-/* Glow al pasar el cursor por MESSAGE */
-.contact-form textarea:hover {
-    border-color: var(--xf-yellow) !important;
-    box-shadow: 0 0 8px var(--xf-green) !important;
-}
-
-/* Placeholder estilo XF */
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: rgba(255, 230, 0, 0.65); /* Amarillo XF suave */
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-
-/* ======================
-   FIX CONTACT SECTION
-   ====================== */
-
-.contact {
-    padding-top: 40px !important;
-    padding-bottom: 60px !important;
-}
-
-.contact h2 {
-    color: var(--xf-green) !important;
-    font-size: 2.5rem !important;
-    margin-bottom: 35px !important;
-}
-
-.contact h2 {
-    margin-top: -10px !important;
-}
-
-
-.contact-text h3 {
-    color: var(--xf-yellow) !important;
-    font-size: 1.4rem !important;
-}
-
-.contact-text p {
-    color: #eaeaea !important;
-    font-size: 1.1rem !important;
-}
-
-/* Campos del formulario estilo XF */
+/* CAMPOS UNIFICADOS */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -396,42 +349,38 @@ body {
     background: rgba(0,0,0,0.55);
     border-radius: 8px;
     color: var(--xf-yellow);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
     outline: none;
     transition: 0.25s ease-in-out;
 }
 
-/* Efecto al hacer clic */
+/* ALTURA DEL TEXTAREA */
+.contact-form textarea {
+    height: 120px;
+}
+
+/* PLACEHOLDER XF */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 230, 0, 0.65);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+/* HOVER */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: var(--xf-yellow) !important;
+    box-shadow: 0 0 8px var(--xf-green) !important;
+}
+
+/* FOCUS */
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: var(--xf-yellow);
-    background: rgba(0,0,0,0.75);
-    box-shadow: 0 0 8px var(--xf-green);
-}
-
-
-/* ======================
-   FIX EMAIL BOX
-   ====================== */
-
-.contact-email {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border: 3px solid var(--xf-yellow) !important;
-
-    color: #fff !important;
-    padding: 14px 22px !important;
-    font-size: 18px !important;
-    border-radius: 12px !important;
-}
-
-/* Doble borde estilo XF para el formulario */
-.contact-form {
-    padding: 20px !important;
-    border: 3px solid var(--xf-yellow) !important;
-   
-    border-radius: 12px !important;
-    background: rgba(0,0,0,0.45) !important;
+    border-color: var(--xf-yellow) !important;
+    background: rgba(0,0,0,0.75) !important;
+    box-shadow: 0 0 8px var(--xf-green) !important;
 }
 
 /* ======================================
