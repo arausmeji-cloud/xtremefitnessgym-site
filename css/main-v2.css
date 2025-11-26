@@ -344,13 +344,21 @@ body {
 .contact-email {
     background: rgba(0, 0, 0, 0.6) !important;
     border: 3px solid var(--xf-yellow) !important;
-    box-shadow: 0 0 0 3px var(--xf-green) !important; /* marco externo */
+
     color: #fff !important;
     padding: 14px 22px !important;
     font-size: 18px !important;
     border-radius: 12px !important;
 }
 
+/* Doble borde estilo XF para el formulario */
+.contact-form {
+    padding: 20px !important;
+    border: 3px solid var(--xf-yellow) !important;
+    box-shadow: 0 0 0 3px var(--xf-green) !important;
+    border-radius: 12px !important;
+    background: rgba(0,0,0,0.45) !important;
+}
 
 /* ======================================
    FOOTER
