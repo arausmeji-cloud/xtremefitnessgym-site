@@ -174,3 +174,20 @@
 
 </body>
 </html>
+<script>
+document.querySelectorAll(".gallery-thumb").forEach(img => {
+    img.addEventListener("click", function() {
+        let lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "flex";
+        lightbox.querySelector("img").src = this.src;
+    });
+});
+
+document.getElementById("lightbox").addEventListener("click", function() {
+    this.style.display = "none";
+});
+</script>
+
+<div id="lightbox">
+    <img src="">
+</div>
