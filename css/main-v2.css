@@ -609,6 +609,11 @@ body {
 }
 
 .xf-btn:hover {
-    background: var(--xf-green); /* ⬅ FONDO
+    background: var(--xf-green);     /* fondo verde neón */
+    color: #000;                     /* texto negro */
+    border-color: var(--xf-green);
+    transform: translateY(-4px);
+    box-shadow: 0 0 14px var(--xf-green);
+}
 
 
