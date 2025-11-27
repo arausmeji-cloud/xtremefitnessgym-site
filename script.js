@@ -39,3 +39,15 @@ if (yearSpan) {
 }
 // --- Verificación básica del sitio ---
 console.log("Xtreme Fitness Gym website loaded successfully!");
+
+// =============================
+// XF LIGHTBOX FOR GALLERIES
+// =============================
+const lightbox = GLightbox({
+    selector: '.xf-photo',
+    loop: true,
+    touchNavigation: true,
+    closeButton: true,
+    zoomable: true,
+});
+
