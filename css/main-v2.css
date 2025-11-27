@@ -511,3 +511,30 @@ body {
     background: var(--xf-yellow);
     color: #000;
 }
+
+/* ===========================
+   UNIFORM GRID GALLERY
+   =========================== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer; /* convierte el cursor en MANITO */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(168, 255, 0, 0.6);
+}
+
+
+
