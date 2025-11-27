@@ -7,80 +7,71 @@
     <link rel="stylesheet" href="css/main-v2.css" />
 </head>
 
-<!-- LIGHTBOX PRO -->
-<div id="lightbox">
-    <button id="prev-btn" class="nav-btn">&#10094;</button>
-   <img id="lightbox-img" class="lightbox-img" src="" alt="">
-    <button id="next-btn" class="nav-btn">&#10095;</button>
-</div>
-
-<script>
-const thumbs = document.querySelectorAll('.gallery-thumb');
-const lightbox = document.getElementById('lightbox');
-const lightImg = document.getElementById('lightbox-img');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-let currentIndex = 0;
-
-// Abrir lightbox
-thumbs.forEach((img, index) => {
-    img.addEventListener('click', () => {
-        currentIndex = index;
-        lightImg.src = img.src;
-        lightbox.style.display = 'flex';
-    });
-});
-
-// Botón siguiente
-nextBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex + 1) % thumbs.length;
-    lightImg.src = thumbs[currentIndex].src;
-});
-
-// Botón anterior
-prevBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-    lightImg.src = thumbs[currentIndex].src;
-});
-
-// Cerrar lightbox al hacer click afuera
-lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-});
-</script>
-    
 <body>
 
-<header class="gallery-page-header">
-    <h1>BJJ Gallery</h1>
-    <p>Brazilian Jiu-Jitsu — confidence, discipline & self-defence.</p>
-    <a href="index.html#gallery" class="back-link">← Back to main gallery</a>
-</header>
+    <!-- HEADER -->
+    <header class="gallery-page-header">
+        <h1>BJJ GALLERY</h1>
+        <p>Brazilian Jiu-Jitsu — confidence, discipline & self-defence.</p>
+        <a href="index.html#gallery" class="back-link">⬅ Back to main gallery</a>
+    </header>
 
-<section id="gallery" class="gallery-section">
-  <h2>BJJ Gallery</h2>
+    <!-- GALERÍA -->
+    <section id="gallery" class="gallery-section">
+        <h2>BJJ Gallery</h2>
 
- <div class="gallery-grid">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-1.jpg" alt="BJJ Photo 1">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-2.jpg" alt="BJJ Photo 2">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-3.jpg" alt="BJJ Photo 3">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-4.jpg" alt="BJJ Photo 4">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-5.jpg" alt="BJJ Photo 5">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-6.jpg" alt="BJJ Photo 6">
-    <img class="gallery-thumb" src="images/gallery/bjj/bjj-7.jpg" alt="BJJ Photo 7">
-</div>
-    
-</section>
+        <div class="gallery-grid">
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-1.jpg" alt="BJJ Photo 1" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-2.jpg" alt="BJJ Photo 2" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-3.jpg" alt="BJJ Photo 3" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-4.jpg" alt="BJJ Photo 4" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-5.jpg" alt="BJJ Photo 5" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-6.jpg" alt="BJJ Photo 6" />
+            <img class="gallery-thumb" src="images/gallery/bjj/bjj-7.jpg" alt="BJJ Photo 7" />
+        </div>
+    </section>
 
-<footer class="footer">
-    <div class="footer-inner">
-        <p>© 2025 Xtreme Fitness Gym</p>
-        <p class="footer-tagline">No excuses. Just results.</p>
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="prev-btn" class="nav-btn">◀</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        <button id="next-btn" class="nav-btn">▶</button>
     </div>
-</footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const thumbs = document.querySelectorAll(".gallery-thumb");
+        const lightbox = document.getElementById("lightbox");
+        const lightImg = document.getElementById("lightbox-img");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+
+        let currentIndex = 0;
+
+        thumbs.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                currentIndex = index;
+                lightImg.src = img.src;
+                lightbox.style.display = "flex";
+            });
+        });
+
+        nextBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % thumbs.length;
+            lightImg.src = thumbs[currentIndex].src;
+        });
+
+        prevBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
+            lightImg.src = thumbs[currentIndex].src;
+        });
+
+        lightbox.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
+    </script>
 
 </body>
 </html>
