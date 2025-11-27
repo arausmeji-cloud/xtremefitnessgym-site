@@ -628,3 +628,21 @@ body {
     background: rgba(0,0,0,0.75) !important;
     color: white !important;
 }
+/* LINK — Back to main gallery (más visible) */
+.back-link {
+    color: var(--xf-green) !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px rgba(140,255,0,0.6);
+}
+
+.back-link:hover {
+    color: var(--xf-yellow) !important;
+    text-shadow: 0 0 12px rgba(255,255,0,0.9);
+}
+
+
