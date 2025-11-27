@@ -616,4 +616,15 @@ body {
     box-shadow: 0 0 14px var(--xf-green);
 }
 
+/* FIX — Flechas del lightbox que desaparecen */
+.nav-btn {
+    z-index: 99999 !important;
+    background: rgba(0,0,0,0.55) !important;
+    color: white !important;
+    border: none !important;
+}
 
+.nav-btn:hover {
+    background: rgba(0,0,0,0.75) !important;
+    color: white !important;
+}
