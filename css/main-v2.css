@@ -584,9 +584,9 @@ body {
 #next-btn {
     right: 5%;
 }
-/* ================
-   XF GALLERY BUTTONS
-   ================ */
+/* ============================
+   XF GALLERY BUTTONS — MATCH GLOBAL STYLE
+   ============================ */
 
 .gallery-menu {
     text-align: center;
@@ -596,25 +596,24 @@ body {
 .xf-btn {
     display: inline-block;
     margin: 10px 15px;
-    padding: 12px 26px;
-    border-radius: 50px;
-    font-size: 1.1rem;
+    padding: 14px 28px;
+    border-radius: 12px; /* matching global buttons */
+    font-size: 1.2rem;
     font-weight: 700;
-    color: var(--xf-green);
-    border: 3px solid var(--xf-green);
-    background: rgba(0, 0, 0, 0.3);
+    color: var(--xf-yellow); /* SAME TEXT COLOR AS OTHER BUTTONS */
+    border: 2px solid var(--xf-green);
+    background: rgba(0,0,0,0.35); /* matching black transparency */
     text-decoration: none;
     transition: 0.3s ease;
 }
 
 .xf-btn:hover {
-    background: var(--xf-yellow);
-    color: #000;
+    background: var(--xf-yellow); /* SAME HOVER AS OTHER BUTTONS */
+    color: #000; /* text black on hover */
     border-color: var(--xf-yellow);
     transform: translateY(-4px);
-    box-shadow: 0 0 15px var(--xf-yellow);
+    box-shadow: 0 0 12px var(--xf-yellow);
 }
-
 
 
 
