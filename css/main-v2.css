@@ -645,4 +645,21 @@ body {
     text-shadow: 0 0 12px rgba(255,255,0,0.9);
 }
 
+/* Flechas del lightbox siempre visibles */
+.nav-btn {
+    opacity: 1 !important;
+    color: white !important;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid var(--xf-green);
+    padding: 10px 16px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.25s ease-in-out;
+}
 
+.nav-btn:hover {
+    background: var(--xf-green);
+    color: #000;
+    border-color: var(--xf-yellow);
+}
