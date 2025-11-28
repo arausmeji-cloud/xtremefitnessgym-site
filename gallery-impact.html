@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XF Impact Gallery | Xtreme Fitness Gym</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Gallery | Xtreme Fitness Gym</title>
+    <link rel="stylesheet" href="css/main-v2.css">
 </head>
 
-<!-- LIGHTBOX PRO -->
+<body>
+
+<!-- LIGHTBOX -->
 <div id="lightbox">
     <button id="prev-btn" class="nav-btn">&#10094;</button>
     <img id="lightbox-img" src="" alt="">
@@ -23,7 +25,7 @@ const nextBtn = document.getElementById('next-btn');
 
 let currentIndex = 0;
 
-// Abrir lightbox
+// abrir lightbox
 thumbs.forEach((img, index) => {
     img.addEventListener('click', () => {
         currentIndex = index;
@@ -32,51 +34,48 @@ thumbs.forEach((img, index) => {
     });
 });
 
-// Botón siguiente
+// siguiente
 nextBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     currentIndex = (currentIndex + 1) % thumbs.length;
     lightImg.src = thumbs[currentIndex].src;
 });
 
-// Botón anterior
+// anterior
 prevBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
     lightImg.src = thumbs[currentIndex].src;
 });
 
-// Cerrar lightbox al hacer click afuera
+// cerrar
 lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
 });
 </script>
 
-  
-<body>
-
-  <header class="gallery-page-header">
+<header class="gallery-page-header">
     <h1>XF IMPACT</h1>
     <p>Community, mindset, motivation & transformation.</p>
     <a href="index.html#gallery" class="back-link">← Back to main gallery</a>
-  </header>
+</header>
 
-  <section id="gallery" class="gallery-section">
-  <h2>XF Impact Gallery</h2>
+<section id="gallery-impact" class="gallery-section">
+    <h2>Impact Gallery</h2>
 
-  <div class="gallery-grid">
-    <!-- Your Impact photos will go here -->
-   <img class="gallery-thumb" src="images/gallery/impact/impact-1.jpg" alt="Impact Photo 1">
-<img class="gallery-thumb" src="images/gallery/impact/impact-2.jpg" alt="Impact Photo 2">
-  </div>
+    <div class="gallery-grid">
+        <img class="gallery-thumb" src="images/gallery/impact/xf-impact1.jpg" alt="Impact Photo 1">
+        <img class="gallery-thumb" src="images/gallery/impact/xf-impact2.jpg" alt="Impact Photo 2">
+        <img class="gallery-thumb" src="images/gallery/impact/xf-impact3.jpg" alt="Impact Photo 3">
+    </div>
 </section>
 
-  <footer class="footer">
+<footer class="footer">
     <div class="footer-inner">
-      <p>© 2025 Xtreme Fitness Gym</p>
-      <p class="footer-tagline">No excuses. Just results.</p>
+        <p>© 2025 Xtreme Fitness Gym</p>
+        <p class="foot-tagline">No excuses. Just results.</p>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
