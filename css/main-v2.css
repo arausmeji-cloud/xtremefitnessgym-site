@@ -652,3 +652,10 @@ body {
     color: #000;
     border-color: var(--xf-yellow);
 }
+/* FIX – Lightbox tamaño completo */
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+}
