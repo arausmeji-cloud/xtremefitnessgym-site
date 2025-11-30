@@ -1,74 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impact Gallery | Xtreme Fitness Gym</title>
-  <link rel="stylesheet" href="css/main-v2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XF Impact Gallery | Xtreme Fitness Gym</title>
+    <link rel="stylesheet" href="css/main.v2.css" />
 </head>
+
 <body>
 
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <button id="prev-btn" class="nav-btn">&#10094;</button>
-  <img id="lightbox-img" class="lightbox-img" src="">
-  <button id="next-btn" class="nav-btn">&#10095;</button>
-</div>
+    <!-- HEADER -->
+    <header class="gallery-page-header">
+        <h1>IMPACT GALLERY</h1>
+        <p>Community, mindset, motivation & transformation.</p>
+        <a href="index.html#gallery" class="back-link">← Back to main gallery</a>
+    </header>
 
-<header class="gallery-page-header">
-  <h1>XF IMPACT</h1>
-  <p>Community, mindset, motivation & transformation.</p>
-  <a href="index.html#gallery" class="back-link">← Back to main gallery</a>
-</header>
+    <!-- GALERÍA -->
+    <section id="gallery" class="gallery-section">
+        <h2>Impact Gallery</h2>
 
-<section class="gallery-section">
-  <h2>Impact Gallery</h2>
+        <div class="gallery-grid" id="impact-grid">
+            <!-- Las imágenes se generan automáticamente -->
+        </div>
+    </section>
 
- <div class="gallery-grid">
-   
-</div>
-</section>
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="prev-btn" class="nav-btn">&#10094;</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="">
+        <button id="next-btn" class="nav-btn">&#10095;</button>
+    </div>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <p>© 2025 Xtreme Fitness Gym</p>
-    <p class="footer-tagline">No excuses. Just results.</p>
-  </div>
-</footer>
+    <!-- SCRIPT -->
+    <script>
+        // Cantidad total de imágenes
+        const totalImages = 7;
 
-<script>
-const thumbs = document.querySelectorAll('.gallery-thumb');
-const lightbox = document.getElementById('lightbox');
-const lightImg = document.getElementById('lightbox-img');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
+        // Contenedor de los thumbnails
+        const grid = document.getElementById("impact-grid");
 
-let currentIndex = 0;
+        // Generar thumbnails automáticamente
+        for (let i = 1; i <= totalImages; i++) {
+            const img = document.createElement("img");
+            img.src = images/gallery/impact/impact-${i}.jpg;
+            img.alt = Impact Photo ${i};
+            img.classList.add("gallery-thumb");
+            grid.appendChild(img);
+        }
 
-thumbs.forEach((img, index) => {
-  img.addEventListener('click', () => {
-    currentIndex = index;
-    lightImg.src = img.src;
-    lightbox.style.display = 'flex';
-  });
-});
-
-nextBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  currentIndex = (currentIndex + 1) % thumbs.length;
-  lightImg.src = thumbs[currentIndex].src;
-});
-
-prevBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-  lightImg.src = thumbs[currentIndex].src;
-});
-
-lightbox.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-</script>
-
-</body>
-</html>
+        // Lightbox funcional
+        const thumbs = document.querySelectorAll(".gallery-thumb");
