@@ -26,13 +26,12 @@ const container = document.getElementById("bjj-container");
 
 for (let i = 1; i <= totalPhotos; i++) {
     const img = document.createElement("img");
-    img.src = ../images/gallery/bjj/bjj-${i}.jpg;
+    img.src = images/gallery/bjj/bjj-${i}.jpg;
     img.classList.add("gallery-thumb");
     img.alt = BJJ Photo ${i};
     container.appendChild(img);
 }
 </script>
-
 <!-- LIGHTBOX -->
 <div id="lightbox">
   <button id="prev-btn" class="nav-btn">&#10094;</button>
