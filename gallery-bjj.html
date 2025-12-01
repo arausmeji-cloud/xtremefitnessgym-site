@@ -19,6 +19,7 @@
   <h2>BJJ Gallery</h2>
   <div class="gallery-grid" id="bjj-container"></div>
 </section>
+
 <script>
 const totalPhotos = 7;  
 const container = document.getElementById("bjj-container");
@@ -31,15 +32,13 @@ for (let i = 1; i <= totalPhotos; i++) {
     container.appendChild(img);
 }
 </script>
+
 <!-- LIGHTBOX -->
 <div id="lightbox">
   <button id="prev-btn" class="nav-btn">&#10094;</button>
   <img id="lightbox-img" class="lightbox-img" src="" alt="">
   <button id="next-btn" class="nav-btn">&#10095;</button>
 </div>
-
-<script>
-// AUTO LOAD BJJ IMAGES
 
 </body>
 </html>
