@@ -19,7 +19,18 @@
   <h2>BJJ Gallery</h2>
   <div class="gallery-grid" id="bjj-container"></div>
 </section>
+<script>
+const totalPhotos = 7;  
+const container = document.getElementById("bjj-container");
 
+for (let i = 1; i <= totalPhotos; i++) {
+    const img = document.createElement("img");
+    img.src = images/gallery/bjj/bjj-${i}.jpg;
+    img.classList.add("gallery-thumb");
+    img.alt = BJJ Photo ${i};
+    container.appendChild(img);
+}
+</script>
 <!-- LIGHTBOX -->
 <div id="lightbox">
   <button id="prev-btn" class="nav-btn">&#10094;</button>
@@ -29,58 +40,6 @@
 
 <script>
 // AUTO LOAD BJJ IMAGES
-const container = document.getElementById("bjj-container");
-let images = [];
-const totalImages = 20; // por si agregás más en el futuro
-
-for (let i = 1; i <= totalImages; i++) {
-  const path = images/gallery/bjj/bjj-${i}.jpeg;
-  images.push(path);
-
-  const img = new Image();
-  img.src = path;
-
-  img.onload = () => {
-    const thumb = document.createElement("img");
-    thumb.src = path;
-    thumb.classList.add("gallery-thumb");
-    thumb.alt = BJJ Photo ${i};
-    container.appendChild(thumb);
-  };
-}
-
-// LIGHTBOX
-let currentIndex = 0;
-const lightbox = document.getElementById('lightbox');
-const lightImg = document.getElementById('lightbox-img');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-container.addEventListener('click', (e) => {
-  if (e.target.classList.contains('gallery-thumb')) {
-    const src = e.target.src;
-    currentIndex = images.indexOf(src.replace(window.location.origin + "/", ""));
-    lightImg.src = src;
-    lightbox.style.display = 'flex';
-  }
-});
-
-nextBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  currentIndex = (currentIndex + 1) % images.length;
-  lightImg.src = images[currentIndex];
-});
-
-prevBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  lightImg.src = images[currentIndex];
-});
-
-lightbox.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-</script>
 
 </body>
 </html>
