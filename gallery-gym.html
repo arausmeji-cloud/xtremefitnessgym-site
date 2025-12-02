@@ -37,7 +37,8 @@ const container = document.getElementById("gym-container");
 
 for (let i = 1; i <= totalPhotos; i++) {
     const img = document.createElement("img");
-    img.src = `./images/gallery/gym/gym-${i}.jpg`;
+   img.src = `./images/gallery/gym/gym-${i}.jpg`;
+
     img.classList.add("gallery-thumb");
     img.alt = `Gym Photo ${i}`;
     container.appendChild(img);
