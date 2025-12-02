@@ -34,13 +34,52 @@ for (let i = 1; i <= totalPhotos; i++) {
 
 </script>
   
-for (let i = 1; i <= totalPhotos; i++) {
-    const img = document.createElement("img");
-    img.src = `./images/gallery/bjj/bjj-${i}.jpg`;
-    img.classList.add("gallery-thumb");
-    img.alt = `BJJ Photo ${i}`;
-    container.appendChild(img);
-}
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;">
+  <button id="prev-btn" class="nav-btn">&#10094;</button>
+  <img id="lightbox-img" class="lightbox-img" src="" alt="">
+  <button id="next-btn" class="nav-btn">&#10095;</button>
+</div>
+
+<script>
+// === LIGHTBOX ===
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+
+let currentIndex = 0;
+
+// Abrir lightbox al hacer click en una miniatura
+container.addEventListener("click", (e) => {
+    if (e.target.tagName === "IMG") {
+        const src = e.target.src;
+        currentIndex = parseInt(src.match(/bjj-(\d+)\.jpg/)[1]) - 1;
+        lightboxImg.src = src;
+        lightbox.style.display = "flex";
+    }
+});
+
+// Navegar siguiente
+nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % totalPhotos;
+    lightboxImg.src = `./images/gallery/bjj/bjj-${currentIndex + 1}.jpg`;
+});
+
+// Navegar anterior
+prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
+    lightboxImg.src = `./images/gallery/bjj/bjj-${currentIndex + 1}.jpg`;
+});
+
+// Cerrar lightbox al hacer click fuera de la imagen
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
 
 
 </body>
