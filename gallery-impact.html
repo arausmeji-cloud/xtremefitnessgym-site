@@ -37,7 +37,8 @@ const container = document.getElementById("impact-container");
 
 for (let i = 1; i <= totalPhotos; i++) {
     const img = document.createElement("img");
-    img.src = `./images/gallery/impact/impact-${i}.jpg`;
+   img.src = `./images/gallery/impact/impact-${i}.jpg`;
+
     img.classList.add("gallery-thumb");
     img.alt = `Impact Photo ${i}`;
     container.appendChild(img);
