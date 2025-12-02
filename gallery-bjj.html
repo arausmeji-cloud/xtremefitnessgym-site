@@ -26,7 +26,7 @@ const container = document.getElementById("bjj-container");
 
 for (let i = 1; i <= totalPhotos; i++) {
     const img = document.createElement("img");
-    img.src = `images/gallery/bjj/bjj-${i}.jpg`;   <-- acá reemplazar con backticks
+    img.src = `./images/gallery/bjj/bjj-${i}.jpg`;   <-- acá reemplazar con backticks
     img.classList.add("gallery-thumb");
     img.alt = `BJJ Photo ${i}`;                    <-- acá también reemplazar con backticks
     container.appendChild(img);
