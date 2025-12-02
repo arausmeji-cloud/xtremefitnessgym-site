@@ -34,12 +34,14 @@ for (let i = 1; i <= totalPhotos; i++) {
 
 </script>
   
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <button id="prev-btn" class="nav-btn">&#10094;</button>
-  <img id="lightbox-img" class="lightbox-img" src="" alt="">
-  <button id="next-btn" class="nav-btn">&#10095;</button>
-</div>
+for (let i = 1; i <= totalPhotos; i++) {
+    const img = document.createElement("img");
+    img.src = `./images/gallery/bjj/bjj-${i}.jpg`;
+    img.classList.add("gallery-thumb");
+    img.alt = `BJJ Photo ${i}`;
+    container.appendChild(img);
+}
+
 
 </body>
 </html>
