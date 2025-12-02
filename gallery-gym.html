@@ -32,56 +32,19 @@
         <button id="next-btn" class="nav-btn">&#10095;</button>
     </div>
 
-    <!-- SCRIPT -->
     <script>
-        // Cantidad de imágenes en la carpeta gym
-        const totalImages = 7;
+const totalPhotos = 7;  
+const container = document.getElementById("gym-container");
 
-        // Contenedor donde se insertan los thumbnails
-        const grid = document.getElementById("gym-grid");
+for (let i = 1; i <= totalPhotos; i++) {
+    const img = document.createElement("img");
+    img.src = `./images/gallery/gym/gym-${i}.jpg`;
+    img.classList.add("gallery-thumb");
+    img.alt = `Gym Photo ${i}`;
+    container.appendChild(img);
+}
+</script>
 
-        // Insertamos las imágenes automáticamente
-        for (let i = 1; i <= totalImages; i++) {
-            const img = document.createElement("img");
-            img.src = images/gallery/gym/gym-${i}.jpg;
-            img.alt = Gym Photo ${i};
-            img.classList.add("gallery-thumb");
-            grid.appendChild(img);
-        }
-
-        // Lógica del Lightbox
-        const thumbs = document.querySelectorAll(".gallery-thumb");
-        const lightbox = document.getElementById("lightbox");
-        const lightImg = document.getElementById("lightbox-img");
-        const prevBtn = document.getElementById("prev-btn");
-        const nextBtn = document.getElementById("next-btn");
-
-        let currentIndex = 0;
-
-        thumbs.forEach((img, index) => {
-            img.addEventListener("click", () => {
-                currentIndex = index;
-                lightImg.src = img.src;
-                lightbox.style.display = "flex";
-            });
-        });
-
-        nextBtn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            currentIndex = (currentIndex + 1) % thumbs.length;
-            lightImg.src = thumbs[currentIndex].src;
-        });
-
-        prevBtn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-            lightImg.src = thumbs[currentIndex].src;
-        });
-
-        lightbox.addEventListener("click", () => {
-            lightbox.style.display = "none";
-        });
-    </script>
 
 </body>
 </html>
