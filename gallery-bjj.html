@@ -42,43 +42,67 @@ for (let i = 1; i <= totalPhotos; i++) {
 </div>
 
 <script>
-// === LIGHTBOX ===
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
+async function loadGallery() {
+    const folder = "bjj"; // carpeta que queremos usar
+    const response = await fetch(`/api/list-photos?folder=${folder}`);
+    const photos = await response.json();
 
-let currentIndex = 0;
+    const container = document.getElementById("bjj-container");
+    container.innerHTML = "";
 
-// Abrir lightbox al hacer click en una miniatura
-container.addEventListener("click", (e) => {
-    if (e.target.tagName === "IMG") {
-        const src = e.target.src;
-        currentIndex = parseInt(src.match(/bjj-(\d+)\.jpg/)[1]) - 1;
-        lightboxImg.src = src;
+    photos.forEach((photo, index) => {
+        const img = document.createElement("img");
+        img.src = `/images/gallery/bjj/${photo}`;
+        img.alt = `BJJ Photo ${index + 1}`;
+        img.classList.add("gallery-thumb");
+        img.dataset.index = index;
+        container.appendChild(img);
+    });
+
+    setupLightbox(photos);
+}
+
+function setupLightbox(photos) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    let currentIndex = 0;
+
+    document.querySelectorAll(".gallery-thumb").forEach((img) => {
+        img.addEventListener("click", () => {
+            currentIndex = parseInt(img.dataset.index);
+            openLightbox();
+        });
+    });
+
+    function openLightbox() {
         lightbox.style.display = "flex";
+        lightboxImg.src = `/images/gallery/bjj/${photos[currentIndex]}`;
     }
-});
 
-// Navegar siguiente
-nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex + 1) % totalPhotos;
-    lightboxImg.src = `./images/gallery/bjj/bjj-${currentIndex + 1}.jpg`;
-});
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
 
-// Navegar anterior
-prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    currentIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
-    lightboxImg.src = `./images/gallery/bjj/bjj-${currentIndex + 1}.jpg`;
-});
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
 
-// Cerrar lightbox al hacer click fuera de la imagen
-lightbox.addEventListener("click", () => {
-    lightbox.style.display = "none";
-});
+    prevBtn.onclick = () => {
+        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+        openLightbox();
+    };
+
+    nextBtn.onclick = () => {
+        currentIndex = (currentIndex + 1) % photos.length;
+        openLightbox();
+    };
+}
+
+loadGallery();
 </script>
+
 
 
 
