@@ -89,68 +89,7 @@ function setupLightbox(photos) {
 }
 
 loadGallery();
-<script>
-async function loadGallery() {
-    const folder = "bjj";
-    const response = await fetch(`/api/list-photos?folder=${folder}`);
-    const photos = await response.json();
-
-    const container = document.getElementById("bjj-container");
-    container.innerHTML = "";
-
-    photos.forEach((photo, index) => {
-        const img = document.createElement("img");
-        img.src = `/images/gallery/bjj/${photo}`;
-        img.alt = `BJJ Photo ${index + 1}`;
-        img.classList.add("gallery-thumb");
-        img.dataset.index = index;
-        container.appendChild(img);
-    });
-
-    setupLightbox(photos);
-}
-
-function setupLightbox(photos) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
-    let currentIndex = 0;
-
-    document.querySelectorAll(".gallery-thumb").forEach((img) => {
-        img.addEventListener("click", () => {
-            currentIndex = parseInt(img.dataset.index);
-            openLightbox();
-        });
-    });
-
-    function openLightbox() {
-        lightbox.style.display = "flex";
-        lightboxImg.src = `/images/gallery/bjj/${photos[currentIndex]}`;
-    }
-
-    function closeLightbox() {
-        lightbox.style.display = "none";
-    }
-
-    lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) closeLightbox();
-    });
-
-    prevBtn.onclick = () => {
-        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-        openLightbox();
-    };
-
-    nextBtn.onclick = () => {
-        currentIndex = (currentIndex + 1) % photos.length;
-        openLightbox();
-    };
-}
-
-loadGallery();
 </script>
-
 
 
 
