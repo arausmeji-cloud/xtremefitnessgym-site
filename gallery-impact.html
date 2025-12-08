@@ -39,7 +39,7 @@ async function loadGallery() {
 
     photos.forEach((photo, index) => {
         const img = document.createElement("img");
-        img.src = `/images/gallery/gym/${photo}`;
+       img.src = "/public/images/gallery/impact/" + photo;
         img.alt = `Gym Photo ${index + 1}`;
         img.classList.add("gallery-thumb");
         img.dataset.index = index;
