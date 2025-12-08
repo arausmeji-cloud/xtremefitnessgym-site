@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
+const fs = require("fs");
+const path = require("path");
 
-export default function handler(req, res) {
+module.exports = (req, res) => {
   const folder = req.query.folder;
 
   if (!folder) {
@@ -12,6 +12,7 @@ export default function handler(req, res) {
 
   try {
     const files = fs.readdirSync(imagesPath);
+
     const photos = files.filter(f =>
       f.endsWith(".jpg") ||
       f.endsWith(".jpeg") ||
@@ -19,9 +20,8 @@ export default function handler(req, res) {
       f.endsWith(".webp")
     );
 
-    res.status(200).json({ photos });
-
+    return res.status(200).json(photos);
   } catch (error) {
-    res.status(500).json({ error: "Folder not found" });
+    return res.status(500).json({ error: "Folder not found" });
   }
-}
+};
