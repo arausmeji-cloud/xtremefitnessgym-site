@@ -1,91 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GYM Gallery | Xtreme Fitness Gym</title>
-    <link rel="stylesheet" href="css/main-v2.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GYM Gallery | Xtreme Fitness Gym</title>
+  <link rel="stylesheet" href="css/main-v2.css" />
 </head>
 
 <body>
-
-<header class="gallery-page-header">
+  <header class="gallery-page-header">
     <h1>GYM GALLERY</h1>
     <p>Weight training · Strength · Performance</p>
-    <a href="gallery.html" class="back-link">← Back to main gallery</a>
-</header>
+    <a href="gallery.html#gallery" class="back-link">Back to main gallery</a>
+  </header>
 
-<section id="gallery" class="gallery-section">
+  <section id="gallery" class="gallery-section">
     <h2>Gym Gallery</h2>
     <div class="gallery-grid" id="gym-container"></div>
-</section>
+  </section>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" style="display:none;">
+  <div id="lightbox" style="display:none;">
     <button id="prev-btn" class="nav-btn">&#10094;</button>
     <img id="lightbox-img" class="lightbox-img" src="" alt="">
     <button id="next-btn" class="nav-btn">&#10095;</button>
-</div>
+  </div>
 
 <script>
 async function loadGallery() {
+  const folder = "gym";
+  const response = await fetch(/api/list-photos?folder=${folder});
+  const photos = await response.json();
 
-    const folder = "gym";   // carpeta a usar
-    const response = await fetch(`/api/list-photos?folder=${folder}`);
-    const photos = await response.json();
+  const container = document.getElementById("gym-container");
+  container.innerHTML = "";
 
-    const container = document.getElementById("gym-container");
-    container.innerHTML = "";
+  photos.forEach((photo, index) => {
+    const img = document.createElement("img");
+    img.src = /images/gallery/gym/${photo};
+    img.alt = Gym Photo ${index + 1};
+    img.classList.add("gallery-thumb");
+    img.dataset.index = index;
+    container.appendChild(img);
+  });
 
-    photos.forEach((photo, index) => {
-        const img = document.createElement("img");
-        img.src = `/images/gallery/gym/${photo}`;
-        img.alt = `Gym Photo ${index + 1}`;
-        img.classList.add("gallery-thumb");
-        img.dataset.index = index;
-        container.appendChild(img);
-    });
-
-    setupLightbox(photos);
+  setupLightbox(photos);
 }
 
 function setupLightbox(photos) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  let currentIndex = 0;
 
-    let currentIndex = 0;
-
-    document.querySelectorAll(".gallery-thumb").forEach((img) => {
-        img.addEventListener("click", () => {
-            currentIndex = parseInt(img.dataset.index);
-            openLightbox();
-        });
+  document.querySelectorAll(".gallery-thumb").forEach((img) => {
+    img.addEventListener("click", () => {
+      currentIndex = parseInt(img.dataset.index);
+      openLightbox();
     });
+  });
 
-    function openLightbox() {
-        lightbox.style.display = "flex";
-        lightboxImg.src = `/images/gallery/gym/${photos[currentIndex]}`;
-    }
+  function openLightbox() {
+    lightbox.style.display = "flex";
+    lightboxImg.src = /images/gallery/gym/${photos[currentIndex]};
+  }
 
-    function closeLightbox() {
-        lightbox.style.display = "none";
-    }
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
 
-    lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) closeLightbox();
-    });
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
 
-    prevBtn.onclick = () => {
-        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-        openLightbox();
-    };
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+    openLightbox();
+  };
 
-    nextBtn.onclick = () => {
-        currentIndex = (currentIndex + 1) % photos.length;
-        openLightbox();
-    };
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % photos.length;
+    openLightbox();
+  };
 }
 
 loadGallery();
