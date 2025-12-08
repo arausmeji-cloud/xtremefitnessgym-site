@@ -64,9 +64,9 @@ function setupLightbox(photos) {
     });
 
     function openLightbox() {
-        lightbox.style.display = "flex";
-        lightboxImg.src = `/images/gallery/gym/${photos[currentIndex]}`;
-    }
+    lightbox.style.display = "flex";
+    lightboximg.src = "/public/images/gallery/gym/" + photos[currentIndex];
+}
 
     function closeLightbox() {
         lightbox.style.display = "none";
