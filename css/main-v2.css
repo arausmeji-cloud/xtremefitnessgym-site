@@ -703,3 +703,25 @@ body {
 #next-btn {
     right: 2%;
 }
+
+/* ===============================
+   HERO BACKGROUND – XF FINAL
+   =============================== */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Overlay oscuro para legibilidad */
+.hero::before {
+  content: "";
