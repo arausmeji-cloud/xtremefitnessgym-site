@@ -39,7 +39,7 @@ async function loadGallery() {
 
     photos.forEach((photo, index) => {
         const img = document.createElement("img");
-       img.src = "/public/images/gallery/impact/" + photo;
+       img.src = "/images/gallery/impact/" + photo;
         img.alt = `Gym Photo ${index + 1}`;
         img.classList.add("gallery-thumb");
         img.dataset.index = index;
@@ -65,7 +65,7 @@ function setupLightbox(photos) {
 
     function openLightbox() {
     lightbox.style.display = "flex";
-    lightboximg.src = "/public/images/gallery/gym/" + photos[currentIndex];
+    lightboximg.src = "/images/gallery/gym/" + photos[currentIndex];
 }
 
     function closeLightbox() {
