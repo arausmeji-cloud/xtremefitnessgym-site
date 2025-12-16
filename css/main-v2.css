@@ -705,7 +705,7 @@ body {
 }
 
 /* ===============================
-   HERO BACKGROUND – XF FINAL
+   HERO SECTION – BACKGROUND FIX
    =============================== */
 
 .hero {
@@ -715,12 +715,48 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
 }
+
+/* overlay oscuro */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* contenido arriba del overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+/* logo del hero */
+.hero-logo {
+  max-width: 260px;
+  margin-bottom: 2rem;
+}
+
+/* textos */
+.hero .motto {
+  color: #ffd84d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .subtitle-hero,
+.hero p {
+  color: #f2f2f2;
+  font-size: 1.1rem;
+   }
 
 /* Overlay oscuro para legibilidad */
 .hero::before {
