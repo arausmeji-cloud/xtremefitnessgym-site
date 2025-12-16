@@ -129,55 +129,7 @@ body {
     margin-top: -6px;
     border-color: var(--xf-green);
 }
-/* ===========================
-   GALLERY – XF PRO MOSAIC
-   =========================== */
 
-.gallery-section {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.gallery-section h2 {
-  font-size: 2.5rem;
-  color: #A8FF00; /* verde XF */
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Grid contenedor */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  grid-auto-rows: 240px;
-  gap: 15px;
-  grid-auto-flow: dense;
-}
-
-/* Imágenes */
-.gallery-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px; /* redondeado pro */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* EFECTO PRO AL PASAR EL MOUSE */
-.gallery-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(168, 255, 0, 0.5);
-}
-
-/* Variación del mosaico */
-.gallery-grid img:nth-child(3n) {
-  grid-row: span 2;
-}
-
-.gallery-grid img:nth-child(5n) {
-  grid-column: span 2;
-}
 
 /* ======================================
    XF IMPACT
@@ -426,244 +378,6 @@ body {
     box-shadow: 0 0 15px var(--xf-green);
 }
 
-/* ========== LIGHTBOX ========== */
-#lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-#lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-}
-
-/* Botones de navegación */
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: var(--xf-yellow);
-    border: 2px solid var(--xf-yellow);
-    padding: 12px 18px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10000;
-}
-
-.prev-btn {
-    left: 30px;
-}
-
-.next-btn {
-    right: 30px;
-}
-
-.nav-btn:hover {
-    background: var(--xf-yellow);
-    color: #000;
-}
-
-/* ===========================
-   UNIFORM GRID GALLERY
-   =========================== */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  cursor: pointer; /* convierte el cursor en MANITO */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(168, 255, 0, 0.6);
-}
-
-/* ===============================
-   LIGHTBOX PRO – XF GALLERY
-================================= */
-
-#lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-}
-
-#lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-}
-
-.nav-btn {
-    position: absolute;
-    background: rgba(0,0,0,0.4);
-    color: #fff;
-    border: none;
-    font-size: 2.5rem;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.2s;
-}
-
-.nav-btn:hover {
-    background: rgba(0,0,0,0.7);
-}
-
-#prev-btn {
-    left: 5%;
-}
-
-#next-btn {
-    right: 5%;
-}
-
-/* ============================
-   XF GALLERY BUTTONS — MATCH GLOBAL STYLE
-   ============================ */
-
-.gallery-menu {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.xf-btn {
-    display: inline-block;
-    margin: 10px 15px;
-    padding: 14px 28px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--xf-yellow); /* text BEFORE hover */
-    border: 2px solid var(--xf-green);
-    background: rgba(0,0,0,0.35);
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.xf-btn:hover {
-    background: var(--xf-green);     /* fondo verde neón */
-    color: #000;                     /* texto negro */
-    border-color: var(--xf-green);
-    transform: translateY(-4px);
-    box-shadow: 0 0 14px var(--xf-green);
-}
-
-
-/* LINK — Back to main gallery (más visible) */
-.back-link {
-    color: var(--xf-green) !important;
-    font-size: 1.3rem !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    text-shadow: 0 0 8px rgba(140,255,0,0.6);
-}
-
-.back-link:hover {
-    color: var(--xf-yellow) !important;
-    text-shadow: 0 0 12px rgba(255,255,0,0.9);
-}
-
-/* Flechas del lightbox siempre visibles */
-.nav-btn {
-    opacity: 1 !important;
-    color: white !important;
-    background: rgba(0,0,0,0.5);
-    border: 2px solid var(--xf-green);
-    padding: 10px 16px;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.25s ease-in-out;
-}
-
-.nav-btn:hover {
-    background: var(--xf-green);
-    color: #000;
-    border-color: var(--xf-yellow);
-}
-/* FIX – Lightbox tamaño completo */
-#lightbox-img {
-    max-width: 90vw;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
-}
-/* 🔥 FIX GLOBAL PARA TODAS LAS GALERÍAS – Lightbox Grande */
-#lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-#lightbox-img {
-    max-width: 90vw !important;
-    max-height: 90vh !important;
-    width: auto !important;
-    height: auto !important;
-    border-radius: 12px;
-}
-
-/* Flechas */
-.nav-btn {
-    background: #c5ff00;
-    color: black;
-    border: none;
-    font-size: 45px;
-    padding: 12px 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10000;
-}
-
-#prev-btn {
-    left: 2%;
-}
-
-#next-btn {
-    right: 2%;
-}
 
 /* ===============================
    HERO SECTION – FINAL ÚNICO
@@ -725,3 +439,111 @@ body {
   font-size: 1.15rem;
   margin-bottom: 1.2rem;
 }
+
+/* ======================================
+   XF GALLERY – FINAL CLEAN
+   ====================================== */
+
+.gallery-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.6rem;
+  color: var(--xf-green);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Botones */
+.gallery-menu {
+  margin-bottom: 40px;
+}
+
+.xf-btn {
+  display: inline-block;
+  margin: 10px 14px;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--xf-yellow);
+  border: 2px solid var(--xf-green);
+  background: rgba(0,0,0,0.35);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.xf-btn:hover {
+  background: var(--xf-green);
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 14px var(--xf-green);
+}
+
+/* Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 18px rgba(164,255,10,0.6);
+}
+
+/* ======================================
+   LIGHTBOX – FINAL CLEAN
+   ====================================== */
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+}
+
+/* Flechas */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--xf-green);
+  color: #000;
+  border: none;
+  font-size: 44px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+#prev-btn { left: 3%; }
+#next-btn { right: 3%; }
+
+.nav-btn:hover {
+  background: var(--xf-yellow);
+}
+
+
