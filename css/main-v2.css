@@ -700,12 +700,13 @@ body {
 }
 
 /* ===============================
-   HERO SECTION – BACKGROUND FIX
+   HERO SECTION – FINAL ÚNICO
    =============================== */
 
 .hero {
   position: relative;
   min-height: 100vh;
+  width: 100%;
   background-image: url("/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -722,11 +723,11 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
-/* contenido arriba del overlay */
+/* contenido */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -734,25 +735,27 @@ body {
   padding: 2rem;
 }
 
-/* logo del hero */
+/* logo */
 .hero-logo {
-  max-width: 260px;
+  max-width: 280px;
   margin-bottom: 2rem;
 }
 
 /* textos */
-.hero .motto {
-  color: #ffd84d;
-  font-size: 2.5rem;
+.hero h1 {
+  color: var(--xf-yellow);
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.hero .subtitle-hero,
+.subtitle-hero {
+  color: var(--xf-green);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
 .hero p {
   color: #f2f2f2;
-  font-size: 1.1rem;
-   }
-
-/* Overlay oscuro para legibilidad */
-.hero::before {
-  content: "";
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+}
