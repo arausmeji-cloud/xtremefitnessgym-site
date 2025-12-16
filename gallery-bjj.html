@@ -40,7 +40,7 @@ async function loadGallery() {
 
     photos.forEach((photo, index) => {
         const img = document.createElement("img");
-       img.src = "/public/images/gallery/bjj/" + photo;
+       img.src = "/images/gallery/bjj/" + photo;
         img.alt = `BJJ Photo ${index + 1}`;
         img.classList.add("gallery-thumb");
         img.dataset.index = index;
@@ -66,7 +66,7 @@ function setupLightbox(photos) {
 
     function openLightbox() {
     lightbox.style.display = "flex";
-    lightboximg.src = "/public/images/gallery/bjj/" + photos[currentIndex];
+   lightboxImg.src = "/images/gallery/bjj/" + photos[currentIndex];
 }
 
     function closeLightbox() {
