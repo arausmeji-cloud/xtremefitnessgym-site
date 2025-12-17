@@ -31,18 +31,7 @@ body {
 /* ======================================
    LOGO GIGANTE
    ====================================== */
-.logo-header {
-    text-align: center;
-    padding: 110px 0 40px;
-}
 
-.logo-header img {
-    width: 540px;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
 /* ======================================
    BOTÓN PRO XF
@@ -412,9 +401,10 @@ body {
 }
 
 .hero-logo {
-  max-width: 240px;
-  margin-bottom: 1.2rem;
+  max-width: 320px;
+  margin-bottom: 1.5rem;
 }
+
 
 @media (max-height: 700px) {
   .hero-logo {
