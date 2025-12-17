@@ -522,3 +522,15 @@ body {
 }
 
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-light);
+  line-height: 1.6;
+
+  background-image: url("/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
