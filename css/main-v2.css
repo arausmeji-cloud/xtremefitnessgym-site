@@ -534,3 +534,15 @@ body {
   background-attachment: fixed;
 }
 
+/* ============================
+   FORCE GLOBAL BACKGROUND FIX
+   ============================ */
+
+.services,
+.gallery-section,
+.impact-section,
+.contact {
+  background: transparent !important;
+}
+
+
