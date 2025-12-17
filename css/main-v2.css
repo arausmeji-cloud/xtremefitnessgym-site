@@ -383,21 +383,10 @@ body {
     box-shadow: 0 0 15px var(--xf-green);
 }
 
-
-/* ===============================
-   HERO SECTION – FINAL ÚNICO
-   =============================== */
-
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-
-  background-image: url("../public/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
   display: flex;
   align-items: center;
@@ -406,6 +395,22 @@ body {
   overflow: hidden;
 }
 
+/* FONDO FIJO REAL */
+.hero::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -2;
+}
 
 /* overlay oscuro */
 .hero::before {
@@ -424,30 +429,6 @@ body {
   padding: 2rem;
 }
 
-/* logo */
-.hero-logo {
-  max-width: 280px;
-  margin-bottom: 2rem;
-}
-
-/* textos */
-.hero h1 {
-  color: var(--xf-yellow);
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.subtitle-hero {
-  color: var(--xf-green);
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-}
-
-.hero p {
-  color: #f2f2f2;
-  font-size: 1.15rem;
-  margin-bottom: 1.2rem;
-}
 
 /* ======================================
    XF GALLERY – FINAL CLEAN
