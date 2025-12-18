@@ -436,6 +436,13 @@ body {
   letter-spacing: 2px;
 }
 
+.services,
+.services * {
+  background-color: transparent !important;
+}
+
+
+
 /* Botones */
 .gallery-menu {
   margin-bottom: 40px;
