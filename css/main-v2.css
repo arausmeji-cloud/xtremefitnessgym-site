@@ -378,11 +378,10 @@ body {
   min-height: 100vh;
   width: 100%;
 
-  background-image: url("/public/hero/hero-bg.png");
+  background-image: url("/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
   display: flex;
   align-items: center;
