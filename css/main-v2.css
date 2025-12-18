@@ -536,4 +536,19 @@ body {
 .services {
   background: transparent !important;
 }
+/* ===== FORCE TRANSPARENT SECTIONS ===== */
+.services,
+.gallery-section,
+.impact-section,
+.contact,
+section {
+  background: transparent !important;
+}
 
+/* Por si hay wrappers */
+.services *,
+.gallery-section *,
+.impact-section *,
+.contact * {
+  background-color: transparent;
+   }
