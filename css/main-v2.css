@@ -392,13 +392,9 @@ body {
 }
 
 /* overlay oscuro */
-/* .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-} */
+.hero::before {
+  display: none !important;
+}
 
 /* contenido */
 .hero-content {
