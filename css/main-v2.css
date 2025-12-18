@@ -34,7 +34,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-light);
   line-height: 1.6;
-  background: transparent;
+  background: #000;
 }
 
 /* ======================================
@@ -531,13 +531,4 @@ body {
 
 .nav-btn:hover {
   background: var(--xf-yellow);
-}
-/* === FINAL BACKGROUND OVERRIDE === */
-body,
-section,
-.services,
-.gallery-section,
-.impact-section,
-.contact {
-  background: transparent !important;
 }
