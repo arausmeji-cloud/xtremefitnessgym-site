@@ -525,5 +525,8 @@ body {
   background: var(--xf-yellow);
 }
 
-
+/* FIX SERVICES BACKGROUND */
+.services {
+  background: transparent !important;
+}
 
