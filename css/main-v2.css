@@ -1,6 +1,17 @@
 
 
 
+body {
+  background-color: #0e0e0e;
+  color: #ddd;
+}
+
+.services,
+.gallery,
+.impact-section,
+.contact {
+  background: transparent !important;
+}
 
 
 /* ======================================
@@ -100,6 +111,7 @@ body {
     max-width: var(--max-width);
     margin: 80px auto 40px;
     padding: 0 20px;
+    background: transparent; /* 👈 CLAVE */
 }
 
 .services h2 {
