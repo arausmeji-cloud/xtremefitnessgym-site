@@ -529,18 +529,3 @@ body {
 
 
 
-/* ============================
-   FORCE GLOBAL BACKGROUND FIX
-   ============================ */
-
-.services,
-.gallery-section,
-.impact-section,
-.contact {
-  background: transparent !important;
-}
-html, body {
-  background: #0a0a0a;
-}
-
-
