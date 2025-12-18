@@ -532,24 +532,12 @@ body {
 .nav-btn:hover {
   background: var(--xf-yellow);
 }
-
-/* FIX SERVICES BACKGROUND */
-.services {
-  background: transparent !important;
-}
-/* ===== FORCE TRANSPARENT SECTIONS ===== */
+/* === FINAL BACKGROUND OVERRIDE === */
+body,
+section,
 .services,
 .gallery-section,
 .impact-section,
-.contact,
-section {
+.contact {
   background: transparent !important;
 }
-
-/* Por si hay wrappers */
-.services *,
-.gallery-section *,
-.impact-section *,
-.contact * {
-  background-color: transparent;
-   }
