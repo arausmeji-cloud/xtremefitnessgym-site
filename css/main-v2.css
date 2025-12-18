@@ -531,3 +531,10 @@ body {
 .nav-btn:hover {
   background: var(--xf-yellow);
 }
+
+html, body {
+  background-color: #0a0a0a;
+}
+
+
+
