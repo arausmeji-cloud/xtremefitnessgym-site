@@ -557,7 +557,32 @@ html, body {
   padding-top: 80px;
 }
 
+/* =========================
+   HERO LOGO – BIG & CLEAN
+   ========================= */
 
+.hero-logo {
+  width: 420px;          /* tamaño grande en desktop */
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-logo {
+    width: 340px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+}
 
 
 
