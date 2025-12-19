@@ -576,6 +576,41 @@ html, body {
   }
 }
 
+/* =========================
+   HERO – REMOVE EXTRA AIR
+   ========================= */
+
+.hero {
+  padding-top: 40px;     /* antes seguro era mucho más */
+  padding-bottom: 40px;
+}
+
+.hero-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Logo */
+.hero-logo {
+  width: 620px;          /* mantenemos tu tamaño ganador */
+  max-width: 90%;
+  margin: 0 auto 15px auto; /* MENOS aire abajo del logo */
+  display: block;
+}
+
+/* Texto del hero */
+.hero h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+
+
 /* Mobile */
 @media (max-width: 600px) {
   .hero-logo {
