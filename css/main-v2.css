@@ -562,7 +562,7 @@ html, body {
    ========================= */
 
 .hero-logo {
-  width: 520px;          /* tamaño grande en desktop */
+  width: 620px;          /* tamaño grande en desktop */
   max-width: 90%;
   height: auto;
   display: block;
