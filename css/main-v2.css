@@ -637,4 +637,16 @@ body {
 section {
   background: transparent !important;
 }
+/* === FIX DEFINITIVO DE FONDO === */
+.site-bg {
+  min-height: 100vh;
+  background: #0f0f0f;
+}
 
+/* anulamos fondos blancos de secciones */
+.hero,
+.services,
+.gallery-section,
+.contact-section {
+  background: transparent !important;
+}
