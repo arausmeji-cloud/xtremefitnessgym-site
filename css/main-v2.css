@@ -400,6 +400,8 @@ html {
 
 .hero {
   background-color: red !important;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -624,7 +626,10 @@ html, body {
     margin-bottom: 20px;
   }
 }
-
+section {
+  position: relative;
+  z-index: 1;
+}
 
 
 
