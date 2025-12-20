@@ -398,6 +398,11 @@ html {
    padding-top: 60px;
 }
 
+.hero {
+  background-color: red !important;
+}
+
+
 /* overlay oscuro */
 .hero::before {
   content: none !important;
