@@ -637,8 +637,18 @@ section {
 /* === FIX DEFINITIVO DE FONDO === */
 .site-bg {
   min-height: 100vh;
-  background: #0f0f0f;
+  width: 100%;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.65)
+    ),
+    url("/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 /* anulamos fondos blancos de secciones */
 .hero,
