@@ -628,8 +628,6 @@ section {
   z-index: 1;
 }
 
-body {
-  background: #0f0f0f;
 }
 section {
   background: transparent !important;
