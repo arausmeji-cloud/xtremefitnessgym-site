@@ -359,6 +359,92 @@ html, body {
 .nav-btn:hover {
   background: var(--xf-yellow);
 }
+/* ======================================
+   HERO – MASTER CONTROL (FINAL)
+====================================== */
 
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("/hero/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Oscurecer un poco el fondo para contraste */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+/* CONTENIDO HERO */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    max-width: 900px;
+    padding: 40px 20px;
+}
+
+/* LOGO HERO */
+.hero-logo {
+    width: 420px;
+    max-width: 90%;
+    margin-bottom: 30px;
+}
+
+/* TEXTO */
+.hero .motto {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--xf-yellow);
+    margin-bottom: 12px;
+}
+
+.hero .subtitle-hero {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.hero p {
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN */
+.hero .btn-primary {
+    font-size: 1.2rem;
+    padding: 16px 34px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-logo {
+        width: 300px;
+    }
+
+    .hero .motto {
+        font-size: 1.9rem;
+    }
+}
 
 
