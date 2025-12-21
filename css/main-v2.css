@@ -364,20 +364,22 @@ html, body {
 ====================================== */
 
 .hero {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-image: url("/hero/hero-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  /* PRUEBA VISUAL */
+  background: linear-gradient(
+      rgba(255, 0, 0, 0.35),
+      rgba(255, 0, 0, 0.35)
+    ),
+    url("/hero-bg.png");
 
-    padding: 0;
-    margin: 0;
-    position: relative;
+  background-size: cover;
+  background-position: center;
+
+  padding: 0;
 }
 
 /* Oscurecer un poco el fondo para contraste */
@@ -406,9 +408,10 @@ html, body {
 
 /* LOGO HERO */
 .hero-logo {
-    width: 420px;
-    max-width: 90%;
-    margin-bottom: 30px;
+  width: 420px;
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+  display: block;
 }
 
 /* TEXTO */
