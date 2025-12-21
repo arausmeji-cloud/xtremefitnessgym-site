@@ -1,13 +1,10 @@
 
-
-
 .services,
 .gallery,
 .impact-section,
 .contact {
   background: transparent !important;
 }
-
 
 /* ======================================
    XTREME FITNESS GYM — CLEAN FINAL CSS
@@ -31,12 +28,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* ======================================
-   LOGO GIGANTE
-   ====================================== */
-
 
 /* ======================================
    BOTÓN PRO XF
@@ -370,7 +361,6 @@
     box-shadow: 0 0 15px var(--xf-green);
 }
 
-
  .hero {
   position: relative;
   min-height: 80vh;
@@ -400,7 +390,6 @@
   content: none !important;
 }
 
-
 /* contenido */
 .hero-content {
   position: relative;
@@ -420,7 +409,6 @@
     max-width: 200px;
   }
 }
-
 
 /* ======================================
    XF GALLERY – FINAL CLEAN
@@ -443,8 +431,6 @@
 .services * {
   background-color: transparent !important;
 }
-
-
 
 /* Botones */
 .gallery-menu {
@@ -535,7 +521,6 @@
   background: var(--xf-yellow);
 }
 
-
 /* FIX DEFINITIVO CORTE NEGRO */
 
 .hero {
@@ -599,8 +584,6 @@
   margin-bottom: 6px;
 }
 
-
-
 /* Mobile */
 @media (max-width: 600px) {
   .hero-logo {
@@ -618,7 +601,6 @@ section {
 /* ==============================
    BACKGROUND GLOBAL DEFINITIVO
    ============================== */
-
 .site-bg {
   min-height: 100vh;
   width: 100%;
@@ -632,7 +614,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 /* anulamos fondos blancos de secciones */
 .hero,
