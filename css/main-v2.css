@@ -483,3 +483,6 @@ html, body {
 .hero .subtitle-hero {
     margin-bottom: 4px;
 }
+body {
+  background: red !important;
+}
