@@ -137,25 +137,10 @@ html, body {
     padding: 20px;
     border-radius: 8px;
 }
-/* ======================
-   FIX XF IMPACT COLORS
-   ====================== */
-.impact-section h2 {
-    color: var(--xf-green) !important;
-    font-size: 2.4rem !important;
-    margin-bottom: 15px !important;
-    text-shadow: 0 0 10px rgba(164,255,10,0.5);
-}
-
-
-.impact-section p {
-    color: #ddd !important;
-    font-size: 1.15rem !important;
-}
 
 .impact-box h3 {
-    color: var(--xf-yellow) !important;
-    font-size: 1.4rem !important;
+    color: var(--xf-yellow);
+    font-size: 1.4rem;
     margin-bottom: 10px;
 
 }
@@ -180,23 +165,23 @@ html, body {
 
 /* TEXTO CENTRAL */
 .contact-text h3 {
-    color: var(--xf-yellow) !important;
-    font-size: 1.4rem !important;
+    color: var(--xf-yellow);
+    font-size: 1.4rem;
 }
 .contact-text p {
-    color: #eaeaea !important;
-    font-size: 1.1rem !important;
+    color: #eaeaea ;
+    font-size: 1.1rem ;
     margin-bottom: 14px;
 }
 
 /* CAJA DE EMAIL */
 .contact-email {
-    background: rgba(0,0,0,0.6) !important;
-    border: 3px solid var(--xf-yellow) !important;
-    padding: 14px 22px !important;
-    color: #fff !important;
-    border-radius: 12px !important;
-    font-size: 18px !important;
+    background: rgba(0,0,0,0.6) ;
+    border: 3px solid var(--xf-yellow);
+    padding: 14px 22px;
+    color: #fff ;
+    border-radius: 12px ;
+    font-size: 18px;
     font-weight: 700;
     display: inline-block;
     margin-top: 10px;
@@ -204,10 +189,10 @@ html, body {
 
 /* FORMULARIO – CAJA EXTERIOR */
 .contact-form {
-    padding: 20px !important;
-    border: 3px solid var(--xf-yellow) !important;
-    border-radius: 12px !important;
-    background: rgba(0,0,0,0.45) !important;
+    padding: 20px;
+    border: 3px solid var(--xf-yellow);
+    border-radius: 12px;
+    background: rgba(0,0,0,0.45) ;
    }
 
 /* FORMULARIO INTERNOS */
@@ -226,8 +211,8 @@ html, body {
     background: rgba(0,0,0,0.55);
     border-radius: 8px;
     color: var(--xf-yellow);
-    font-size: 1rem !important;
-    font-weight: 600 !important;
+    font-size: 1rem;
+    font-weight: 600;
     outline: none;
     transition: 0.25s ease-in-out;
 }
@@ -276,7 +261,7 @@ html, body {
   
 
 .btn-primary {
-    margin-top: 10px !important;
+    margin-top: 10px;
 }
  
 /* Hover */
