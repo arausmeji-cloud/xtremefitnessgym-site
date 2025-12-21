@@ -1,11 +1,4 @@
 
-.services,
-.gallery,
-.impact-section,
-.contact {
-  background: transparent !important;
-}
-
 /* ======================================
    XTREME FITNESS GYM — CLEAN FINAL CSS
    ====================================== */
@@ -87,8 +80,7 @@
     max-width: var(--max-width);
     margin: 80px auto 40px;
     padding: 0 20px;
-    background: transparent; /* 👈 CLAVE */
-}
+  }
 
 .services h2 {
     font-size: 2.4rem;
@@ -115,7 +107,6 @@
     margin-top: -6px;
     border-color: var(--xf-green);
 }
-
 
 /* ======================================
    XF IMPACT
@@ -305,32 +296,7 @@
 @media (max-width: 600px) {
     .logo-header img { width: 340px; }
     .impact-grid { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: 1fr; }
-}
-
-/* ======================
-   FIX HERO & LOGO
-   ====================== */
-
-.logo-header {
-    padding: 140px 0 20px !important; /* Más espacio arriba */
-}
-
-.hero h1 {
-    color: #ffea00 !important; /* amarillo XF fuerte */
-    font-size: 3rem !important;
-}
-
-.subtitle-hero {
-    color: #a4ff0a !important; /* verde neon XF */
-    font-size: 1.4rem !important;
-}
-
-.hero-content p {
-    color: #f6f6f6 !important;
-    font-size: 1.2rem !important;
-    margin-bottom: 12px !important;
-}
+  
 
 .btn-primary {
     margin-top: 10px !important;
@@ -338,12 +304,6 @@
 /* ============================
    GALLERY THUMBNAILS
    ============================ */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
 
 .gallery-thumb {
     width: 100%;
@@ -361,55 +321,6 @@
     box-shadow: 0 0 15px var(--xf-green);
 }
 
- .hero {
-  position: relative;
-  min-height: 80vh;
-   width: 100%;
-
-  background-image: url("/public/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-   padding-top: 60px;
-}
-
-.hero {
-  background-color: red !important;
-  position: relative;
-  z-index: 10;
-}
-
-
-/* overlay oscuro */
-.hero::before {
-  content: none !important;
-}
-
-/* contenido */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  padding: 2rem;
-}
-
-.hero-logo {
-  max-width: 320px;
-  margin-bottom: 1.5rem;
-}
-
-
-@media (max-height: 700px) {
-  .hero-logo {
-    max-width: 200px;
-  }
-}
-
 /* ======================================
    XF GALLERY – FINAL CLEAN
    ====================================== */
@@ -425,11 +336,6 @@
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.services,
-.services * {
-  background-color: transparent !important;
 }
 
 /* Botones */
@@ -459,11 +365,6 @@
 }
 
 /* Grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 16px;
-}
 
 .gallery-grid img {
   width: 100%;
@@ -521,104 +422,5 @@
   background: var(--xf-yellow);
 }
 
-/* FIX DEFINITIVO CORTE NEGRO */
 
-.hero {
-  margin-bottom: 0 !important;
-}
 
-.services {
-  margin-top: 0 !important;
-  padding-top: 80px;
-}
-
-/* =========================
-   HERO LOGO – BIG & CLEAN
-   ========================= */
-
-.hero-logo {
-  width: 620px;          /* tamaño grande en desktop */
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto 30px auto;
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .hero-logo {
-    width: 340px;
-  }
-}
-
-/* =========================
-   HERO – REMOVE EXTRA AIR
-   ========================= */
-
-.hero {
-  padding-top: 40px;     /* antes seguro era mucho más */
-  padding-bottom: 40px;
-}
-
-.hero-content {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* Logo */
-.hero-logo {
-  width: 620px;          /* mantenemos tu tamaño ganador */
-  max-width: 90%;
-  margin: 0 auto 15px auto; /* MENOS aire abajo del logo */
-  display: block;
-}
-
-/* Texto del hero */
-.hero h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .hero-logo {
-    width: 260px;
-    margin-bottom: 20px;
-  }
-}
-section {
-  position: relative;
-  z-index: 1;
-}
-
-}
-
-/* ==============================
-   BACKGROUND GLOBAL DEFINITIVO
-   ============================== */
-.site-bg {
-  min-height: 100vh;
-  width: 100%;
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.65),
-      rgba(0,0,0,0.65)
-    ),
-    url("/public/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* anulamos fondos blancos de secciones */
-.hero,
-.services,
-.gallery-section,
-.contact-section {
-  background: transparent !important;
-}
