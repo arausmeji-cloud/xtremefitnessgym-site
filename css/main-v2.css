@@ -371,7 +371,7 @@ html, body {
   align-items: center;
   justify-content: center;
 
-  background: url("/hero-bg.png") center / cover no-repeat;
+ background: url("/hero/hero-bg.png") center / cover no-repeat;
 
   padding: 40px 20px;
   text-align: center;
