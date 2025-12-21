@@ -447,4 +447,39 @@ html, body {
     }
 }
 
+/* ======================================
+   HERO – LOGO & SPACING FIX
+====================================== */
 
+.hero {
+    padding: 0 !important;
+}
+
+.hero-content {
+    gap: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* LOGO: más chico y mejor balanceado */
+.hero-logo {
+    width: 300px;
+    max-width: 80%;
+    margin: 0 0 12px 0;
+}
+
+/* Quitar aire extra del texto */
+.hero h1,
+.hero p {
+    margin: 0;
+}
+
+/* Ajuste fino del bloque texto */
+.hero .motto {
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.hero .subtitle-hero {
+    margin-bottom: 4px;
+}
