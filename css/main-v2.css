@@ -275,8 +275,9 @@ html, body {
    ====================================== */
 
 .gallery-section {
-  padding: 80px 20px;
-  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .gallery-section h2 {
@@ -366,22 +367,16 @@ html, body {
 .hero {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  /* PRUEBA VISUAL */
-  background: linear-gradient(
-      rgba(255, 0, 0, 0.35),
-      rgba(255, 0, 0, 0.35)
-    ),
-    url("/hero-bg.png");
+  background: url("/hero-bg.png") center / cover no-repeat;
 
-  background-size: cover;
-  background-position: center;
-
-  padding: 0;
+  padding: 40px 20px;
+  text-align: center;
 }
-
+   
 /* Oscurecer un poco el fondo para contraste */
 .hero::before {
     content: "";
@@ -408,10 +403,9 @@ html, body {
 
 /* LOGO HERO */
 .hero-logo {
-  width: 420px;
-  max-width: 90%;
-  margin: 0 auto 20px auto;
-  display: block;
+  width: 260px;   /* mobile friendly */
+  max-width: 80%;
+  margin: 0 0 20px 0;
 }
 
 /* TEXTO */
