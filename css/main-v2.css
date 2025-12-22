@@ -275,9 +275,8 @@ html, body {
    ====================================== */
 
 .gallery-section {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .gallery-section h2 {
@@ -360,9 +359,10 @@ html, body {
 .nav-btn:hover {
   background: var(--xf-yellow);
 }
-/* ======================================
-   HERO – MASTER CONTROL (FINAL)
-====================================== */
+
+/* =========================
+   HERO – SINGLE SOURCE
+========================= */
 
 .hero {
   min-height: 100vh;
@@ -371,7 +371,7 @@ html, body {
   align-items: center;
   justify-content: center;
 
- background: url("/public/hero/hero-bg.png") center / cover no-repeat;
+  background: url("/public/hero/hero-bg.png") center / cover no-repeat;
 
   padding: 40px 20px;
   text-align: center;
@@ -481,5 +481,9 @@ html, body {
     margin-bottom: 4px;
 }
 body {
-  background: red !important;
+  margin: 0;
+  padding: 0;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
