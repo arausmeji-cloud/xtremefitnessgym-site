@@ -275,7 +275,16 @@ html, body {
     transform: scale(1.06);
     box-shadow: 0 0 15px var(--xf-green);
 }
+.logo-header {
+  padding: 0;
+  margin-bottom: 20px;
+}
 
+.logo-header img {
+  width: 420px;
+  max-width: 90%;
+  height: auto;
+}
 /* ======================================
    XF GALLERY – FINAL CLEAN
    ====================================== */
