@@ -260,21 +260,7 @@ html, body {
     height: auto;
   }
 
-  .hero {
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-}
- 
-/* Hover */
-.gallery-thumb:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 15px var(--xf-green);
-}
+ /* LOGO – DESKTOP */
 .logo-header {
   padding: 0;
   margin-bottom: 20px;
@@ -285,6 +271,7 @@ html, body {
   max-width: 90%;
   height: auto;
 }
+   
 /* ======================================
    XF GALLERY – FINAL CLEAN
    ====================================== */
