@@ -264,6 +264,10 @@ html, body {
     padding-top: 20px;
     padding-bottom: 30px;
   }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
 }
  
 /* Hover */
