@@ -343,20 +343,20 @@ html, body {
 /* =========================
    HERO – SINGLE SOURCE
 ========================= */
-
 .hero {
   min-height: 100vh;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background: url("/public/hero/hero-bg.png") center / cover no-repeat;
-
-  padding: 40px 20px;
-  text-align: center;
 }
-   
+
 /* Oscurecer un poco el fondo para contraste */
 .hero::before {
     content: "";
@@ -416,17 +416,17 @@ html, body {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: 280px;
-  max-width: 80%;
+  width: 420px;
+  max-width: 90%;
   height: auto;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 10px auto;
   display: block;
 }
 
 .hero-content {
-    gap: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Quitar aire extra del texto */
@@ -455,4 +455,32 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* === MOBILE FIXES === */
+@media (max-width: 768px) {
+
+  section,
+  .container,
+  .content,
+  .cards,
+  .grid {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .what-we-offer,
+  .xf-impact,
+  .contact-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .card,
+  .offer-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
 }
