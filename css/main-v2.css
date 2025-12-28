@@ -344,19 +344,9 @@ html, body {
    HERO – SINGLE SOURCE
 ========================= */
 .hero {
-  min-height: 100vh;
-  height: 100vh;
   background-image:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
     url("/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Oscurecer un poco el fondo para contraste */
@@ -375,8 +365,10 @@ html, body {
   align-items: center;
   gap: 6px;
   padding: 0;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
 }
-
 
 /* TEXTO */
 .hero .motto {
@@ -416,7 +408,9 @@ html, body {
   height: auto;
   margin: 0 auto 6px auto;
   display: block;
+  margin-bottom: 20px;
 }
+
 
 .hero-content {
     gap: 10px;
@@ -465,6 +459,9 @@ html, body {
   justify-content: center;
 }
 
+
+
+
 /* === MOBILE FIXES === */
 @media (max-width: 768px) {
 
@@ -489,6 +486,17 @@ html, body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 80px 20px 60px;
+  }
+
+  .motto {
+    font-size: 2rem;
   }
 
 }
