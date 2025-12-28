@@ -424,12 +424,25 @@ html, body {
     padding-bottom: 10px;
 }
 
-/* Quitar aire extra del texto */
-.hero h1,
-.hero p {
-    margin: 0;
-}
+@media (max-width: 768px) {
 
+  .hero {
+    background-attachment: scroll;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 16px;
+  }
+
+  .hero-logo {
+    width: 320px;
+    margin-bottom: 10px;
+  }
+
+  .hero-content {
+    gap: 10px;
+  }
+
+}
 /* Ajuste fino del bloque texto */
 .hero .motto {
     margin-top: 8px;
