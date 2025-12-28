@@ -248,29 +248,7 @@ html, body {
 /* ======================================
    RESPONSIVE
    ====================================== */
-@media (max-width: 600px) {
-  .logo-header {
-    padding: 10px 0 !important;
-    margin-bottom: 10px !important;
-  }
 
-  .logo-header img {
-    width: 90%;
-    max-width: 420px;
-    height: auto;
-  }
-
- /* LOGO – DESKTOP */
-.logo-header {
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.logo-header img {
-  width: 420px;
-  max-width: 90%;
-  height: auto;
-}
    
 /* ======================================
    XF GALLERY – FINAL CLEAN
