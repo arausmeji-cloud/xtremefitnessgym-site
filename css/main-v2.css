@@ -387,6 +387,9 @@ html, body {
     padding: 16px 34px;
 }
 
+.hero {
+  background: red !important;
+}
 
 /* ======================================
    HERO – LOGO & SPACING FIX
