@@ -345,13 +345,15 @@ html, body {
 ========================= */
 .hero {
   min-height: 100vh;
-  background-image: 
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,19 +370,12 @@ html, body {
 
 /* CONTENIDO HERO */
 .hero-content {
-    position: relative;
-    z-index: 2;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    max-width: 900px;
-    padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
 }
-
 
 
 /* TEXTO */
@@ -416,10 +411,10 @@ html, body {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: 420px;
-  max-width: 90%;
+  width: 520px;
+  max-width: 95%;
   height: auto;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 6px auto;
   display: block;
 }
 
