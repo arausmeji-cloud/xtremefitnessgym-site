@@ -492,3 +492,29 @@ html, body {
   }
 
 }
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .what-we-offer,
+  .xf-impact,
+  .contact-section {
+    gap: 24px;
+  }
+
+  .card,
+  .offer-card,
+  .impact-card {
+    margin-bottom: 20px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+}
