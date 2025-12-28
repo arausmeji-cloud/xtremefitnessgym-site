@@ -381,12 +381,7 @@ html, body {
     padding: 40px 20px;
 }
 
-/* LOGO HERO */
-.hero-logo {
-  width: 260px;   /* mobile friendly */
-  max-width: 80%;
-  margin: 0 0 20px 0;
-}
+
 
 /* TEXTO */
 .hero .motto {
@@ -413,36 +408,25 @@ html, body {
     padding: 16px 34px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero-logo {
-        width: 300px;
-    }
-
-    .hero .motto {
-        font-size: 1.9rem;
-    }
-}
 
 /* ======================================
    HERO – LOGO & SPACING FIX
 ====================================== */
 
-.hero {
-    padding: 0 !important;
+
+/* HERO LOGO – FINAL CLEAN */
+.hero-logo {
+  width: 280px;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto 16px auto;
+  display: block;
 }
 
 .hero-content {
     gap: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-/* LOGO: más chico y mejor balanceado */
-.hero-logo {
-    width: 300px;
-    max-width: 80%;
-    margin: 0 0 12px 0;
 }
 
 /* Quitar aire extra del texto */
