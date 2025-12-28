@@ -538,3 +538,22 @@ html, body {
   }
 
 }
+@media (max-width: 768px) {
+
+  .offers,
+  .what-we-offer,
+  .what-we-offer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .offers > *,
+  .what-we-offer > *,
+  .what-we-offer-grid > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
