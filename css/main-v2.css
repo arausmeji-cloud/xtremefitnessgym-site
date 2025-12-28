@@ -349,14 +349,6 @@ html, body {
     url("/hero/hero-bg.png");
 }
 
-/* Oscurecer un poco el fondo para contraste */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    z-index: 1;
-}
 
 /* CONTENIDO HERO */
 .hero-content {
