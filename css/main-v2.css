@@ -521,3 +521,20 @@ html, body {
   }
 
 }
+@media (max-width: 768px) {
+
+  .offers-grid,
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .offers-grid > *,
+  .impact-grid > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
