@@ -444,10 +444,4 @@ html, body {
 .hero .subtitle-hero {
     margin-bottom: 4px;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ff0000;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-}
+
