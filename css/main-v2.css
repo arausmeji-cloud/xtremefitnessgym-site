@@ -557,3 +557,15 @@ html, body {
   }
 
 }
+@media (max-width: 768px) {
+
+  /* WHAT WE OFFER – FIX DEFINITIVO MOBILE */
+  .what-we-offer *,
+  .offers *,
+  .offer-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+}
