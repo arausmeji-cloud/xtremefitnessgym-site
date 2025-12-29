@@ -568,13 +568,20 @@ html, body {
 /* ===== HERO BACKGROUND FINAL ===== */
 .hero {
   min-height: 100vh;
-  background-image: url("/public/hero/hero-bg.png");
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/public/hero/hero-bg.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
