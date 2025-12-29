@@ -343,12 +343,6 @@ html, body {
 /* =========================
    HERO – SINGLE SOURCE
 ========================= */
-.hero {
-  background-image:
-    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-    url("/public/hero/hero-bg.png");
-}
-
 
 /* CONTENIDO HERO */
 .hero-content {
@@ -391,7 +385,6 @@ html, body {
    HERO – LOGO & SPACING FIX
 ====================================== */
 
-
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
   width: 520px;
@@ -401,7 +394,6 @@ html, body {
   display: block;
   margin-bottom: 20px;
 }
-
 
 .hero-content {
     gap: 10px;
