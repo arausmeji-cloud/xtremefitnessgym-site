@@ -105,8 +105,8 @@ body::before {
 .services {
     text-align: center;
     max-width: var(--max-width);
-    margin: 80px auto 40px;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 80px 20px;
   }
 
 .services h2 {
@@ -140,8 +140,8 @@ body::before {
    ====================================== */
 .impact-section {
     text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 40px;
+    padding: 80px 20px;
+    margin-bottom: 0px;
 }
 
 .impact-grid {
@@ -604,4 +604,17 @@ section {
   background-color: var(--dark-bg);
   position: relative;
   z-index: 2;
+}
+/* 🔒 RESET GLOBAL DE SECTIONS */
+section {
+  background: transparent !important;
+  margin: 0 !important;
+}
+
+.what-we-offer,
+.gallery-section,
+.impact-section,
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
