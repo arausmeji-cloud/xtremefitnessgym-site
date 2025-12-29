@@ -573,3 +573,7 @@ html, body {
 section {
   border: 3px solid red;
 }
+/* FIX: sections should NOT force black background */
+section {
+  background: transparent;
+}
