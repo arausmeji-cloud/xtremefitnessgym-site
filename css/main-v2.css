@@ -560,13 +560,8 @@ html, body {
   align-items: center;
 
   position: relative;
+  z-index: 1;
 }
-
-/*@media (max-width: 768px) {
-  .hero {
-    background-attachment: scroll;
-  }
-}*/
 
 section:not(.hero),
 .services,
