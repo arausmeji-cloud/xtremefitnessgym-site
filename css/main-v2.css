@@ -585,3 +585,6 @@ section {
   padding: 80px 20px;
   background-color: var(--dark-bg);
 }
+.hero {
+  background: red !important;
+}
