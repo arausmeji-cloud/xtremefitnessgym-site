@@ -582,4 +582,22 @@ section {
   position: relative;
   background-color: var(--dark-bg);
 }
+/* =========================
+   FIX DEFINITIVO BACKGROUNDS
+========================= */
 
+/* Hero: único con imagen */
+.hero {
+  background-color: transparent;
+}
+
+/* Todas las secciones DESPUÉS del hero */
+.what-we-offer,
+.services,
+.gallery-section,
+.impact-section,
+.contact-section {
+  background-color: var(--dark-bg);
+  position: relative;
+  z-index: 2;
+}
