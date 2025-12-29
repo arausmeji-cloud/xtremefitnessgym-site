@@ -492,7 +492,7 @@ html, body {
     flex-direction: column;
     gap: 24px;
   }
-
+}
 @media (max-width: 768px) {
 
   .offers-grid,
@@ -550,7 +550,7 @@ html, body {
       rgba(0,0,0,0.35),
       rgba(0,0,0,0.55)
     ),
-    url("/hero/hero-bg.png");
+    url("/public/hero/hero-bg.png");
 
   background-size: cover;
   background-position: center;
@@ -561,4 +561,3 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
