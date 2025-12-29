@@ -553,19 +553,14 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  z-index: 0;
-  background-attachment: fixed;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   position: relative;
-  overflow: hidden;
-  position: relative;
- }
 
+  position: relative;
+}
 
 /*@media (max-width: 768px) {
   .hero {
@@ -584,7 +579,7 @@ section {
   margin: 0;
   padding: 80px 20px;
   background-color: var(--dark-bg);
+  position: relative;
+  background-color: var(--dark-bg);
 }
-.hero {
-  background: red !important;
-}
+
