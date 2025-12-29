@@ -29,6 +29,11 @@ html, body {
   color: var(--text-light);
   overflow-x: hidden;
 }
+body {
+  background: none;
+  position: relative;
+  z-index: 0;
+}
 
 /* ======================================
    BOTÓN PRO XF
@@ -553,14 +558,12 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   position: relative;
-  z-index: 1;
 }
 
 section:not(.hero),
