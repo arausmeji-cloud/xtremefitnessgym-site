@@ -563,8 +563,8 @@ html, body {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .hero {
     background-attachment: scroll;
   }
-}
+}*/
