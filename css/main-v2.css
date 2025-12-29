@@ -568,7 +568,7 @@ html, body {
 /* ===== HERO BACKGROUND FINAL ===== */
 .hero {
   min-height: 100vh;
-  background-image: url("/hero-bg.png");
+  background-image: url("/public/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
