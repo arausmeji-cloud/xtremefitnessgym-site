@@ -71,7 +71,7 @@ html, body {
     font-size: 1.1rem;
     font-weight: 600;
     display: inline-block;
-    background: rgba(0,0,0,0.4);
+    background: transparent;
     transition: var(--transition);
 }
 
