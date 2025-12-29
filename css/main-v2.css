@@ -563,15 +563,7 @@ body::before {
 /* HERO — FINAL DEFINITIVO */
 .hero {
   min-height: 100vh;
-  background-image:
-    linear-gradient(
-      rgba(0,0,0,0.35),
-      rgba(0,0,0,0.55)
-    ),
-    url("/public/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ background: transparent
   width: 100%;
   display: flex;
   flex-direction: column;
