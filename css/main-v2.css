@@ -544,19 +544,19 @@ html, body {
 /* HERO — FINAL DEFINITIVO */
 .hero {
   min-height: 100vh;
-
   background-image:
     linear-gradient(
       rgba(0,0,0,0.35),
       rgba(0,0,0,0.55)
     ),
     url("/public/hero/hero-bg.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  width: 100%;
+  z-index: 0;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -564,8 +564,7 @@ html, body {
    position: relative;
   overflow: hidden;
   position: relative;
-  z-index: 10;
-}
+ }
 
 
 /*@media (max-width: 768px) {
@@ -579,5 +578,10 @@ section:not(.hero),
 .gallery-section,
 .impact-section,
 .contact-section {
+  background-color: var(--dark-bg);
+}
+section {
+  margin: 0;
+  padding: 80px 20px;
   background-color: var(--dark-bg);
 }
