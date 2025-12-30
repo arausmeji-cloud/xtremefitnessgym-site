@@ -502,35 +502,8 @@ body::before {
     gap: 24px;
   }
 }
-@media (max-width: 768px) {
 
-  .offers-grid,
-  .impact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    justify-items: center;
-  }
-
-  .offers-grid > *,
-  .impact-grid > * {
-    width: 100%;
-    max-width: 100%;
-  }
-
-}
-@media (max-width: 768px) {
-
-  .offers,
-  .what-we-offer,
-  .what-we-offer-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    justify-items: center;
-  }
-
-  .offers > *,
+.offers > *,
   .what-we-offer > *,
   .what-we-offer-grid > * {
     width: 100%;
@@ -699,6 +672,56 @@ section {
   .contact-container {
     gap: 16px;
     text-align: center;
+  }
+}
+/* =========================
+   WHAT WE OFFER – MOBILE FIX FINAL
+========================= */
+@media (max-width: 768px) {
+
+  .offers-grid,
+  .what-we-offer,
+  .what-we-offer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .offer-card,
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+}
+/* =========================
+   CONTACT – MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding-top: 32px !important;
+    padding-bottom: 40px !important;
+    text-align: center;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 12px;
+  }
+
+  .contact-section p {
+    margin-bottom: 16px;
+  }
+
+  .contact-container {
+    gap: 16px;
+  }
+
+  .contact-email {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 16px;
   }
 
 }
