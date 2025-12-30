@@ -625,3 +625,80 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+/* =========================
+   MOBILE RESET – FINAL
+========================= */
+@media (max-width: 768px) {
+
+  /* 1. RESET GENERAL DE ESPACIOS */
+  section {
+    padding: 48px 16px !important;
+  }
+
+  /* ================= HERO ================= */
+  .hero {
+    padding-top: 8px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .hero-logo {
+    max-width: 520px;   /* grande pero sin romper */
+    margin-bottom: 6px;
+  }
+
+  .hero-content {
+    gap: 6px;
+  }
+
+  /* ================= WHAT WE OFFER ================= */
+  .offers-grid,
+  .what-we-offer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* 👈 UNA SOLA COLUMNA */
+    gap: 20px;
+  }
+
+  .offer-card,
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  /* ================= GALLERY ================= */
+  .gallery-menu,
+  .gallery-buttons {
+    display: flex;
+    flex-direction: column;   /* 👈 uno debajo del otro */
+    gap: 14px;
+    align-items: center;
+  }
+
+  .gallery-menu a,
+  .gallery-buttons a {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  /* ================= XF IMPACT ================= */
+  .impact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* ================= CONTACT ================= */
+  .contact-section,
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contact-container {
+    gap: 16px;
+    text-align: center;
+  }
+
+}
