@@ -405,12 +405,12 @@ body::before {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: 620px;
+  width: 720px;
   max-width: 95%;
   height: auto;
   margin: 0 auto 6px auto;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 768px) {
