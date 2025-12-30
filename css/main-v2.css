@@ -285,7 +285,15 @@ body::before {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.gallery-section {
+  text-align: center;
+}
 
+.gallery-section .gallery-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 /* Botones */
 .gallery-menu {
   margin-bottom: 40px;
@@ -412,7 +420,7 @@ body::before {
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
   width: auto;              /* clave */
-  max-width: 420px;         /* control real del tamaño */
+  max-width: 580px;         /* control real del tamaño */
   height: auto;
   margin: 0 auto 8px auto;  /* aire mínimo abajo */
   display: block;
@@ -554,8 +562,8 @@ body::before {
   flex-direction: column;
   justify-content: flex-start; /* 👈 CLAVE */
   align-items: center;
-   padding-top: 20px;  /* antes 48px */
-  padding-bottom: 20px;
+   padding-top: 12px;  /* antes 48px */
+  padding-bottom: 16px;
   height: auto;
 }
 
