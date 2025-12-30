@@ -372,7 +372,7 @@ body::before {
   padding: 0;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin: 0;
 }
 
 /* TEXTO */
@@ -414,31 +414,14 @@ body::before {
   margin-bottom: 20px;
 }
 
-.hero-content {
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 @media (max-width: 768px) {
 
   .hero {
     background-attachment: scroll;
     height: auto;
-    min-height: 100vh;
-    padding: 40px 16px;
-  }
-
-  .hero-logo {
-    width: 320px;
-    margin-bottom: 10px;
-  }
-
-  .hero-content {
-    gap: 10px;
-  }
-
+    }
 }
+
 /* Ajuste fino del bloque texto */
 .hero .motto {
     margin-top: 8px;
@@ -562,7 +545,7 @@ body::before {
 }
 /* HERO — FINAL DEFINITIVO */
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
  background: transparent
   width: 100%;
   display: flex;
@@ -570,6 +553,7 @@ body::before {
   justify-content: center;
   align-items: center;
   position: relative;
+   padding: 32px 20px;
 }
 
 section:not(.hero),
