@@ -368,11 +368,10 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  padding: 0;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  margin: 0;
+  gap: 10px;
+  margin-top: 12px;  /* 👈 sube todo el bloque */
 }
 
 /* TEXTO */
@@ -406,7 +405,7 @@ body::before {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: 520px;
+  width: 620px;
   max-width: 95%;
   height: auto;
   margin: 0 auto 6px auto;
@@ -424,7 +423,7 @@ body::before {
 
 /* Ajuste fino del bloque texto */
 .hero .motto {
-    margin-top: 8px;
+    margin-top: 4px;
     margin-bottom: 6px;
 }
 
@@ -546,14 +545,13 @@ body::before {
 /* HERO — FINAL DEFINITIVO */
 .hero {
   min-height: 85vh;
- background: transparent
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* 👈 CLAVE */
   align-items: center;
   position: relative;
-   padding: 32px 20px;
+  padding: 48px 20px 32px;
 }
 
 section:not(.hero),
