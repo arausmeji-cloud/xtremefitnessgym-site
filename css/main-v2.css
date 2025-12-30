@@ -365,6 +365,9 @@ body::before {
 
 /* CONTENIDO HERO */
 .hero-content {
+   width: 100%
+   max-width: 1100px
+   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,11 +465,10 @@ body::before {
 
 }
 @media (max-width: 768px) {
-
   .hero {
-    padding: 80px 20px 60px;
+    padding: 20px 16px 20px;   /* compacto y profesional */
   }
-
+}
   .motto {
     font-size: 2rem;
   }
@@ -551,9 +553,8 @@ body::before {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* 👈 CLAVE */
-  align-items: flex-start;
-  position: relative;
-  padding-top: 20px;  /* antes 48px */
+  align-items: center;
+   padding-top: 20px;  /* antes 48px */
   padding-bottom: 20px;
   height: auto;
 }
