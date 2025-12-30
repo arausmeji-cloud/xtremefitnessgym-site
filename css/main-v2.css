@@ -551,11 +551,11 @@ body::before {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* 👈 CLAVE */
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  min-height: 70vh;   /* 👈 ESTE ES EL CAMBIO FUERTE */
-  padding-top: 28px;  /* antes 48px */
-  padding-bottom: 24px;
+  padding-top: 20px;  /* antes 48px */
+  padding-bottom: 20px;
+  height: auto;
 }
 
 section:not(.hero),
