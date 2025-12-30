@@ -411,10 +411,10 @@ body::before {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: 720px;
-  max-width: 95%;
+  width: auto;              /* clave */
+  max-width: 420px;         /* control real del tamaño */
   height: auto;
-  margin: 0 auto 6px auto;
+  margin: 0 auto 8px auto;  /* aire mínimo abajo */
   display: block;
   margin-bottom: 2px;
 }
@@ -604,4 +604,7 @@ section {
 .contact-section {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.hero {
+  min-height: unset !important;
 }
