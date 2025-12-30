@@ -161,7 +161,6 @@ body::before {
     color: var(--xf-yellow);
     font-size: 1.4rem;
     margin-bottom: 10px;
-
 }
 
 /* GRID */
@@ -475,7 +474,6 @@ body::before {
   .motto {
     font-size: 2rem;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -509,7 +507,6 @@ body::before {
     width: 100%;
     max-width: 100%;
   }
-
 }
 @media (max-width: 768px) {
 
