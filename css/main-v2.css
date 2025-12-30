@@ -264,20 +264,19 @@ body::before {
     box-shadow: 0 0 8px var(--xf-green) !important;
 }
 
-/* ======================================
-   RESPONSIVE
-   ====================================== */
-
-   
-/* ======================================
+  /* ======================================
    XF GALLERY – FINAL CLEAN
-   ====================================== */
+====================================== */
 
 .gallery-section {
   padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+/* Título */
 .gallery-section h2 {
   font-size: 2.6rem;
   color: var(--xf-green);
@@ -285,19 +284,15 @@ body::before {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.gallery-section {
-  text-align: center;
-}
 
-.gallery-section .gallery-buttons {
+/* Contenedor de botones */
+.gallery-menu,
+.gallery-buttons {
   display: flex;
   justify-content: center;
   gap: 16px;
-}
-/* Botones */
-.gallery-menu {
   margin-bottom: 40px;
-}
+} 
 
 .xf-btn {
   display: inline-block;
@@ -373,19 +368,21 @@ body::before {
 
 /* CONTENIDO HERO */
 .hero-content {
-   width: 100%
-   max-width: 1100px
-   margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  gap: 10px;
-  margin-top: 0  ! importnat;  /* 👈 sube todo el bloque */
-  padding-top:  0  ! important;
-}
 
+  gap: 8px;
+
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 /* TEXTO */
 .hero .motto {
     font-size: 2.4rem;
@@ -419,12 +416,11 @@ body::before {
 
 /* HERO LOGO – FINAL CLEAN */
 .hero-logo {
-  width: auto;              /* clave */
-  max-width: 580px;         /* control real del tamaño */
+  width: auto;
+  max-width: 720px;   /* ⬅️ más impacto */
   height: auto;
-  margin: 0 auto 8px auto;  /* aire mínimo abajo */
+  margin: 0 auto 6px;
   display: block;
-  margin-bottom: 2px;
 }
 
 @media (max-width: 768px) {
@@ -615,4 +611,7 @@ section {
 }
 .hero {
   min-height: unset !important;
+}
+.hero {
+  padding: 12px 20px !important;
 }
