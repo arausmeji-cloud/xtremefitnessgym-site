@@ -448,9 +448,15 @@ backdrop-filter: blur(2px);
 /* GALLERY MENU */
 .gallery-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
-  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .gallery-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .gallery-menu a,
@@ -505,4 +511,64 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+/* =========================
+   HERO – TIGHT & IMPACTFUL
+========================= */
+
+.hero {
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.hero-content {
+  gap: 4px;
+}
+
+.hero-logo {
+  max-width: 760px;   /* más grande */
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.hero .motto {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.hero .subtitle-hero {
+  margin-bottom: 2px;
+}
+
+.hero p {
+  margin-bottom: 8px;
+}
+/* =========================
+   WHAT WE OFFER – TEXT FIX
+========================= */
+
+.what-we-offer,
+.what-we-offer h3,
+.what-we-offer p {
+  color: #eee;
+}
+
+.offer-card {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(164,255,10,0.35);
+}
+/* =========================
+   XF IMPACT – CLEAN LOOK
+========================= */
+
+.impact-section,
+.impact-section h3,
+.impact-section p {
+  color: #eee;
+}
+
+.impact-box {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: none;
 }
