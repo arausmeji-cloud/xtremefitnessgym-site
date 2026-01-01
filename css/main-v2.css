@@ -96,7 +96,8 @@
 }
 
 .service-box {
-    background: rgba(20, 20, 20, 0.8);
+   background: rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(2px);
     padding: 25px;
     border-radius: 10px;
     border: 2px solid #222;
@@ -124,9 +125,11 @@
 }
 
 .impact-box {
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px);
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid rgba(164,255,10,0.25);
 }
 
 .impact-box h3 {
@@ -244,6 +247,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: transparent;
 }
 
 /* Título */
