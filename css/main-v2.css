@@ -451,13 +451,6 @@ body::before {
     overflow-x: hidden;
   }
 
-  .what-we-offer,
-  .xf-impact,
-  .contact-section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .card,
   .offer-card {
     width: 100%;
@@ -476,24 +469,6 @@ body::before {
   }
 }
 
-@media (max-width: 768px) {
-
-  section {
-    padding: 60px 20px;
-  }
-
-  .what-we-offer,
-  .xf-impact,
-  .contact-section {
-    gap: 24px;
-  }
-
-  .card,
-  .offer-card,
-  .impact-card {
-    margin-bottom: 20px;
-  }
-
   .contact-container {
     display: flex;
     flex-direction: column;
@@ -501,24 +476,11 @@ body::before {
   }
 }
 
-.offers > *,
-  .what-we-offer > *,
-  .what-we-offer-grid > * {
-    width: 100%;
-    max-width: 100%;
-  }
-}
 @media (max-width: 768px) {
-
-  /* WHAT WE OFFER – FIX DEFINITIVO MOBILE */
-  .what-we-offer *,
-  .offers *,
-  .offer-card {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
+  .offers-grid,
+  .what-we-offer-grid {
+    grid-template-columns: 1fr !important;
   }
-
 }
 /* HERO — FINAL DEFINITIVO */
 .hero {
@@ -568,10 +530,6 @@ section {
   z-index: 2;
 }
 /* 🔒 RESET GLOBAL DE SECTIONS */
-section {
-  background: transparent !important;
-  margin: 0 !important;
-}
 
 .what-we-offer,
 .gallery-section,
@@ -587,16 +545,6 @@ section {
   padding: 12px 20px !important;
 }
 
-/* =========================
-   MOBILE RESET – FINAL
-========================= */
-@media (max-width: 768px) {
-
-  /* 1. RESET GENERAL DE ESPACIOS */
-  section {
-    padding: 48px 16px !important;
-  }
-
   /* ================= HERO ================= */
   .hero {
     padding-top: 8px !important;
@@ -610,14 +558,6 @@ section {
 
   .hero-content {
     gap: 6px;
-  }
-
-  /* ================= WHAT WE OFFER ================= */
-  .offers-grid,
-  .what-we-offer-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important; /* 👈 UNA SOLA COLUMNA */
-    gap: 20px;
   }
 
   .offer-card,
@@ -651,32 +591,24 @@ section {
   }
 
   /* ================= CONTACT ================= */
-  .contact-section,
+ @media (max-width: 768px) {
   .contact-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
-    padding: 0;
-  }
-
-  .contact-container {
-    gap: 16px;
+    padding: 0 16px;
     text-align: center;
   }
-}
-/* =========================
-   WHAT WE OFFER – MOBILE FIX FINAL
-========================= */
-@media (max-width: 768px) {
 
-  .offers-grid,
-  .what-we-offer,
-  .what-we-offer-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px;
+  .contact-email {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
-
-  .offer-card,
+}
+   
+    .offer-card,
   .card {
     width: 100% !important;
     max-width: 100% !important;
