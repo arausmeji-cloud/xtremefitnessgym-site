@@ -235,6 +235,9 @@
     box-shadow: 0 0 8px var(--xf-green) !important;
 }
 
+/* ======================================
+   XF GALLERY
+   ====================================== */
 .gallery-section {
   padding: 80px 20px;
   display: flex;
@@ -253,14 +256,6 @@
 }
 
 /* Contenedor de botones */
-.gallery-menu,
-.gallery-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 40px;
-} 
-
 .xf-btn {
   display: inline-block;
   margin: 10px 14px;
@@ -330,8 +325,23 @@
 }
 
 /* =========================
-   HERO – SINGLE SOURCE
+   HERO – SINGLE SOURCE (FINAL)
 ========================= */
+
+/* CONTENEDOR HERO */
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  height: auto;
+  background-color: transparent;
+}
 
 /* CONTENIDO HERO */
 .hero-content {
@@ -342,175 +352,65 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   text-align: center;
-  gap: 6px;              /* antes 10px */
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+
+  gap: 6px;
+}
+
+/* LOGO */
+.hero-logo {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+
+  margin: 0 auto 4px;
+  display: block;
 }
 
 /* TEXTO */
 .hero .motto {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--xf-yellow);
-    margin-bottom: 12px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--xf-yellow);
+  margin: 4px 0 6px;
 }
 
 .hero .subtitle-hero {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-bottom: 6px;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 4px;
 }
 
 .hero p {
-    color: #ddd;
-    margin-bottom: 25px;
+  color: #ddd;
+  margin-bottom: 18px;
 }
 
 /* BOTÓN */
 .hero .btn-primary {
-    font-size: 1.2rem;
-    padding: 16px 34px;
-  margin-top: 10px;
-  margin-bottom: 14px;
+  font-size: 1.2rem;
+  padding: 16px 34px;
+  margin-bottom: 10px;
 }
 
-/* ======================================
-   HERO – LOGO & SPACING FIX
-====================================== */
-
-/* HERO LOGO – FINAL CLEAN */
-.hero-logo {
-  max-width: 700px;      /* grande pero controlado */
-  width: 100%;
-  height: auto;
-
-  margin: 0 auto 4px;   /* aire mínimo abajo */
-  display: block;
-}
+/* =========================
+   HERO — MOBILE
+========================= */
 @media (max-width: 768px) {
 
   .hero {
-    background-attachment: scroll;
-    height: auto;
-    }
-}
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
 
-/* Ajuste fino del bloque texto */
-.hero .motto {
-    margin-top: 4px;
+  .hero-logo {
+    max-width: 520px;
     margin-bottom: 6px;
-}
-
-.hero .subtitle-hero {
-    margin-bottom: 4px;
-}
-
-/* === MOBILE FIXES === */
-@media (max-width: 768px) {
-
-  section,
-  .container,
-  .content,
-  .cards,
-  .grid {
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
-  .card,
-  .offer-card {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-}
-@media (max-width: 768px) {
-  .hero {
-    padding: 20px 16px 20px;   /* compacto y profesional */
-  }
-}
-  .motto {
+  .hero .motto {
     font-size: 2rem;
   }
-}
-
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .offers-grid,
-  .what-we-offer-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-/* HERO — FINAL DEFINITIVO */
-.hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  padding-top: 8px;     /* antes 12 / 48 */
-  padding-bottom: 12px;
-
-  height: auto;
-}
-
-section:not(.hero),
-.services,
-.gallery-section,
-.impact-section,
-.contact-section {
-  background-color: var(--dark-bg);
-}
-section {
-  margin: 0;
-  padding: 80px 20px;
-  background-color: var(--dark-bg);
-  position: relative;
-  background-color: var(--dark-bg);
-}
-/* =========================
-   FIX DEFINITIVO BACKGROUNDS
-========================= */
-
-/* Hero: único con imagen */
-.hero {
-  background-color: transparent;
-}
-
-/* Todas las secciones DESPUÉS del hero */
-.what-we-offer,
-.services,
-.gallery-section,
-.impact-section,
-.contact-section {
-  background-color: var(--dark-bg);
-  position: relative;
-  z-index: 2;
-}
-/* 🔒 RESET GLOBAL DE SECTIONS */
-
-.what-we-offer,
-.gallery-section,
-.impact-section,
-.contact-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.hero {
-  min-height: unset !important;
-}
-.hero {
-  padding: 12px 20px !important;
 }
 
   /* ================= HERO ================= */
