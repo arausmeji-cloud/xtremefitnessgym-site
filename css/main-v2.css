@@ -423,9 +423,7 @@ backdrop-filter: blur(2px);
 
 /* HERO */
 .hero {
-  padding-top: 8px;
-  padding-bottom: 12px;
-  background: transparent;
+    background: transparent;
 }
 
 .hero-logo {
@@ -515,12 +513,6 @@ body::before {
 /* =========================
    HERO – TIGHT & IMPACTFUL
 ========================= */
-
-.hero {
-  padding-top: 0;
-  padding-bottom: 8px;
-}
-
 .hero-content {
   gap: 4px;
 }
@@ -667,6 +659,38 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
+
+/* 🔥 KILL HERO FORCED HEIGHT */
+.hero {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+/* =========================
+   HERO – FINAL AIR FIX
+========================= */
+
+.hero {
+  padding-top: 16px !important;
+  padding-bottom: 24px !important;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 🔴 clave */
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto 4px auto;
+}
+
 /* =========================
    WHAT WE OFFER – TEXT FIX
 ========================= */
