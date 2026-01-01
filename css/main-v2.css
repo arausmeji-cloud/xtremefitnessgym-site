@@ -667,6 +667,25 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   WHAT WE OFFER – TEXT FIX
+========================= */
 
+.what-we-offer,
+.what-we-offer * {
+  color: #eee;
+}
+
+.what-we-offer h2 {
+  color: var(--xf-yellow);
+}
+
+.offer-card h3 {
+  color: var(--xf-green);
+}
+
+.offer-card p {
+  color: #ddd;
+}
 
 
