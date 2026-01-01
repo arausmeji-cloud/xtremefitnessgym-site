@@ -339,9 +339,6 @@ backdrop-filter: blur(2px);
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
-  padding-top: 12px;
-  padding-bottom: 16px;
 }
 
 /* CONTENIDO HERO */
@@ -401,7 +398,7 @@ backdrop-filter: blur(2px);
 
   .hero {
     padding-top: 8px;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
   }
 
   .hero-logo {
@@ -414,52 +411,64 @@ backdrop-filter: blur(2px);
   }
 }
 
-  /* ================= HERO ================= */
-  .hero {
-    padding-top: 8px !important;
-    padding-bottom: 16px !important;
-  }
+ /* =========================
+   LAYOUT & MOBILE FIXES — CLEAN
+========================= */
 
-  .hero-logo {
-    max-width: 520px;   /* grande pero sin romper */
-    margin-bottom: 6px;
-  }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  .hero-content {
-    gap: 6px;
-  }
+/* HERO */
+.hero {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  background: transparent;
+}
 
-  .offer-card,
-  .card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto;
-  }
+.hero-logo {
+  max-width: 520px;
+  margin-bottom: 6px;
+}
 
-  /* ================= GALLERY ================= */
-  .gallery-menu {
-    display: flex;
-    flex-direction: column;   /* 👈 uno debajo del otro */
-    gap: 16px;
-  margin-bottom: 40px
-  }
+.hero-content {
+  gap: 6px;
+}
 
-  .gallery-menu a,
-  .gallery-buttons a {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-  }
+/* CARDS */
+.card,
+.offer-card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-  /* ================= XF IMPACT ================= */
-  .impact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+/* GALLERY MENU */
+.gallery-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
 
-  /* ================= CONTACT ================= */
- @media (max-width: 768px) {
+.gallery-menu a,
+.gallery-buttons a {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+/* IMPACT */
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* CONTACT */
+@media (max-width: 768px) {
   .contact-container {
     display: flex;
     flex-direction: column;
@@ -467,63 +476,16 @@ backdrop-filter: blur(2px);
     max-width: 100%;
     padding: 0 16px;
     text-align: center;
-  }
-
-  .contact-email {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
-   
-    .offer-card,
-  .card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-  }
-
-}
-/* =========================
-   CONTACT – MOBILE FIX
-========================= */
-@media (max-width: 768px) {
-
-  .contact-section {
-    padding-top: 32px !important;
-    padding-bottom: 40px !important;
-    text-align: center;
-  }
-
-  .contact-section h2 {
-    margin-bottom: 12px;
-  }
-
-  .contact-section p {
-    margin-bottom: 16px;
-  }
-
-  .contact-container {
     gap: 16px;
   }
 
   .contact-email {
-    max-width: 90%;
+    max-width: 320px;
     margin: 0 auto;
-    padding: 16px;
   }
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-/* =========================
-   GLOBAL BACKGROUND SYSTEM — FINAL
-========================= */
-
-/* BODY: imagen global */
+/* GLOBAL BACKGROUND */
 body {
   background: none;
   position: relative;
@@ -543,25 +505,4 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-}
-
-/* HERO: transparente, deja ver la imagen */
-.hero {
-  background: transparent !important;
-}
-
-/* TODAS LAS SECCIONES DESPUÉS DEL HERO */
-.services,
-.what-we-offer,
-.gallery-section,
-.impact-section,
-.contact-section {
-  background-color: rgba(10,10,10,0.92);
-  position: relative;
-  z-index: 1;
-}
-
-/* Seguridad extra */
-section {
-  position: relative;
 }
