@@ -572,3 +572,101 @@ body::before {
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: none;
 }
+/* =========================
+   HERO – ALIGNMENT & AIR FIX
+========================= */
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Reducir aire vertical real */
+.hero {
+  padding-top: 0 !important;
+  padding-bottom: 6px !important;
+}
+
+.hero .motto,
+.hero .subtitle-hero,
+.hero p {
+  line-height: 1.2;
+}
+
+.hero .motto {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.hero .subtitle-hero {
+  margin-bottom: 4px;
+}
+
+.hero p {
+  margin-bottom: 8px;
+}
+/* =========================
+   WHAT WE OFFER – TEXT & STYLE
+========================= */
+
+.what-we-offer h2 {
+  color: var(--xf-green);
+}
+
+.offer-card {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(164,255,10,0.35);
+}
+
+.offer-card h3 {
+  color: var(--xf-yellow);
+}
+
+.offer-card p {
+  color: #eee;
+}
+/* =========================
+   XF IMPACT – FINAL LOOK
+========================= */
+
+.impact-section h2 {
+  color: var(--xf-green);
+}
+
+.impact-box {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(164,255,10,0.35);
+  padding: 24px;
+}
+
+.impact-box h3 {
+  color: var(--xf-yellow);
+}
+
+.impact-box p {
+  color: #ddd;
+}
+
+/* Desktop: horizontal */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Mobile: vertical */
+@media (max-width: 768px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
