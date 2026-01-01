@@ -338,9 +338,6 @@
 
   padding-top: 12px;
   padding-bottom: 16px;
-
-  height: auto;
-  background-color: transparent;
 }
 
 /* CONTENIDO HERO */
@@ -517,4 +514,50 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
+}
+/* =========================
+   GLOBAL BACKGROUND SYSTEM — FINAL
+========================= */
+
+/* BODY: imagen global */
+body {
+  background: none;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.55)
+    ),
+    url("/public/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* HERO: transparente, deja ver la imagen */
+.hero {
+  background: transparent !important;
+}
+
+/* TODAS LAS SECCIONES DESPUÉS DEL HERO */
+.services,
+.what-we-offer,
+.gallery-section,
+.impact-section,
+.contact-section {
+  background-color: rgba(10,10,10,0.92);
+  position: relative;
+  z-index: 1;
+}
+
+/* Seguridad extra */
+section {
+  position: relative;
 }
