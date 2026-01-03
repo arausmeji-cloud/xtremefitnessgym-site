@@ -578,3 +578,9 @@ section#home.hero {
   }
 }
 
+/* FIX DEFINITIVO LOGO HERO */
+.hero-logo {
+  width: auto !important;
+  max-width: 280px !important;
+  height: auto !important;
+}
