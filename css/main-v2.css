@@ -650,3 +650,19 @@ backdrop-filter: blur(2px);
 .hero p {
   margin-bottom: 8px !important;
 }
+
+/* 🔥 FIX REAL – SECTION HOME HERO */
+section#home.hero {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* seguridad extra */
+section#home {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
