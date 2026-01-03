@@ -355,15 +355,6 @@ backdrop-filter: blur(2px);
   gap: 4px;
 }
 
-/* LOGO */
-.hero-logo {
-  width: 100%;
-  max-width: 620px;
-  height: auto;
-
-  margin: 0 auto 2px;
-  display: block;
-}
 
 /* TEXTO */
 .hero .motto {
@@ -400,12 +391,6 @@ backdrop-filter: blur(2px);
     padding-top: 8px;
     padding-bottom: 12px;
   }
-
-  .hero-logo {
-    max-width: 520px;
-    margin-bottom: 6px;
-  }
-
   .hero .motto {
     font-size: 2rem;
   }
@@ -426,11 +411,20 @@ backdrop-filter: blur(2px);
     background: transparent;
 }
 
+/* LOGO */
 .hero-logo {
-  max-width: 520px;
-  margin-bottom: 6px;
-}
+  width: 100%;
+  max-width: 460px;
+  height: auto;
 
+  margin: 0 auto 2px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 300px;
+  }
+}
 .hero-content {
   gap: 6px;
 }
