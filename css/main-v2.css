@@ -328,73 +328,7 @@ backdrop-filter: blur(2px);
   background: var(--xf-yellow);
 }
 
-/* =========================
-   HERO – SINGLE SOURCE (FINAL)
-========================= */
 
-/* CONTENEDOR HERO */
-.hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* CONTENIDO HERO */
-.hero-content {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  gap: 4px;
-}
-
-
-/* TEXTO */
-.hero .motto {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--xf-yellow);
-  margin: 4px 0 6px;
-}
-
-.hero .subtitle-hero {
-  font-size: 1.3rem;
-  color: #fff;
-  margin-bottom: 4px;
-}
-
-.hero p {
-  color: #ddd;
-  margin-bottom: 18px;
-}
-
-/* BOTÓN */
-.hero .btn-primary {
-  font-size: 1.2rem;
-  padding: 16px 34px;
-  margin-bottom: 10px;
-}
-
-/* =========================
-   HERO — MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .hero {
-    padding-top: 8px;
-    padding-bottom: 12px;
-  }
-  .hero .motto {
-    font-size: 2rem;
-  }
-}
 
  /* =========================
    LAYOUT & MOBILE FIXES — CLEAN
@@ -404,33 +338,6 @@ backdrop-filter: blur(2px);
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-/* HERO */
-.hero {
-    background: transparent;
-}
-
-/* LOGO */
-.hero-logo {
-  width: 100%;
-  max-width: 460px;
-  height: auto;
-
-  margin: 0 auto 2px;
-  display: block;
-}
-@media (max-width: 768px) {
-  .hero-logo {
-    max-width: 300px;
-  }
-}
-.hero-content {
-  gap: 6px;
-}
-.hero {
-  padding: 0;
-  margin: 0;
 }
 
 /* CARDS */
@@ -573,35 +480,10 @@ backdrop-filter: blur(2px);
   }
 }
 
-/* 🔥 KILL HERO FORCED HEIGHT */
-.hero {
-  min-height: unset !important;
-  height: auto !important;
-}
-
 /* =========================
    WHAT WE OFFER – TEXT FIX
 ========================= */
 
-.what-we-offer,
-.what-we-offer * {
-  color: #eee;
-}
-
-.what-we-offer h2 {
-  color: var(--xf-yellow);
-}
-
-.offer-card h3 {
-  color: var(--xf-green);
-}
-
-.offer-card p {
-  color: #ddd;
-}
-
-
-/* 🔥 WHAT WE OFFER – FIX DEFINITIVO */
 .what-we-offer h2 {
   color: var(--xf-yellow) !important;
 }
@@ -631,41 +513,68 @@ backdrop-filter: blur(2px);
 .what-we-offer {
   padding-top: 40px !important;
 }
+/* =========================
+   HERO — CLEAN FINAL
+========================= */
 
+section#home.hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+/* LOGO */
+.hero-logo {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* TEXTO */
 .hero .motto {
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--xf-yellow);
 }
 
 .hero .subtitle-hero {
-  margin-bottom: 6px !important;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .hero p {
-  margin-bottom: 8px !important;
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
-/* 🔥 FIX REAL – SECTION HOME HERO */
-section#home.hero {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  min-height: auto !important;
-  height: auto !important;
+/* BOTÓN */
+.hero .btn-primary {
+  margin-top: 6px;
 }
 
-/* seguridad extra */
-section#home {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-/* 🚨 DEBUG ABSOLUTO – MATAR ESPACIO HERO */
-section#home {
-  padding: 0 !important;
-  margin: 0 !important;
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 280px;
+  }
+
+  .hero .motto {
+    font-size: 2rem;
+  }
 }
 
-section#home * {
-  margin-top: 0 !important;
-}
