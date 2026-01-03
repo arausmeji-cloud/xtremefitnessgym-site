@@ -538,16 +538,20 @@ section#home.hero {
 
 /* LOGO */
 .hero-logo {
-  max-width: 480px !important; /* ⬆️ +50% */
+  max-width: 540px !important; /* ⬆️ un poco más grande */
   width: 100%;
   height: auto !important;
-  margin: 0 auto 8px;
+  margin: 0 auto 10px;
   display: block;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .hero-logo {
-    max-width: 360px !important; /* ⬆️ +50% */
+    max-width: 400px !important;
   }
+}
+
+section#home.hero {
+  padding-top: 24px !important; /* aire controlado arriba */
 }
