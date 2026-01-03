@@ -666,3 +666,12 @@ section#home {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+/* 🚨 DEBUG ABSOLUTO – MATAR ESPACIO HERO */
+section#home {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+section#home * {
+  margin-top: 0 !important;
+}
