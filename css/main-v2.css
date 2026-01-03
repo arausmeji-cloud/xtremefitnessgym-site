@@ -539,7 +539,7 @@ section#home.hero {
 /* LOGO */
 .hero-logo {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -570,7 +570,7 @@ section#home.hero {
 /* MOBILE */
 @media (max-width: 768px) {
   .hero-logo {
-    max-width: 280px;
+    max-width: 220px;
   }
 
   .hero .motto {
