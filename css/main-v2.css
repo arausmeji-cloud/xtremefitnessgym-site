@@ -510,31 +510,7 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
-/* =========================
-   HERO – TIGHT & IMPACTFUL
-========================= */
-.hero-content {
-  gap: 4px;
-}
 
-.hero-logo {
-  max-width: 760px;   /* más grande */
-  margin-top: 0;
-  margin-bottom: 2px;
-}
-
-.hero .motto {
-  margin-top: 0;
-  margin-bottom: 4px;
-}
-
-.hero .subtitle-hero {
-  margin-bottom: 2px;
-}
-
-.hero p {
-  margin-bottom: 8px;
-}
 /* =========================
    WHAT WE OFFER – TEXT FIX
 ========================= */
@@ -564,46 +540,7 @@ body::before {
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: none;
 }
-/* =========================
-   HERO – ALIGNMENT & AIR FIX
-========================= */
 
-.hero-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-}
-
-.hero-logo {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Reducir aire vertical real */
-.hero {
-  padding-top: 0 !important;
-  padding-bottom: 6px !important;
-}
-
-.hero .motto,
-.hero .subtitle-hero,
-.hero p {
-  line-height: 1.2;
-}
-
-.hero .motto {
-  margin-top: 0;
-  margin-bottom: 6px;
-}
-
-.hero .subtitle-hero {
-  margin-bottom: 4px;
-}
-
-.hero p {
-  margin-bottom: 8px;
-}
 /* =========================
    WHAT WE OFFER – TEXT & STYLE
 ========================= */
@@ -667,31 +604,6 @@ body::before {
 }
 
 /* =========================
-   HERO – FINAL AIR FIX
-========================= */
-
-.hero {
-  padding-top: 16px !important;
-  padding-bottom: 24px !important;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* 🔴 clave */
-  gap: 12px;
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-logo {
-  display: block;
-  margin: 0 auto 4px auto;
-}
-
-/* =========================
    WHAT WE OFFER – TEXT FIX
 ========================= */
 
@@ -712,4 +624,52 @@ body::before {
   color: #ddd;
 }
 
+/* =========================
+   HERO — FINAL DEFINITIVO
+========================= */
 
+.hero {
+  width: 100%;
+  background: transparent;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px; /* 🔥 este es el aire REAL */
+  text-align: center;
+}
+
+.hero-logo {
+  max-width: 760px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2px auto;
+  display: block;
+}
+
+.hero .motto {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.hero .subtitle-hero {
+  margin: 0;
+}
+
+.hero p {
+  margin: 4px 0 6px;
+}
+
+.hero .btn-primary {
+  margin: 6px 0 0;
+}
