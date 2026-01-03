@@ -1,6 +1,4 @@
-body {
-  background: red !important;
-}
+
 /* ======================================
    XTREME FITNESS GYM — CLEAN FINAL CSS
    ====================================== */
@@ -638,4 +636,17 @@ backdrop-filter: blur(2px);
 /* Reduce sensación de aire */
 .what-we-offer {
   padding-top: 40px !important;
+}
+
+.hero .motto {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.hero .subtitle-hero {
+  margin-bottom: 6px !important;
+}
+
+.hero p {
+  margin-bottom: 8px !important;
 }
