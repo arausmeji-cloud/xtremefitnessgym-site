@@ -650,7 +650,7 @@ body::before {
 }
 
 .hero-logo {
-  max-width: 760px;
+  max-width: 680px;
   width: 100%;
   height: auto;
   margin: 0 auto 2px auto;
@@ -673,3 +673,25 @@ body::before {
 .hero .btn-primary {
   margin: 6px 0 0;
 }
+/* 🔥 CORTE REAL DEL HERO */
+.hero {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+/* 🔥 QUITAR AIRE ENTRE HERO Y WHAT WE OFFER */
+.what-we-offer {
+  padding-top: 40px !important;
+}
+/* 🔥 WHAT WE OFFER – FIX DEFINITIVO */
+.what-we-offer h2 {
+  color: var(--xf-yellow) !important;
+}
+
+.what-we-offer h3 {
+  color: var(--xf-green) !important;
+}
+
+.what-we-offer p {
+  color: #eee !important;
+}
+
