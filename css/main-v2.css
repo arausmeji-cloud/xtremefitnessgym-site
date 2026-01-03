@@ -695,3 +695,48 @@ body::before {
   color: #eee !important;
 }
 
+/* =========================
+   🔥 FORCE OVERRIDE – FINAL
+========================= */
+
+/* HERO – control total */
+.hero {
+  padding: 40px 0 24px 0 !important;
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.hero-content {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  text-align: center !important;
+}
+
+.hero-logo {
+  max-width: 640px !important; /* 🔧 ajustable */
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* WHAT WE OFFER – fuerza colores */
+.what-we-offer h2 {
+  color: #ffe600 !important;
+}
+
+.what-we-offer h3 {
+  color: #a4ff0a !important;
+}
+
+.what-we-offer p {
+  color: #eee !important;
+}
+
+/* Reduce sensación de aire */
+.what-we-offer {
+  padding-top: 40px !important;
+}
