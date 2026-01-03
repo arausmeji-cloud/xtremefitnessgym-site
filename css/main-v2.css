@@ -354,16 +354,16 @@ backdrop-filter: blur(2px);
   align-items: center;
   text-align: center;
 
-  gap: 6px;
+  gap: 4px;
 }
 
 /* LOGO */
 .hero-logo {
   width: 100%;
-  max-width: 700px;
+  max-width: 620px;
   height: auto;
 
-  margin: 0 auto 4px;
+  margin: 0 auto 2px;
   display: block;
 }
 
@@ -436,6 +436,10 @@ backdrop-filter: blur(2px);
 .hero-content {
   gap: 6px;
 }
+.hero {
+  padding: 0;
+  margin: 0;
+}
 
 /* CARDS */
 .card,
@@ -489,10 +493,6 @@ backdrop-filter: blur(2px);
     max-width: 320px;
     margin: 0 auto;
   }
-}
-
-body {
-  background: red !important;
 }
 
 /* =========================
@@ -608,64 +608,7 @@ body {
   color: #ddd;
 }
 
-/* =========================
-   HERO — FINAL DEFINITIVO
-========================= */
 
-.hero {
-  width: 100%;
-  background: transparent;
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: unset !important;
-  height: auto !important;
-}
-
-.hero-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 4px; /* 🔥 este es el aire REAL */
-  text-align: center;
-}
-
-.hero-logo {
-  max-width: 680px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 2px auto;
-  display: block;
-}
-
-.hero .motto {
-  margin: 0;
-  line-height: 1.15;
-}
-
-.hero .subtitle-hero {
-  margin: 0;
-}
-
-.hero p {
-  margin: 4px 0 6px;
-}
-
-.hero .btn-primary {
-  margin: 6px 0 0;
-}
-/* 🔥 CORTE REAL DEL HERO */
-.hero {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-/* 🔥 QUITAR AIRE ENTRE HERO Y WHAT WE OFFER */
-.what-we-offer {
-  padding-top: 40px !important;
-}
 /* 🔥 WHAT WE OFFER – FIX DEFINITIVO */
 .what-we-offer h2 {
   color: var(--xf-yellow) !important;
@@ -677,34 +620,6 @@ body {
 
 .what-we-offer p {
   color: #eee !important;
-}
-
-/* =========================
-   🔥 FORCE OVERRIDE – FINAL
-========================= */
-
-/* HERO – control total */
-.hero {
-  padding: 40px 0 24px 0 !important;
-  min-height: unset !important;
-  height: auto !important;
-}
-
-.hero-content {
-  max-width: 1100px !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  gap: 16px !important;
-  text-align: center !important;
-}
-
-.hero-logo {
-  max-width: 640px !important; /* 🔧 ajustable */
-  margin: 0 auto !important;
-  display: block !important;
 }
 
 /* WHAT WE OFFER – fuerza colores */
