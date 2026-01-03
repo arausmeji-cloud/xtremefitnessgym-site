@@ -555,3 +555,20 @@ section#home.hero {
 section#home.hero {
   padding-top: 24px !important; /* aire controlado arriba */
 }
+
+/* =========================
+   HERO BACKGROUND – FINAL
+========================= */
+
+section#home.hero {
+  position: relative;
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.55)
+    ),
+    url("/public/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
