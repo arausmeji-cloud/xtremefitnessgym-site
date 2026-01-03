@@ -562,7 +562,7 @@ section#home.hero {
 ========================= */
 section#home.hero {
   position: relative;
-  min-height: 100vh; /* 🔥 CLAVE */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -577,4 +577,11 @@ section#home.hero {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+
+.hero .motto,
+.hero .subtitle-hero,
+.hero p {
+color: var(--xf-yellow) !important;
 }
