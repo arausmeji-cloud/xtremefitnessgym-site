@@ -491,26 +491,8 @@ backdrop-filter: blur(2px);
   }
 }
 
-/* GLOBAL BACKGROUND */
 body {
-  background: none;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(
-      rgba(0,0,0,0.35),
-      rgba(0,0,0,0.55)
-    ),
-    url("/public/hero/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  background: red !important;
 }
 
 /* =========================
