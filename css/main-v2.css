@@ -635,7 +635,7 @@ footer {
 }
 
 .hero-logo {
-  margin-top: 40px; /* baja el logo */
+  margin-top: 50px; /* baja el logo */
 }
 
 .hero-logo {
@@ -645,6 +645,18 @@ footer {
 /* título principal */
 .hero h1 {
   margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--xf-green);
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  display: inline;
+}
+
+.hero p + p {
+  margin-left: 6px;
 }
 
 /* slogan grande */
@@ -705,11 +717,11 @@ footer {
 
 /* GALLERY – recortar aire exagerado */
 .gallery-section {
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
 }
 .gallery-buttons {
-  margin-bottom: 40px;
+  margin-bottom: 40px important;
 }
 
 .impact-section {
@@ -730,6 +742,23 @@ footer {
   color: var(--xf-yellow);
   text-align: center;
   margin: 80px 0 50px;
+}
+.impact-section h2,
+.impact-section p {
+  color: var(--xf-yellow);
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: var(--xf-green);
+  text-align: center;
+  margin: 80px 0 50px;
+}
+
+footer,
+footer * {
+  text-align: center;
+  color: var(--xf-yellow);
 }
 
 
