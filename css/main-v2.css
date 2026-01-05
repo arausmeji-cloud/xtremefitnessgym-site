@@ -601,10 +601,6 @@ section#home.hero {
   background: transparent !important;
 }
 
-.what-we-offer {
-  background: #f5f5f5;
-}
-
 .service-box {
   background: transparent;
   border: 2px solid var(--xf-green);
