@@ -543,6 +543,7 @@ section#home.hero {
   background: transparent;
   position: relative;
   z-index: 1;
+  padding-top: 24px !important; /* aire controlado arriba */
 }
 
 .hero-content {
@@ -560,7 +561,7 @@ section#home.hero {
 
 /* LOGO */
 .hero-logo {
-  max-width: 540px !important; /* ⬆️ un poco más grande */
+  max-width: 560px !important; /* ⬆️ un poco más grande */
   width: 100%;
   height: auto !important;
   margin: 0 auto 10px;
@@ -572,10 +573,6 @@ section#home.hero {
   .hero-logo {
     max-width: 400px !important;
   }
-}
-
-section#home.hero {
-  padding-top: 24px !important; /* aire controlado arriba */
 }
 
 .hero .motto,
