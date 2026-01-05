@@ -632,13 +632,7 @@ footer {
   background: transparent !important;
   box-shadow: none !important;
   filter: none !important;
-}
-
-.hero-logo {
   margin-top: 50px; /* baja el logo */
-}
-
-.hero-logo {
   margin-bottom: 40px;
 }
 
