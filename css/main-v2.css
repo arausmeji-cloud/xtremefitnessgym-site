@@ -579,3 +579,12 @@ section#home.hero {
 .hero p {
 color: var(--xf-yellow) !important;
 }
+.services,
+.what-we-offer,
+.impact-section,
+.gallery-section,
+.contact-container {
+  position: relative;
+  background: #f5f5f5;
+  z-index: 5;
+}
