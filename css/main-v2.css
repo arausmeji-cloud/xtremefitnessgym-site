@@ -134,8 +134,7 @@ body {
    ====================================== */
 .impact-section {
     text-align: center;
-  padding-top: 90px !important;
-  padding-bottom: 90px !important;
+    padding: 60px 20px;
 }
 
 .impact-grid {
@@ -144,10 +143,7 @@ body {
     gap: 25px;
     margin-top: 30px;
 }
-.impact-section p {
-  margin-top: 20px !important;
-  margin-bottom: 40px !important;
-}
+
 .impact-box {
     background: rgba(0,0,0,0.25);
     backdrop-filter: blur(2px);
@@ -169,8 +165,7 @@ body {
     gap: 35px;
     max-width: var(--max-width);
     margin: 0 auto;
-  padding-top: 100px !important;
-  padding-bottom: 80px !important;
+    padding: 0 20px;
 }
 
 /* MAPA */
@@ -267,10 +262,7 @@ body {
    XF GALLERY
    ====================================== */
 .gallery-section {
-  padding-top: 90px !important;
-  padding-bottom: 90px !important;
-}
-  
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,10 +388,6 @@ body {
   max-width: 280px;
   text-align: center;
 }
-.gallery-buttons {
-  margin-top: 40px !important;
-  margin-bottom: 50px !important;
-}
 
 /* IMPACT */
 .impact-grid {
@@ -420,13 +408,10 @@ body {
     gap: 16px;
   }
 
- .contact-email {
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-.contact-container {
-  background: transparent;
+  .contact-email {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 /* =========================
@@ -437,14 +422,6 @@ body {
 .what-we-offer h3,
 .what-we-offer p {
   color: #eee;
-}
-.what-we-offer {
-  padding-top: 80px !important;
-  padding-bottom: 80px !important;
-}
-
-.service-box {
-  padding: 32px 24px !important;
 }
 
 .offer-card {
@@ -604,30 +581,6 @@ section#home.hero {
 color: var(--xf-yellow) !important;
 }
 
-.hero .motto {
-  font-size: 48px !important;
-  line-height: 1.2 !important;
-  margin-top: 18px !important;
-  margin-bottom: 18px !important;
-}
-
-@media (max-width: 768px){
-  .hero .motto{
-    font-size: 32px !important;
-  }
-}
-
-#contact h2,
-.contact-container h2{
-  text-align: center !important;
-  color: var(--xf-green) !important;
-}
-.contact-container h2 {
-  text-align: center !important;
-  color: var(--xf-green) !important;
-  margin-bottom: 40px !important;
-}
-
 /* =========================
    CORTE DEFINITIVO POST-HERO
 ========================= */
@@ -640,58 +593,16 @@ color: var(--xf-yellow) !important;
   z-index: 10;
 }
 
-/* REMOVE SOLID BACKGROUNDS OVER HERO (LIMITED) */
-section#home.hero {
-  background: transparent !important;
-}
-
-.service-box {
-  background: transparent;
-  border: 2px solid var(--xf-green);
-  color: #fff;
-}
-
-.service-box h3 {
-  color: var(--xf-yellow);
-}
-
-.service-box p {
-  color: #eaeaea;
-}
-
-.service-box:hover {
-  background: rgba(0,0,0,0.4);
-}
-
-section:not(#home),
+/* ======================================
+   REMOVE SOLID BACKGROUNDS OVER HERO
+   ====================================== */
+section,
 .services,
 .what-we-offer,
 .gallery-section,
 .impact-section,
 .contact-container,
-#contact {
+#contact,
+footer {
   background: transparent !important;
 }
-.hero-content{
-  padding-top: 18px !important;
-  padding-bottom: 18px !important;
-}
-/* HERO – más aire general */
-.hero-content {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
-}
-
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #ccc;
-  font-size: 14px;
-  background: transparent;
-}
-
-footer p {
-  margin: 0;
-}
-
-
