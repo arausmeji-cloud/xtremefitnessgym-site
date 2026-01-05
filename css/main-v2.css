@@ -601,3 +601,15 @@ color: var(--xf-yellow) !important;
 section#home.hero {
   z-index: 1;
 }
+/* ======================================
+   REMOVE SOLID BACKGROUNDS OVER HERO
+   ====================================== */
+
+.services,
+.what-we-offer,
+.impact-section,
+.gallery-section,
+.contact-container,
+#contact {
+  background: transparent !important;
+}
