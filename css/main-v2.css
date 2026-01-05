@@ -411,6 +411,9 @@ body {
   .contact-email {
     max-width: 320px;
     margin: 0 auto;
+    .contact-container {
+  background: transparent;
+}
   }
 }
 
@@ -603,14 +606,29 @@ section#home.hero {
 }
 
 .service-box {
-  background: #ffffff;
-  color: #111;
+  background: transparent;
+  border: 2px solid var(--xf-green);
+  color: #fff;
 }
 
 .service-box h3 {
-  color: var(--xf-green);
+  color: var(--xf-yellow);
 }
 
 .service-box p {
-  color: #222;
+  color: #eaeaea;
+}
+
+.service-box:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+section:not(#home),
+.services,
+.what-we-offer,
+.gallery-section,
+.impact-section,
+.contact-container,
+#contact {
+  background: transparent !important;
 }
