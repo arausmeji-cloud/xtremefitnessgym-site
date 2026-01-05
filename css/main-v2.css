@@ -593,17 +593,24 @@ color: var(--xf-yellow) !important;
   z-index: 10;
 }
 
-/* ======================================
-   REMOVE SOLID BACKGROUNDS OVER HERO
-   ====================================== */
-section,
-.services,
-.what-we-offer,
-.gallery-section,
-.impact-section,
-.contact-container,
-#contact,
-footer {
+/* REMOVE SOLID BACKGROUNDS OVER HERO (LIMITED) */
+section#home.hero {
   background: transparent !important;
 }
 
+.what-we-offer {
+  background: #f5f5f5;
+}
+
+.service-box {
+  background: #ffffff;
+  color: #111;
+}
+
+.service-box h3 {
+  color: var(--xf-green);
+}
+
+.service-box p {
+  color: #222;
+}
