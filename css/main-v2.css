@@ -583,6 +583,24 @@ section#home.hero {
 .hero p {
 color: var(--xf-yellow) !important;
 }
+.hero .motto{
+  font-size: 44px !important;
+  line-height: 1.15 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+@media (max-width: 768px){
+  .hero .motto{
+    font-size: 30px !important;
+  }
+}
+
+#contact h2,
+.contact-container h2{
+  text-align: center !important;
+  color: var(--xf-green) !important;
+}
+
 
 /* =========================
    CORTE DEFINITIVO POST-HERO
@@ -627,4 +645,8 @@ section:not(#home),
 .contact-container,
 #contact {
   background: transparent !important;
+}
+.hero-content{
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
 }
