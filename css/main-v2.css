@@ -97,8 +97,7 @@
 }
 
 .service-box {
-   background: rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(2px);
+    background: #fff;
     padding: 25px;
     border-radius: 10px;
     border: 2px solid #222;
@@ -586,17 +585,17 @@ section#home.hero {
 .hero p {
 color: var(--xf-yellow) !important;
 }
-/* =========================
-   CORTE CLARO DESPUÉS DEL HERO
-========================= */
 
+/* =========================
+   CORTE DEFINITIVO POST-HERO
+========================= */
 .services,
 .gallery-section,
 .impact-section,
 .contact-container {
+  background: #f5f5f5 !important;
   position: relative;
-  z-index: 5;
-  background: #f5f5f5;
+  z-index: 10;
 }
 
 section#home.hero {
