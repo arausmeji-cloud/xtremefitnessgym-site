@@ -606,3 +606,52 @@ section,
 footer {
   background: transparent !important;
 }
+
+/* =========================
+   HERO – CLEAN & BALANCED
+========================= */
+
+/* contenedor general */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 140px;
+}
+
+/* contenido */
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+}
+
+/* logo */
+.hero-logo {
+  margin-bottom: 40px;
+}
+
+/* título principal */
+.hero h1 {
+  margin-bottom: 30px;
+}
+
+/* slogan grande */
+.hero .motto {
+  margin-bottom: 24px;
+}
+
+/* subtítulo */
+.hero p {
+  margin-bottom: 40px;
+}
+
+/* botón principal */
+.hero .btn-primary {
+  margin-bottom: 60px;
+}
+
+/* menú debajo del hero */
+.nav-under-hero {
+  margin-top: 0;
+}
