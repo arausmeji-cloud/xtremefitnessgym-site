@@ -1,4 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
+body {
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.75)
+    ),
+    url("/public/hero/hero-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #fff;
+}
 
 /* ======================================
    XTREME FITNESS GYM — CLEAN FINAL CSS
@@ -604,12 +624,14 @@ section#home.hero {
 /* ======================================
    REMOVE SOLID BACKGROUNDS OVER HERO
    ====================================== */
-
+section,
 .services,
 .what-we-offer,
-.impact-section,
 .gallery-section,
+.impact-section,
 .contact-container,
-#contact {
+#contact,
+footer {
   background: transparent !important;
 }
+
