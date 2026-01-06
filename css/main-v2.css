@@ -393,7 +393,22 @@ body {
 .impact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+}
+.cards-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card{
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(164,255,10,0.35);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+@media (max-width: 900px){
+  .cards-grid{ grid-template-columns: 1fr; }
 }
 
 /* CONTACT */
@@ -442,6 +457,9 @@ body {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: none;
+}
+#impact h2{
+  color: var(--xf-green);
 }
 
 /* =========================
@@ -626,14 +644,20 @@ footer {
   max-width: 900px;
 }
 
-/* LOGO – limpiar fondo y bajarlo */
-.hero-logo,
-.hero-logo img {
+.hero-logo {
   background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-logo img {
+  display: block;            /* esto evita líneas/gaps raros */
+  background: transparent !important;
+  border: 0 !important;
   box-shadow: none !important;
   filter: none !important;
-  margin-top: 50px; /* baja el logo */
-  margin-bottom: 40px;
 }
 
 /* título principal */
@@ -721,6 +745,13 @@ footer {
 .impact-section {
   margin-top: 40px;
 }
+.section{
+  padding: 70px 20px;
+}
+
+.section h2{
+  margin: 0 0 30px 0; /* mismo aire para todos */
+}
 
 .impact-section {
   margin-top: 60px;
@@ -755,6 +786,29 @@ footer * {
   color: var(--xf-yellow);
 }
 
+:root{
+  --xf-green:#a4ff0a;
+  --xf-yellow:#ffde00;
+  --text:#ffffff;
+}
+.section-title{
+  color: var(--xf-green);
+  text-align:center;
+}
 
+.card-title{
+  color: var(--xf-yellow);
+  font-weight:700;
+}
 
+.card-text{
+  color: var(--text);
+}
 
+#services, #gallery, #impact, #contact{
+  padding: 70px 20px;
+}
+
+#services h2, #gallery h2, #impact h2, #contact h2{
+  margin: 0 0 30px 0;
+}
