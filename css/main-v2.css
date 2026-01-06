@@ -1,6 +1,4 @@
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -19,6 +17,34 @@ body {
 
   color: #fff;
 }
+/* ======================================
+   LAYOUT BASE
+====================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Todas las secciones con el mismo aire */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+/* Títulos h2 unificados (mismo rol, mismo color) */
+.section h2 {
+  font-size: 2.6rem;
+  margin: 0 0 30px 0;
+  color: var(--xf-green);
+}
+
+/* Texto base */
+.section p {
+  color: var(--text-light);
+}
 
 /* ======================================
    XTREME FITNESS GYM — CLEAN FINAL CSS
@@ -26,14 +52,12 @@ body {
 
 /* -------- VARIABLES -------- */
 :root {
-    --xf-yellow: #ffe600;
-    --xf-green: #a4ff0a;
-    --dark-bg: #0a0a0a;
-    --light-bg: #111;
-    --text-light: #eee;
-    --text-muted: #aaa;
-    --transition: 0.25s ease-in-out;
-    --max-width: 1280px;
+  --xf-green: #a4ff0a;
+  --xf-yellow: #ffe600;
+  --text-light: #eee;
+  --text-dark: #000;
+  --transition: 0.25s ease-in-out;
+  --max-width: 1280px;
 }
 
 /* -------- RESET -------- */
@@ -93,18 +117,6 @@ body {
     color: #000;
 }
 
-/* SISTEMA VISUAL UNIFICADO */
-
-.section {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2.6rem;
-  margin-bottom: 30px;
-  color: var(--xf-green);
-}
 
 .services-grid,
 .impact-grid {
@@ -331,11 +343,6 @@ body {
    LAYOUT & MOBILE FIXES — CLEAN
 ========================= */
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 /* CARDS */
 .card,
@@ -443,7 +450,6 @@ footer {
   background: transparent !important;
   border: 0 !important;
   padding: 0 !important;
-  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -513,9 +519,6 @@ footer {
   margin-left: 6px;
 }
 
-.what-we-offer {
-  margin-top: 80px;
-}
 .service-box {
   background: rgba(0,0,0,0.35);
   color: #fff;
@@ -539,14 +542,7 @@ footer {
 
 .impact-section {
   margin-top: 40px;
-}
-.section{
-  padding: 70px 20px;
-}
 
-.section h2{
-  margin: 0 0 30px 0; /* mismo aire para todos */
-}
 
 .impact-section {
   margin-top: 60px;
@@ -600,28 +596,9 @@ footer * {
   color: var(--text);
 }
 
-#services, #gallery, #impact, #contact{
-  padding: 70px 20px;
-}
-
-#services h2, #gallery h2, #impact h2, #contact h2{
-  margin: 0 0 30px 0;
-}
 /* =========================
    SISTEMA VISUAL UNIFICADO
 ========================= */
-
-/* SECCIONES */
-.section {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2.6rem;
-  margin-bottom: 30px;
-  color: var(--xf-green);
-}
 
 /* CARDS (What We Offer + XF Impact) */
 .services-grid,
@@ -694,16 +671,6 @@ footer * {
   margin-top: 16px;
 }
 
-/* =========================
-   SERVICES — título correcto
-========================= */
-.services h2 {
-  text-align: center;
-  font-size: 2.6rem;
-  margin: 0 0 30px 0;
-  color: var(--xf-green);
-}
-
   /* =========================
    GALLERY — aire controlado
 ========================= */
@@ -720,9 +687,4 @@ footer * {
   margin: 10px 0 18px;
 }
 
-/* =========================
-   IMPACT — título verde
-========================= */
-.impact-section h2 {
-  color: var(--xf-green);
-}
+
