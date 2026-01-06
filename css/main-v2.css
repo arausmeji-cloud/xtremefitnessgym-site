@@ -658,3 +658,71 @@ footer * {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   HERO — FIX: textos y botón
+========================= */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .motto,
+.hero .subtitle-hero {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.hero .motto {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--xf-yellow);
+}
+
+.hero .subtitle-hero {
+  font-size: 1.05rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.hero .btn-primary {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+/* =========================
+   SERVICES — título correcto
+========================= */
+.services h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 0 0 30px 0;
+  color: var(--xf-green);
+}
+
+  /* =========================
+   GALLERY — aire controlado
+========================= */
+.gallery-section {
+  padding: 50px 20px;
+}
+
+.gallery-section h2 {
+  margin: 10px 0 22px;
+}
+
+.gallery-menu,
+.gallery-buttons {
+  margin: 10px 0 18px;
+}
+
+/* =========================
+   IMPACT — título verde
+========================= */
+.impact-section h2 {
+  color: var(--xf-green);
+}
