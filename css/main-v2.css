@@ -429,188 +429,6 @@ body {
   }
 }
 
-/* =========================
-   WHAT WE OFFER – TEXT FIX
-========================= */
-
-.what-we-offer,
-.what-we-offer h3,
-.what-we-offer p {
-  color: #eee;
-}
-
-.offer-card {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(164,255,10,0.35);
-}
-/* =========================
-   XF IMPACT – CLEAN LOOK
-========================= */
-
-.impact-section,
-.impact-section h3,
-.impact-section p {
-  color: #eee;
-}
-
-.impact-box {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: none;
-}
-#impact h2{
-  color: var(--xf-green);
-}
-
-/* =========================
-   WHAT WE OFFER – TEXT & STYLE
-========================= */
-
-.what-we-offer h2 {
-  color: var(--xf-green);
-}
-
-.offer-card {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(164,255,10,0.35);
-}
-
-.offer-card h3 {
-  color: var(--xf-yellow);
-}
-
-.offer-card p {
-  color: #eee;
-}
-/* =========================
-   XF IMPACT – FINAL LOOK
-========================= */
-
-.impact-section h2 {
-  color: var(--xf-green);
-}
-
-.impact-box {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(164,255,10,0.35);
-  padding: 24px;
-}
-
-.impact-box h3 {
-  color: var(--xf-yellow);
-}
-
-.impact-box p {
-  color: #ddd;
-}
-
-/* Desktop: horizontal */
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-/* Mobile: vertical */
-@media (max-width: 768px) {
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* =========================
-   WHAT WE OFFER – TEXT FIX
-========================= */
-
-.what-we-offer h2 {
-  color: var(--xf-yellow) !important;
-}
-
-.what-we-offer h3 {
-  color: var(--xf-green) !important;
-}
-
-.what-we-offer p {
-  color: #eee !important;
-}
-
-/* WHAT WE OFFER – fuerza colores */
-.what-we-offer h2 {
-  color: #ffe600 !important;
-}
-
-.what-we-offer h3 {
-  color: #a4ff0a !important;
-}
-
-.what-we-offer p {
-  color: #eee !important;
-}
-
-/* Reduce sensación de aire */
-.what-we-offer {
-  padding-top: 40px !important;
-}
-/* =========================
-   HERO — CLEAN FINAL
-========================= */
-section#home.hero {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  position: relative;
-  z-index: 1;
-  padding-top: 24px !important; /* aire controlado arriba */
-}
-
-.hero-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 8px 20px;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 8px;
-}
-
-/* LOGO */
-.hero-logo {
-  max-width: 560px !important; /* ⬆️ un poco más grande */
-  width: 100%;
-  height: auto !important;
-  margin: 0 auto 10px;
-  display: block;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-logo {
-    max-width: 400px !important;
-  }
-}
-
-.hero .motto,
-.hero .subtitle-hero,
-.hero p {
-color: var(--xf-yellow) !important;
-}
-
-/* =========================
-   CORTE DEFINITIVO POST-HERO
-========================= */
-.services,
-.gallery-section,
-.impact-section,
-.contact-container {
-  background: #f5f5f5 !important;
-  position: relative;
-  z-index: 10;
-}
-
 /* ======================================
    REMOVE SOLID BACKGROUNDS OVER HERO
    ====================================== */
@@ -654,7 +472,7 @@ footer {
 
 .hero-logo img {
   display: block;            /* esto evita líneas/gaps raros */
-  background: transparent !important;
+  background: none !important;
   border: 0 !important;
   box-shadow: none !important;
   filter: none !important;
@@ -811,4 +629,55 @@ footer * {
 
 #services h2, #gallery h2, #impact h2, #contact h2{
   margin: 0 0 30px 0;
+}
+/* =========================
+   SISTEMA VISUAL UNIFICADO
+========================= */
+
+/* SECCIONES */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  color: var(--xf-green);
+}
+
+/* CARDS (What We Offer + XF Impact) */
+.services-grid,
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.service-box,
+.impact-box {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(164,255,10,0.35);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.service-box h3,
+.impact-box h3 {
+  color: var(--xf-yellow);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.service-box p,
+.impact-box p {
+  color: #eee;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
 }
