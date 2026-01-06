@@ -117,13 +117,6 @@ body {
     color: #000;
 }
 
-.services-grid,
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
 .service-box,
 .impact-box {
   background: rgba(0,0,0,0.35);
@@ -580,14 +573,6 @@ footer * {
   color: var(--text);
 }
 
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .services-grid,
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* =========================
    HERO — FIX: textos y botón
 ========================= */
