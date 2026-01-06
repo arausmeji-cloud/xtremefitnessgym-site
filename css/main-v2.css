@@ -413,106 +413,44 @@ body {
   }
 }
 
-/* ======================================
-   REMOVE SOLID BACKGROUNDS OVER HERO
-   ====================================== */
-section,
-.services,
-.what-we-offer,
-.gallery-section,
-.impact-section,
-.contact-container,
-#contact,
-footer {
-  background: transparent !important;
-}
-
 /* =========================
-   HERO – CLEAN & BALANCED
+   HERO – TEXTO Y BOTÓN
 ========================= */
 
-/* contenedor general */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 140px;
+  padding: 140px 20px;
 }
 
-/* contenido */
 .hero-content {
-  text-align: center;
   max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.hero-logo {
-  background: transparent !important;
-  border: 0 !important;
-  padding: 0 !important;
-  margin-bottom: 20px;
-}
-
-.hero-logo img {
-  display: block;            /* esto evita líneas/gaps raros */
-  background: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  filter: none !important;
-}
-
-/* título principal */
+/* Título principal */
 .hero h1 {
-  margin-bottom: 30px;
   font-size: 3rem;
   font-weight: 800;
   color: var(--xf-green);
-  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
 
-.hero p {
-  display: inline;
+/* Subtexto en UNA sola línea */
+.hero .subtitle-hero {
+  font-size: 1.15rem;
+  color: var(--text-light);
 }
 
-.hero p + p {
-  margin-left: 6px;
-}
-
-/* slogan grande */
-.hero .motto {
-  margin-bottom: 24px;
-}
-
-/* subtítulo */
-.hero p {
-  margin-bottom: 40px;
-}
-
-/* botón principal */
+/* Botón separado y centrado */
 .hero .btn-primary {
-  margin-bottom: 60px;
-}
-
-/* menú debajo del hero */
-.nav-under-hero {
-  margin-top: 0;
-}
-
-/* HERO – ajuste fino */
-.hero-content {
-  padding-top: 40px; /* baja un poco todo el bloque */
-}
-
-/* Frase principal más fuerte */
-.hero h1 {
-  font-weight: 800;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-
-/* Subtexto en una sola línea */
-.hero .subtitle-hero,
-.hero .motto {
-  display: inline;
+  margin-top: 30px;
+  align-self: center;
 }
 
 .hero .motto {
