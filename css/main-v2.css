@@ -430,11 +430,7 @@ body {
   text-align: center;
 }
 
-/* IMPACT */
-.impact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+
 .cards-grid{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -569,11 +565,7 @@ footer * {
   color: var(--xf-yellow);
 }
 
-:root{
-  --xf-green:#a4ff0a;
-  --xf-yellow:#ffde00;
-  --text:#ffffff;
-}
+
 .section-title{
   color: var(--xf-green);
   text-align:center;
@@ -588,37 +580,6 @@ footer * {
   color: var(--text);
 }
 
-/* =========================
-   SISTEMA VISUAL UNIFICADO
-========================= */
-
-/* CARDS (What We Offer + XF Impact) */
-.services-grid,
-.impact-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.service-box,
-.impact-box {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(164,255,10,0.35);
-  border-radius: 12px;
-  padding: 24px;
-}
-
-.service-box h3,
-.impact-box h3 {
-  color: var(--xf-yellow);
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.service-box p,
-.impact-box p {
-  color: #eee;
-}
 
 /* MOBILE */
 @media (max-width: 768px) {
