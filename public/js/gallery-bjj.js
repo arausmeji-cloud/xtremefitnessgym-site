@@ -1,28 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("bjj-container");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
 
-  var folder = "bjj";
-  var container = document.getElementById("bjj-container");
+  let photos = [];
+  let currentIndex = 0;
+  const folder = "bjj";
 
-  var photos = [
-    "bjj-1.jpg",
-    "bjj-2.jpg",
-    "bjj-3.jpg",
-    "bjj-4.jpg",
-    "bjj-5.jpg",
-    "bjj-6.jpg",
-    "bjj-7.jpg",
-    "bjj-8.jpg",
-    "bjj-9.jpg"
-  ];
+  fetch("/api/list-photos?folder=" + folder)
+    .then(response => response.json())
+    .then(data => {
+      photos = data;
 
-  if (!container) return;
+      if (!photos.length) {
+        container.innerHTML = "<p style=\"opacity:.7\">No photos found.</p>";
+        return;
+      }
 
-  photos.forEach(function (file, index) {
-    var img = document.createElement("img");
-    img.src = "/images/gallery/" + folder + "/" + file;
-    img.alt = "BJJ Photo " + (index + 1);
-    img.className = "gallery-thumb";
-    container.appendChild(img);
+      photos.forEach((file, index) => {
+        const img = document.createElement("img");
+        img.src = "/public/images/gallery/" + folder + "/" + file;
+        img.alt = "BJJ Photo " + (index + 1);
+        img.className = "gallery-thumb";
+        img.dataset.index = index;
+
+        img.addEventListener("click", function () {
+          currentIndex = index;
+          openLightbox();
+        });
+
+        container.appendChild(img);
+      });
+    })
+    .catch(() => {
+      container.innerHTML = "<p>Error loading gallery.</p>";
+    });
+
+  function openLightbox() {
+    lightbox.style.display = "flex";
+    lightboxImg.src = "/public/images/gallery/" + folder + "/" + photos[currentIndex];
+  }
+
+  prevBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+    openLightbox();
   });
 
+  nextBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % photos.length;
+    openLightbox();
+  });
+
+  lightbox.addEventListener("click", function () {
+    lightbox.style.display = "none";
+  });
 });
