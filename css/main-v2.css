@@ -900,3 +900,25 @@ footer * {
   display: none !important;
 }
 
+/* =========================
+   OVERRIDE FINAL – ESPACIO IMPACT → CONTACT
+========================= */
+
+/* Impact: nada de aire abajo */
+#impact {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Contact: subir todo el bloque */
+#contact {
+  margin-top: -60px !important; /* este es el ajuste clave */
+  padding-top: 0 !important;
+}
+
+/* Título Contact Us bien pegado pero prolijo */
+#contact h2 {
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+}
+
