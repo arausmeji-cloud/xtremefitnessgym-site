@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       photos.forEach((file, index) => {
         const img = document.createElement("img");
-        img.src = `/public/images/gallery/${folder}/${file}`;
+      img.src = "/public/images/gallery/bjj/" + photo;
         img.alt = `BJJ Photo ${index + 1}`;
         img.className = "gallery-thumb";
         img.dataset.index = String(index);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   function openLightbox() {
     if (!photos.length) return;
     lightbox.style.display = "flex";
-    lightboxImg.src = `/public/images/gallery/${folder}/${photos[currentIndex]}`;
+    lightboxImg.src = "/public/images/gallery/bjj/" + photos[currentIndex];
   }
 
   function closeLightbox() {
