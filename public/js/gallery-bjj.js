@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function openLightbox() {
     lightbox.style.display = "flex";
-    lightboxImg.src = "/public/images/gallery/" + folder + "/" + photos[currentIndex];
+    lightboxImg.src = "/images/gallery/" + folder + "/" + photos[currentIndex];
   }
 
   prevBtn.addEventListener("click", function (e) {
