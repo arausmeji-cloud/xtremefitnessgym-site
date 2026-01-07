@@ -852,3 +852,26 @@ footer * {
 .contact-section {
   margin-top: 0 !important;
 }
+
+
+
+
+/* ===== COMPACTAR ESPACIO ENTRE IMPACT Y CONTACT ===== */
+
+/* Impact: quitar aire abajo */
+#impact {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
+}
+
+/* Contact: quitar aire arriba */
+#contact {
+  margin-top: 0 !important;
+  padding-top: 30px !important;
+}
+
+/* Título Contact Us: NO gigante */
+#contact .section-title {
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+}
