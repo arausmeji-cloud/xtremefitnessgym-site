@@ -142,26 +142,41 @@
     <!-- ===========================
          CONTACT
     ============================ -->
-   <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section">
 
   <h2 class="section-title">Contact Us</h2>
 
   <div class="contact-container">
 
+    <!-- MAPA -->
     <div class="contact-map">
-      <!-- iframe del mapa -->
+      <iframe
+        src="https://www.google.com/maps?q=Sydney%20Australia&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
+    <!-- INFO -->
     <div class="contact-info">
       <h3>Visit or Contact Us</h3>
       <p>Train hard, stay consistent and unleash your potential.</p>
-      <p>Address: Your gym address here</p>
-      <p>Phone: +61 000 000 000</p>
-      <div class="contact-email">Email: info@xtremefitnessgym.com.au</div>
+      <p><strong>Address:</strong> Your gym address here</p>
+      <p><strong>Phone:</strong> +61 000 000 000</p>
+
+      <div class="contact-email">
+        Email: info@xtremefitnessgym.com.au
+      </div>
     </div>
 
+    <!-- FORM -->
     <div class="contact-form">
-      <!-- form -->
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
 
   </div>
