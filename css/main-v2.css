@@ -892,5 +892,11 @@ footer * {
 #contact::after {
   display: none !important;
 }
-
+/* Quitar separadores decorativos tipo ... */
+.section::before,
+.section::after,
+.section-divider,
+.section-dots {
+  display: none !important;
+}
 
