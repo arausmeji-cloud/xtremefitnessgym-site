@@ -835,12 +835,16 @@ footer * {
   font-weight: 800;
 }
 
-/* REDUCIR EL HUECO ENTRE XF IMPACT Y CONTACT */
+/* ===== COMPACTAR FINAL DE XF IMPACT ===== */
+
 #impact {
-  padding-bottom: 30px !important;
+  padding-bottom: 20px !important;
   margin-bottom: 0 !important;
 }
 
+#impact h2 {
+  margin-bottom: 30px !important;
+}
 #contact {
   padding-top: 30px !important;
   margin-top: 0 !important;
@@ -853,15 +857,12 @@ footer * {
   margin-top: 0 !important;
 }
 
-
-
-
 /* ===== COMPACTAR ESPACIO ENTRE IMPACT Y CONTACT ===== */
 
 /* Impact: quitar aire abajo */
 #impact {
   margin-bottom: 0 !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 0 !important;
 }
 
 /* Contact: quitar aire arriba */
@@ -875,3 +876,17 @@ footer * {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
 }
+/* ===== AJUSTE FINO TITULO CONTACT ===== */
+
+#contact {
+  padding-top: 0 !important;
+  margin-top: -40px !important;
+}
+
+#contact .section-title {
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+
+
