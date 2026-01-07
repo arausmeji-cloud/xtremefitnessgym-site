@@ -766,6 +766,9 @@ footer * {
   margin: 0 auto 28px;
   opacity: 0.9;
 }
+.impact-section {
+  margin-top: 30px;
+}
 
 /* Botones un poco más abajo */
 .impact-section .gallery-buttons {
