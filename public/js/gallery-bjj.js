@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       photos.forEach((file, index) => {
         const img = document.createElement("img");
-        img.src = "/public/images/gallery/" + folder + "/" + file;
+        img.src = "/images/gallery/" + folder + "/" + file;
         img.alt = "BJJ Photo " + (index + 1);
         img.className = "gallery-thumb";
         img.dataset.index = index;
