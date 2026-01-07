@@ -624,5 +624,25 @@ footer * {
 .gallery-buttons {
   margin: 10px 0 18px;
 }
+/* =========================
+   HERO — FIX FINAL DEFINITIVO
+========================= */
 
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--xf-green);
+}
+
+.hero .motto {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--xf-green);
+}
+
+.hero .subtitle-hero {
+  font-size: 1.15rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
 
