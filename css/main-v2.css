@@ -751,3 +751,24 @@ footer * {
     text-align: center;
   }
 }
+/* =========================
+   XF IMPACT – TEXTO AJUSTE FINO
+========================= */
+
+.impact-section h2 {
+  margin-bottom: 14px;
+}
+
+.impact-section .impact-intro {
+  color: #ffffff;
+  font-size: 1.05rem;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  opacity: 0.9;
+}
+
+/* Botones un poco más abajo */
+.impact-section .gallery-buttons {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
