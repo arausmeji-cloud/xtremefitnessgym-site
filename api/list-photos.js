@@ -3,31 +3,39 @@ import path from "path";
 
 export default function handler(req, res) {
   try {
-    const folder = (req.query.folder || "").toString().toLowerCase();
+    const folder = req.query.folder;
 
-    // Seguridad: solo permitimos estas carpetas
-    const allowed = new Set(["bjj", "gym", "impact"]);
-    if (!allowed.has(folder)) {
-      return res.status(400).json({ error: "Invalid folder" });
+    if (!folder) {
+      return res.status(400).json({ error: "Folder not specified" });
     }
 
-    // Ruta a /public/images/gallery/<folder>
-    const dirPath = path.join(process.cwd(), "public", "images", "gallery", folder);
+    const basePath = path.join(
+      process.cwd(),
+      "public",
+      "images",
+      "gallery",
+      folder
+    );
 
-    if (!fs.existsSync(dirPath)) {
-      return res.status(200).json([]); // carpeta vacía o no existe aún
+    if (!fs.existsSync(basePath)) {
+      return res.status(404).json({ error: "Folder not found" });
     }
 
-    const files = fs.readdirSync(dirPath);
+    const files = fs.readdirSync(basePath);
 
-    // Filtrar solo imágenes
-    const images = files
-      .filter((f) => /\.(png|jpe?g|gif|webp|jfif)$/i.test(f))
-      // Ordenar (opcional, pero ayuda)
-      .sort((a, b) => a.localeCompare(b));
+    const images = files.filter(file => {
+      const lower = file.toLowerCase();
+      return (
+        lower.endsWith(".jpg") ||
+        lower.endsWith(".jpeg") ||
+        lower.endsWith(".png") ||
+        lower.endsWith(".webp") ||
+        lower.endsWith(".jfif")
+      );
+    });
 
     res.status(200).json(images);
-  } catch (err) {
-    res.status(500).json({ error: "Server error", details: err.message });
+  } catch (error) {
+    res.status(500).json({ error: "Server error" });
   }
 }
