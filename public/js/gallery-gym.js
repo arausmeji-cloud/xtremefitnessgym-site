@@ -14,7 +14,7 @@ fetch("/api/list-photos?folder=" + folder)
     photos = data;
     photos.forEach((file, index) => {
       const img = document.createElement("img");
-      img.src = "/images/gallery/" + folder + "/" + file;
+    img.src = "/images/gallery/" + folder + "/" + file;
       img.className = "gallery-thumb";
       img.dataset.index = index;
 
