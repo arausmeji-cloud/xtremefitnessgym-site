@@ -1,33 +1,43 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-  let photos = [];
-  let currentIndex = 0;
-  const folder = "gym";
-
+document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("gym-container");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const prevBtn = document.getElementById("prev-btn");
   const nextBtn = document.getElementById("next-btn");
 
+  if (!container) return;
+
+  let photos = [];
+  let currentIndex = 0;
+  const folder = "gym";
+
   fetch("/api/list-photos?folder=" + folder)
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
       photos = data;
+
+      if (!photos.length) {
+        container.innerHTML = "<p style='opacity:.7'>No photos found.</p>";
+        return;
+      }
 
       photos.forEach((file, index) => {
         const img = document.createElement("img");
         img.src = "/images/gallery/" + folder + "/" + file;
+        img.alt = "Gym Photo " + (index + 1);
         img.className = "gallery-thumb";
         img.dataset.index = index;
 
-        img.addEventListener("click", () => {
+        img.addEventListener("click", function () {
           currentIndex = index;
           openLightbox();
         });
 
         container.appendChild(img);
       });
+    })
+    .catch(() => {
+      container.innerHTML = "<p>Error loading gallery.</p>";
     });
 
   function openLightbox() {
@@ -35,20 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.src = "/images/gallery/" + folder + "/" + photos[currentIndex];
   }
 
-  prevBtn.onclick = e => {
+  prevBtn.addEventListener("click", function (e) {
     e.stopPropagation();
     currentIndex = (currentIndex - 1 + photos.length) % photos.length;
     openLightbox();
-  };
+  });
 
-  nextBtn.onclick = e => {
+  nextBtn.addEventListener("click", function (e) {
     e.stopPropagation();
     currentIndex = (currentIndex + 1) % photos.length;
     openLightbox();
-  };
+  });
 
-  lightbox.onclick = () => {
+  lightbox.addEventListener("click", function () {
     lightbox.style.display = "none";
-  };
-
+  });
 });
