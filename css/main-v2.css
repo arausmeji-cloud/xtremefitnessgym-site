@@ -922,3 +922,21 @@ footer * {
   margin-bottom: 30px !important;
 }
 
+/* DEBUG GALLERY – NO BORRAR */
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+  gap: 20px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: auto !important;
+}
+
+.gallery-thumb {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  border: 2px solid red !important;
+}
