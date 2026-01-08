@@ -26,66 +26,8 @@
   <img id="lightbox-img" class="lightbox-img" src="" alt="">
   <button id="next-btn" class="nav-btn">&#10095;</button>
 </div>
-
-<script>
-async function loadGallery() {
-  const folder = "gym";
-  const response = await fetch("/api/list-photos?folder=" + folder);
-  const photos = await response.json();
-
-  const container = document.getElementById("gym-container");
-  container.innerHTML = "";
-
-  photos.forEach((photo, index) => {
-    const img = document.createElement("img");
-    img.src = "/images/gallery/gym/" + photo;
-    img.alt = "Gym Photo " + (index + 1);
-    img.classList.add("gallery-thumb");
-    img.dataset.index = index;
-    container.appendChild(img);
-  });
-
-  setupLightbox(photos);
-}
-
-function setupLightbox(photos) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const prevBtn = document.getElementById("prev-btn");
-  const nextBtn = document.getElementById("next-btn");
-  let currentIndex = 0;
-
-  document.querySelectorAll(".gallery-thumb").forEach(img => {
-    img.addEventListener("click", () => {
-      currentIndex = parseInt(img.dataset.index);
-      openLightbox();
-    });
-  });
-
-  function openLightbox() {
-    lightbox.style.display = "flex";
-    lightboxImg.src = "/images/gallery/gym/" + photos[currentIndex];
-  }
-
-  lightbox.addEventListener("click", e => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-    }
-  });
-
-  prevBtn.onclick = () => {
-    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-    openLightbox();
-  };
-
-  nextBtn.onclick = () => {
-    currentIndex = (currentIndex + 1) % photos.length;
-    openLightbox();
-  };
-}
-
-loadGallery();
-</script>
-
+  
+<script src="/js/gallery-gym.js?v=999"></script>
+  
 </body>
 </html>
