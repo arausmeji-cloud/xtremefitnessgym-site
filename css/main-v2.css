@@ -940,3 +940,20 @@ footer * {
   visibility: visible !important;
   border: 2px solid red !important;
 }
+
+/* XF Impact clickable cards */
+.impact-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.impact-link .impact-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.impact-link .impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(180, 255, 0, 0.6);
+}
