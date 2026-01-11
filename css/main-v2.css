@@ -1190,4 +1190,10 @@ footer * {
   margin: 35px 0 12px;
 }
 
+/* Fix alignment: Women's Self-Defense */
+body.womens-self-defense .program-container {
+  margin-top: 80px;
+}
+
+
 
