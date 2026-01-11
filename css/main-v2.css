@@ -1061,47 +1061,94 @@ footer * {
   justify-content: center;
 }
 
-.program-container {
-  background: rgba(0,0,0,0.55);
-  border: 1px solid rgba(164,255,10,0.45);
-  border-radius: 14px;
+/* =========================
+   XF IMPACT PROGRAM PAGES
+   (Unified Style)
+========================= */
 
-  box-shadow:
-    0 0 18px rgba(164,255,10,0.18),
-    0 0 45px rgba(164,255,10,0.08);
-}
 .program-container {
   max-width: 900px;
-  margin: 80px auto; /* esto es CLAVE para centrar */
-  padding: 60px 50px;
-  text-align: center;
-
-  background: rgba(0,0,0,0.55);
-  border: 1px solid rgba(164,255,10,0.45);
-  border-radius: 16px;
-
+  margin: 120px auto;
+  padding: 60px 60px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(164, 255, 10, 0.35);
+  border-radius: 18px;
   box-shadow:
-    0 0 18px rgba(164,255,10,0.18),
-    0 0 45px rgba(164,255,10,0.08);
+    0 0 35px rgba(164, 255, 10, 0.18),
+    inset 0 0 25px rgba(164, 255, 10, 0.08);
+  text-align: center;
+}
+
+/* Hover glow */
+.program-container:hover {
+  box-shadow:
+    0 0 55px rgba(164, 255, 10, 0.35),
+    inset 0 0 35px rgba(164, 255, 10, 0.12);
 }
 
 /* Back button */
 .back-btn {
   display: inline-block;
-  margin-bottom: 30px;
-  padding: 10px 18px;
-  border: 1px solid var(--xf-green);
-  border-radius: 30px;
+  margin-bottom: 35px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(164, 255, 10, 0.6);
   color: var(--xf-green);
+  font-size: 0.9rem;
   text-decoration: none;
-  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .back-btn:hover {
-  background: var(--xf-green);
-  color: #000;
-  box-shadow: 0 0 18px rgba(164,255,10,0.6);
+  background: rgba(164, 255, 10, 0.12);
+  box-shadow: 0 0 15px rgba(164, 255, 10, 0.6);
+}
+
+/* Main title */
+.program-container h1 {
+  color: var(--xf-yellow);
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.program-intro {
+  color: #eaeaea;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 45px;
+  line-height: 1.7;
+}
+
+/* Section titles */
+.program-container h3 {
+  color: var(--xf-green);
+  font-size: 1.3rem;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraphs */
+.program-container p {
+  color: #f0f0f0;
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .program-container {
+    padding: 40px 25px;
+    margin: 80px 20px;
+  }
+
+  .program-container h1 {
+    font-size: 2.1rem;
+  }
 }
 
 /* Title */
