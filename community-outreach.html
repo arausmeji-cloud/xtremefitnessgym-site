@@ -4,96 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BJJ Gallery | Xtreme Fitness Gym</title>
+ <title>Community Outreach | Xtreme Fitness Gym</title>
   <link rel="stylesheet" href="css/main-v2.css?v=999">
 </head>
 
 <body>
 
 <header class="gallery-page-header">
-  <h1>BJJ GALLERY</h1>
-  <p>Brazilian Jiu-Jitsu – confidence, discipline & self-defence.</p>
- <a href="index.html#gallery">Back to main gallery</a>
+<h1>COMMUNITY OUTREACH</h1>
+<p>Building safer communities through strength, discipline, and education.</p>
+ <a href="xf-impact.html">← Back to XF Impact</a>
 </header>
 
-<section id="gallery" class="gallery-section">
-  <h2>BJJ Gallery</h2>
-  <div class="gallery-grid" id="bjj-container"></div>
+<section class="impact-section">
+  <h2>Community Outreach Program</h2>
+
+  <div class="impact-card">
+    <p>
+      Our Community Outreach Program is designed to support children, teenagers, and families affected by bullying, violence, and social exclusion.
+      We work not only with those who suffer bullying, but also with those who engage in it — helping both sides develop discipline, empathy, and accountability.
+    </p>
+
+    <p>
+      Through structured martial arts instruction, conflict awareness training, and real-world behavioral guidance, we teach students how to respond calmly, safely, and confidently in challenging situations.
+      Our goal is prevention, education, and long-term positive change within schools and local communities.
+    </p>
+
+    <p>
+      We actively collaborate with schools, educators, community leaders, and public institutions to reduce bullying and promote respect, resilience, and healthy social interaction.
+    </p>
+  </div>
 </section>
-
-
   
-<!-- LIGHTBOX -->
-<div id="lightbox" style="display:none;">
-  <button id="prev-btn" class="nav-btn">&#10094;</button>
-  <img id="lightbox-img" class="lightbox-img" src="" alt="">
-  <button id="next-btn" class="nav-btn">&#10095;</button>
-</div>
-
-<script>
-async function loadGallery() {
-    const folder = "bjj"; // carpeta que queremos usar
-    const response = await fetch(`/api/list-photos?folder=${folder}`);
-    const photos = await response.json();
-
-    const container = document.getElementById("bjj-container");
-    container.innerHTML = "";
-
-    photos.forEach((photo, index) => {
-        const img = document.createElement("img");
-       img.src = "/images/gallery/bjj/" + photo;
-        img.alt = `BJJ Photo ${index + 1}`;
-        img.classList.add("gallery-thumb");
-        img.dataset.index = index;
-        container.appendChild(img);
-    });
-
-    setupLightbox(photos);
-}
-
-function setupLightbox(photos) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
-    let currentIndex = 0;
-
-    document.querySelectorAll(".gallery-thumb").forEach((img) => {
-        img.addEventListener("click", () => {
-            currentIndex = parseInt(img.dataset.index);
-            openLightbox();
-        });
-    });
-
-    function openLightbox() {
-    lightbox.style.display = "flex";
-   lightboxImg.src = "/images/gallery/bjj/" + photos[currentIndex];
-}
-
-    function closeLightbox() {
-        lightbox.style.display = "none";
-    }
-
-    lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) closeLightbox();
-    });
-
-    prevBtn.onclick = () => {
-        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-        openLightbox();
-    };
-
-    nextBtn.onclick = () => {
-        currentIndex = (currentIndex + 1) % photos.length;
-        openLightbox();
-    };
-}
-
-loadGallery();
-</script>
-
-<script src="/js/gallery-bjj.js"></script>
-
 
 </body>
 </html>
