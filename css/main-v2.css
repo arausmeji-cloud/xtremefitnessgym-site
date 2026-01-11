@@ -1050,3 +1050,75 @@ footer * {
 .impact-grid {
   margin-bottom: 120px;
 }
+
+/* =========================
+   PROGRAM PAGES (UNIFIED)
+========================= */
+
+.program-page {
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.program-container {
+  max-width: 900px;
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(164,255,10,0.35);
+  border-radius: 16px;
+  padding: 60px;
+  box-shadow: 0 0 35px rgba(164,255,10,0.15);
+  text-align: center;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 10px 18px;
+  border: 1px solid var(--xf-green);
+  border-radius: 30px;
+  color: var(--xf-green);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: var(--xf-green);
+  color: #000;
+  box-shadow: 0 0 18px rgba(164,255,10,0.6);
+}
+
+/* Title */
+.program-title {
+  color: var(--xf-yellow);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.program-subtitle {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Content */
+.program-content p {
+  color: #eee;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .program-container {
+    padding: 40px 25px;
+  }
+
+  .program-title {
+    font-size: 2.2rem;
+  }
+}
