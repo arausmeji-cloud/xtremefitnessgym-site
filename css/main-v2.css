@@ -957,3 +957,54 @@ footer * {
   transform: translateY(-4px);
   box-shadow: 0 0 15px rgba(180, 255, 0, 0.6);
 }
+.impact-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.impact-link:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   UNIFIED CARD STYLE
+========================= */
+
+.impact-box,
+.service-box,
+.offer-card {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 30px;
+  border: 1px solid rgba(170, 255, 0, 0.4);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.impact-box:hover,
+.service-box:hover,
+.offer-card:hover {
+  transform: scale(1.05);
+  border-color: #aaff00;
+  box-shadow:
+    0 0 15px rgba(170, 255, 0, 0.6),
+    0 0 35px rgba(170, 255, 0, 0.3);
+}
+
+/* REMOVE LINK STYLE */
+.impact-box h3,
+.service-box h3,
+.offer-card h3 {
+  color: #ffd400;
+}
+
+.impact-box p,
+.service-box p,
+.offer-card p {
+  color: #ffffff;
+}
