@@ -1062,13 +1062,13 @@ footer * {
 }
 
 .program-container {
-  max-width: 900px;
-  background: rgba(0,0,0,0.45);
-  border: 1px solid rgba(164,255,10,0.35);
-  border-radius: 16px;
-  padding: 60px;
-  box-shadow: 0 0 35px rgba(164,255,10,0.15);
-  text-align: center;
+  background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(164,255,10,0.45);
+  border-radius: 14px;
+
+  box-shadow:
+    0 0 18px rgba(164,255,10,0.18),
+    0 0 45px rgba(164,255,10,0.08);
 }
 
 /* Back button */
