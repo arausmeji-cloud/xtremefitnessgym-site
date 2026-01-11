@@ -665,7 +665,7 @@ footer * {
 }
 
 /* =========================
-   XF IMPACT — MATCH WHAT WE OFFER
+   XF IMPACT — MATCH WHAT WE OFFER (FIXED)
 ========================= */
 
 .impact-section h2 {
@@ -675,21 +675,29 @@ footer * {
   margin-bottom: 40px;
 }
 
+/* GRID: 3 arriba / 2 abajo centrados (cuando hay 5 items) */
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
+/* Asegura que los <a> se comporten como "cards" */
+.impact-grid a.impact-box {
+  display: block;
+  text-decoration: none;
+}
+
+/* Card base */
 .impact-box {
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(164,255,10,0.35);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(164, 255, 10, 0.35);
   border-radius: 12px;
   padding: 24px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
+/* Text styles */
 .impact-box h3 {
   color: var(--xf-yellow);
   font-size: 1.4rem;
@@ -702,8 +710,38 @@ footer * {
   line-height: 1.5;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+/* Hover glow (igual idea que What We Offer) */
+.impact-box:hover {
+  transform: scale(1.03);
+  border-color: rgba(164, 255, 10, 0.75);
+  box-shadow:
+    0 0 18px rgba(164, 255, 10, 0.25),
+    0 0 40px rgba(164, 255, 10, 0.12);
+}
+
+/* ✅ Centrado real para 5 cards: la 4ta arranca en columna 2 y la 5ta en columna 3 */
+.impact-grid > a.impact-box:nth-child(4) {
+  grid-column: 2;
+}
+.impact-grid > a.impact-box:nth-child(5) {
+  grid-column: 3;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Reseteamos el centrado manual porque en 2 columnas no aplica */
+  .impact-grid > a.impact-box:nth-child(4),
+  .impact-grid > a.impact-box:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
   .impact-grid {
     grid-template-columns: 1fr;
   }
