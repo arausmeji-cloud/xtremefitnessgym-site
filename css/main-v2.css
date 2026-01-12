@@ -1234,3 +1234,40 @@ body.womens-self-defense .program-container {
   box-shadow: 0 0 12px rgba(164,255,10,0.5);
 }
 
+.gallery-hero {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+.gallery-title {
+  color: var(--xf-green);
+  font-size: 3.2rem;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.gallery-subtitle {
+  color: #ddd;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 10px 26px;
+  border: 1px solid var(--xf-green);
+  border-radius: 30px;
+  color: var(--xf-green);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: rgba(164,255,10,0.18);
+  box-shadow: 0 0 14px rgba(164,255,10,0.55);
+}
