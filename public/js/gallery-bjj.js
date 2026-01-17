@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("bjj-container");
+container.innerHTML = "";
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const prevBtn = document.getElementById("prev-btn");
