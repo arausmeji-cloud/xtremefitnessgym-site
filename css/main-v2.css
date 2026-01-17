@@ -1272,3 +1272,14 @@ body.womens-self-defense .program-container {
   background: rgba(164,255,10,0.18);
   box-shadow: 0 0 14px rgba(164,255,10,0.55);
 }
+.gallery-page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-page-header .back-link {
+  margin-top: 15px;
+}
