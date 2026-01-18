@@ -1429,3 +1429,42 @@ body.womens-self-defense .program-container {
   padding: 14px 28px;     /* botón más alto y ancho */
   min-width: 240px;       /* más presencia */
 }
+/* =========================
+   NAVIGATION — CLEAN & PREMIUM
+========================= */
+
+nav a,
+.nav a,
+.nav-link {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(164, 255, 10, 0.45);
+  color: var(--xf-green);
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Hover elegante (no gamer) */
+nav a:hover,
+.nav a:hover,
+.nav-link:hover {
+  background: rgba(0, 0, 0, 0.55);
+  border-color: rgba(164, 255, 10, 0.75);
+  box-shadow:
+    0 0 10px rgba(164, 255, 10, 0.25),
+    0 0 22px rgba(164, 255, 10, 0.15);
+  transform: translateY(-1px);
+}
+
+/* CTA principal — NO TOCAR */
+.btn-primary,
+.hero .btn-primary {
+  background: var(--xf-green);
+  color: #000;
+  box-shadow:
+    0 0 18px rgba(164, 255, 10, 0.55),
+    0 0 36px rgba(164, 255, 10, 0.35);
+}
