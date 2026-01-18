@@ -1468,3 +1468,21 @@ nav a:hover,
     0 0 18px rgba(164, 255, 10, 0.55),
     0 0 36px rgba(164, 255, 10, 0.35);
 }
+/* =========================
+   NAV MENU — OVERRIDE FINAL
+========================= */
+
+header nav a {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(164, 255, 10, 0.45) !important;
+  color: var(--xf-green) !important;
+  box-shadow: none !important;
+}
+
+header nav a:hover {
+  background: rgba(0, 0, 0, 0.55) !important;
+  border-color: rgba(164, 255, 10, 0.75) !important;
+  box-shadow:
+    0 0 10px rgba(164, 255, 10, 0.25),
+    0 0 22px rgba(164, 255, 10, 0.15) !important;
+}
