@@ -1364,3 +1364,45 @@ body.womens-self-defense .program-container {
   font-size: 1.1rem !important;
   padding: 12px 26px !important;
 }
+/* =========================
+   GALLERY BUTTONS — MATCH BACK TO MAIN GALLERY
+========================= */
+
+.gallery-menu a,
+.gallery-buttons a {
+  display: inline-block;
+  width: auto;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 12px 22px;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  color: var(--xf-green);
+  background: rgba(0, 0, 0, 0.45);
+
+  border: 1px solid rgba(164, 255, 10, 0.45);
+  border-radius: 999px;
+
+  transition: 
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover elegante, NO gamer */
+.gallery-menu a:hover,
+.gallery-buttons a:hover {
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--xf-yellow);
+
+  box-shadow:
+    0 0 10px rgba(164, 255, 10, 0.25),
+    0 0 22px rgba(164, 255, 10, 0.12);
+
+  transform: translateY(-1px);
+}
