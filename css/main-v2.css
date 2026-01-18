@@ -1304,3 +1304,19 @@ body.womens-self-defense .program-container {
   gap: 20px;
   width: 100%;
 }
+.gallery-page-header h1 {
+  color: var(--xf-yellow);
+}
+
+.gallery-page-header p {
+  color: var(--xf-green);
+}
+
+.gallery-page-header {
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 16px;
+}
