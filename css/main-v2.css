@@ -1196,175 +1196,6 @@ body.womens-self-defense .program-container {
 }
 
 /* =========================
-   GALLERY HERO
-========================= */
-
-.gallery-hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-}
-
-.gallery-title {
-  color: var(--xf-green);
-  font-size: 3rem;
-  margin-bottom: 12px;
-}
-
-.gallery-subtitle {
-  color: #ddd;
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.back-link {
-  display: inline-block;
-  margin: 20px auto;
-  text-align: center;
-  padding: 10px 22px;
-  border: 1px solid var(--xf-green);
-  border-radius: 30px;
-  color: var(--xf-green);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.back-link:hover {
-  background: rgba(164,255,10,0.15);
-  box-shadow: 0 0 12px rgba(164,255,10,0.5);
-}
-
-.gallery-hero {
-  text-align: center;
-  padding: 90px 20px 50px;
-}
-
-.gallery-title {
-  color: var(--xf-green);
-  font-size: 3.2rem;
-  margin-bottom: 14px;
-  text-align: center;
-}
-
-.gallery-subtitle {
-  color: #ddd;
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 35px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 35px;
-  padding: 10px 26px;
-  border: 1px solid var(--xf-green);
-  border-radius: 30px;
-  color: var(--xf-green);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.back-link:hover {
-  background: rgba(164,255,10,0.18);
-  box-shadow: 0 0 14px rgba(164,255,10,0.55);
-}
-.gallery-page-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.gallery-page-header .back-link {
-  margin-top: 15px;
-}
-/* ===== Gallery layout fix ===== */
-
-.gallery-page-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.gallery-page-header .back-link {
-  margin-top: 15px;
-}
-
-/* Unified gallery grid (BJJ, Gym, Impact) */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  width: 100%;
-}
-.gallery-page-header h1 {
-  color: var(--xf-yellow);
-}
-
-.gallery-page-header p {
-  color: var(--xf-green);
-}
-
-.gallery-page-header {
-  text-align: center;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 16px;
-}
-/* Espacio superior en páginas de galería */
-.gallery-page-header {
-  padding-top: 60px !important;
-  padding-bottom: 30px !important;
-}
-.gallery-page-header h1 {
-  font-size: 42px !important;
-  letter-spacing: 1px;
-}
-
-.gallery-page-header p {
-  font-size: 18px !important;
-  margin-top: 10px;
-}
-
-.back-link {
-  font-size: 16px !important;
-  padding: 10px 22px !important;
-}
-/* ==== GALLERY HEADER SPACING & SIZE FIX ==== */
-
-.gallery-page-header {
-  padding-top: 60px !important;
-  padding-bottom: 40px !important;
-  text-align: center !important;
-}
-
-.gallery-page-header h1 {
-  font-size: 2.8rem !important;
-  margin-bottom: 12px !important;
-}
-
-.gallery-page-header p {
-  font-size: 1.2rem !important;
-  margin-bottom: 24px !important;
-  opacity: 0.9;
-}
-
-.back-link {
-  display: inline-block !important;
-  margin-top: 20px !important;
-  font-size: 1.1rem !important;
-  padding: 12px 26px !important;
-}
-/* =========================
    GALLERY BUTTONS — MATCH BACK TO MAIN GALLERY
 ========================= */
 
@@ -1429,23 +1260,6 @@ body.womens-self-defense .program-container {
   padding: 14px 28px;     /* botón más alto y ancho */
   min-width: 240px;       /* más presencia */
 }
-/* =========================
-   NAVIGATION — CLEAN & PREMIUM
-========================= */
-
-nav a,
-.nav a,
-.nav-link {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(164, 255, 10, 0.45);
-  color: var(--xf-green);
-  padding: 10px 22px;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
 
 /* Hover elegante (no gamer) */
 nav a:hover,
@@ -1459,30 +1273,42 @@ nav a:hover,
   transform: translateY(-1px);
 }
 
-/* CTA principal — NO TOCAR */
-.btn-primary,
-.hero .btn-primary {
-  background: var(--xf-green);
-  color: #000;
-  box-shadow:
-    0 0 18px rgba(164, 255, 10, 0.55),
-    0 0 36px rgba(164, 255, 10, 0.35);
-}
 /* =========================
-   NAV MENU — OVERRIDE FINAL
+   BOTONES — SISTEMA FINAL
 ========================= */
 
+/* CTA principal (único flúo) */
+.btn-primary {
+  background: #a4ff0a;
+  color: #000;
+  font-weight: 700;
+  padding: 14px 34px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 20px rgba(164,255,10,0.45);
+}
+
+.btn-primary:hover {
+  box-shadow:
+    0 0 25px rgba(164,255,10,0.7),
+    0 0 45px rgba(164,255,10,0.35);
+}
+
+/* Menú usa el mismo estilo premium */
 header nav a {
-  background: rgba(0, 0, 0, 0.35) !important;
-  border: 1px solid rgba(164, 255, 10, 0.45) !important;
-  color: var(--xf-green) !important;
-  box-shadow: none !important;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(164,255,10,0.45);
+  color: var(--xf-green);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 header nav a:hover {
-  background: rgba(0, 0, 0, 0.55) !important;
-  border-color: rgba(164, 255, 10, 0.75) !important;
+  background: rgba(0,0,0,0.55);
   box-shadow:
-    0 0 10px rgba(164, 255, 10, 0.25),
-    0 0 22px rgba(164, 255, 10, 0.15) !important;
+    0 0 10px rgba(164,255,10,0.25),
+    0 0 22px rgba(164,255,10,0.15);
 }
