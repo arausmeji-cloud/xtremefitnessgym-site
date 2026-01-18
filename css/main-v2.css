@@ -1406,3 +1406,26 @@ body.womens-self-defense .program-container {
 
   transform: translateY(-1px);
 }
+/* =========================
+   GALLERY — ESPACIO ENTRE TÍTULO Y BOTONES
+========================= */
+
+.gallery-section h2 {
+  margin-bottom: 36px; /* antes estaba muy pegado */
+}
+
+.gallery-menu,
+.gallery-buttons {
+  margin-top: 20px;   /* baja los botones */
+}
+
+/* =========================
+   GALLERY BUTTONS — SIZE UPGRADE
+========================= */
+
+.gallery-menu a,
+.gallery-buttons a {
+  font-size: 1.15rem;     /* texto más grande */
+  padding: 14px 28px;     /* botón más alto y ancho */
+  min-width: 240px;       /* más presencia */
+}
