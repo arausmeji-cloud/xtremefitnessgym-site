@@ -1301,3 +1301,15 @@ header nav a:hover,
   <a href="#contact" class="btn-primary">Contact</a>
 </div>
 
+.nav-under-hero {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-under-hero a {
+  display: inline-block;
+}
+.nav-under-hero {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
