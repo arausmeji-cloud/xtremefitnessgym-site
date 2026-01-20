@@ -1368,3 +1368,50 @@ header nav a:hover,
     0 0 14px rgba(164,255,10,0.45),
     0 0 28px rgba(164,255,10,0.25);
 }
+/* =========================
+   RESET: NO GLOW PERMANENTE
+========================= */
+
+.btn,
+.btn-primary,
+header nav a,
+.gallery-menu a,
+.gallery-buttons a,
+.back-link {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* =========================
+   BOTONES TRANSPARENTES — BASE
+========================= */
+
+header nav a,
+.gallery-menu a,
+.gallery-buttons a,
+.back-link {
+  border: 1px solid rgba(164,255,10,0.35);
+  color: var(--xf-green);
+  padding: 11px 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* Hover — glow suave, elegante */
+header nav a:hover,
+.gallery-menu a:hover,
+.gallery-buttons a:hover,
+.back-link:hover {
+  color: var(--xf-yellow);
+  border-color: rgba(164,255,10,0.6);
+  box-shadow:
+    0 0 8px rgba(164,255,10,0.35),
+    0 0 18px rgba(164,255,10,0.18);
+  transform: translateY(-1px);
+}
