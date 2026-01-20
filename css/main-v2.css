@@ -1312,3 +1312,59 @@ header nav a:hover {
     0 0 10px rgba(164,255,10,0.25),
     0 0 22px rgba(164,255,10,0.15);
 }
+/* =========================
+   BOTONES — SISTEMA ÚNICO XF
+========================= */
+
+/* BOTÓN BASE — premium, no gamer */
+.btn,
+header nav a,
+.gallery-menu a,
+.gallery-buttons a,
+.back-link {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(164, 255, 10, 0.45);
+  color: var(--xf-green);
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: 
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+/* Hover elegante */
+.btn:hover,
+header nav a:hover,
+.gallery-menu a:hover,
+.gallery-buttons a:hover,
+.back-link:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--xf-yellow);
+  box-shadow:
+    0 0 10px rgba(164,255,10,0.25),
+    0 0 22px rgba(164,255,10,0.12);
+  transform: translateY(-1px);
+}
+
+/* CTA — Start Your Transformation */
+.btn-primary {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(164, 255, 10, 0.55);
+  color: var(--xf-yellow);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* CTA hover — un poco más fuerte */
+.btn-primary:hover {
+  background: rgba(164, 255, 10, 0.15);
+  box-shadow:
+    0 0 14px rgba(164,255,10,0.45),
+    0 0 28px rgba(164,255,10,0.25);
+}
