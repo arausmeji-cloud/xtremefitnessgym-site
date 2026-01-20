@@ -68,28 +68,6 @@ body {
 }
 
 /* ======================================
-   BOTÓN PRO XF
-   ====================================== */
-.btn-primary {
-    padding: 14px 32px;
-    font-size: 1.2rem;
-    background: rgba(0,0,0,0.4);
-    border: 2px solid var(--xf-green);
-    border-radius: 8px;
-    font-weight: bold;
-    color: var(--xf-yellow);
-    text-decoration: none;
-    transition: var(--transition);
-    display: inline-block;
-}
-
-.btn-primary:hover {
-    background: var(--xf-green);
-    color: #000;
-    border-color: var(--xf-green);
-}
-
-/* ======================================
    MENU
    ====================================== */
 .nav-under-hero {
@@ -535,9 +513,6 @@ body {
   margin-top: 40px !important;
   margin-bottom: 40px !important;
 }
-.gallery-buttons {
-  margin-bottom: 40px important;
-}
 
 .impact-section {
   margin-top: 40px;
@@ -638,10 +613,6 @@ footer * {
   margin: 10px 0 22px;
 }
 
-.gallery-menu,
-.gallery-buttons {
-  margin: 10px 0 18px;
-}
 /* =========================
    HERO — FIX FINAL DEFINITIVO
 ========================= */
@@ -1196,47 +1167,69 @@ body.womens-self-defense .program-container {
 }
 
 /* =========================
-   XF BUTTON SYSTEM — IMPACT STYLE (ÚNICO)
+   XF BUTTON SYSTEM — SOFT GLOW ONLY
 ========================= */
 
+/* BOTONES BASE (menú + galería + back) */
 header nav a,
 .gallery-menu a,
 .gallery-buttons a,
-.back-link,
-.btn-primary {
-  background: rgba(0,0,0,0.35);
-  color: var(--xf-yellow);
+.back-link {
+  background: transparent;
+  color: var(--xf-green);
   border: 1px solid rgba(164,255,10,0.35);
   border-radius: 999px;
-  padding: 12px 26px;
-  font-size: 1rem;
+  padding: 11px 24px;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  box-shadow: none;
   transition:
-    border-color 0.25s ease,
     box-shadow 0.25s ease,
+    border-color 0.25s ease,
     transform 0.2s ease,
     color 0.2s ease;
 }
 
+/* HOVER — SOLO GLOW EXTERNO (NO fondo) */
 header nav a:hover,
 .gallery-menu a:hover,
 .gallery-buttons a:hover,
-.back-link:hover,
-.btn-primary:hover {
+.back-link:hover {
   color: var(--xf-yellow);
-  border-color: rgba(164,255,10,0.75);
+  border-color: rgba(164,255,10,0.7);
   box-shadow:
-    0 0 10px rgba(164,255,10,0.45),
-    0 0 22px rgba(164,255,10,0.25);
+    0 0 8px rgba(164,255,10,0.45),
+    0 0 18px rgba(164,255,10,0.25);
   transform: translateY(-1px);
 }
 
-/* CTA — un poco más fuerte SOLO en hover */
-.btn-primary:hover {
-  box-shadow:
-    0 0 16px rgba(164,255,10,0.6),
-    0 0 36px rgba(164,255,10,0.35);
+/* =========================
+   CTA — Start Your Transformation
+========================= */
+
+.btn-primary {
+  background: transparent;
+  color: var(--xf-yellow);
+  border: 1px solid rgba(164,255,10,0.45);
+  border-radius: 999px;
+  padding: 13px 30px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
 }
+
+/* CTA hover — menos brillo + texto negro */
+.btn-primary:hover {
+  background: rgba(164,255,10,0.35); /* suave */
+  color: #000;                      /* negro, legible */
+  box-shadow:
+    0 0 12px rgba(164,255,10,0.55),
+    0 0 26px rgba(164,255,10,0.35);
+  transform: translateY(-1px);
+}
+
