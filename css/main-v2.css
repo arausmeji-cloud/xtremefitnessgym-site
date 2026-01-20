@@ -1278,3 +1278,7 @@ header nav a:hover,
     0 0 26px rgba(164,255,10,0.35);
 }
 
+.nav-under-hero {
+  display: flex;
+  justify-content: center;
+}
