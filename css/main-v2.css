@@ -1255,3 +1255,26 @@ header nav a:hover,
     0 0 30px rgba(164,255,10,0.35);
   transform: translateY(-1px);
 }
+
+/* ===== OVERRIDE FINAL BOTONES (MODELO ÚNICO) ===== */
+.btn-primary {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  background: rgba(0,0,0,0.4);
+  border: 2px solid var(--xf-green);
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--xf-yellow) !important;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: rgba(164,255,10,0.35);
+  color: #000 !important;
+  box-shadow:
+    0 0 12px rgba(164,255,10,0.55),
+    0 0 26px rgba(164,255,10,0.35);
+}
+
