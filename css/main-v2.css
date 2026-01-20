@@ -1195,3 +1195,48 @@ body.womens-self-defense .program-container {
   margin-top: 80px;
 }
 
+/* =========================
+   XF BUTTON SYSTEM — IMPACT STYLE (ÚNICO)
+========================= */
+
+header nav a,
+.gallery-menu a,
+.gallery-buttons a,
+.back-link,
+.btn-primary {
+  background: rgba(0,0,0,0.35);
+  color: var(--xf-yellow);
+  border: 1px solid rgba(164,255,10,0.35);
+  border-radius: 999px;
+  padding: 12px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: none;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+header nav a:hover,
+.gallery-menu a:hover,
+.gallery-buttons a:hover,
+.back-link:hover,
+.btn-primary:hover {
+  color: var(--xf-yellow);
+  border-color: rgba(164,255,10,0.75);
+  box-shadow:
+    0 0 10px rgba(164,255,10,0.45),
+    0 0 22px rgba(164,255,10,0.25);
+  transform: translateY(-1px);
+}
+
+/* CTA — un poco más fuerte SOLO en hover */
+.btn-primary:hover {
+  box-shadow:
+    0 0 16px rgba(164,255,10,0.6),
+    0 0 36px rgba(164,255,10,0.35);
+}
