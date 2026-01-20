@@ -1282,3 +1282,14 @@ header nav a:hover,
   display: flex;
   justify-content: center;
 }
+.nav-under-hero {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-under-hero a {
+  margin: 0 8px;
+}
+
