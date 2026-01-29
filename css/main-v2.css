@@ -1383,4 +1383,25 @@ header nav a:hover,
   .gallery-grid{ grid-template-columns: 1fr !important; }
 }
 
+/* Galerías: separar un poco el botón del título */
+.gallery-page-header .back-btn,
+.gallery-page-header .back-link,
+.back-btn,
+.back-link{
+  margin-top: 14px !important;
+  margin-bottom: 28px !important;
+}
+/* Menú centrado (los 5 links que están sueltos en el HTML) */
+.btn-primary{
+  /* no tocamos el look del botón Start (ya está bien) */
+}
+
+/* Este es el contenedor real del menú en tu index (la línea "MENÚ CENTRADO") */
+#home .btn-primary,
+.hero .btn-primary{
+  /* NO aplica porque Start es btn-primary también, así que NO usamos esto */
+}
+
+/* En vez de eso: centramos el "padre" por comentario: usá esta clase en HTML */
+
 
