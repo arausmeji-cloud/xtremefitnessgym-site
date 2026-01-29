@@ -70,11 +70,6 @@ body {
 /* ======================================
    MENU
    ====================================== */
-.nav-under-hero {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
 
 .service-box,
 .impact-box {
@@ -1164,35 +1159,6 @@ header nav a:hover,
 }
 
 /* =========================
-   CTA — Start Your Transformation
-========================= */
-
-.btn-primary {
-  background: transparent;
-  color: var(--xf-yellow);
-  border: 1px solid rgba(164,255,10,0.45);
-  border-radius: 999px;
-  padding: 13px 30px;
-  font-size: 1.05rem;
-  font-weight: 700;
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.2s ease;
-}
-
-/* CTA hover — menos brillo + texto negro */
-.btn-primary:hover {
-  background: rgba(164,255,10,0.35); /* suave */
-  color: #000;                      /* negro, legible */
-  box-shadow:
-    0 0 12px rgba(164,255,10,0.55),
-    0 0 26px rgba(164,255,10,0.35);
-  transform: translateY(-1px);
-}
-
-/* =========================
    XF BUTTON SYSTEM — UNIFICADO
 ========================= */
 
@@ -1278,48 +1244,6 @@ header nav a:hover,
     0 0 26px rgba(164,255,10,0.35);
 }
 
-.nav-under-hero {
-  display: flex;
-  justify-content: center;
-}
-.nav-under-hero {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center;
-  width: 100%;
-}
-
-.nav-under-hero a {
-  margin: 0 8px;
-}
-
-<div class="nav-under-hero">
-  <a href="#home" class="btn-primary">Home</a>
-  <a href="#services" class="btn-primary">Services</a>
-  <a href="#gallery" class="btn-primary">Gallery</a>
-  <a href="#timetable" class="btn-primary">Timetable</a>
-  <a href="#contact" class="btn-primary">Contact</a>
-</div>
-
-.nav-under-hero {
-  width: 100%;
-  text-align: center;
-}
-
-.nav-under-hero a {
-  display: inline-block;
-}
-.nav-under-hero {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.nav-under-hero {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
 
 .gallery-page-header h1 {
   color: var(--xf-yellow);
@@ -1352,16 +1276,7 @@ header nav a:hover,
     grid-template-columns: 1fr;
   }
 }
-/* FIX FINAL: centrar menú debajo del hero */
-.nav-under-hero{
-  width: 100%;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  text-align: center !important;
-}
+
 /* FIX: dar aire arriba en páginas de galería */
 .gallery-page-header{
   padding-top: 90px;
@@ -1383,25 +1298,26 @@ header nav a:hover,
   .gallery-grid{ grid-template-columns: 1fr !important; }
 }
 
-/* Galerías: separar un poco el botón del título */
+/* Galerías: separar más el botón del título */
 .gallery-page-header .back-btn,
-.gallery-page-header .back-link,
-.back-btn,
-.back-link{
-  margin-top: 14px !important;
-  margin-bottom: 28px !important;
-}
-/* Menú centrado (los 5 links que están sueltos en el HTML) */
-.btn-primary{
-  /* no tocamos el look del botón Start (ya está bien) */
+.gallery-page-header .back-link{
+  margin-top: 26px !important;
+  margin-bottom: 42px !important;
 }
 
-/* Este es el contenedor real del menú en tu index (la línea "MENÚ CENTRADO") */
-#home .btn-primary,
-.hero .btn-primary{
-  /* NO aplica porque Start es btn-primary también, así que NO usamos esto */
+/* MENÚ debajo del hero (única versión) */
+.nav-under-hero{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 18px auto 0;
 }
 
-/* En vez de eso: centramos el "padre" por comentario: usá esta clase en HTML */
-
+.nav-under-hero a{
+  display: inline-block;
+  margin: 0;
+}
 
