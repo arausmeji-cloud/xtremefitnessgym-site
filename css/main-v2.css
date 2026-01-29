@@ -1313,3 +1313,10 @@ header nav a:hover,
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.nav-under-hero {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
