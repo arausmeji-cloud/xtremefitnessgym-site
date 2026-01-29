@@ -1347,6 +1347,10 @@ header nav a:hover,
     drop-shadow(0 0 10px rgba(164,255,10,0.35))
     drop-shadow(0 0 22px rgba(164,255,10,0.18));
 }
+.hero-logo{
+  object-fit: contain;
+}
+
 /* =========================
    GALLERY HEADER — AJUSTE FINAL
 ========================= */
