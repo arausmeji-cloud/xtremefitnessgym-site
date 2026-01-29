@@ -1320,7 +1320,33 @@ header nav a:hover,
   display: inline-block;
   margin: 0;
 }
+/* =========================
+   HERO: menos aire arriba/abajo
+========================= */
+.hero{
+  min-height: auto !important;
+  padding: 40px 0 30px !important; /* ajustá estos números a gusto */
+}
 
+.hero-content{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* El logo en sí: sin márgenes raros */
+.hero-logo{
+  display: block;
+  margin: 0 auto 18px !important;  /* baja un poquito el texto de abajo */
+  max-width: 520px;                /* ajustá si lo querés más grande */
+  height: auto;
+}
+.hero-logo{
+  filter:
+    drop-shadow(0 0 10px rgba(164,255,10,0.35))
+    drop-shadow(0 0 22px rgba(164,255,10,0.18));
+}
 /* =========================
    GALLERY HEADER — AJUSTE FINAL
 ========================= */
@@ -1346,4 +1372,11 @@ header nav a:hover,
 .gallery-page-header .back-btn {
   margin-top: 32px !important;
   margin-bottom: 48px !important;
+}
+/* HERO background: menos oscuro */
+.hero::before{
+  opacity: 0.35 !important; /* si existe ese overlay */
+}
+.hero{
+  background-color: rgba(0,0,0,0.25) !important;
 }
