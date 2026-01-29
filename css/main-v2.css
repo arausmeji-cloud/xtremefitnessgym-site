@@ -1321,3 +1321,29 @@ header nav a:hover,
   margin: 0;
 }
 
+/* =========================
+   GALLERY HEADER — AJUSTE FINAL
+========================= */
+
+/* TÍTULO de galería (verde y más grande) */
+.gallery-page-header h1 {
+  color: var(--xf-green) !important;
+  font-size: 3.2rem !important;
+  margin-bottom: 14px !important;
+  text-align: center;
+}
+
+/* SUBTÍTULO (amarillo, prolijo) */
+.gallery-page-header p {
+  color: var(--xf-yellow) !important;
+  font-size: 1.15rem !important;
+  margin-bottom: 22px !important;
+  text-align: center;
+}
+
+/* BOTÓN Back to Main Gallery — más abajo */
+.gallery-page-header .back-link,
+.gallery-page-header .back-btn {
+  margin-top: 32px !important;
+  margin-bottom: 48px !important;
+}
