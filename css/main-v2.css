@@ -109,6 +109,50 @@ body {
 }
 
 /* =========================
+   TIMETABLE PAGE
+========================= */
+
+.timetable-hero {
+    min-height: 60vh;
+}
+
+.timetable-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.timetable-card {
+    border: 2px solid var(--xf-green);
+    border-radius: 16px;
+    padding: 30px 20px;
+    background: rgba(0,0,0,0.45);
+    transition: transform 0.3s ease;
+}
+
+.timetable-card:hover {
+    transform: translateY(-6px);
+}
+
+.timetable-card h3 {
+    color: var(--xf-yellow);
+    margin-bottom: 12px;
+}
+
+.timetable-card span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* =========================
    WHAT WE OFFER
 ========================= */
 
