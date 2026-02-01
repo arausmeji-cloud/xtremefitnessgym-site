@@ -1426,3 +1426,34 @@ header nav a:hover,
   opacity: 0.15 !important; /* si existe ese overlay */
 }
 
+/* ===== HERO spacing fix ===== */
+.hero {
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+}
+
+.hero-content {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  gap: 18px !important;          /* separa logo / texto / botón */
+}
+
+.hero-logo {
+  margin-bottom: 10px !important;
+}
+
+.motto {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.subtitle-hero {
+  margin-top: 6px !important;
+  margin-bottom: 18px !important;
+}
+
+/* Glow suave para el logo */
+.hero-logo{
+  filter: drop-shadow(0 0 10px rgba(180,255,80,0.35))
+          drop-shadow(0 0 24px rgba(180,255,80,0.20));
+}
