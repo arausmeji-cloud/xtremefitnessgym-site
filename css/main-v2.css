@@ -151,6 +151,71 @@ body {
     font-weight: bold;
 }
 
+/* ===== TIMETABLE PAGE STYLE ===== */
+
+.timetable-title{
+  color: var(--xf-green);
+  font-size: clamp(34px, 4vw, 58px);
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.timetable-subtitle{
+  color: var(--xf-yellow);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.back-home-btn{
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.timetable-section{
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.timetable-section .section-title{
+  color: var(--xf-yellow);
+  margin-bottom: 26px;
+}
+
+.timetable-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 26px;
+}
+
+.timetable-card{
+  border: 2px solid var(--xf-green);
+  border-radius: 16px;
+  padding: 26px 18px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(2px);
+}
+
+.timetable-card h3{
+  color: var(--xf-yellow);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.timetable-card p{
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.timetable-card span{
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #fff;
+}
 
 /* =========================
    WHAT WE OFFER
