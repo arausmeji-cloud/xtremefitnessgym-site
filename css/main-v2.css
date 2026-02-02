@@ -110,10 +110,6 @@ body {
   line-height: 1.5;
   margin-top: 6px;
 }
-.hero-logo{
-  filter: drop-shadow(0 0 18px rgba(195,255,0,.55))
-          drop-shadow(0 0 40px rgba(195,255,0,.25));
-}
 
 /* =========================
    TIMETABLE PAGE
@@ -1458,11 +1454,7 @@ header nav a:hover,
   max-width: 520px;                /* ajustá si lo querés más grande */
   height: auto;
 }
-.hero-logo{
-  filter:
-    drop-shadow(0 0 10px rgba(164,255,10,0.35))
-    drop-shadow(0 0 22px rgba(164,255,10,0.18));
-}
+
 .hero-logo{
   object-fit: contain;
 }
@@ -1524,8 +1516,4 @@ header nav a:hover,
   margin-bottom: 18px !important;
 }
 
-/* Glow suave para el logo */
-.hero-logo{
-  filter: drop-shadow(0 0 10px rgba(180,255,80,0.35))
-          drop-shadow(0 0 24px rgba(180,255,80,0.20));
-}
+
