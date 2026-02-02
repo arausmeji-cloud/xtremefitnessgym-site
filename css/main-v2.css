@@ -107,6 +107,10 @@ body {
   line-height: 1.5;
   margin-top: 6px;
 }
+.hero-logo{
+  filter: drop-shadow(0 0 18px rgba(195,255,0,.55))
+          drop-shadow(0 0 40px rgba(195,255,0,.25));
+}
 
 /* =========================
    TIMETABLE PAGE
