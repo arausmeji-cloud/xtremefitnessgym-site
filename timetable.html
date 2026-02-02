@@ -24,12 +24,19 @@
       --tt-glow-strong: 0 0 22px rgba(164,255,10,.35);
     }
 
-    body{
-      background:
-        radial-gradient(1200px 600px at 50% 0%, rgba(164,255,10,.08), transparent 60%),
-        linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
-      color:#fff;
-    }
+   body{
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.75)
+    ),
+    url("/public/hero/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
 
     .tt-wrap{
       max-width: 1200px;
@@ -112,13 +119,15 @@
 
     /* Main frame */
     .tt-frame{
-      margin-top: 22px;
-      border-radius: 18px;
-      border: 1px solid var(--tt-line-strong);
-      background: var(--tt-card);
-      box-shadow: var(--tt-glow);
-      padding: 18px;
-    }
+  margin-top: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(164,255,10,.35);
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 0 18px rgba(164,255,10,.18);
+  padding: 18px;
+}
 
     .tt-section{
       margin: 18px 0 26px;
