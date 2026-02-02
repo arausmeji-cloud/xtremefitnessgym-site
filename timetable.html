@@ -83,14 +83,33 @@
     }
 
     .tt-section{
-      margin-top: 34px;
-      padding: 18px;
-      border-radius: 16px;
-      border: 1px solid rgba(214,255,58,0.25);
-      background: var(--xf-card);
-      box-shadow: 0 0 24px rgba(0,0,0,0.35);
-    }
+  margin-top: 34px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(214,255,58,0.38); /* un poquito más fuerte */
+  background: var(--xf-card);
+  box-shadow:
+    0 0 28px rgba(0,0,0,0.35),
+    0 0 26px rgba(214,255,58,0.16); /* glow suave */
+  position: relative;
+  overflow: hidden;
+}
 
+/* glow “ambient” por detrás */
+.tt-section::before{
+  content:"";
+  position:absolute;
+  inset:-40px;
+  background: radial-gradient(circle at 50% 30%, rgba(214,255,58,0.14), transparent 60%);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* asegura que el contenido quede arriba del glow */
+.tt-section > *{
+  position: relative;
+  z-index: 1;
+}
     .tt-section h2{
       margin: 6px 0 14px;
       text-align:center;
