@@ -1066,6 +1066,11 @@ footer * {
   transition: all 0.3s ease;
 }
 
+.impact-box {
+  text-align: center;
+}
+
+
 /* HOVER EFFECT */
 .impact-box:hover,
 .service-box:hover,
