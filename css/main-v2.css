@@ -1508,4 +1508,15 @@ header nav a:hover,
   margin-bottom: 18px !important;
 }
 
+/* XF Impact detail pages - consistent vertical alignment */
+.xf-detail-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
+.xf-detail-page .content-wrap {
+  width: 100%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
