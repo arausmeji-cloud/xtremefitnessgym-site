@@ -1172,7 +1172,7 @@ footer * {
 @media (max-width: 768px) {
   .program-container {
     padding: 40px 25px;
-    margin: 80px 20px;
+    margin: 40px 20px;
   }
 
   .program-container h1 {
