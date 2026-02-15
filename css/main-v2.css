@@ -2102,3 +2102,76 @@ a.primary{
 .hero .btn-primary.btn-cta{
   border-width: 2px;
 }
+/* =========================
+   FIX: links + menu alignment + unified buttons
+   Paste at the VERY END of your main CSS
+   ========================= */
+
+:root{
+  --xf-green: #a8d400;
+  --xf-yellow: #ffd400;
+  --xf-btn-border: rgba(168, 212, 0, 0.55);
+  --xf-btn-border-hover: rgba(168, 212, 0, 0.85);
+  --xf-btn-bg: rgba(0, 0, 0, 0.22);
+  --xf-btn-bg-hover: rgba(168, 212, 0, 0.16);
+  --xf-btn-glow: rgba(168, 212, 0, 0.22);
+}
+
+/* Stop browser default blue/underline everywhere */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:visited{ color: inherit; }
+
+/* Center the menu row */
+.nav-under-hero{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+/* If the menu links lost their button class, force them */
+.nav-under-hero a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ONE button style for ALL */
+.btn-primary,
+.nav-under-hero a,
+.gallery a,
+.gallery-buttons a,
+.gallery-tabs a,
+.hero a{
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: 1.5px solid var(--xf-btn-border);
+  background: var(--xf-btn-bg);
+  color: var(--xf-yellow);
+  font-weight: 700;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  box-shadow: none;
+}
+
+/* Hover = green tint + glow (same everywhere) */
+.btn-primary:hover,
+.nav-under-hero a:hover,
+.gallery a:hover,
+.gallery-buttons a:hover,
+.gallery-tabs a:hover,
+.hero a:hover{
+  background: var(--xf-btn-bg-hover);
+  border-color: var(--xf-btn-border-hover);
+  box-shadow: 0 0 14px var(--xf-btn-glow);
+  transform: translateY(-1px);
+  color: #111; /* texto oscuro al hover (como BJJ Gallery) */
+}
+
+/* CTA: same style but a tad stronger border */
+.hero a{
+  border-width: 2px;
+}
