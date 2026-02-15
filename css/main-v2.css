@@ -1759,4 +1759,113 @@ button[type="submit"]:hover,
   box-shadow: 0 0 18px rgba(168,212,0,0.35);
 }
 
+/* ==========================
+   XF PREMIUM UNIFIED PACK v2
+   Pegar al FINAL del CSS
+========================== */
+
+/* ==== 1. Ajuste fino de verde (más premium) ==== */
+:root{
+  --xf-green: #98c900;
+  --xf-green-soft: rgba(152, 201, 0, 0.22);
+  --xf-glow: rgba(152, 201, 0, 0.28);
+}
+
+/* ==== 2. NAV PILLS (Home, Services, etc) ==== */
+.nav a,
+.menu a,
+.navbar a{
+  border: 2px solid rgba(152,201,0,0.35);
+  background: rgba(0,0,0,0.25);
+  border-radius: 999px;
+  transition: all .25s ease;
+}
+
+.nav a:hover,
+.menu a:hover,
+.navbar a:hover{
+  border-color: var(--xf-green);
+  box-shadow:
+    0 0 0 1px rgba(152,201,0,0.25),
+    0 0 16px var(--xf-glow);
+}
+
+/* ==== 3. CARDS (Impact + What We Offer) ==== */
+.card,
+.offer-box,
+.service-box,
+.impact-box{
+  background: rgba(10,12,14,0.55);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 18px;
+  transition: all .25s ease;
+}
+
+.card:hover,
+.offer-box:hover,
+.service-box:hover,
+.impact-box:hover{
+  border-color: var(--xf-green);
+  box-shadow:
+    0 0 0 1px rgba(152,201,0,0.25),
+    0 0 22px var(--xf-glow),
+    0 15px 35px rgba(0,0,0,0.45);
+  transform: translateY(-3px);
+}
+
+/* ==== 4. GALLERY PILLS ==== */
+.gallery button,
+.gallery a{
+  border: 2px solid rgba(152,201,0,0.35);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  transition: all .25s ease;
+}
+
+.gallery button:hover,
+.gallery a:hover{
+  border-color: var(--xf-green);
+  box-shadow:
+    0 0 0 1px rgba(152,201,0,0.25),
+    0 0 18px var(--xf-glow);
+}
+
+/* ==== 5. CTA BUTTON (Start Your Transformation) ==== */
+.cta-btn,
+.hero .btn,
+button.primary,
+a.primary{
+  border: 2px solid var(--xf-green);
+  background: rgba(0,0,0,0.35);
+  transition: all .25s ease;
+}
+
+.cta-btn:hover,
+.hero .btn:hover,
+button.primary:hover,
+a.primary:hover{
+  background: var(--xf-green);
+  color: #0b0d0f;
+  box-shadow:
+    0 0 0 1px rgba(152,201,0,0.25),
+    0 0 24px var(--xf-glow);
+  transform: translateY(-2px);
+}
+
+/* ==== 6. HERO OVERLAY (ligeramente más oscuro para texto perfecto) ==== */
+.hero::before,
+.hero-section::before,
+#hero::before,
+.header-hero::before{
+  background: rgba(0,0,0,0.62);
+}
+
+/* ==== 7. TITLES UNIFORM SHADOW ==== */
+h1, h2, h3{
+  text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+}
+
+
 
