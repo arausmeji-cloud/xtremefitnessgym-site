@@ -2166,4 +2166,48 @@ a.primary{
   box-shadow: 0 0 14px rgba(168, 212, 0, 0.20) !important;
 }
 
+/* =========================
+   BUTTONS MASTER (KEEP THIS)
+   ========================= */
 
+:root{
+  --xf-btn-border: rgba(168, 212, 0, 0.55);
+  --xf-btn-border-hover: rgba(168, 212, 0, 0.80);
+  --xf-btn-bg: rgba(0, 0, 0, 0.22);
+  --xf-btn-bg-hover: rgba(168, 212, 0, 0.16);
+  --xf-btn-glow: rgba(168, 212, 0, 0.22);
+}
+
+/* MENU buttons + Gallery buttons (same look) */
+.nav-under-hero a.btn-primary,
+.gallery a.btn-primary,
+.gallery-buttons a,
+.gallery-tabs a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: 1.5px solid var(--xf-btn-border);
+  background: var(--xf-btn-bg);
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  box-shadow: none;
+}
+
+/* Hover = como BJJ Gallery (premium, no neón) */
+.nav-under-hero a.btn-primary:hover,
+.gallery a.btn-primary:hover,
+.gallery-buttons a:hover,
+.gallery-tabs a:hover{
+  background: var(--xf-btn-bg-hover);
+  border-color: var(--xf-btn-border-hover);
+  box-shadow: 0 0 14px var(--xf-btn-glow);
+  transform: translateY(-1px);
+}
+
+/* CTA (Start Your Transformation) un poquito más fuerte, opcional */
+.btn-cta,
+.hero .btn-primary.btn-cta{
+  border-width: 2px;
+}
