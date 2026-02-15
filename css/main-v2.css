@@ -2205,7 +2205,7 @@ a:visited{ color: inherit; }
 
   /* más verde al hover (menos gris) */
   --xf-btn-bg: rgba(0, 0, 0, 0.20);
-  --xf-btn-bg-hover: rgba(168, 212, 0, 0.28);
+  --xf-btn-bg-hover: rgba(168, 212, 0, 0.32);
 
   /* glow más fuerte */
   --xf-btn-glow: rgba(168, 212, 0, 0.40);
