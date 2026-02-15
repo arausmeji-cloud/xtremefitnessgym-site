@@ -1916,3 +1916,104 @@ h1, h2, h3{
     0 0 12px rgba(152,201,0,0.18) !important;
 }
 
+/* ==========================
+   XF Premium - Button System Unify (v1)
+   Pegar al FINAL del CSS
+========================== */
+
+/* Ajustes globales para todos los "pills/buttons" */
+:root{
+  --xf-btn-border: 2px;                 /* UNIFICA grosor */
+  --xf-btn-radius: 999px;
+  --xf-btn-pad-y: 12px;
+  --xf-btn-pad-x: 26px;
+  --xf-btn-bg: rgba(0,0,0,0.22);
+  --xf-btn-border-idle: rgba(168,212,0,0.45);
+  --xf-btn-border-hover: rgba(168,212,0,0.75);
+  --xf-btn-glow-soft: 0 0 12px rgba(168,212,0,0.16);
+  --xf-btn-glow-strong: 0 0 18px rgba(168,212,0,0.30);
+}
+
+/* 1) Menú superior (Home/Services/Gallery/Timetable/Contact) */
+.nav a,
+.menu a,
+.navbar a{
+  border: var(--xf-btn-border) solid var(--xf-btn-border-idle) !important;
+  border-radius: var(--xf-btn-radius) !important;
+  padding: var(--xf-btn-pad-y) var(--xf-btn-pad-x) !important;
+  background: var(--xf-btn-bg) !important;
+  box-shadow: none !important; /* sobrio */
+}
+
+/* 2) Botones de Gallery (BJJ/Gym/XF Impact) */
+.gallery a,
+.gallery button{
+  border: var(--xf-btn-border) solid var(--xf-btn-border-idle) !important;
+  border-radius: var(--xf-btn-radius) !important;
+  padding: var(--xf-btn-pad-y) var(--xf-btn-pad-x) !important;
+  background: var(--xf-btn-bg) !important;
+  box-shadow: none !important; /* sobrio */
+}
+
+/* Hover sobrio (Menú + Gallery) */
+.nav a:hover,
+.menu a:hover,
+.navbar a:hover,
+.gallery a:hover,
+.gallery button:hover{
+  border-color: var(--xf-btn-border-hover) !important;
+  box-shadow: var(--xf-btn-glow-soft) !important;
+  transform: translateY(-1px);
+}
+
+/* 3) CTA principal (Start Your Transformation) - un poquito más "premium" */
+.cta-btn,
+.hero .btn,
+.hero a.btn,
+button.primary,
+a.primary{
+  border: var(--xf-btn-border) solid var(--xf-btn-border-hover) !important;
+  border-radius: var(--xf-btn-radius) !important;
+  padding: 14px 34px !important; /* un toque más pro */
+  background: rgba(0,0,0,0.20) !important;
+  box-shadow: none !important;
+}
+
+.cta-btn:hover,
+.hero .btn:hover,
+.hero a.btn:hover,
+button.primary:hover,
+a.primary:hover{
+  background: var(--xf-green) !important;
+  color: #0b0d0f !important;
+  box-shadow: var(--xf-btn-glow-strong) !important;
+  transform: translateY(-1px);
+}
+
+/* 4) Estado "activo" si existe (ej: class="active" o aria-current="page") */
+.nav a.active,
+.menu a.active,
+.navbar a.active,
+.gallery .active,
+.gallery a.active,
+.gallery button.active,
+.nav a[aria-current="page"],
+.menu a[aria-current="page"],
+.navbar a[aria-current="page"]{
+  border-color: var(--xf-btn-border-hover) !important;
+  box-shadow: 0 0 14px rgba(168,212,0,0.22) !important;
+}
+
+/* 5) Evita que algunos botones se vean "más finos" por line-height */
+.nav a,
+.menu a,
+.navbar a,
+.gallery a,
+.gallery button,
+.cta-btn,
+.hero .btn,
+.hero a.btn{
+  line-height: 1 !important;
+  font-weight: 700;
+}
+
