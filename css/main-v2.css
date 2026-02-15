@@ -1867,5 +1867,52 @@ h1, h2, h3{
   text-shadow: 0 2px 16px rgba(0,0,0,0.6);
 }
 
+/* ==========================
+   XF Premium - Halo Control (Menu + Gallery)
+   Pegar al FINAL (override)
+========================== */
 
+/* Menú (nav pills): menos glow, más sobrio */
+.nav a,
+.menu a,
+.navbar a{
+  box-shadow: none !important;
+  background: rgba(0,0,0,0.28) !important;
+  border-color: rgba(152,201,0,0.28) !important;
+}
+
+.nav a:hover,
+.menu a:hover,
+.navbar a:hover{
+  border-color: rgba(152,201,0,0.55) !important;
+  box-shadow:
+    0 0 10px rgba(152,201,0,0.16) !important; /* antes 16-18 fuerte */
+}
+
+/* Gallery pills: mismo tratamiento, elegante */
+.gallery button,
+.gallery a{
+  box-shadow: none !important;
+  background: rgba(0,0,0,0.26) !important;
+  border-color: rgba(152,201,0,0.26) !important;
+}
+
+.gallery button:hover,
+.gallery a:hover{
+  border-color: rgba(152,201,0,0.55) !important;
+  box-shadow:
+    0 0 10px rgba(152,201,0,0.16) !important;
+}
+
+/* Estado "activo" (si tu HTML marca active/current) */
+.nav a.active,
+.menu a.active,
+.navbar a.active,
+.gallery .active,
+.gallery a.active,
+.gallery button.active{
+  border-color: rgba(152,201,0,0.65) !important;
+  box-shadow:
+    0 0 12px rgba(152,201,0,0.18) !important;
+}
 
