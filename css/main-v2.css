@@ -2198,3 +2198,35 @@ a:visited{ color: inherit; }
 .gallery-btn:hover {
   color: #111 !important;
 }
+/* ===== XF VOLTAGE BOOST (ONE PLACE) ===== */
+:root{
+  --xf-btn-border: rgba(168, 212, 0, 0.55);
+  --xf-btn-border-hover: rgba(168, 212, 0, 0.95);
+
+  /* más verde al hover (menos gris) */
+  --xf-btn-bg: rgba(0, 0, 0, 0.20);
+  --xf-btn-bg-hover: rgba(168, 212, 0, 0.28);
+
+  /* glow más fuerte */
+  --xf-btn-glow: rgba(168, 212, 0, 0.40);
+}
+
+/* fuerza texto amarillo en todos los botones (incluye gallery + menú + start) */
+.btn-primary,
+.nav-under-hero a,
+.gallery a,
+.gallery-buttons a,
+.gallery-tabs a{
+  color: var(--xf-yellow) !important;
+}
+
+/* cuando hover: texto oscuro para que se lea con fondo verde */
+.btn-primary:hover,
+.nav-under-hero a:hover,
+.gallery a:hover,
+.gallery-buttons a:hover,
+.gallery-tabs a:hover{
+  color: #111 !important;
+  box-shadow: 0 0 18px var(--xf-btn-glow);
+}
+
