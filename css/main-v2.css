@@ -2017,3 +2017,40 @@ a.primary:hover{
   font-weight: 700;
 }
 
+/* ==========================
+   XF Premium Button Uniformity v2
+   Menú = Gallery (fino y elegante)
+========================== */
+
+:root{
+  --xf-border-soft: rgba(168,212,0,0.55);
+  --xf-border-hover: rgba(168,212,0,0.75);
+}
+
+/* 1️⃣ MENÚ SUPERIOR */
+.nav a,
+.menu a,
+.navbar a{
+  border: 1.5px solid var(--xf-border-soft) !important;
+  background: rgba(0,0,0,0.22) !important;
+  box-shadow: none !important;
+}
+
+/* 2️⃣ BOTONES GALLERY */
+.gallery a,
+.gallery button{
+  border: 1.5px solid var(--xf-border-soft) !important;
+  background: rgba(0,0,0,0.22) !important;
+  box-shadow: none !important;
+}
+
+/* Hover sobrio y uniforme */
+.nav a:hover,
+.menu a:hover,
+.navbar a:hover,
+.gallery a:hover,
+.gallery button:hover{
+  border-color: var(--xf-border-hover) !important;
+  box-shadow: 0 0 10px rgba(168,212,0,0.18) !important;
+  transform: translateY(-1px);
+}
