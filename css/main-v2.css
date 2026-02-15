@@ -2159,3 +2159,11 @@ a.primary{
   box-shadow: var(--xf-btn-glow-strong) !important;
 }
 
+/* MENU hover = same vibe as BJJ Gallery */
+.nav-under-hero .btn-primary:hover{
+  background: rgba(168, 212, 0, 0.14) !important;
+  border-color: rgba(168, 212, 0, 0.78) !important;
+  box-shadow: 0 0 14px rgba(168, 212, 0, 0.20) !important;
+}
+
+
