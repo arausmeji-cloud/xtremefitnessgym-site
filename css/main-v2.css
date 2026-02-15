@@ -1534,3 +1534,229 @@ header nav a:hover,
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+/* ==========================
+   XF PREMIUM TUNE PACK (v1)
+   Pegar al FINAL del CSS
+========================== */
+
+/* 1) Variables de marca (verde menos fluo) */
+:root{
+  --xf-green: #a8d400;       /* antes: muy fluo -> ahora premium */
+  --xf-green-soft: rgba(168, 212, 0, 0.28);
+  --xf-yellow: #ffd000;
+  --xf-white: #f4f6f8;
+  --xf-dark: #0b0d0f;
+  --xf-glass: rgba(10, 12, 14, 0.55);
+  --xf-border: rgba(168, 212, 0, 0.35);
+}
+
+/* 2) Suaviza cualquier uso previo de verde fluo */
+.neon-green,
+.green,
+.xf-green{
+  color: var(--xf-green) !important;
+}
+
+/* 3) HERO: overlay oscuro para que el texto siempre se lea */
+.hero,
+.hero-section,
+#hero,
+.header-hero{
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::before,
+.hero-section::before,
+#hero::before,
+.header-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.58); /* subí/bajá entre 0.50 - 0.65 */
+  z-index: 0;
+}
+
+.hero > * ,
+.hero-section > * ,
+#hero > * ,
+.header-hero > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* 4) Tipografía y legibilidad global (más pro) */
+body{
+  color: var(--xf-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3{
+  letter-spacing: 0.3px;
+}
+
+/* 5) Títulos amarillos: un toque menos saturado (si querés) */
+.section-title,
+h2{
+  color: var(--xf-yellow);
+}
+
+/* 6) CTA Button (Start Your Transformation + similares) */
+.cta-btn,
+.hero .btn,
+.hero a.btn,
+button.primary,
+a.primary{
+  border: 2px solid var(--xf-green);
+  color: var(--xf-green);
+  padding: 14px 34px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.20);
+  transition: transform .15s ease, background .25s ease, box-shadow .25s ease, color .25s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn:hover,
+.hero .btn:hover,
+.hero a.btn:hover,
+button.primary:hover,
+a.primary:hover{
+  background: var(--xf-green);
+  color: #0b0d0f;
+  box-shadow: 0 0 18px rgba(168,212,0,0.38);
+  transform: translateY(-1px);
+}
+
+.cta-btn:active,
+.hero .btn:active,
+.hero a.btn:active{
+  transform: translateY(0px);
+}
+
+/* 7) Nav pills (Home/Services/Gallery...) */
+.nav a,
+.menu a,
+.navbar a{
+  border: 2px solid rgba(168,212,0,0.40);
+  color: var(--xf-white);
+  border-radius: 999px;
+  padding: 10px 20px;
+  transition: background .2s ease, box-shadow .2s ease, border-color .2s ease;
+  background: rgba(0,0,0,0.18);
+  text-decoration: none;
+}
+
+.nav a:hover,
+.menu a:hover,
+.navbar a:hover{
+  border-color: var(--xf-green);
+  box-shadow: 0 0 14px rgba(168,212,0,0.25);
+}
+
+/* 8) CARDS “glass” (What we offer + XF Impact boxes) */
+.card,
+.offer-box,
+.service-box,
+.impact-box{
+  background: var(--xf-glass);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 22px 20px;
+  transition: transform .18s ease, border-color .2s ease, box-shadow .25s ease;
+}
+
+/* hover */
+.card:hover,
+.offer-box:hover,
+.service-box:hover,
+.impact-box:hover{
+  border-color: var(--xf-border);
+  box-shadow: 0 0 22px rgba(0,0,0,0.35);
+  transform: translateY(-2px);
+}
+
+/* 9) Títulos dentro de cards: centrados y prolijos */
+.impact-box h3,
+.offer-box h3,
+.card h3{
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--xf-yellow);
+  font-weight: 800;
+}
+
+/* Texto dentro de cards */
+.impact-box p,
+.offer-box p,
+.card p{
+  text-align: center;
+  color: rgba(244,246,248,0.88);
+  line-height: 1.45;
+}
+
+/* 10) Arreglo específico: tus boxes XF Impact linkeables */
+.impact-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* 11) Títulos grandes: mejorar lectura con sombra suave */
+.hero h1,
+.hero-title,
+.program-title,
+h1{
+  text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+}
+
+.hero p,
+.hero-subtitle{
+  color: rgba(244,246,248,0.88);
+  text-shadow: 0 1px 10px rgba(0,0,0,0.55);
+}
+
+/* 12) Form Contact: inputs + botón */
+input,
+textarea{
+  background: rgba(0,0,0,0.28);
+  border: 2px solid rgba(168,212,0,0.35);
+  color: var(--xf-white);
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus{
+  border-color: var(--xf-green);
+  box-shadow: 0 0 14px rgba(168,212,0,0.22);
+}
+
+button[type="submit"],
+.send-btn{
+  border: 2px solid var(--xf-green);
+  background: rgba(0,0,0,0.20);
+  color: var(--xf-green);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .15s ease, background .25s ease, box-shadow .25s ease, color .25s ease;
+}
+
+button[type="submit"]:hover,
+.send-btn:hover{
+  background: var(--xf-green);
+  color: #0b0d0f;
+  box-shadow: 0 0 18px rgba(168,212,0,0.35);
+}
+
+
