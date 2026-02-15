@@ -1312,56 +1312,6 @@ header nav a:hover,
   transform: translateY(-1px);
 }
 
-/* =========================
-   CTA — Start Your Transformation (MODELO)
-========================= */
-
-.btn-primary {
-  background: transparent;
-  color: var(--xf-yellow);
-  border: 1.5px solid rgba(164,255,10,0.55);
-  border-radius: 999px;
-  padding: 14px 32px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background: rgba(164,255,10,0.35);
-  color: #000;
-  box-shadow:
-    0 0 14px rgba(164,255,10,0.55),
-    0 0 30px rgba(164,255,10,0.35);
-  transform: translateY(-1px);
-}
-
-/* ===== OVERRIDE FINAL BOTONES (MODELO ÚNICO) ===== */
-.btn-primary {
-  padding: 14px 32px;
-  font-size: 1.1rem;
-  background: rgba(0,0,0,0.4);
-  border: 2px solid var(--xf-green);
-  border-radius: 999px;
-  font-weight: 700;
-  color: var(--xf-yellow) !important;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.25s ease;
-}
-
-.btn-primary:hover {
-  background: rgba(164,255,10,0.35);
-  color: #000 !important;
-  box-shadow:
-    0 0 12px rgba(164,255,10,0.55),
-    0 0 26px rgba(164,255,10,0.35);
-}
-
 
 .gallery-page-header h1 {
   color: var(--xf-yellow);
@@ -1423,21 +1373,6 @@ header nav a:hover,
   margin-bottom: 42px !important;
 }
 
-/* MENÚ debajo del hero (única versión) */
-.nav-under-hero{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin: 18px auto 0;
-}
-
-.nav-under-hero a{
-  display: inline-block;
-  margin: 0;
-}
 /* =========================
    HERO: menos aire arriba/abajo
 ========================= */
@@ -2116,54 +2051,10 @@ a.primary{
   --xf-btn-pad-x: 26px;
 }
 
-/* Menú + Galería: mismo look */
-.nav-under-hero .btn-primary,
-.gallery-buttons a,
-.gallery-buttons button,
-.gallery-tabs a,
-.gallery-tabs button,
-.gallery-nav a,
-.gallery-nav button{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: var(--xf-btn-pad-y) var(--xf-btn-pad-x) !important;
-  border-radius: var(--xf-btn-radius) !important;
-
-  border: var(--xf-btn-border-w) solid var(--xf-border-soft) !important;
-  background: var(--xf-btn-bg) !important;
-
-  box-shadow: none !important;        /* <— le baja lo “brilloso” */
-  text-decoration: none !important;
-
-  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.nav-under-hero .btn-primary:hover,
-.gallery-buttons a:hover,
-.gallery-buttons button:hover,
-.gallery-tabs a:hover,
-.gallery-tabs button:hover,
-.gallery-nav a:hover,
-.gallery-nav button:hover{
-  border-color: var(--xf-border-hover) !important;
-  background: var(--xf-btn-bg-hover) !important;
-  box-shadow: var(--xf-btn-glow-soft) !important;  /* suave, premium */
-  transform: translateY(-1px);
-}
-
 /* CTA (Start Your Transformation): más fuerte a propósito */
 .btn-cta{
   border: 2px solid var(--xf-border-hover) !important;
   box-shadow: var(--xf-btn-glow-strong) !important;
-}
-
-/* MENU hover = same vibe as BJJ Gallery */
-.nav-under-hero .btn-primary:hover{
-  background: rgba(168, 212, 0, 0.14) !important;
-  border-color: rgba(168, 212, 0, 0.78) !important;
-  box-shadow: 0 0 14px rgba(168, 212, 0, 0.20) !important;
 }
 
 /* =========================
