@@ -2054,3 +2054,49 @@ a.primary:hover{
   box-shadow: 0 0 10px rgba(168,212,0,0.18) !important;
   transform: translateY(-1px);
 }
+/* ==========================
+   XF Button Unifier (FINAL HAMMER)
+   Menú = Gallery (premium, fino)
+========================== */
+
+:root{
+  --xf-btn-border: rgba(168,212,0,0.55);
+  --xf-btn-border-hover: rgba(168,212,0,0.78);
+  --xf-btn-bg: rgba(0,0,0,0.20);
+  --xf-btn-bg-hover: rgba(168,212,0,0.10);
+  --xf-btn-glow: rgba(168,212,0,0.18);
+}
+
+/* RESET fuerte: evita “herencias” raras */
+#main-header a,
+.nav a, .menu a, .navbar a,
+.gallery a, .gallery button,
+.gallery .btn, .gallery .cta-btn{
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  background: var(--xf-btn-bg) !important;
+  border: 1.5px solid var(--xf-btn-border) !important;
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease !important;
+}
+
+/* HOVER sobrio y consistente */
+#main-header a:hover,
+.nav a:hover, .menu a:hover, .navbar a:hover,
+.gallery a:hover, .gallery button:hover,
+.gallery .btn:hover, .gallery .cta-btn:hover{
+  border-color: var(--xf-btn-border-hover) !important;
+  background: var(--xf-btn-bg-hover) !important;
+  box-shadow: 0 0 10px var(--xf-btn-glow) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* CTA principal (Start Your Transformation) queda más fuerte a propósito */
+.cta-btn,
+.hero .btn,
+.hero a.btn,
+button.primary,
+a.primary{
+  border: 2px solid var(--xf-btn-border-hover) !important;
+  box-shadow: 0 0 18px rgba(168,212,0,0.30) !important;
+}
