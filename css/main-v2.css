@@ -2226,3 +2226,7 @@ a:visited{ color: inherit; }
   box-shadow: 0 0 18px var(--xf-btn-glow);
 }
 
+/* XF IMPACT - espacio inferior */
+.impact-section {
+  margin-bottom: 120px !important;
+}
