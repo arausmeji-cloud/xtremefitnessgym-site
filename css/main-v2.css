@@ -2550,3 +2550,21 @@ header {
   max-width: 760px !important;
   margin-bottom: 24px !important;
 }
+
+/* HERO LOGO CROP / SCALE FIX */
+.xfg-hero-logo {
+  width: 900px !important;
+  max-width: none !important;
+  transform: scale(1.35) !important;
+  transform-origin: left center !important;
+  margin-left: -70px !important;
+  margin-bottom: -90px !important;
+}
+
+.xfg-hero-kicker {
+  margin-top: -30px !important;
+}
+
+.xfg-hero-title {
+  margin-top: 0 !important;
+}
