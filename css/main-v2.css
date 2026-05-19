@@ -2495,6 +2495,13 @@ header {
     font-size: 0.68rem !important;
   }
 }
+.xfg-hero-content {
+  max-width: 1200px !important;
+}
 
+.xfg-hero-logo {
+  width: 680px !important;
+  max-width: 92vw !important;
+}
 
 
