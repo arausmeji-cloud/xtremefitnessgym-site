@@ -2427,3 +2427,74 @@ a:visited{ color: inherit; }
   }
 }
 
+/* ================================
+   XFG HERO FINAL TUNING
+================================ */
+
+/* Header más fino */
+.site-header,
+header {
+  min-height: 70px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+/* Hero más compacto arriba */
+.xfg-hero {
+  min-height: 100vh;
+  padding-top: 90px !important;
+  padding-bottom: 110px !important;
+}
+
+/* Logo más grande y protagonista */
+.xfg-hero-logo {
+  width: min(520px, 82vw) !important;
+  margin-bottom: 22px !important;
+}
+
+/* Texto más compacto */
+.xfg-hero-kicker {
+  margin-bottom: 12px !important;
+}
+
+.xfg-hero-title {
+  margin-bottom: 20px !important;
+}
+
+.xfg-hero-text {
+  margin-bottom: 28px !important;
+}
+
+/* Strip inferior un poco más fino */
+.xfg-hero-strip {
+  bottom: 18px !important;
+}
+
+.xfg-hero-strip div {
+  padding: 14px 12px !important;
+}
+
+/* Mobile */
+@media (max-width: 820px) {
+  .xfg-hero {
+    padding-top: 95px !important;
+    padding-bottom: 165px !important;
+  }
+
+  .xfg-hero-logo {
+    width: min(360px, 86vw) !important;
+    margin-bottom: 18px !important;
+  }
+
+  .xfg-hero-title {
+    font-size: clamp(2.8rem, 16vw, 5.2rem) !important;
+  }
+
+  .xfg-hero-strip div {
+    padding: 12px 8px !important;
+    font-size: 0.68rem !important;
+  }
+}
+
+
+
