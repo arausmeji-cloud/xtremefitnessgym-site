@@ -2504,4 +2504,49 @@ header {
   max-width: 92vw !important;
 }
 
+/* ================================
+   HERO SPACING FIX
+================================ */
 
+.xfg-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+}
+
+/* Logo gigante */
+.xfg-hero-logo {
+  width: 760px !important;
+  max-width: 95vw !important;
+
+  margin-bottom: -20px !important;
+}
+
+/* XF logo de fondo más sutil */
+.xfg-hero::before {
+  opacity: 0.10 !important;
+}
+
+/* Menos aire arriba */
+.xfg-hero {
+  padding-top: 40px !important;
+}
+
+/* Texto verde pequeño */
+.xfg-hero-kicker {
+  margin-bottom: 8px !important;
+}
+
+/* NO EXCUSES pegado al logo */
+.xfg-hero-title {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+
+  line-height: 0.82 !important;
+}
+
+/* Texto descriptivo */
+.xfg-hero-text {
+  max-width: 760px !important;
+  margin-bottom: 24px !important;
+}
