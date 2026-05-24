@@ -2462,3 +2462,60 @@ letter-spacing: 0.16em;
   position: relative;
   z-index: 2;
 }
+
+
+/* HERO FINAL FIX */
+
+.xfg-hero {
+  padding-top: 150px !important;
+}
+
+.xfg-hero-logo {
+  margin-top: 0 !important;
+  margin-bottom: 34px !important;
+}
+
+.xfg-hero-buttons {
+  display: flex !important;
+  gap: 16px !important;
+  flex-wrap: wrap;
+}
+
+.xfg-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.xfg-btn-primary {
+  color: #000 !important;
+  background: linear-gradient(135deg, #ffe600, #a4ff0a) !important;
+}
+
+.xfg-btn-secondary {
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.35) !important;
+  background: rgba(255,255,255,0.06) !important;
+}
+
+@media (max-width: 820px) {
+  .xfg-hero {
+    padding-top: 115px !important;
+  }
+
+  .xfg-hero-logo {
+    width: min(250px, 70vw) !important;
+  }
+
+  .xfg-hero-buttons {
+    flex-direction: column;
+  }
+}
