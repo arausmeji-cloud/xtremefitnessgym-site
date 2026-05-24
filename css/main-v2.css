@@ -2519,3 +2519,27 @@ letter-spacing: 0.16em;
     flex-direction: column;
   }
 }
+
+/* DESKTOP HERO BREATHING FIX */
+
+@media (min-width: 821px) {
+  .xfg-hero {
+    min-height: 115vh !important;
+    padding-top: 170px !important;
+    padding-bottom: 170px !important;
+  }
+
+  .xfg-hero-logo {
+    width: min(420px, 38vw) !important;
+    margin-bottom: 24px !important;
+  }
+
+  .xfg-hero-title {
+    font-size: clamp(4rem, 6.6vw, 6.8rem) !important;
+    margin-bottom: 28px !important;
+  }
+
+  .xfg-hero-text {
+    margin-bottom: 34px !important;
+  }
+}
