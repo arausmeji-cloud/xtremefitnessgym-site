@@ -2543,3 +2543,43 @@ letter-spacing: 0.16em;
     margin-bottom: 34px !important;
   }
 }
+
+/* FORCE HERO VIDEO VISIBLE */
+
+.xfg-hero {
+  position: relative !important;
+  overflow: hidden !important;
+  background: #050505 !important;
+  background-image: none !important;
+}
+
+.xfg-hero::before,
+.xfg-hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+.xfg-hero-video {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
+}
+
+.xfg-hero-overlay {
+  z-index: 2 !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+}
+
+.xfg-hero-glow {
+  z-index: 3 !important;
+}
+
+.xfg-hero-content {
+  position: relative !important;
+  z-index: 4 !important;
+}
