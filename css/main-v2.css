@@ -1423,9 +1423,7 @@ header nav a:hover,
   margin-bottom: 48px !important;
 }
 /* HERO background: menos oscuro */
-.hero::before{
-  opacity: 0.15 !important; /* si existe ese overlay */
-}
+
 
 /* ===== HERO spacing fix ===== */
 .hero {
@@ -2236,6 +2234,7 @@ a:visited{ color: inherit; }
    XFG CINEMATIC HERO
 ================================ */
 
+.hero,
 .xfg-hero {
   position: relative;
   min-height: 100vh;
@@ -2280,6 +2279,7 @@ a:visited{ color: inherit; }
   pointer-events: none;
 }
 
+.hero-content,
 .xfg-hero-content {
   position: relative;
   z-index: 4;
@@ -2443,12 +2443,14 @@ header {
    XFG HERO FINAL CLEAN
 ================================ */
 
+.hero,
 .xfg-hero {
   min-height: 100vh;
   padding: 100px 7vw 130px;
   align-items: center;
 }
 
+.hero-content,
 .xfg-hero-content {
   position: relative;
   z-index: 4;
@@ -2503,6 +2505,11 @@ letter-spacing: 0.16em;
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  height: 100vh;
+}
+
+.xfg-hero::before {
+  display: none !important;
 }
 
 .xfg-hero-video {
@@ -2530,6 +2537,7 @@ letter-spacing: 0.16em;
   z-index: 1;
 }
 
+.hero-content,
 .xfg-hero-content {
   position: relative;
   z-index: 2;
