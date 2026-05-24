@@ -2466,6 +2466,8 @@ header {
 
 .xfg-hero-kicker {
   margin-bottom: 22px;
+  font-size: 0.72rem;
+letter-spacing: 0.16em;
 }
 
 .xfg-hero-title {
@@ -2485,11 +2487,11 @@ header {
   }
 
   .xfg-hero-logo {
-    width: min(300px, 78vw);
+    width: min(260px, 72vw);
     margin-bottom: 24px;
   }
 
-  .xfg-hero-title {
-    font-size: clamp(2.8rem, 14vw, 5rem);
-  }
+ .xfg-hero-title {
+    font-size: clamp(2.5rem, 12vw, 4.4rem);
+}
 }
