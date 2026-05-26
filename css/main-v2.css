@@ -2643,3 +2643,55 @@ letter-spacing: 0.16em;
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   XF PREMIUM GLOBAL BACKGROUND
+   Final visual direction
+========================= */
+
+html,
+body {
+  background: #050607 !important;
+  color: #f4f6f8;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(152, 201, 0, 0.16), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(255, 208, 0, 0.08), transparent 24%),
+    radial-gradient(circle at 50% 85%, rgba(60, 90, 120, 0.18), transparent 34%),
+    linear-gradient(180deg, #050607 0%, #090b0d 45%, #050607 100%) !important;
+
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Remove old photo-style background feel from main content */
+.services,
+.what-we-offer,
+.gallery-section,
+.contact-section,
+.footer {
+  background: transparent !important;
+}
+
+/* Soft premium separation between sections */
+.what-we-offer,
+.gallery-section,
+.contact-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.what-we-offer::before,
+.gallery-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.025), transparent 35%, rgba(0,0,0,0.18));
+  pointer-events: none;
+  z-index: -1;
+}
