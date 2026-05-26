@@ -3248,3 +3248,24 @@ section {
     object-position: center;
   }
 }
+
+/* FIX DEFINITIVO — desktop/mobile hero video */
+
+.xfg-hero-video.mobile-video {
+  display: none !important;
+}
+
+.xfg-hero-video.desktop-video {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .xfg-hero-video.desktop-video {
+    display: none !important;
+  }
+
+  .xfg-hero-video.mobile-video {
+    display: block !important;
+  }
+}
+
