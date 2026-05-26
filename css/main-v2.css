@@ -3138,3 +3138,71 @@ section {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* =========================
+   CONTACT US — PREMIUM FINAL
+========================= */
+
+.contact-section {
+  padding: 90px 20px 70px !important;
+}
+
+.contact-section .section-title {
+  color: var(--xf-green) !important;
+  font-size: clamp(2.4rem, 4vw, 3.4rem) !important;
+  margin-bottom: 45px !important;
+}
+
+.contact-container {
+  align-items: stretch !important;
+}
+
+.contact-map iframe,
+.contact-info,
+.contact-form {
+  min-height: 330px;
+}
+
+.contact-info {
+  background: rgba(15, 15, 15, 0.52);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 34px 30px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.contact-info h3 {
+  color: var(--xf-yellow);
+  font-size: 1.55rem;
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  color: rgba(255,255,255,0.82);
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.contact-email {
+  margin-top: 22px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 28px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
+
+.contact-form textarea {
+  min-height: 135px !important;
+}
+
+@media (max-width: 900px) {
+  .contact-map iframe,
+  .contact-info,
+  .contact-form {
+    min-height: auto;
+  }
+}
