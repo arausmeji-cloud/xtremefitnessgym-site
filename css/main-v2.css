@@ -3228,3 +3228,23 @@ section {
 .footer span {
   color: var(--xf-yellow);
 }
+
+/* =========================
+   HERO VIDEO — DESKTOP / MOBILE
+========================= */
+
+.mobile-video {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-video {
+    display: none !important;
+  }
+
+  .mobile-video {
+    display: block !important;
+    object-fit: cover;
+    object-position: center;
+  }
+}
