@@ -2949,3 +2949,78 @@ section {
     0 12px 40px rgba(0,0,0,0.45),
     0 0 30px rgba(168,212,0,0.12);
 }
+
+/* =========================
+   XF FINAL SPACING + LINE CLEANUP
+========================= */
+
+/* mata líneas amarillas/fantasmas decorativas */
+.what-we-offer,
+.gallery-section,
+.contact-section,
+.services {
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.what-we-offer::before,
+.what-we-offer::after,
+.gallery-section::before,
+.gallery-section::after,
+.contact-section::before,
+.contact-section::after,
+.services::before,
+.services::after {
+  content: none !important;
+  display: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* menos vacío entre hero y Train Recover Evolve */
+.what-we-offer {
+  padding-top: 45px !important;
+  padding-bottom: 65px !important;
+}
+
+/* título + subtítulo más compacto */
+.what-we-offer .premium-title {
+  margin-bottom: 22px !important;
+}
+
+.what-we-offer .premium-subtitle {
+  margin-bottom: 42px !important;
+}
+
+/* cards un poco más arriba/compactas */
+.services-grid {
+  margin-top: 0 !important;
+}
+
+/* galería más consistente */
+.gallery-section {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+}
+
+.gallery-section h2 {
+  margin-bottom: 26px !important;
+}
+
+/* botones gallery pegados pero con aire */
+.gallery-menu {
+  margin-top: 0 !important;
+  gap: 18px !important;
+}
+
+/* contacto no tan pegado ni tan lejos */
+.contact-section {
+  padding-top: 55px !important;
+  padding-bottom: 60px !important;
+}
+
+.contact-section h2 {
+  margin-bottom: 34px !important;
+}
