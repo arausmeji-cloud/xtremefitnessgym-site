@@ -3024,3 +3024,88 @@ section {
 .contact-section h2 {
   margin-bottom: 34px !important;
 }
+
+/* =========================
+   GALLERY PREMIUM PREVIEW
+========================= */
+
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 45px;
+}
+
+.gallery-preview-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  min-height: 320px;
+  text-decoration: none;
+  border: 1px solid rgba(180,220,80,0.16);
+  background: rgba(12,14,18,0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.35s ease;
+}
+
+.gallery-preview-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(200,255,80,0.4);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+.gallery-preview-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.38;
+  transition: transform 0.5s ease;
+}
+
+.gallery-preview-card:hover .gallery-preview-image {
+  transform: scale(1.05);
+}
+
+.gallery-preview-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 34px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.78),
+      rgba(0,0,0,0.18)
+    );
+}
+
+.gallery-preview-overlay h3 {
+  color: #d8ff4d;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.gallery-preview-overlay p {
+  color: rgba(255,255,255,0.82);
+  line-height: 1.6;
+}
+
+/* TEMP backgrounds */
+
+.bjj-preview {
+  background-image: url('/gallery/bjj/bjj1.jpg');
+}
+
+.gym-preview {
+  background-image: url('/gallery/gym/gym1.jpg');
+}
+
+.impact-preview {
+  background-image: url('/gallery/impact/impact1.jpg');
+}
