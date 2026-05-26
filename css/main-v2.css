@@ -3109,3 +3109,32 @@ section {
 .impact-preview {
   background-image: url('/gallery/impact/impact1.jpg');
 }
+/* =========================
+   GALLERY FINAL LAYOUT FIX
+========================= */
+
+.gallery-section {
+  padding: 90px 20px 120px !important;
+}
+
+.gallery-preview-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 1280px;
+  margin: 55px auto 0 !important;
+  gap: 30px !important;
+}
+
+.gallery-preview-card {
+  min-height: 360px !important;
+}
+
+#contact {
+  padding-top: 90px !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .gallery-preview-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
