@@ -2776,3 +2776,82 @@ body::after {
 
   mix-blend-mode: soft-light;
 }
+
+/* =========================
+   XF EXPERIENCE CARDS
+========================= */
+
+.service-box h3,
+.impact-box h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+
+  color: #d7ff3f !important;
+}
+
+/* textos secundarios */
+.service-box p,
+.impact-box p {
+  color: rgba(255,255,255,0.78) !important;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* cards */
+.service-box,
+.impact-box {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 40px 32px !important;
+}
+
+/* Hover premium */
+.service-box:hover,
+.impact-box:hover {
+  border-color: rgba(215,255,63,0.35) !important;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(30,35,40,0.92),
+      rgba(10,12,16,0.92)
+    ) !important;
+}
+
+/* XF Impact special */
+.service-box-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-box-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(215,255,63,0.08),
+      transparent 60%
+    );
+
+  pointer-events: none;
+}
+
+/* Learn more */
+.learn-more {
+  margin-top: 18px;
+
+  color: #d7ff3f;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  opacity: 0.9;
+}
