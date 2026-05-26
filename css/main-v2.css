@@ -2917,7 +2917,7 @@ section {
 
 /* aire premium entre secciones */
 .what-we-offer {
-  padding-top: 120px !important;
+  padding-top: 70px !important;
   padding-bottom: 90px !important;
 }
 
@@ -2928,4 +2928,24 @@ section {
 
 .contact-section {
   padding-top: 80px !important;
+}
+
+/* PREMIUM CARD EFFECT */
+
+.service-box,
+.impact-box {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease !important;
+}
+
+.service-box:hover,
+.impact-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(168,212,0,0.55) !important;
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.45),
+    0 0 30px rgba(168,212,0,0.12);
 }
