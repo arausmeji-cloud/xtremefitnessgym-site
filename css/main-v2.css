@@ -2855,3 +2855,77 @@ body::after {
 
   opacity: 0.9;
 }
+
+/* =========================
+   XF CINEMATIC SPACING
+========================= */
+
+section {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
+
+/* separaciones suaves */
+.what-we-offer,
+.gallery-section,
+.contact-section {
+  position: relative;
+}
+
+/* glow ambiental */
+.what-we-offer::before,
+.gallery-section::before,
+.contact-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(180,255,0,0.05),
+      transparent 65%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================
+   XF CLEAN SECTION FLOW
+   quita franjas/líneas feas sin romper botones/cards
+========================= */
+
+.what-we-offer,
+.gallery-section,
+.contact-section {
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* mata líneas decorativas entre secciones */
+.what-we-offer::before,
+.what-we-offer::after,
+.gallery-section::before,
+.gallery-section::after,
+.contact-section::before,
+.contact-section::after {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* aire premium entre secciones */
+.what-we-offer {
+  padding-top: 120px !important;
+  padding-bottom: 90px !important;
+}
+
+.gallery-section {
+  padding-top: 70px !important;
+  padding-bottom: 60px !important;
+}
+
+.contact-section {
+  padding-top: 80px !important;
+}
