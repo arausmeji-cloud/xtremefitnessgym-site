@@ -3269,3 +3269,47 @@ section {
   }
 }
 
+.service-box{
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  color:white;
+}
+
+.train-card{
+  background:
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
+  url("images/cards/train.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.fight-card{
+  background:
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
+  url("images/cards/fight.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.recover-card{
+  background:
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
+  url("images/cards/recover.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.belong-card{
+  background:
+  linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
+  url("images/cards/belong.png");
+  background-size:cover;
+  background-position:center;
+}
+
