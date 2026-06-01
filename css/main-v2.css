@@ -3284,7 +3284,7 @@ section {
 .train-card{
   background:
   linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
-  url("images/cards/train.png");
+  url("/public/images/cards/train.png");
   background-size:cover;
   background-position:center;
 }
@@ -3292,7 +3292,7 @@ section {
 .fight-card{
   background:
   linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
-  url("images/cards/fight.png");
+  url("/public/images/cards/fight.png");
   background-size:cover;
   background-position:center;
 }
@@ -3300,7 +3300,7 @@ section {
 .recover-card{
   background:
   linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
-  url("images/cards/recover.png");
+  url("/public/images/cards/recover.png");
   background-size:cover;
   background-position:center;
 }
@@ -3308,7 +3308,7 @@ section {
 .belong-card{
   background:
   linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
-  url("images/cards/belong.png");
+  url("/public/images/cards/belong.png");
   background-size:cover;
   background-position:center;
 }
@@ -3320,7 +3320,7 @@ section {
 .bjj-preview{
   background:
   linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
-  url("images/cards/gallery-bjj.png");
+  url("/public/images/cards/gallery-bjj.png");
   background-size: cover;
   background-position: center;
 }
@@ -3328,7 +3328,7 @@ section {
 .gym-preview{
   background:
   linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
-  url("images/cards/gallery-gym.png");
+  url("/public/images/cards/gallery-gym.png");
   background-size: cover;
   background-position: center;
 }
@@ -3336,7 +3336,7 @@ section {
 .impact-preview{
   background:
   linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
-  url("images/cards/gallery-impact.png");
+  url("/public/images/cards/gallery-impact.png");
   background-size: cover;
   background-position: center;
 }
