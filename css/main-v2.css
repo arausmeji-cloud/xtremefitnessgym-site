@@ -3060,7 +3060,7 @@ section {
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.38;
+  opacity: 1 !important;
   transition: transform 0.5s ease;
 }
 
@@ -3076,11 +3076,12 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
   background:
     linear-gradient(
       to top,
-      rgba(0,0,0,0.78),
-      rgba(0,0,0,0.18)
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.05)
     );
 }
 
