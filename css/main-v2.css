@@ -3096,19 +3096,6 @@ section {
   line-height: 1.6;
 }
 
-/* TEMP backgrounds */
-
-.bjj-preview {
-  background-image: url('/gallery/bjj/bjj1.jpg');
-}
-
-.gym-preview {
-  background-image: url('/gallery/gym/gym1.jpg');
-}
-
-.impact-preview {
-  background-image: url('/gallery/impact/impact1.jpg');
-}
 /* =========================
    GALLERY FINAL LAYOUT FIX
 ========================= */
