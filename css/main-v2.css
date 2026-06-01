@@ -3313,3 +3313,30 @@ section {
   background-position:center;
 }
 
+/* ===========================
+   GALLERY PREVIEW IMAGES
+=========================== */
+
+.bjj-preview{
+  background:
+  linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
+  url("images/cards/gallery-bjj.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.gym-preview{
+  background:
+  linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
+  url("images/cards/gallery-gym.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.impact-preview{
+  background:
+  linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
+  url("images/cards/gallery-impact.png");
+  background-size: cover;
+  background-position: center;
+}
