@@ -3406,3 +3406,37 @@ section {
   background-size: cover !important;
   background-position: center !important;
 }
+
+/* =========================
+   FINAL IMAGE FIT FIX
+========================= */
+
+/* SERVICES */
+.train-card,
+.fight-card,
+.recover-card,
+.belong-card,
+.train-card:hover,
+.fight-card:hover,
+.recover-card:hover,
+.belong-card:hover {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #101318 !important;
+}
+
+/* GALLERY */
+.bjj-preview,
+.gym-preview,
+.impact-preview {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #101318 !important;
+}
+
+/* que la galería no haga zoom raro */
+.gallery-preview-card:hover .gallery-preview-image {
+  transform: none !important;
+}
