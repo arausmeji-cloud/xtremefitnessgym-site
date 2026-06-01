@@ -3370,10 +3370,6 @@ section {
 
 .service-box:hover,
 .service-box-link:hover {
- background-size: contain;
-background-repeat: no-repeat;
-background-color: #101318;
-  background-position: center !important;
   transform: translateY(-8px);
   border-color: rgba(200,255,80,0.45) !important;
   box-shadow: 0 18px 45px rgba(0,0,0,0.45);
@@ -3383,23 +3379,30 @@ background-color: #101318;
   background:
   linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.38)),
   url("/images/cards/train.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .fight-card:hover{
   background:
   linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.38)),
   url("/images/cards/fight.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .recover-card:hover{
   background:
   linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.38)),
   url("/images/cards/recover.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .belong-card:hover{
   background:
   linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.38)),
   url("/images/cards/belong.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
-
