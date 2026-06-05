@@ -3441,3 +3441,90 @@ section {
 .gallery-preview-card:hover .gallery-preview-image {
   transform: none !important;
 }
+
+/* =========================
+   MOBILE FINAL POLISH
+========================= */
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  section {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+  }
+
+  .what-we-offer {
+    padding-top: 55px !important;
+    padding-bottom: 45px !important;
+  }
+
+  .premium-title,
+  .gallery-section h2,
+  #contact h2 {
+    font-size: clamp(2.4rem, 11vw, 3.6rem) !important;
+    line-height: 1.05 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .premium-subtitle {
+    font-size: 1.15rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 35px !important;
+  }
+
+  .services-grid,
+  .gallery-preview-grid,
+  .contact-container,
+  .contact-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .service-box,
+  .gallery-preview-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .gallery-section {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+  }
+
+  .gallery-preview-grid {
+    margin-top: 35px !important;
+    gap: 26px !important;
+  }
+
+  #contact {
+    padding-top: 55px !important;
+  }
+
+  iframe,
+  .map,
+  .map iframe,
+  .contact-map,
+  .contact-map iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-section,
+  .contact-wrapper,
+  .contact-card,
+  .contact-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
