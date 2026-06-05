@@ -3532,3 +3532,33 @@ section {
     max-width: 100% !important;
   }
 }
+
+/* =========================
+   PREMIUM FOOTER
+========================= */
+
+.site-footer {
+  padding: 55px 20px 38px;
+  text-align: center;
+  border-top: 1px solid rgba(200,255,80,0.18);
+  background: rgba(0,0,0,0.45);
+}
+
+.footer-inner h3 {
+  color: #caff2f;
+  font-size: 1.4rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.footer-inner p {
+  color: rgba(255,255,255,0.72);
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.footer-copy {
+  margin-top: 22px !important;
+  color: rgba(255,255,255,0.48) !important;
+  font-size: 0.85rem !important;
+}
