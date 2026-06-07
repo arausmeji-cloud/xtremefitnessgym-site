@@ -3562,3 +3562,49 @@ section {
   color: rgba(255,255,255,0.48) !important;
   font-size: 0.85rem !important;
 }
+
+/* =========================
+   FOOTER — XF FINAL
+========================= */
+
+.footer {
+  opacity: 1 !important;
+  padding: 56px 20px 42px !important;
+  text-align: center !important;
+  background: rgba(0,0,0,0.48) !important;
+  border-top: 1px solid rgba(168,212,0,0.22) !important;
+}
+
+.footer h3 {
+  color: #d8ff4d !important;
+  font-size: 1.15rem !important;
+  letter-spacing: 0.22em !important;
+  margin-bottom: 16px !important;
+}
+
+.footer p {
+  margin: 8px 0 !important;
+  color: rgba(255,255,255,0.72) !important;
+  font-size: 0.9rem !important;
+}
+
+.footer-values {
+  color: rgba(255,255,255,0.82) !important;
+}
+
+.footer-mission {
+  color: var(--xf-yellow) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.footer-impact {
+  color: #d8ff4d !important;
+  font-weight: 700 !important;
+}
+
+.footer-copy {
+  margin-top: 24px !important;
+  font-size: 0.78rem !important;
+  color: rgba(255,255,255,0.46) !important;
+}
