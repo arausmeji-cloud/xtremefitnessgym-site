@@ -3839,27 +3839,3 @@ section {
 .service-box .learn-more {
   margin-top: 18px !important;
 }
-
-.more-than-gym{
-  position: relative;
-  overflow: hidden;
-
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 70px 60px;
-
-  border-radius: 30px;
-
-  background:
-    linear-gradient(
-      rgba(0,0,0,.65),
-      rgba(0,0,0,.75)
-    ),
-    url("/images/home/more-than-gym.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: 1px solid rgba(255,255,255,.12);
-}
