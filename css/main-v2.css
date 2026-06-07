@@ -3421,11 +3421,12 @@ section {
 .fight-card:hover,
 .recover-card:hover,
 .belong-card:hover {
-  background-size: contain !important;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-color: #101318 !important;
 }
+
 
 /* GALLERY */
 .bjj-preview,
@@ -3813,4 +3814,28 @@ section {
 /* More Than A Gym: que el fondo no parezca otro bloque raro */
 .more-than-inner {
   background: rgba(8,10,14,0.48) !important;
+}
+
+/* =========================
+   SERVICES TEXT ALIGN FINAL
+========================= */
+
+.service-box {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 28px 22px !important;
+}
+
+.service-box h3 {
+  margin: 0 0 18px !important;
+}
+
+.service-box p {
+  margin: 0 auto !important;
+  max-width: 260px !important;
+}
+
+.service-box .learn-more {
+  margin-top: 18px !important;
 }
