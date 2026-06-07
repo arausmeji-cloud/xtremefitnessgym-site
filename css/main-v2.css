@@ -3892,3 +3892,39 @@ section {
   text-shadow: 0 0 16px rgba(216,255,77,0.25);
 }
 
+/* =========================
+   XF IMPACT BACK BUTTON
+========================= */
+
+.impact-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 24px;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: var(--xf-yellow);
+
+  color: #111 !important;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.impact-back-btn:hover {
+  transform: translateY(-3px);
+
+  background: #d8ff4d;
+
+  box-shadow: 0 12px 30px rgba(216,255,77,0.28);
+}
+
