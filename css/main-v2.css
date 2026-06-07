@@ -3753,3 +3753,64 @@ section {
     padding-top: 25px !important;
   }
 }
+
+/* =========================
+   CARD IMAGE + ALIGNMENT FIX
+========================= */
+
+/* Fotos ocupan todo el cuadro */
+.service-box,
+.gallery-preview-card {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Services: alinear textos igual */
+.service-box {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 28px 22px !important;
+}
+
+.service-box h3 {
+  margin: 0 0 18px !important;
+}
+
+.service-box p {
+  margin: 0 auto !important;
+  max-width: 260px;
+}
+
+.service-box .learn-more {
+  margin-top: 18px !important;
+}
+
+/* Gallery: imagen llena todo el card */
+.gallery-preview-image {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  opacity: 0.72 !important;
+}
+
+/* Overlay más prolijo */
+.gallery-preview-overlay {
+  height: 100% !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 28px 24px !important;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.52),
+    rgba(0,0,0,0.18)
+  ) !important;
+}
+
+/* More Than A Gym: que el fondo no parezca otro bloque raro */
+.more-than-inner {
+  background: rgba(8,10,14,0.48) !important;
+}
