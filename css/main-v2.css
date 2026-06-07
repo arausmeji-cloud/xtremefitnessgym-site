@@ -3562,52 +3562,25 @@ section {
   color: rgba(255,255,255,0.48) !important;
   font-size: 0.85rem !important;
 }
-
 /* =========================
-   FOOTER — XF PREMIUM FINAL
+   FOOTER — XF CLEAN FINAL
 ========================= */
 
 .footer {
   position: relative;
   overflow: hidden;
-
   opacity: 1 !important;
-
-  padding: 60px 20px 45px !important;
-
+  padding: 56px 20px 42px !important;
   text-align: center !important;
-
   background: rgba(0,0,0,0.42) !important;
-
   border-top: 1px solid rgba(168,212,0,0.22) !important;
 }
 
-/* Glow XF */
-
+/* Remove previous glow */
 .footer::before {
-  content: "";
-
-  position: absolute;
-
-  width: 500px;
-  height: 500px;
-
-  top: -250px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  background: radial-gradient(
-    circle,
-    rgba(168,212,0,0.12) 0%,
-    rgba(168,212,0,0.05) 35%,
-    transparent 75%
-  );
-
-  pointer-events: none;
+  display: none !important;
+  content: none !important;
 }
-
-/* Mantener todo por encima del glow */
 
 .footer * {
   position: relative;
@@ -3616,71 +3589,53 @@ section {
 
 .footer h3 {
   color: var(--xf-yellow) !important;
-
   font-size: 1.35rem !important;
-
   font-weight: 800 !important;
-
   letter-spacing: 0.22em !important;
-
   margin-bottom: 18px !important;
 }
 
 .footer-values {
-  color: rgba(255,255,255,0.82) !important;
-
+  color: rgba(255,255,255,0.75) !important;
   text-transform: uppercase;
-
   letter-spacing: 0.12em;
-
   font-size: 0.9rem !important;
-
   margin-bottom: 16px !important;
 }
 
 .footer-mission {
   color: var(--xf-yellow) !important;
-
   font-size: 1rem !important;
-
-  font-weight: 800 !important;
-
-  letter-spacing: 0.08em !important;
-
+  font-weight: 900 !important;
+  letter-spacing: 0.1em !important;
   margin-bottom: 10px !important;
 }
 
 .footer-impact {
-  color: #d8ff4d !important;
-
+  color: rgba(255,255,255,0.82) !important;
   font-size: 0.95rem !important;
-
   font-weight: 700 !important;
-
-  margin-bottom: 20px !important;
+  margin-bottom: 22px !important;
 }
 
 .footer-copy {
-  color: rgba(255,255,255,0.5) !important;
-
+  color: rgba(255,255,255,0.48) !important;
   font-size: 0.78rem !important;
-
   letter-spacing: 0.04em;
 }
 
 @media (max-width: 768px) {
-
   .footer {
-    padding: 50px 20px 38px !important;
+    padding: 48px 20px 38px !important;
   }
 
   .footer h3 {
-    font-size: 1.15rem !important;
-    letter-spacing: 0.18em !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.16em !important;
   }
 
   .footer-values {
-    font-size: 0.82rem !important;
+    font-size: 0.78rem !important;
   }
 
   .footer-mission {
@@ -3688,7 +3643,7 @@ section {
   }
 
   .footer-impact {
-    font-size: 0.85rem !important;
+    font-size: 0.84rem !important;
   }
 }
 
