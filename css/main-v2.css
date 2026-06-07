@@ -3652,13 +3652,13 @@ section {
 ========================= */
 
 .more-than-gym {
-  padding: 70px 20px 80px;
+  padding: 25px 20px 35px;
   text-align: center;
 }
 
 .more-than-inner {
   max-width: 920px;
-  margin: 0 auto;
+  margin: 0 auto 20 px;
   padding: 48px 34px;
   border: 1px solid rgba(168,212,0,0.22);
   border-radius: 30px;
@@ -3704,3 +3704,7 @@ section {
     line-height: 1.65;
   }
 }
+.more-than-inner p:last-child {
+  margin-bottom: 0;
+}
+
