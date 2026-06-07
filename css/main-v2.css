@@ -3839,3 +3839,30 @@ section {
 .service-box .learn-more {
   margin-top: 18px !important;
 }
+
+
+/* =========================
+   MORE THAN A GYM — BACKGROUND IMAGE FINAL
+========================= */
+
+.more-than-gym {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.more-than-inner {
+  background:
+    linear-gradient(
+      rgba(0,0,0,.30),
+      rgba(0,0,0,.42)
+    ),
+    url("/images/home/more-than-gym.png") !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  border: 1px solid rgba(168,212,0,0.26) !important;
+  box-shadow: 0 20px 55px rgba(0,0,0,0.35) !important;
+}
