@@ -3866,3 +3866,16 @@ section {
   border: 1px solid rgba(168,212,0,0.26) !important;
   box-shadow: 0 20px 55px rgba(0,0,0,0.35) !important;
 }
+
+/* =========================
+   WHY XF
+========================= */
+
+.why-kicker {
+  text-align: center !important;
+  margin-bottom: 18px !important;
+  color: var(--xf-yellow) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.24em !important;
+  font-size: 0.9rem !important;
+}
