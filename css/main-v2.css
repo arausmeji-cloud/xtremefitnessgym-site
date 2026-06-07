@@ -4114,3 +4114,44 @@ body::after,
 body {
   background: #050607 !important;
 }
+
+/* =========================
+   GALLERY MOBILE ARROW FIX
+========================= */
+
+@media (max-width: 768px) {
+  .gallery-arrow,
+  .gallery-next,
+  .gallery-prev,
+  .next,
+  .prev {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+
+    border-radius: 50% !important;
+
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    background: rgba(216,255,77,0.9) !important;
+    color: #050607 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 20 !important;
+  }
+
+  .gallery-next,
+  .next {
+    right: 12px !important;
+  }
+
+  .gallery-prev,
+  .prev {
+    left: 12px !important;
+  }
+}
