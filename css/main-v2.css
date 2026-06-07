@@ -3879,3 +3879,16 @@ section {
   letter-spacing: 0.24em !important;
   font-size: 0.9rem !important;
 }
+
+/* =========================
+   WHY XF — FINAL SIZE
+========================= */
+
+.why-kicker {
+  font-size: 1.15rem !important;
+  letter-spacing: 0.28em !important;
+  margin-bottom: 20px !important;
+  color: var(--xf-yellow) !important;
+  text-shadow: 0 0 16px rgba(216,255,77,0.25);
+}
+
