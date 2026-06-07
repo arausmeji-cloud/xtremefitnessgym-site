@@ -4076,3 +4076,41 @@ section {
   margin-top: 0 !important;
   margin-bottom: 34px !important;
 }
+/* =========================
+   XF IMPACT — REMOVE BACKGROUND GLOW HARD FIX
+========================= */
+
+body,
+.site-bg,
+.gallery-page-header,
+.impact-intro-block,
+.impact-intro-inner,
+.impact-section {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Elimina glows creados con pseudo-elementos */
+.site-bg::before,
+.site-bg::after,
+body::before,
+body::after,
+.gallery-page-header::before,
+.gallery-page-header::after,
+.impact-intro-block::before,
+.impact-intro-block::after,
+.impact-intro-inner::before,
+.impact-intro-inner::after,
+.impact-section::before,
+.impact-section::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Fondo uniforme para XF Impact */
+body {
+  background: #050607 !important;
+}
