@@ -4195,3 +4195,39 @@ body {
 #next-btn {
   right: 15px !important;
 }
+
+/* =========================
+   MORE THAN A GYM CTA
+========================= */
+
+.impact-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 28px;
+
+  padding: 14px 30px;
+
+  border-radius: 999px;
+
+  background: var(--xf-yellow);
+
+  color: #111 !important;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  letter-spacing: 0.04em;
+
+  transition: all 0.3s ease;
+}
+
+.impact-cta-btn:hover {
+  transform: translateY(-3px);
+
+  background: #d8ff4d;
+
+  box-shadow: 0 12px 30px rgba(216,255,77,0.28);
+}
