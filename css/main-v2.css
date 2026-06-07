@@ -3975,3 +3975,44 @@ section {
     font-size: 1rem;
   }
 }
+/* =========================
+   XF IMPACT INTRO — CLEAN
+========================= */
+
+.impact-intro-block {
+  padding: 20px 20px 20px !important;
+  text-align: center !important;
+}
+
+.impact-intro-inner {
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  padding: 20px 20px 10px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.impact-intro-inner h2 {
+  color: #d8ff4d !important;
+  font-size: clamp(2rem, 4vw, 3.6rem) !important;
+  line-height: 1.08 !important;
+  margin-bottom: 22px !important;
+}
+
+.impact-intro-inner p {
+  color: rgba(255,255,255,0.78) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
+  max-width: 760px !important;
+  margin: 12px auto !important;
+}
+
+.impact-section {
+  padding-top: 20px !important;
+}
+
+.impact-section h2 {
+  margin-top: 0 !important;
+  margin-bottom: 34px !important;
+}
