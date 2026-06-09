@@ -4261,7 +4261,7 @@ body {
 .impact-bottom-cta {
   max-width: 900px;
   margin: 50px auto 70px;
-  padding: 46px 28px;
+  padding: 28px 24px;
   text-align: center;
 
   border-radius: 28px;
@@ -4271,7 +4271,7 @@ body {
 
 .impact-bottom-cta h2 {
   color: #d8ff4d;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   line-height: 1.1;
   margin-bottom: 18px;
 }
