@@ -4231,3 +4231,26 @@ body {
 
   box-shadow: 0 12px 30px rgba(216,255,77,0.28);
 }
+/* =========================
+   EARLY ACCESS LIST
+========================= */
+
+.early-access-list{
+  list-style: none;
+  padding: 0;
+  margin: 22px auto;
+  max-width: 500px;
+}
+
+.early-access-list li{
+  color: rgba(255,255,255,0.88);
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+.early-access-list li::before{
+  content: "✓ ";
+  color: var(--xf-yellow);
+  font-weight: 800;
+}
+
