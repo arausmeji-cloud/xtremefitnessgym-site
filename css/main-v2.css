@@ -4318,3 +4318,66 @@ body {
     flex-direction: column;
   }
 }
+/* XF Impact image background cards */
+
+.impact-box {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  padding: 34px;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.impact-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82),
+    rgba(0, 0, 0, 0.38),
+    rgba(0, 0, 0, 0.12)
+  );
+  z-index: 1;
+}
+
+.impact-box h3,
+.impact-box p {
+  position: relative;
+  z-index: 2;
+}
+
+.impact-box h3 {
+  color: #ffffff;
+}
+
+.impact-box p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.impact-womens {
+  background-image: url("/images/impact/womens-self-defence.png");
+}
+
+.impact-anti-bullying {
+  background-image: url("/images/impact/anti-bullying.png");
+}
+
+.impact-community {
+  background-image: url("/images/impact/community-outreach.png");
+}
+
+.impact-responders {
+  background-image: url("/images/impact/first-responders.png");
+}
+
+.impact-mental {
+  background-image: url("/images/impact/mental-health.png");
+}
+
