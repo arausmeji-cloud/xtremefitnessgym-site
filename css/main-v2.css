@@ -4421,4 +4421,33 @@ body {
   pointer-events: none;
 }
 
+.impact-womens:hover {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/womens-self-defence.jpeg") !important;
+}
 
+.impact-anti-bullying:hover {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/anti-bullying.jpeg") !important;
+}
+
+.impact-community:hover {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/community-outreach.jpeg") !important;
+}
+
+.impact-responders:hover {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/first-responders.jpeg") !important;
+}
+
+.impact-mental:hover {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/mental-health.jpeg") !important;
+}
+
+.impact-box:hover {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
