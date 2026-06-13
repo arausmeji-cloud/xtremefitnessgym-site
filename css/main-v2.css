@@ -4362,26 +4362,6 @@ body {
 }
 
 .impact-womens {
-  background-image: url("/images/impact/womens-self-defence.jpeg");
-}
-
-.impact-anti-bullying {
-  background-image: url("/images/impact/anti-bullying.jpeg");
-}
-
-.impact-community {
-  background-image: url("/images/impact/community-outreach.jpeg");
-}
-
-.impact-responders {
-  background-image: url("/images/impact/first-responders.jpeg");
-}
-
-.impact-mental {
-  background-image: url("/images/impact/mental-health.jpeg");
-}
-
-.impact-womens {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
   url("/images/impact/womens-self-defence.jpeg") !important;
 }
