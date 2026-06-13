@@ -4420,10 +4420,5 @@ body {
 .impact-box::before {
   pointer-events: none;
 }
-.impact-link:hover {
-  background-color: transparent !important;
-}
 
-.impact-box:hover {
-    background-image: inherit !important;
-}
+
