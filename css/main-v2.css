@@ -4323,7 +4323,7 @@ body {
 .impact-box {
   position: relative;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 380px;
   padding: 34px;
   border-radius: 24px;
   background-size: cover;
