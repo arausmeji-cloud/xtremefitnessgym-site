@@ -4381,3 +4381,27 @@ body {
   background-image: url("/images/impact/mental-health.png");
 }
 
+.impact-womens {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/womens-self-defence.png") !important;
+}
+
+.impact-anti-bullying {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/anti-bullying.png") !important;
+}
+
+.impact-community {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/community-outreach.png") !important;
+}
+
+.impact-responders {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/first-responders.png") !important;
+}
+
+.impact-mental {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+  url("/images/impact/mental-health.png") !important;
+}
