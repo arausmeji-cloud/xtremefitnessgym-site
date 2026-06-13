@@ -4362,46 +4362,46 @@ body {
 }
 
 .impact-womens {
-  background-image: url("/images/impact/womens-self-defence.png");
+  background-image: url("/images/impact/womens-self-defence.jpeg");
 }
 
 .impact-anti-bullying {
-  background-image: url("/images/impact/anti-bullying.png");
+  background-image: url("/images/impact/anti-bullying.jpeg");
 }
 
 .impact-community {
-  background-image: url("/images/impact/community-outreach.png");
+  background-image: url("/images/impact/community-outreach.jpeg");
 }
 
 .impact-responders {
-  background-image: url("/images/impact/first-responders.png");
+  background-image: url("/images/impact/first-responders.jpeg");
 }
 
 .impact-mental {
-  background-image: url("/images/impact/mental-health.png");
+  background-image: url("/images/impact/mental-health.jpeg");
 }
 
 .impact-womens {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-  url("/images/impact/womens-self-defence.png") !important;
+  url("/images/impact/womens-self-defence.jpeg") !important;
 }
 
 .impact-anti-bullying {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-  url("/images/impact/anti-bullying.png") !important;
+  url("/images/impact/anti-bullying.jpeg") !important;
 }
 
 .impact-community {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-  url("/images/impact/community-outreach.png") !important;
+  url("/images/impact/community-outreach.jpeg") !important;
 }
 
 .impact-responders {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-  url("/images/impact/first-responders.png") !important;
+  url("/images/impact/first-responders.jpeg") !important;
 }
 
 .impact-mental {
   background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-  url("/images/impact/mental-health.png") !important;
+  url("/images/impact/mental-health.jpeg") !important;
 }
