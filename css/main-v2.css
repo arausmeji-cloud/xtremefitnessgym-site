@@ -4442,3 +4442,26 @@ body {
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
+
+/* XF Impact mobile card fix */
+
+@media (max-width: 768px) {
+  .impact-box {
+    min-height: 340px !important;
+    padding: 28px 22px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    justify-content: center !important;
+  }
+
+  .impact-box h3 {
+    font-size: 2.4rem !important;
+    line-height: 1.05 !important;
+  }
+
+  .impact-box p {
+    font-size: 1.25rem !important;
+    line-height: 1.45 !important;
+  }
+}
