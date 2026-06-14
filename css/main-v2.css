@@ -4465,3 +4465,25 @@ body {
     line-height: 1.45 !important;
   }
 }
+
+/* Disable hover movement on mobile for XF Impact cards */
+
+@media (max-width: 768px) {
+  .impact-box,
+  .impact-box:hover,
+  .impact-box:active,
+  .impact-box:focus {
+    transform: none !important;
+    min-height: 340px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .impact-link,
+  .impact-link:hover,
+  .impact-link:active,
+  .impact-link:focus {
+    transform: none !important;
+  }
+}
